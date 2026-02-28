@@ -1,21 +1,20 @@
 {
-  "3f79327f3e112b54edcb1fae39f670b6" : {
+  "623176f8e74e6ece6499a78d66d1f3e0" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d4bd55e0a15e4ec0",
-      "status" : "broken",
-      "statusDetails" : "AttributeError: 'WebKeys' object has no attribute 'check_text_in_page'",
+      "uid" : "214d354d8de6f8c9",
+      "status" : "passed",
       "time" : {
-        "start" : 1772267654707,
-        "stop" : 1772267663079,
-        "duration" : 8372
+        "start" : 1772272117649,
+        "stop" : 1772272121210,
+        "duration" : 3561
       }
     } ]
   }

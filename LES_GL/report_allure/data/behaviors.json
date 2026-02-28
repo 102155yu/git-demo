@@ -4,26 +4,26 @@
   "children" : [ {
     "name" : "LES系统",
     "children" : [ {
-      "name" : "登录",
+      "name" : "设备员审核计划",
       "children" : [ {
         "name" : "典型场景",
         "children" : [ {
-          "name" : "主流程完成",
-          "uid" : "d4bd55e0a15e4ec0",
-          "parentUid" : "62fd82adebdcc2ad5b5f55c4dcaa8169",
-          "status" : "broken",
+          "name" : "设备员审核计划",
+          "uid" : "214d354d8de6f8c9",
+          "parentUid" : "0f99806a9e96683c3ee5a030957e00af",
+          "status" : "passed",
           "time" : {
-            "start" : 1772267654707,
-            "stop" : 1772267663079,
-            "duration" : 8372
+            "start" : 1772272117649,
+            "stop" : 1772272121210,
+            "duration" : 3561
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         } ],
-        "uid" : "62fd82adebdcc2ad5b5f55c4dcaa8169"
+        "uid" : "0f99806a9e96683c3ee5a030957e00af"
       } ],
-      "uid" : "235d2a4d911fde3d04e9a0ed3cc76a88"
+      "uid" : "cf23f87758afa2e3b83afaf37346a194"
     } ],
     "uid" : "6811519b2e8d73eb8610a9f48418a4b2"
   } ]

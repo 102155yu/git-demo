@@ -14,6 +14,9 @@ USERNAME_CZG_YJA ="13720102552" #操作工 余
 USERNAME_jlf_xmfzr_lxw = "13910893211" #项目负责人 李学武
 USERNAME_jlf_xmjl_wzq ="15963716341"    #项目经理  王子强
 USERNAME_jlf_jlgcs_lc ="17671677251"    #监理工程师 刘超
+USERNAME_sby_55 = "sb.y55"
+USERNAME_sby_80 ="sb.y80"
+
 #密码
 PASSWD = '123456'
 

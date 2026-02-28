@@ -1,0 +1,183 @@
+{
+  "uid" : "214d354d8de6f8c9",
+  "name" : "设备员审核计划",
+  "fullName" : "testcase.test_zzy_01#test_login02",
+  "historyId" : "623176f8e74e6ece6499a78d66d1f3e0",
+  "time" : {
+    "start" : 1772272117649,
+    "stop" : 1772272121210,
+    "duration" : 3561
+  },
+  "description" : "\n        用例编号：test_loin02\n            用例标题：设备员审核计划\n            前置条件：专工下派计划成功\n            测试步骤：\n                1登录进入首页\n                2.定位待办处理\n                3.点击处理\n                4.进入计划页面点击发布\n                5.发布成功\n\n            预期结果；设备员发布计划成功\n\n    :param browser:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>    用例编号：test_loin02\n        用例标题：设备员审核计划\n        前置条件：专工下派计划成功\n        测试步骤：\n            1登录进入首页\n            2.定位待办处理\n            3.点击处理\n            4.进入计划页面点击发布\n            5.发布成功\n\n        预期结果；设备员发布计划成功\n\n:param browser:\n:return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1772272116374,
+      "stop" : 1772272117649,
+      "duration" : 1275
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        用例编号：test_loin02\n            用例标题：设备员审核计划\n            前置条件：专工下派计划成功\n            测试步骤：\n                1登录进入首页\n                2.定位待办处理\n                3.点击处理\n                4.进入计划页面点击发布\n                5.发布成功\n\n            预期结果；设备员发布计划成功\n\n    :param browser:\n    :return:\n    ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "浏览器窗口最大化",
+      "time" : {
+        "start" : 1772272117649,
+        "stop" : 1772272117705,
+        "duration" : 56
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "进入LES登录页",
+      "time" : {
+        "start" : 1772272117705,
+        "stop" : 1772272118781,
+        "duration" : 1076
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击待办处理",
+      "time" : {
+        "start" : 1772272119782,
+        "stop" : 1772272119869,
+        "duration" : 87
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击处理弹窗确认按钮",
+      "time" : {
+        "start" : 1772272119869,
+        "stop" : 1772272120445,
+        "duration" : 576
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击发布计划",
+      "time" : {
+        "start" : 1772272120445,
+        "stop" : 1772272121210,
+        "duration" : 765
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1772272121211,
+      "stop" : 1772272123399,
+      "duration" : 2188
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "设备员审核计划"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "epic",
+    "value" : "LES系统"
+  }, {
+    "name" : "story",
+    "value" : "典型场景"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_zzy_01"
+  }, {
+    "name" : "host",
+    "value" : "Y-YU"
+  }, {
+    "name" : "thread",
+    "value" : "13208-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_zzy_01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "214d354d8de6f8c9.json",
+  "parameterValues" : [ ]
+}

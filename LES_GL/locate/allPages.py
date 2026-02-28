@@ -20,7 +20,13 @@ page_login_loginBtn = ["xpath",'/html/body/div[1]/div/div/div[2]/div/form/div[3]
 二.菜单
 '''
 #机动部静设备工作台
-
+#生产运行部设备工程师工作台
+    #待办页面处理按钮
+sby_gzt_db_cl=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[2]/div/div[3]/div[1]/div/div[2]/button/span"]
+    #待办页面处理弹窗确认按钮
+sby_gzt_db_cl_qr=["xpath","/html/body/div[10]/div/div/div[3]/button/span"]
+    #定力矩服务计划页面 下派 按钮
+sby_gzt_db_cl_fb=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div[1]/div/div[2]/button[1]/span"]
 #服务计划管理
 fwjh =["xpath","/html/body/div[1]/div/div/div[2]/div/div[1]/div/ul/li[2]/div/span"]
     #定力矩服务计划

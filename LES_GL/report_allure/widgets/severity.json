@@ -1,11 +1,11 @@
 [ {
-  "uid" : "d4bd55e0a15e4ec0",
-  "name" : "主流程完成",
+  "uid" : "214d354d8de6f8c9",
+  "name" : "设备员审核计划",
   "time" : {
-    "start" : 1772267654707,
-    "stop" : 1772267663079,
-    "duration" : 8372
+    "start" : 1772272117649,
+    "stop" : 1772272121210,
+    "duration" : 3561
   },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "critical"
 } ]

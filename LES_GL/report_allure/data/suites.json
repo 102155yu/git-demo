@@ -4,22 +4,22 @@
   "children" : [ {
     "name" : "testcase",
     "children" : [ {
-      "name" : "test_dl_01",
+      "name" : "test_zzy_01",
       "children" : [ {
-        "name" : "主流程完成",
-        "uid" : "d4bd55e0a15e4ec0",
-        "parentUid" : "10e8f81c3a0abbb884628124f43a1a00",
-        "status" : "broken",
+        "name" : "设备员审核计划",
+        "uid" : "214d354d8de6f8c9",
+        "parentUid" : "3ef5de606c19f644d06cb102fa391d95",
+        "status" : "passed",
         "time" : {
-          "start" : 1772267654707,
-          "stop" : 1772267663079,
-          "duration" : 8372
+          "start" : 1772272117649,
+          "stop" : 1772272121210,
+          "duration" : 3561
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "10e8f81c3a0abbb884628124f43a1a00"
+      "uid" : "3ef5de606c19f644d06cb102fa391d95"
     } ],
     "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
   } ]
