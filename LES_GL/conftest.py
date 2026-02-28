@@ -1,18 +1,25 @@
 import allure
 import pytest
 
-from selenium import webdriver
 
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service  # 新增导入
 #浏览器预制fix
 @pytest.fixture()
 def browser():
-    #01用例前置操作
-    #定义全局变量driver，本文件中其他fix可以共享
+    # 全局变量 driver
     global driver
-    driver = webdriver.Chrome()
-    #02用例执行，返回driver
+    # 1. 替换为你解压后的 chromedriver.exe 路径
+    driver_path = r"D:\Python\chromedriver.exe"  # 示例路径，根据实际修改
+    # 2. 创建 Service 对象，指定驱动路径
+    service = Service(executable_path=driver_path)
+    # 3. 初始化 Chrome 浏览器
+    driver = webdriver.Chrome(service=service)
+
+    # 可选：设置隐式等待，提升稳定性
+    driver.implicitly_wait(10)
     yield driver
-    #03 用例后置，关闭浏览器
+    # 用例执行完后关闭浏览器
     driver.quit()
 
 @pytest.hookimpl(hookwrapper=True)

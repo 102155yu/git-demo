@@ -39,7 +39,7 @@ def test_login02(browser):
     #进入登录
     with allure.step('进入LES登录页'):
         login = LoginPage(browser)
-        login.login(LOGIN_URL, USERNAME, PASSWD)
+        login.login(LOGIN_URL, USERNAME_zg_YJA, PASSWD)
     time.sleep(1)
 
     #定位服务计划管理

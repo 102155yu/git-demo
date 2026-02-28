@@ -1,5 +1,5 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Fri Feb 27 17:59:57 CST 2026","Fri Feb 27 18:00:07 CST 2026","9781","testcase","test_dl_01","","","","test_login02","
+"passed","Sat Feb 28 16:00:26 CST 2026","Sat Feb 28 16:00:34 CST 2026","8894","testcase","test_dl_01","","","","主流程完成","
         用例编号：test_loin02
             用例标题：登录
             前置条件：登录
