@@ -1,11 +1,11 @@
 [ {
-  "uid" : "78f51132ae7d642c",
-  "name" : "test_login02",
+  "uid" : "d4bd55e0a15e4ec0",
+  "name" : "主流程完成",
   "time" : {
-    "start" : 1772186397761,
-    "stop" : 1772186407542,
-    "duration" : 9781
+    "start" : 1772267654707,
+    "stop" : 1772267663079,
+    "duration" : 8372
   },
-  "status" : "passed",
+  "status" : "broken",
   "severity" : "critical"
 } ]

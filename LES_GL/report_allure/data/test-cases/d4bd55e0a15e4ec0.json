@@ -1,0 +1,400 @@
+{
+  "uid" : "d4bd55e0a15e4ec0",
+  "name" : "主流程完成",
+  "fullName" : "testcase.test_dl_01#test_login02",
+  "historyId" : "3f79327f3e112b54edcb1fae39f670b6",
+  "time" : {
+    "start" : 1772267654707,
+    "stop" : 1772267663079,
+    "duration" : 8372
+  },
+  "description" : "\n        用例编号：test_loin02\n            用例标题：登录\n            前置条件：登录\n            测试步骤：\n                1登录进入首页\n                2.选择服务计划管理菜单\n                3.点击定力矩服务计划菜单\n                4.点击添加定力矩服务计划\n                5.下派成功\n\n            预期结果；专工建立计划下派成功\n\n    :param browser:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>    用例编号：test_loin02\n        用例标题：登录\n        前置条件：登录\n        测试步骤：\n            1登录进入首页\n            2.选择服务计划管理菜单\n            3.点击定力矩服务计划菜单\n            4.点击添加定力矩服务计划\n            5.下派成功\n\n        预期结果；专工建立计划下派成功\n\n:param browser:\n:return:\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'WebKeys' object has no attribute 'check_text_in_page'",
+  "statusTrace" : "browser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"e0e13ae3cfcfeb2c4a4a6fb11ba2eed7\")>\n\n    @allure.epic('LES系统')\n    @allure.feature('登录')\n    @allure.story('典型场景')\n    @allure.title('主流程完成')\n    @allure.severity('critical')\n    def test_login02(browser):\n        \"\"\"\n            用例编号：test_loin02\n                用例标题：登录\n                前置条件：登录\n                测试步骤：\n                    1登录进入首页\n                    2.选择服务计划管理菜单\n                    3.点击定力矩服务计划菜单\n                    4.点击添加定力矩服务计划\n                    5.下派成功\n    \n                预期结果；专工建立计划下派成功\n    \n        :param browser:\n        :return:\n        \"\"\"\n        #初始化页面对象\n        #实例化Wait\n        wait = WebDriverWait(browser,10)\n        wk = WebKeys(browser)\n        #进入登录\n        with allure.step('进入LES登录页'):\n            login = LoginPage(browser)\n            login.login(LOGIN_URL, USERNAME_zg_YJA, PASSWD)\n        time.sleep(1)\n    \n        #定位服务计划管理\n        with allure.step('定位服务计划管理菜单'):\n    \n            wk.locator(*allPages.fwjh).click()\n    \n        # 点击定力矩服务计划菜单\n        with allure.step('点击定力矩服务计划菜单'):\n            wk.locator(*allPages.fwjh_dljfwjh).click()\n    \n        #点击添加定力矩服务计划\n        with allure.step('点击添加定力矩服务计划'):\n    \n            wk.locator(*allPages.fwjh_dljfwjh_tj).click()\n    \n            # ---------- 核心改造：使用计数器生成唯一计划名称 ----------\n        with allure.step('输入计划名称（计数器生成唯一名称）'):\n                # 调用计数器自增方法，获取最新值\n            counter_value = wk.increment_counter()\n                # 拼接唯一名称（前缀可自定义）\n            plan_name = f\"源诚服务-web-yja-{counter_value}\"\n                # 输入计划名称\n            wk.locator(*allPages.fwjh_dljfwjh_jhmc).send_keys(plan_name)\n                # 打印日志，方便调试\n            allure.attach(f\"生成的计划名称：{plan_name}\", \"计划名称\", allure.attachment_type.TEXT)\n            # ---------- 计数器改造结束 ----------\n    \n        #选择检修类型\n        with allure.step(\"选择检修类型\"):\n    \n            wk.locator(*allPages.fwjh_dljfwjh_jxlx).click()\n            # 通过classname定位到仓库的下拉框\n            ActionChains(browser) \\\n                .key_down(Keys.DOWN) \\\n                .key_down(Keys.ENTER) \\\n                .perform()\n        #选择开始时间\n        with allure.step(\"选择开始时间\"):\n            wk.locator(*allPages.fwjh_dljfwjh_kssj).click()\n            ActionChains(browser) \\\n                .key_down(Keys.DOWN) \\\n                .key_down(Keys.RIGHT)\\\n                .key_down(Keys.ENTER)\\\n                .perform()\n        #选择结束时间\n        with allure.step(\"选择结束时间\"):\n            wk.locator(*allPages.fwjh_dljfwjh_jssj).click()\n            ActionChains(browser) \\\n                .key_down(Keys.DOWN) \\\n                .key_down(Keys.DOWN) \\\n                .key_down(Keys.DOWN) \\\n                .key_down(Keys.RIGHT)\\\n                .key_down(Keys.ENTER)\\\n                .perform()\n    \n        #点击保存\n        with allure.step(\"保存\"):\n            wk.locator(*allPages.fwjh_dljfwjh_bc).click()\n    \n        #添加检修范围\n        with allure.step(\"点击添加，添加检修范围\"):\n            wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_tj).click()\n    \n        #选择服务商\n        with allure.step(\"选择服务商:北京源城\"):\n            wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_fws).click()\n            ActionChains(browser) \\\n                .key_down(Keys.DOWN) \\\n                .key_down(Keys.ENTER) \\\n                .perform()\n    \n        #选择装置\n        with allure.step(\"选择装置:55万吨\"):\n            wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_zz).click()\n            ActionChains(browser) \\\n                .send_keys('55万吨') \\\n                .key_down(Keys.DOWN) \\\n                .key_down(Keys.ENTER) \\\n                .perform()\n    \n        #填写计划检修量\n        with allure.step(\"选择装置:55万吨\"):\n            wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_jhjxl).send_keys(\"50\")\n    \n        #选择服务模式\n        with allure.step(\"选择服务模式：简易模式\"):\n            wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_fwms).click()\n            ActionChains(browser) \\\n                .key_down(Keys.DOWN) \\\n                .key_down(Keys.DOWN) \\\n                .key_down(Keys.DOWN) \\\n                .key_down(Keys.ENTER) \\\n                .perform()\n        #点击确认保存检修范围\n        with allure.step(\"点击确认保存检修范围\"):\n            wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_qd).click()\n    \n        #点击下派\n        with allure.step(\"点击下派\"):\n            wk.locator(*allPages.fwjh_dljfwjh_xp).click()\n    \n        with allure.step(\"后置校验：验证计划名称展示在页面中\"):\n            # 1. 可选：返回计划列表页（如果操作后不在列表页，需先切回）\n            wk.locator(*allPages.fwjh_dljfwjh).click()  # 重新点击定力矩服务计划菜单，回到列表\n            # time.sleep(1)\n    \n            # 2. 校验计划名称是否存在于页面\n>           is_text_exist = wk.check_text_in_page(plan_name, timeout=15)\nE           AttributeError: 'WebKeys' object has no attribute 'check_text_in_page'\n\ntestcase\\test_dl_01.py:155: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1772267653542,
+      "stop" : 1772267654706,
+      "duration" : 1164
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        用例编号：test_loin02\n            用例标题：登录\n            前置条件：登录\n            测试步骤：\n                1登录进入首页\n                2.选择服务计划管理菜单\n                3.点击定力矩服务计划菜单\n                4.点击添加定力矩服务计划\n                5.下派成功\n\n            预期结果；专工建立计划下派成功\n\n    :param browser:\n    :return:\n    ",
+    "status" : "broken",
+    "statusMessage" : "AttributeError: 'WebKeys' object has no attribute 'check_text_in_page'",
+    "statusTrace" : "browser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"e0e13ae3cfcfeb2c4a4a6fb11ba2eed7\")>\n\n    @allure.epic('LES系统')\n    @allure.feature('登录')\n    @allure.story('典型场景')\n    @allure.title('主流程完成')\n    @allure.severity('critical')\n    def test_login02(browser):\n        \"\"\"\n            用例编号：test_loin02\n                用例标题：登录\n                前置条件：登录\n                测试步骤：\n                    1登录进入首页\n                    2.选择服务计划管理菜单\n                    3.点击定力矩服务计划菜单\n                    4.点击添加定力矩服务计划\n                    5.下派成功\n    \n                预期结果；专工建立计划下派成功\n    \n        :param browser:\n        :return:\n        \"\"\"\n        #初始化页面对象\n        #实例化Wait\n        wait = WebDriverWait(browser,10)\n        wk = WebKeys(browser)\n        #进入登录\n        with allure.step('进入LES登录页'):\n            login = LoginPage(browser)\n            login.login(LOGIN_URL, USERNAME_zg_YJA, PASSWD)\n        time.sleep(1)\n    \n        #定位服务计划管理\n        with allure.step('定位服务计划管理菜单'):\n    \n            wk.locator(*allPages.fwjh).click()\n    \n        # 点击定力矩服务计划菜单\n        with allure.step('点击定力矩服务计划菜单'):\n            wk.locator(*allPages.fwjh_dljfwjh).click()\n    \n        #点击添加定力矩服务计划\n        with allure.step('点击添加定力矩服务计划'):\n    \n            wk.locator(*allPages.fwjh_dljfwjh_tj).click()\n    \n            # ---------- 核心改造：使用计数器生成唯一计划名称 ----------\n        with allure.step('输入计划名称（计数器生成唯一名称）'):\n                # 调用计数器自增方法，获取最新值\n            counter_value = wk.increment_counter()\n                # 拼接唯一名称（前缀可自定义）\n            plan_name = f\"源诚服务-web-yja-{counter_value}\"\n                # 输入计划名称\n            wk.locator(*allPages.fwjh_dljfwjh_jhmc).send_keys(plan_name)\n                # 打印日志，方便调试\n            allure.attach(f\"生成的计划名称：{plan_name}\", \"计划名称\", allure.attachment_type.TEXT)\n            # ---------- 计数器改造结束 ----------\n    \n        #选择检修类型\n        with allure.step(\"选择检修类型\"):\n    \n            wk.locator(*allPages.fwjh_dljfwjh_jxlx).click()\n            # 通过classname定位到仓库的下拉框\n            ActionChains(browser) \\\n                .key_down(Keys.DOWN) \\\n                .key_down(Keys.ENTER) \\\n                .perform()\n        #选择开始时间\n        with allure.step(\"选择开始时间\"):\n            wk.locator(*allPages.fwjh_dljfwjh_kssj).click()\n            ActionChains(browser) \\\n                .key_down(Keys.DOWN) \\\n                .key_down(Keys.RIGHT)\\\n                .key_down(Keys.ENTER)\\\n                .perform()\n        #选择结束时间\n        with allure.step(\"选择结束时间\"):\n            wk.locator(*allPages.fwjh_dljfwjh_jssj).click()\n            ActionChains(browser) \\\n                .key_down(Keys.DOWN) \\\n                .key_down(Keys.DOWN) \\\n                .key_down(Keys.DOWN) \\\n                .key_down(Keys.RIGHT)\\\n                .key_down(Keys.ENTER)\\\n                .perform()\n    \n        #点击保存\n        with allure.step(\"保存\"):\n            wk.locator(*allPages.fwjh_dljfwjh_bc).click()\n    \n        #添加检修范围\n        with allure.step(\"点击添加，添加检修范围\"):\n            wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_tj).click()\n    \n        #选择服务商\n        with allure.step(\"选择服务商:北京源城\"):\n            wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_fws).click()\n            ActionChains(browser) \\\n                .key_down(Keys.DOWN) \\\n                .key_down(Keys.ENTER) \\\n                .perform()\n    \n        #选择装置\n        with allure.step(\"选择装置:55万吨\"):\n            wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_zz).click()\n            ActionChains(browser) \\\n                .send_keys('55万吨') \\\n                .key_down(Keys.DOWN) \\\n                .key_down(Keys.ENTER) \\\n                .perform()\n    \n        #填写计划检修量\n        with allure.step(\"选择装置:55万吨\"):\n            wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_jhjxl).send_keys(\"50\")\n    \n        #选择服务模式\n        with allure.step(\"选择服务模式：简易模式\"):\n            wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_fwms).click()\n            ActionChains(browser) \\\n                .key_down(Keys.DOWN) \\\n                .key_down(Keys.DOWN) \\\n                .key_down(Keys.DOWN) \\\n                .key_down(Keys.ENTER) \\\n                .perform()\n        #点击确认保存检修范围\n        with allure.step(\"点击确认保存检修范围\"):\n            wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_qd).click()\n    \n        #点击下派\n        with allure.step(\"点击下派\"):\n            wk.locator(*allPages.fwjh_dljfwjh_xp).click()\n    \n        with allure.step(\"后置校验：验证计划名称展示在页面中\"):\n            # 1. 可选：返回计划列表页（如果操作后不在列表页，需先切回）\n            wk.locator(*allPages.fwjh_dljfwjh).click()  # 重新点击定力矩服务计划菜单，回到列表\n            # time.sleep(1)\n    \n            # 2. 校验计划名称是否存在于页面\n>           is_text_exist = wk.check_text_in_page(plan_name, timeout=15)\nE           AttributeError: 'WebKeys' object has no attribute 'check_text_in_page'\n\ntestcase\\test_dl_01.py:155: AttributeError",
+    "steps" : [ {
+      "name" : "进入LES登录页",
+      "time" : {
+        "start" : 1772267654707,
+        "stop" : 1772267655859,
+        "duration" : 1152
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "定位服务计划管理菜单",
+      "time" : {
+        "start" : 1772267656860,
+        "stop" : 1772267656943,
+        "duration" : 83
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "点击定力矩服务计划菜单",
+      "time" : {
+        "start" : 1772267656943,
+        "stop" : 1772267657525,
+        "duration" : 582
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "点击添加定力矩服务计划",
+      "time" : {
+        "start" : 1772267657525,
+        "stop" : 1772267658016,
+        "duration" : 491
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "输入计划名称（计数器生成唯一名称）",
+      "time" : {
+        "start" : 1772267658016,
+        "stop" : 1772267658194,
+        "duration" : 178
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1309c462c9c255b7",
+        "name" : "计划名称",
+        "source" : "1309c462c9c255b7.txt",
+        "type" : "text/plain",
+        "size" : 46
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "选择检修类型",
+      "time" : {
+        "start" : 1772267658194,
+        "stop" : 1772267658321,
+        "duration" : 127
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "选择开始时间",
+      "time" : {
+        "start" : 1772267658321,
+        "stop" : 1772267658459,
+        "duration" : 138
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "选择结束时间",
+      "time" : {
+        "start" : 1772267658459,
+        "stop" : 1772267658643,
+        "duration" : 184
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "保存",
+      "time" : {
+        "start" : 1772267658643,
+        "stop" : 1772267658782,
+        "duration" : 139
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "点击添加，添加检修范围",
+      "time" : {
+        "start" : 1772267658782,
+        "stop" : 1772267659116,
+        "duration" : 334
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "选择服务商:北京源城",
+      "time" : {
+        "start" : 1772267659116,
+        "stop" : 1772267662418,
+        "duration" : 3302
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "选择装置:55万吨",
+      "time" : {
+        "start" : 1772267662418,
+        "stop" : 1772267662535,
+        "duration" : 117
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "选择装置:55万吨",
+      "time" : {
+        "start" : 1772267662535,
+        "stop" : 1772267662615,
+        "duration" : 80
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "选择服务模式：简易模式",
+      "time" : {
+        "start" : 1772267662615,
+        "stop" : 1772267662717,
+        "duration" : 102
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "点击确认保存检修范围",
+      "time" : {
+        "start" : 1772267662717,
+        "stop" : 1772267662812,
+        "duration" : 95
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "点击下派",
+      "time" : {
+        "start" : 1772267662812,
+        "stop" : 1772267663011,
+        "duration" : 199
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "后置校验：验证计划名称展示在页面中",
+      "time" : {
+        "start" : 1772267663011,
+        "stop" : 1772267663077,
+        "duration" : 66
+      },
+      "status" : "broken",
+      "statusMessage" : "AttributeError: 'WebKeys' object has no attribute 'check_text_in_page'\n",
+      "statusTrace" : "  File \"C:\\Users\\chens\\Desktop\\git-demo\\LES_GL\\testcase\\test_dl_01.py\", line 155, in test_login02\n    is_text_exist = wk.check_text_in_page(plan_name, timeout=15)\n                    ^^^^^^^^^^^^^^^^^^^^^\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "添加失败截图... ...",
+      "time" : {
+        "start" : 1772267663119,
+        "stop" : 1772267663375,
+        "duration" : 256
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a5603aecec479c4c",
+        "name" : "失败截图",
+        "source" : "a5603aecec479c4c.png",
+        "type" : "image/png",
+        "size" : 278164
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 18,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1772267663376,
+      "stop" : 1772267665572,
+      "duration" : 2196
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "登录"
+  }, {
+    "name" : "story",
+    "value" : "典型场景"
+  }, {
+    "name" : "epic",
+    "value" : "LES系统"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_dl_01"
+  }, {
+    "name" : "host",
+    "value" : "Y-YU"
+  }, {
+    "name" : "thread",
+    "value" : "12160-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_dl_01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "d4bd55e0a15e4ec0.json",
+  "parameterValues" : [ ]
+}

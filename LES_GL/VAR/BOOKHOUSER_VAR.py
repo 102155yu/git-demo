@@ -15,6 +15,6 @@ USERNAME_jlf_xmfzr_lxw = "13910893211" #项目负责人 李学武
 USERNAME_jlf_xmjl_wzq ="15963716341"    #项目经理  王子强
 USERNAME_jlf_jlgcs_lc ="17671677251"    #监理工程师 刘超
 #密码
-PASSWD_zg_YU = '123456'
+PASSWD = '123456'
 
 

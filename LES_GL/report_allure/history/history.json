@@ -2,19 +2,20 @@
   "3f79327f3e112b54edcb1fae39f670b6" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "78f51132ae7d642c",
-      "status" : "passed",
+      "uid" : "d4bd55e0a15e4ec0",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'WebKeys' object has no attribute 'check_text_in_page'",
       "time" : {
-        "start" : 1772186397761,
-        "stop" : 1772186407542,
-        "duration" : 9781
+        "start" : 1772267654707,
+        "stop" : 1772267663079,
+        "duration" : 8372
       }
     } ]
   }

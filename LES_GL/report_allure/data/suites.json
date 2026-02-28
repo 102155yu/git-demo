@@ -1,18 +1,19 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
   "children" : [ {
     "name" : "testcase",
     "children" : [ {
       "name" : "test_dl_01",
       "children" : [ {
-        "name" : "test_login02",
-        "uid" : "78f51132ae7d642c",
+        "name" : "主流程完成",
+        "uid" : "d4bd55e0a15e4ec0",
         "parentUid" : "10e8f81c3a0abbb884628124f43a1a00",
-        "status" : "passed",
+        "status" : "broken",
         "time" : {
-          "start" : 1772186397761,
-          "stop" : 1772186407542,
-          "duration" : 9781
+          "start" : 1772267654707,
+          "stop" : 1772267663079,
+          "duration" : 8372
         },
         "flaky" : false,
         "newFailed" : false,
@@ -21,6 +22,5 @@
       "uid" : "10e8f81c3a0abbb884628124f43a1a00"
     } ],
     "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
-  } ],
-  "name" : "suites"
+  } ]
 }

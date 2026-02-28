@@ -26,8 +26,12 @@ def test_login02(browser):
             前置条件：登录
             测试步骤：
                 1登录进入首页
+                2.选择服务计划管理菜单
+                3.点击定力矩服务计划菜单
+                4.点击添加定力矩服务计划
+                5.下派成功
 
-            预期结果；登录成功
+            预期结果；专工建立计划下派成功
 
     :param browser:
     :return:
@@ -39,7 +43,7 @@ def test_login02(browser):
     #进入登录
     with allure.step('进入LES登录页'):
         login = LoginPage(browser)
-        login.login(LOGIN_URL, USERNAME, PASSWD)
+        login.login(LOGIN_URL, USERNAME_zg_YJA, PASSWD)
     time.sleep(1)
 
     #定位服务计划管理
@@ -56,10 +60,18 @@ def test_login02(browser):
 
         wk.locator(*allPages.fwjh_dljfwjh_tj).click()
 
-    #输入计划名称
-    with allure.step('输入计划名称'):
+        # ---------- 核心改造：使用计数器生成唯一计划名称 ----------
+    with allure.step('输入计划名称（计数器生成唯一名称）'):
+            # 调用计数器自增方法，获取最新值
+        counter_value = wk.increment_counter()
+            # 拼接唯一名称（前缀可自定义）
+        plan_name = f"源诚服务-web-yja-{counter_value}"
+            # 输入计划名称
+        wk.locator(*allPages.fwjh_dljfwjh_jhmc).send_keys(plan_name)
+            # 打印日志，方便调试
+        allure.attach(f"生成的计划名称：{plan_name}", "计划名称", allure.attachment_type.TEXT)
+        # ---------- 计数器改造结束 ----------
 
-        wk.locator(*allPages.fwjh_dljfwjh_jhmc).send_keys("源诚服务-web-yu-2")
     #选择检修类型
     with allure.step("选择检修类型"):
 
@@ -134,4 +146,19 @@ def test_login02(browser):
     with allure.step("点击下派"):
         wk.locator(*allPages.fwjh_dljfwjh_xp).click()
 
+    with allure.step("后置校验：验证计划名称展示在页面中"):
+        # 1. 可选：返回计划列表页（如果操作后不在列表页，需先切回）
+        wk.locator(*allPages.fwjh_dljfwjh).click()  # 重新点击定力矩服务计划菜单，回到列表
+        # time.sleep(1)
 
+        # 2. 校验计划名称是否存在于页面
+        is_text_exist = wk.check_text_in_page(plan_name, timeout=15)
+
+        # 3. 断言：如果不存在则用例失败，并抛出明确提示
+        assert is_text_exist, f"创建的计划名称【{plan_name}】未在页面中展示！"
+
+        # 4. 附加断言结果到allure报告
+        if is_text_exist:
+            allure.attach(f"校验通过：计划名称【{plan_name}】已在页面展示", "校验结果", allure.attachment_type.TEXT)
+        else:
+            allure.attach(f"校验失败：计划名称【{plan_name}】未在页面展示", "校验结果", allure.attachment_type.TEXT)

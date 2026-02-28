@@ -1,12 +1,16 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Fri Feb 27 17:59:57 CST 2026","Fri Feb 27 18:00:07 CST 2026","9781","testcase","test_dl_01","","","","test_login02","
+"broken","Sat Feb 28 16:34:14 CST 2026","Sat Feb 28 16:34:23 CST 2026","8372","testcase","test_dl_01","","","","主流程完成","
         用例编号：test_loin02
             用例标题：登录
             前置条件：登录
             测试步骤：
                 1登录进入首页
+                2.选择服务计划管理菜单
+                3.点击定力矩服务计划菜单
+                4.点击添加定力矩服务计划
+                5.下派成功
 
-            预期结果；登录成功
+            预期结果；专工建立计划下派成功
 
     :param browser:
     :return:

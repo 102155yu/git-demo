@@ -1,5 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
-  "name" : "categories"
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "AttributeError: 'WebKeys' object has no attribute 'check_text_in_page'",
+      "children" : [ {
+        "name" : "主流程完成",
+        "uid" : "d4bd55e0a15e4ec0",
+        "parentUid" : "89ad80946b4886baba119da31d64b1fb",
+        "status" : "broken",
+        "time" : {
+          "start" : 1772267654707,
+          "stop" : 1772267663079,
+          "duration" : 8372
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "89ad80946b4886baba119da31d64b1fb"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
 }
