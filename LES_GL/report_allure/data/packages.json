@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "testcase.test_dl_01",
+    "children" : [ {
+      "name" : "test_login02",
+      "uid" : "78f51132ae7d642c",
+      "parentUid" : "39aa228bb3efafeada350438d43bf457",
+      "status" : "passed",
+      "time" : {
+        "start" : 1772186397761,
+        "stop" : 1772186407542,
+        "duration" : 9781
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "testcase.test_dl_01"
+  } ],
+  "name" : "packages"
+}

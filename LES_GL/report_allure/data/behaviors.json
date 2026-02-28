@@ -1,0 +1,30 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "LES系统",
+    "children" : [ {
+      "name" : "登录",
+      "children" : [ {
+        "name" : "典型场景",
+        "children" : [ {
+          "name" : "test_login02",
+          "uid" : "78f51132ae7d642c",
+          "parentUid" : "62fd82adebdcc2ad5b5f55c4dcaa8169",
+          "status" : "passed",
+          "time" : {
+            "start" : 1772186397761,
+            "stop" : 1772186407542,
+            "duration" : 9781
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "62fd82adebdcc2ad5b5f55c4dcaa8169"
+      } ],
+      "uid" : "235d2a4d911fde3d04e9a0ed3cc76a88"
+    } ],
+    "uid" : "6811519b2e8d73eb8610a9f48418a4b2"
+  } ],
+  "name" : "behaviors"
+}

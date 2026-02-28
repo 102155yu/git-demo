@@ -1,0 +1,26 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "Y-YU",
+    "children" : [ {
+      "name" : "5544-MainThread",
+      "children" : [ {
+        "name" : "test_login02",
+        "uid" : "78f51132ae7d642c",
+        "parentUid" : "4b9d63635efd4066e8b90e0952bd5b25",
+        "status" : "passed",
+        "time" : {
+          "start" : 1772186397761,
+          "stop" : 1772186407542,
+          "duration" : 9781
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4b9d63635efd4066e8b90e0952bd5b25"
+    } ],
+    "uid" : "d8235af02a0b4ab572b70292f685faa2"
+  } ],
+  "name" : "timeline"
+}
