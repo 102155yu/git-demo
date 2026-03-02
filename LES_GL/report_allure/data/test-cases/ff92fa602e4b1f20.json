@@ -1,0 +1,349 @@
+{
+  "uid" : "ff92fa602e4b1f20",
+  "name" : "项目经理配置项目信息",
+  "fullName" : "testcase.test_xmjl_PM_01#test_login02",
+  "historyId" : "cc30399fd6ebf1e408d3a98bb2b4e8c3",
+  "time" : {
+    "start" : 1772445440134,
+    "stop" : 1772445456365,
+    "duration" : 16231
+  },
+  "description" : "\n        用例编号：test_loin02\n            用例标题：项目经理配置项目信息\n            前置条件：服务商负责人配置完成项目经理\n            测试步骤：\n                1.登录项目经理账号\n                2.点击工作台待办处理\n                3.项目配置项目成员\n                4.添加法兰进入检修范围\n                5.提交至设备员确认\n\n            预期结果；项目成员配置成功，法兰添加成功\n\n    :param browser:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>    用例编号：test_loin02\n        用例标题：项目经理配置项目信息\n        前置条件：服务商负责人配置完成项目经理\n        测试步骤：\n            1.登录项目经理账号\n            2.点击工作台待办处理\n            3.项目配置项目成员\n            4.添加法兰进入检修范围\n            5.提交至设备员确认\n\n        预期结果；项目成员配置成功，法兰添加成功\n\n:param browser:\n:return:\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n\tGetHandleVerifier [0x0x7ff7b4102665+77205]\n\tGetHandleVerifier [0x0x7ff7b41026c0+77296]\n\t(No symbol) [0x0x7ff7b3eb9a3a]\n\t(No symbol) [0x0x7ff7b3f1043a]\n\t(No symbol) [0x0x7ff7b3f106ec]\n\t(No symbol) [0x0x7ff7b3f63ae7]\n\t(No symbol) [0x0x7ff7b3f3868f]\n\t(No symbol) [0x0x7ff7b3f608af]\n\t(No symbol) [0x0x7ff7b3f38423]\n\t(No symbol) [0x0x7ff7b3f01511]\n\t(No symbol) [0x0x7ff7b3f022a3]\n\tGetHandleVerifier [0x0x7ff7b43e389d+3096525]\n\tGetHandleVerifier [0x0x7ff7b43ddc5d+3072909]\n\tGetHandleVerifier [0x0x7ff7b43fd74d+3202685]\n\tGetHandleVerifier [0x0x7ff7b411b9fe+180526]\n\tGetHandleVerifier [0x0x7ff7b4122fdf+210703]\n\tGetHandleVerifier [0x0x7ff7b410b304+113204]\n\tGetHandleVerifier [0x0x7ff7b410b4b9+113641]\n\tGetHandleVerifier [0x0x7ff7b40f2238+10600]\n\tBaseThreadInitThunk [0x0x7ffc397ee8d7+23]\n\tRtlUserThreadStart [0x0x7ffc39d4c40c+44]",
+  "statusTrace" : "browser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"884929155773dc7e18053598c1771e69\")>\n\n    @allure.epic('LES系统')\n    @allure.feature('项目经理工作台')\n    @allure.story('配置项目信息')\n    @allure.title('项目经理配置项目信息')\n    @allure.severity('critical')\n    def test_login02(browser):\n        \"\"\"\n            用例编号：test_loin02\n                用例标题：项目经理配置项目信息\n                前置条件：服务商负责人配置完成项目经理\n                测试步骤：\n                    1.登录项目经理账号\n                    2.点击工作台待办处理\n                    3.项目配置项目成员\n                    4.添加法兰进入检修范围\n                    5.提交至设备员确认\n    \n                预期结果；项目成员配置成功，法兰添加成功\n    \n        :param browser:\n        :return:\n        \"\"\"\n        # 窗口最大化操作（核心新增）\n        with allure.step('浏览器窗口最大化'):\n            browser.maximize_window()\n        #初始化页面对象\n        #实例化Wait\n        wait = WebDriverWait(browser,10)\n        wk = WebKeys(browser)\n        #进入登录\n        with allure.step('进入LES登录页'):\n            login = LoginPage(browser)\n            login.login(LOGIN_URL, USERNAME_XMJL_LQ, PASSWD)\n        time.sleep(1)\n    \n    \n        # 点击待办处理\n        with allure.step('点击待办处理'):\n            wk.locator(*allPages.sby_gzt_db_cl).click()\n    \n        # 点击处理弹窗确认按钮\n        with allure.step('点击处理弹窗确认按钮'):\n            wk.locator(*allPages.xmjl_gzt_db_ts_qr).click()\n    \n        #进入项目管理页面\n            #点击成员配置按钮\n        with allure.step('点击成员配置按钮'):\n            wk.locator(*allPages.xmgl_cypz).click()\n        #进入成员配置页面\n            #点击添加\n        with allure.step('点击添加'):\n            wk.locator(*allPages.xmgl_cypz_tj).click()\n            #进入添加页面\n                #点击下拉按钮\n        with allure.step('点击下拉按钮'):\n            wk.locator(*allPages.xmgl_cypz_tj_xl).click()\n            #选择第三个人员勾选\n        with allure.step('勾选第三个人员'):\n            wk.locator(*allPages.xmgl_cypz_tj_03).click()\n            #点击确定\n        with allure.step('点击确定'):\n            wk.locator(*allPages.xmgl_cypz_tj_qd).click()\n            #点击返回\n        with allure.step('点击返回'):\n            wk.locator(*allPages.xmgl_cypz_fh).click()\n        #点击检修范围\n        with allure.step('点击检修范围按钮'):\n            wk.locator(*allPages.xmgl_jxfw).click()\n    \n        #进入检修范围页面\n            #点击下一页\n        # with allure.step('点击下一页'):\n        #     wk.locator(*allPages.xmgl_jxfw_xyy).click()\n        #     # 点击下一页\n        # with allure.step('点击下一页'):\n        #     wk.locator(*allPages.xmgl_jxfw_xyy).click()\n            #选择第一个法兰点击勾选\n        with allure.step('点击勾选第一个法兰'):\n            wk.locator(*allPages.xmgl_jxfw_gx_01).click()\n            #点击提交\n        with allure.step('点击提交'):\n            wk.locator(*allPages.xmgl_jxfw_tj).click()\n        #弹出确认框\n            #点击确定\n        with allure.step('点击确定'):\n>           wk.locator(*allPages.xmgl_jxfw_tj_qr).click()\n\ntestcase\\test_xmjl_PM_01.py:102: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nkey_word\\keyword.py:30: in locator\n    self.wait.until(ec.visibility_of_element_located(locator))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"884929155773dc7e18053598c1771e69\")>\nmethod = <function visibility_of_element_located.<locals>._predicate at 0x000002538F40B240>\nmessage = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message: \nE       Stacktrace:\nE       \tGetHandleVerifier [0x0x7ff7b4102665+77205]\nE       \tGetHandleVerifier [0x0x7ff7b41026c0+77296]\nE       \t(No symbol) [0x0x7ff7b3eb9a3a]\nE       \t(No symbol) [0x0x7ff7b3f1043a]\nE       \t(No symbol) [0x0x7ff7b3f106ec]\nE       \t(No symbol) [0x0x7ff7b3f63ae7]\nE       \t(No symbol) [0x0x7ff7b3f3868f]\nE       \t(No symbol) [0x0x7ff7b3f608af]\nE       \t(No symbol) [0x0x7ff7b3f38423]\nE       \t(No symbol) [0x0x7ff7b3f01511]\nE       \t(No symbol) [0x0x7ff7b3f022a3]\nE       \tGetHandleVerifier [0x0x7ff7b43e389d+3096525]\nE       \tGetHandleVerifier [0x0x7ff7b43ddc5d+3072909]\nE       \tGetHandleVerifier [0x0x7ff7b43fd74d+3202685]\nE       \tGetHandleVerifier [0x0x7ff7b411b9fe+180526]\nE       \tGetHandleVerifier [0x0x7ff7b4122fdf+210703]\nE       \tGetHandleVerifier [0x0x7ff7b410b304+113204]\nE       \tGetHandleVerifier [0x0x7ff7b410b4b9+113641]\nE       \tGetHandleVerifier [0x0x7ff7b40f2238+10600]\nE       \tBaseThreadInitThunk [0x0x7ffc397ee8d7+23]\nE       \tRtlUserThreadStart [0x0x7ffc39d4c40c+44]\n\nD:\\Python\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py:105: TimeoutException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1772445439019,
+      "stop" : 1772445440134,
+      "duration" : 1115
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        用例编号：test_loin02\n            用例标题：项目经理配置项目信息\n            前置条件：服务商负责人配置完成项目经理\n            测试步骤：\n                1.登录项目经理账号\n                2.点击工作台待办处理\n                3.项目配置项目成员\n                4.添加法兰进入检修范围\n                5.提交至设备员确认\n\n            预期结果；项目成员配置成功，法兰添加成功\n\n    :param browser:\n    :return:\n    ",
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n\tGetHandleVerifier [0x0x7ff7b4102665+77205]\n\tGetHandleVerifier [0x0x7ff7b41026c0+77296]\n\t(No symbol) [0x0x7ff7b3eb9a3a]\n\t(No symbol) [0x0x7ff7b3f1043a]\n\t(No symbol) [0x0x7ff7b3f106ec]\n\t(No symbol) [0x0x7ff7b3f63ae7]\n\t(No symbol) [0x0x7ff7b3f3868f]\n\t(No symbol) [0x0x7ff7b3f608af]\n\t(No symbol) [0x0x7ff7b3f38423]\n\t(No symbol) [0x0x7ff7b3f01511]\n\t(No symbol) [0x0x7ff7b3f022a3]\n\tGetHandleVerifier [0x0x7ff7b43e389d+3096525]\n\tGetHandleVerifier [0x0x7ff7b43ddc5d+3072909]\n\tGetHandleVerifier [0x0x7ff7b43fd74d+3202685]\n\tGetHandleVerifier [0x0x7ff7b411b9fe+180526]\n\tGetHandleVerifier [0x0x7ff7b4122fdf+210703]\n\tGetHandleVerifier [0x0x7ff7b410b304+113204]\n\tGetHandleVerifier [0x0x7ff7b410b4b9+113641]\n\tGetHandleVerifier [0x0x7ff7b40f2238+10600]\n\tBaseThreadInitThunk [0x0x7ffc397ee8d7+23]\n\tRtlUserThreadStart [0x0x7ffc39d4c40c+44]",
+    "statusTrace" : "browser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"884929155773dc7e18053598c1771e69\")>\n\n    @allure.epic('LES系统')\n    @allure.feature('项目经理工作台')\n    @allure.story('配置项目信息')\n    @allure.title('项目经理配置项目信息')\n    @allure.severity('critical')\n    def test_login02(browser):\n        \"\"\"\n            用例编号：test_loin02\n                用例标题：项目经理配置项目信息\n                前置条件：服务商负责人配置完成项目经理\n                测试步骤：\n                    1.登录项目经理账号\n                    2.点击工作台待办处理\n                    3.项目配置项目成员\n                    4.添加法兰进入检修范围\n                    5.提交至设备员确认\n    \n                预期结果；项目成员配置成功，法兰添加成功\n    \n        :param browser:\n        :return:\n        \"\"\"\n        # 窗口最大化操作（核心新增）\n        with allure.step('浏览器窗口最大化'):\n            browser.maximize_window()\n        #初始化页面对象\n        #实例化Wait\n        wait = WebDriverWait(browser,10)\n        wk = WebKeys(browser)\n        #进入登录\n        with allure.step('进入LES登录页'):\n            login = LoginPage(browser)\n            login.login(LOGIN_URL, USERNAME_XMJL_LQ, PASSWD)\n        time.sleep(1)\n    \n    \n        # 点击待办处理\n        with allure.step('点击待办处理'):\n            wk.locator(*allPages.sby_gzt_db_cl).click()\n    \n        # 点击处理弹窗确认按钮\n        with allure.step('点击处理弹窗确认按钮'):\n            wk.locator(*allPages.xmjl_gzt_db_ts_qr).click()\n    \n        #进入项目管理页面\n            #点击成员配置按钮\n        with allure.step('点击成员配置按钮'):\n            wk.locator(*allPages.xmgl_cypz).click()\n        #进入成员配置页面\n            #点击添加\n        with allure.step('点击添加'):\n            wk.locator(*allPages.xmgl_cypz_tj).click()\n            #进入添加页面\n                #点击下拉按钮\n        with allure.step('点击下拉按钮'):\n            wk.locator(*allPages.xmgl_cypz_tj_xl).click()\n            #选择第三个人员勾选\n        with allure.step('勾选第三个人员'):\n            wk.locator(*allPages.xmgl_cypz_tj_03).click()\n            #点击确定\n        with allure.step('点击确定'):\n            wk.locator(*allPages.xmgl_cypz_tj_qd).click()\n            #点击返回\n        with allure.step('点击返回'):\n            wk.locator(*allPages.xmgl_cypz_fh).click()\n        #点击检修范围\n        with allure.step('点击检修范围按钮'):\n            wk.locator(*allPages.xmgl_jxfw).click()\n    \n        #进入检修范围页面\n            #点击下一页\n        # with allure.step('点击下一页'):\n        #     wk.locator(*allPages.xmgl_jxfw_xyy).click()\n        #     # 点击下一页\n        # with allure.step('点击下一页'):\n        #     wk.locator(*allPages.xmgl_jxfw_xyy).click()\n            #选择第一个法兰点击勾选\n        with allure.step('点击勾选第一个法兰'):\n            wk.locator(*allPages.xmgl_jxfw_gx_01).click()\n            #点击提交\n        with allure.step('点击提交'):\n            wk.locator(*allPages.xmgl_jxfw_tj).click()\n        #弹出确认框\n            #点击确定\n        with allure.step('点击确定'):\n>           wk.locator(*allPages.xmgl_jxfw_tj_qr).click()\n\ntestcase\\test_xmjl_PM_01.py:102: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nkey_word\\keyword.py:30: in locator\n    self.wait.until(ec.visibility_of_element_located(locator))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"884929155773dc7e18053598c1771e69\")>\nmethod = <function visibility_of_element_located.<locals>._predicate at 0x000002538F40B240>\nmessage = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message: \nE       Stacktrace:\nE       \tGetHandleVerifier [0x0x7ff7b4102665+77205]\nE       \tGetHandleVerifier [0x0x7ff7b41026c0+77296]\nE       \t(No symbol) [0x0x7ff7b3eb9a3a]\nE       \t(No symbol) [0x0x7ff7b3f1043a]\nE       \t(No symbol) [0x0x7ff7b3f106ec]\nE       \t(No symbol) [0x0x7ff7b3f63ae7]\nE       \t(No symbol) [0x0x7ff7b3f3868f]\nE       \t(No symbol) [0x0x7ff7b3f608af]\nE       \t(No symbol) [0x0x7ff7b3f38423]\nE       \t(No symbol) [0x0x7ff7b3f01511]\nE       \t(No symbol) [0x0x7ff7b3f022a3]\nE       \tGetHandleVerifier [0x0x7ff7b43e389d+3096525]\nE       \tGetHandleVerifier [0x0x7ff7b43ddc5d+3072909]\nE       \tGetHandleVerifier [0x0x7ff7b43fd74d+3202685]\nE       \tGetHandleVerifier [0x0x7ff7b411b9fe+180526]\nE       \tGetHandleVerifier [0x0x7ff7b4122fdf+210703]\nE       \tGetHandleVerifier [0x0x7ff7b410b304+113204]\nE       \tGetHandleVerifier [0x0x7ff7b410b4b9+113641]\nE       \tGetHandleVerifier [0x0x7ff7b40f2238+10600]\nE       \tBaseThreadInitThunk [0x0x7ffc397ee8d7+23]\nE       \tRtlUserThreadStart [0x0x7ffc39d4c40c+44]\n\nD:\\Python\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py:105: TimeoutException",
+    "steps" : [ {
+      "name" : "浏览器窗口最大化",
+      "time" : {
+        "start" : 1772445440134,
+        "stop" : 1772445440180,
+        "duration" : 46
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "进入LES登录页",
+      "time" : {
+        "start" : 1772445440180,
+        "stop" : 1772445441213,
+        "duration" : 1033
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击待办处理",
+      "time" : {
+        "start" : 1772445442214,
+        "stop" : 1772445442300,
+        "duration" : 86
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击处理弹窗确认按钮",
+      "time" : {
+        "start" : 1772445442300,
+        "stop" : 1772445442872,
+        "duration" : 572
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击成员配置按钮",
+      "time" : {
+        "start" : 1772445442872,
+        "stop" : 1772445443237,
+        "duration" : 365
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击添加",
+      "time" : {
+        "start" : 1772445443237,
+        "stop" : 1772445443351,
+        "duration" : 114
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击下拉按钮",
+      "time" : {
+        "start" : 1772445443351,
+        "stop" : 1772445443478,
+        "duration" : 127
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "勾选第三个人员",
+      "time" : {
+        "start" : 1772445443478,
+        "stop" : 1772445444043,
+        "duration" : 565
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击确定",
+      "time" : {
+        "start" : 1772445444043,
+        "stop" : 1772445444102,
+        "duration" : 59
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击返回",
+      "time" : {
+        "start" : 1772445444102,
+        "stop" : 1772445444557,
+        "duration" : 455
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击检修范围按钮",
+      "time" : {
+        "start" : 1772445444557,
+        "stop" : 1772445444777,
+        "duration" : 220
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击勾选第一个法兰",
+      "time" : {
+        "start" : 1772445444777,
+        "stop" : 1772445445757,
+        "duration" : 980
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击提交",
+      "time" : {
+        "start" : 1772445445757,
+        "stop" : 1772445445808,
+        "duration" : 51
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击确定",
+      "time" : {
+        "start" : 1772445445808,
+        "stop" : 1772445456363,
+        "duration" : 10555
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n\tGetHandleVerifier [0x0x7ff7b4102665+77205]\n\tGetHandleVerifier [0x0x7ff7b41026c0+77296]\n\t(No symbol) [0x0x7ff7b3eb9a3a]\n\t(No symbol) [0x0x7ff7b3f1043a]\n\t(No symbol) [0x0x7ff7b3f106ec]\n\t(No symbol) [0x0x7ff7b3f63ae7]\n\t(No symbol) [0x0x7ff7b3f3868f]\n\t(No symbol) [0x0x7ff7b3f608af]\n\t(No symbol) [0x0x7ff7b3f38423]\n\t(No symbol) [0x0x7ff7b3f01511]\n\t(No symbol) [0x0x7ff7b3f022a3]\n\tGetHandleVerifier [0x0x7ff7b43e389d+3096525]\n\tGetHandleVerifier [0x0x7ff7b43ddc5d+3072909]\n\tGetHandleVerifier [0x0x7ff7b43fd74d+3202685]\n\tGetHandleVerifier [0x0x7ff7b411b9fe+180526]\n\tGetHandleVerifier [0x0x7ff7b4122fdf+210703]\n\tGetHandleVerifier [0x0x7ff7b410b304+113204]\n\tGetHandleVerifier [0x0x7ff7b410b4b9+113641]\n\tGetHandleVerifier [0x0x7ff7b40f2238+10600]\n\tBaseThreadInitThunk [0x0x7ffc397ee8d7+23]\n\tRtlUserThreadStart [0x0x7ffc39d4c40c+44]\n\n",
+      "statusTrace" : "  File \"C:\\Users\\chens\\Desktop\\git-demo\\LES_GL\\testcase\\test_xmjl_PM_01.py\", line 102, in test_login02\n    wk.locator(*allPages.xmgl_jxfw_tj_qr).click()\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chens\\Desktop\\git-demo\\LES_GL\\key_word\\keyword.py\", line 30, in locator\n    self.wait.until(ec.visibility_of_element_located(locator))\n  File \"D:\\Python\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 105, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    }, {
+      "name" : "添加失败截图... ...",
+      "time" : {
+        "start" : 1772445456398,
+        "stop" : 1772445456547,
+        "duration" : 149
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "366e6aff4a994198",
+        "name" : "失败截图",
+        "source" : "366e6aff4a994198.png",
+        "type" : "image/png",
+        "size" : 267470
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 15,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1772445456547,
+      "stop" : 1772445458685,
+      "duration" : 2138
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "项目经理工作台"
+  }, {
+    "name" : "story",
+    "value" : "配置项目信息"
+  }, {
+    "name" : "epic",
+    "value" : "LES系统"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_xmjl_PM_01"
+  }, {
+    "name" : "host",
+    "value" : "Y-YU"
+  }, {
+    "name" : "thread",
+    "value" : "23380-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_xmjl_PM_01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "ff92fa602e4b1f20.json",
+  "parameterValues" : [ ]
+}

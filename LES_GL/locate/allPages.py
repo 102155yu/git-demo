@@ -38,6 +38,46 @@ fws_fzr_lxqr_xyb=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div/div[
 fws_fzr_lxqr_xmjl=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div/div[3]/div/form/div[1]/div/div/div/div[1]/div[1]/input"]
         #缺认按钮
 fws_fzr_lxqr_qr=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div/div[3]/div/div/button[2]/span"]
+#项目经理工作台
+    #待办页面
+    #处理按钮
+xmjl_gzt_db_cl=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[2]/div/div[3]/div/div/div[2]/button/span"]
+    #提示界面-确认按钮
+xmjl_gzt_db_ts_qr=["xpath","/html/body/div[12]/div/div/div[3]/button/span"]
+#项目管理页面
+    #成员配置按钮
+xmgl_cypz=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div/div[1]/div[2]/button[1]/span"]
+        #成员配置页面
+            #添加按钮
+xmgl_cypz_tj=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[2]/div[1]/div/div/div/div[2]/div[2]/div/div/button[1]/span"]
+            #添加页面展开箭头
+xmgl_cypz_tj_xl=["xpath","/html/body/div[6]/div/div/div/div[2]/div/div[1]/div/div/div[1]/div[1]/i"]
+            #选择人员
+xmgl_cypz_tj_03=["xpath","/html/body/div[6]/div/div/div/div[2]/div/div[1]/div/div/div[1]/div[2]/div[3]/div/label/span/span"]
+            #确定按钮
+xmgl_cypz_tj_qd=["xpath","/html/body/div[6]/div/div/footer/div/button[2]/span"]
+            #返回按钮
+xmgl_cypz_fh=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[1]/button/span"]
+    #推送设备员按钮
+xmgl_tssby=["xpath",""]
+    #检修范围按钮
+xmgl_jxfw=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div/div[1]/div[2]/button[3]/span"]
+        #下一页按钮
+xmgl_jxfw_xyy=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[4]/button[2]/i"]
+        #勾选1
+xmgl_jxfw_gx_01=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[3]/div/div[1]/div[3]/div/div[1]/div/table/tbody/tr[1]/td[1]/div/label/span/span"]
+        #提交按钮
+xmgl_jxfw_tj=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div/div[1]/button[1]/span"]
+        #提交页面-确认按钮
+xmgl_jxfw_tj_qr=["xpath","/html/body/div[7]/div/div/div[3]/button[2]/span"]
+    # 角色配置
+xmgl_jspz=["xpath",""]
+    # 压测
+xmgl_yc=["xpath",""]
+    #结项
+xmgl_jx=["xpath",""]
+    # 返回
+xmgl_fh=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[1]/button/span"]
 #服务计划管理
 fwjh =["xpath","/html/body/div[1]/div/div/div[2]/div/div[1]/div/ul/li[2]/div/span"]
     #定力矩服务计划

@@ -1,11 +1,11 @@
 [ {
-  "uid" : "214d354d8de6f8c9",
-  "name" : "设备员审核计划",
+  "uid" : "ff92fa602e4b1f20",
+  "name" : "项目经理配置项目信息",
   "time" : {
-    "start" : 1772272117649,
-    "stop" : 1772272121210,
-    "duration" : 3561
+    "start" : 1772445440134,
+    "stop" : 1772445456365,
+    "duration" : 16231
   },
-  "status" : "passed",
+  "status" : "broken",
   "severity" : "critical"
 } ]

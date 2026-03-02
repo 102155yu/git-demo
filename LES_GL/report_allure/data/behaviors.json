@@ -4,26 +4,26 @@
   "children" : [ {
     "name" : "LES系统",
     "children" : [ {
-      "name" : "设备员审核计划",
+      "name" : "项目经理工作台",
       "children" : [ {
-        "name" : "典型场景",
+        "name" : "配置项目信息",
         "children" : [ {
-          "name" : "设备员审核计划",
-          "uid" : "214d354d8de6f8c9",
-          "parentUid" : "0f99806a9e96683c3ee5a030957e00af",
-          "status" : "passed",
+          "name" : "项目经理配置项目信息",
+          "uid" : "ff92fa602e4b1f20",
+          "parentUid" : "0b32b0f0859beb2bd62a1b88ed569a26",
+          "status" : "broken",
           "time" : {
-            "start" : 1772272117649,
-            "stop" : 1772272121210,
-            "duration" : 3561
+            "start" : 1772445440134,
+            "stop" : 1772445456365,
+            "duration" : 16231
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         } ],
-        "uid" : "0f99806a9e96683c3ee5a030957e00af"
+        "uid" : "0b32b0f0859beb2bd62a1b88ed569a26"
       } ],
-      "uid" : "cf23f87758afa2e3b83afaf37346a194"
+      "uid" : "7d473e074dcb372e79664738d533c2b8"
     } ],
     "uid" : "6811519b2e8d73eb8610a9f48418a4b2"
   } ]

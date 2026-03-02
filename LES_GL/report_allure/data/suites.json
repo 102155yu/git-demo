@@ -4,22 +4,22 @@
   "children" : [ {
     "name" : "testcase",
     "children" : [ {
-      "name" : "test_zzy_01",
+      "name" : "test_xmjl_PM_01",
       "children" : [ {
-        "name" : "设备员审核计划",
-        "uid" : "214d354d8de6f8c9",
-        "parentUid" : "3ef5de606c19f644d06cb102fa391d95",
-        "status" : "passed",
+        "name" : "项目经理配置项目信息",
+        "uid" : "ff92fa602e4b1f20",
+        "parentUid" : "f5ad1062e125d5e79367b5b2b044a374",
+        "status" : "broken",
         "time" : {
-          "start" : 1772272117649,
-          "stop" : 1772272121210,
-          "duration" : 3561
+          "start" : 1772445440134,
+          "stop" : 1772445456365,
+          "duration" : 16231
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "3ef5de606c19f644d06cb102fa391d95"
+      "uid" : "f5ad1062e125d5e79367b5b2b044a374"
     } ],
     "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
   } ]

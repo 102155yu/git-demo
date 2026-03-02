@@ -1,16 +1,16 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sat Feb 28 17:48:37 CST 2026","Sat Feb 28 17:48:41 CST 2026","3561","testcase","test_zzy_01","","","","设备员审核计划","
+"broken","Mon Mar 02 17:57:20 CST 2026","Mon Mar 02 17:57:36 CST 2026","16231","testcase","test_xmjl_PM_01","","","","项目经理配置项目信息","
         用例编号：test_loin02
-            用例标题：设备员审核计划
-            前置条件：专工下派计划成功
+            用例标题：项目经理配置项目信息
+            前置条件：服务商负责人配置完成项目经理
             测试步骤：
-                1登录进入首页
-                2.定位待办处理
-                3.点击处理
-                4.进入计划页面点击发布
-                5.发布成功
+                1.登录项目经理账号
+                2.点击工作台待办处理
+                3.项目配置项目成员
+                4.添加法兰进入检修范围
+                5.提交至设备员确认
 
-            预期结果；设备员发布计划成功
+            预期结果；项目成员配置成功，法兰添加成功
 
     :param browser:
     :return:
