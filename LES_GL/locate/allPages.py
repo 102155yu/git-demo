@@ -27,6 +27,17 @@ sby_gzt_db_cl=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[
 sby_gzt_db_cl_qr=["xpath","/html/body/div[10]/div/div/div[3]/button/span"]
     #定力矩服务计划页面 下派 按钮
 sby_gzt_db_cl_fb=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div[1]/div/div[2]/button[1]/span"]
+#服务商负责人工作台
+    #待办页面
+        #处理按钮
+fws_fzr_gzt_db_cl=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[2]/div/div[3]/div[1]/div/div[2]/button/span"]
+    #项目立项确认页面
+        #下一步按钮
+fws_fzr_lxqr_xyb=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div/div[3]/div/div[3]/button/span"]
+        #项目经理选择框
+fws_fzr_lxqr_xmjl=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div/div[3]/div/form/div[1]/div/div/div/div[1]/div[1]/input"]
+        #缺认按钮
+fws_fzr_lxqr_qr=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div/div[3]/div/div/button[2]/span"]
 #服务计划管理
 fwjh =["xpath","/html/body/div[1]/div/div/div[2]/div/div[1]/div/ul/li[2]/div/span"]
     #定力矩服务计划
