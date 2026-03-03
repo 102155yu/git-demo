@@ -4,22 +4,22 @@
   "children" : [ {
     "name" : "Y-YU",
     "children" : [ {
-      "name" : "23380-MainThread",
+      "name" : "3012-MainThread",
       "children" : [ {
-        "name" : "项目经理配置项目信息",
-        "uid" : "ff92fa602e4b1f20",
-        "parentUid" : "097e60c88a2d1e9554075b3dfa3fbe3f",
-        "status" : "broken",
+        "name" : "设备员登录账号查看项目经理提交的检修范围并确认",
+        "uid" : "89eb683b9149f148",
+        "parentUid" : "ad4b254880358663ff964e2a7c878f97",
+        "status" : "passed",
         "time" : {
-          "start" : 1772445440134,
-          "stop" : 1772445456365,
-          "duration" : 16231
+          "start" : 1772524908735,
+          "stop" : 1772524911617,
+          "duration" : 2882
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "097e60c88a2d1e9554075b3dfa3fbe3f"
+      "uid" : "ad4b254880358663ff964e2a7c878f97"
     } ],
     "uid" : "d8235af02a0b4ab572b70292f685faa2"
   } ]

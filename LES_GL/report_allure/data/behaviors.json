@@ -4,26 +4,26 @@
   "children" : [ {
     "name" : "LES系统",
     "children" : [ {
-      "name" : "项目经理工作台",
+      "name" : "设备员审核检修范围",
       "children" : [ {
-        "name" : "配置项目信息",
+        "name" : "设备员查看检修范围并确认",
         "children" : [ {
-          "name" : "项目经理配置项目信息",
-          "uid" : "ff92fa602e4b1f20",
-          "parentUid" : "0b32b0f0859beb2bd62a1b88ed569a26",
-          "status" : "broken",
+          "name" : "设备员登录账号查看项目经理提交的检修范围并确认",
+          "uid" : "89eb683b9149f148",
+          "parentUid" : "d3791267a72f940deacedf9f275840be",
+          "status" : "passed",
           "time" : {
-            "start" : 1772445440134,
-            "stop" : 1772445456365,
-            "duration" : 16231
+            "start" : 1772524908735,
+            "stop" : 1772524911617,
+            "duration" : 2882
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         } ],
-        "uid" : "0b32b0f0859beb2bd62a1b88ed569a26"
+        "uid" : "d3791267a72f940deacedf9f275840be"
       } ],
-      "uid" : "7d473e074dcb372e79664738d533c2b8"
+      "uid" : "967f0f14a07bad1706be3c5bd11075c9"
     } ],
     "uid" : "6811519b2e8d73eb8610a9f48418a4b2"
   } ]

@@ -27,6 +27,13 @@ sby_gzt_db_cl=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[
 sby_gzt_db_cl_qr=["xpath","/html/body/div[10]/div/div/div[3]/button/span"]
     #定力矩服务计划页面 下派 按钮
 sby_gzt_db_cl_fb=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div[1]/div/div[2]/button[1]/span"]
+    #检修范围添加确认页面
+        #同意按钮
+sby_gzt_db_jxfwqr_ty=["xpath",""]
+        #驳回按钮
+sby_gzt_db_jxfwqr_bh=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div/div[3]/div[1]/div/div/div[2]/button/span/span"]
+        #驳回确认弹窗-确认按钮
+sby_gzt_db_jxfwqr_bh_qr=["xpath","/html/body/div[4]/div/div/div[3]/button[2]/span"]
 #服务商负责人工作台
     #待办页面
         #处理按钮
@@ -151,6 +158,18 @@ fwjh_dljfwjh_jxfwpz_flpz_sc =["xpath",]
                     #翻页
 fwjh_dljfwjh_jxfwpz_flpz_fy =["xpath",]
 
-
-
+"""
+APP页面
+"""
+'''
+    定力矩服务
+'''
+#工序处理模块
+app_dljfw_gxcl_gxcl=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view/uni-view/uni-view[2]/uni-view[2]/uni-view[1]/uni-image/img"]
+    #待领取页签
+app_dljfw_gxcl_dlq =["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/div[2]/div[1]/text()"]
+    #待处理页签
+app_dljfw_gxcl_dql=["xpath",""]
+        #勾选框第一个
+app_dljfw_gxcl_dql_01=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[2]/uni-scroll-view/div/div/div/uni-view[1]/uni-view/uni-view/uni-view[1]/uni-image/img"]
 

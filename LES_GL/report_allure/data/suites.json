@@ -4,22 +4,22 @@
   "children" : [ {
     "name" : "testcase",
     "children" : [ {
-      "name" : "test_xmjl_PM_01",
+      "name" : "test_sby_sh_01",
       "children" : [ {
-        "name" : "项目经理配置项目信息",
-        "uid" : "ff92fa602e4b1f20",
-        "parentUid" : "f5ad1062e125d5e79367b5b2b044a374",
-        "status" : "broken",
+        "name" : "设备员登录账号查看项目经理提交的检修范围并确认",
+        "uid" : "89eb683b9149f148",
+        "parentUid" : "86b2b20a38144f09dbd992fadf245059",
+        "status" : "passed",
         "time" : {
-          "start" : 1772445440134,
-          "stop" : 1772445456365,
-          "duration" : 16231
+          "start" : 1772524908735,
+          "stop" : 1772524911617,
+          "duration" : 2882
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "f5ad1062e125d5e79367b5b2b044a374"
+      "uid" : "86b2b20a38144f09dbd992fadf245059"
     } ],
     "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
   } ]

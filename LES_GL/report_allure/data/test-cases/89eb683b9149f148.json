@@ -1,0 +1,183 @@
+{
+  "uid" : "89eb683b9149f148",
+  "name" : "设备员登录账号查看项目经理提交的检修范围并确认",
+  "fullName" : "testcase.test_sby_sh_01#test_login02",
+  "historyId" : "cc84453926b5a0a1749605b9ffa04abd",
+  "time" : {
+    "start" : 1772524908735,
+    "stop" : 1772524911617,
+    "duration" : 2882
+  },
+  "description" : "\n        用例编号：test_loin02\n            用例标题：设备员审核检修范围\n            前置条件：项目经理提交检修范围至设备员\n            测试步骤：\n                1.登录设备员账号\n                2.点击设备员工作台待办处理\n                3.跳转至检修范围添加确认\n                4.勾选同意的法兰点击同意\n                5.检修范围确认结束\n\n            预期结果；项目立项成功，项目经理指定成功\n\n    :param browser:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>    用例编号：test_loin02\n        用例标题：设备员审核检修范围\n        前置条件：项目经理提交检修范围至设备员\n        测试步骤：\n            1.登录设备员账号\n            2.点击设备员工作台待办处理\n            3.跳转至检修范围添加确认\n            4.勾选同意的法兰点击同意\n            5.检修范围确认结束\n\n        预期结果；项目立项成功，项目经理指定成功\n\n:param browser:\n:return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1772524907614,
+      "stop" : 1772524908734,
+      "duration" : 1120
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        用例编号：test_loin02\n            用例标题：设备员审核检修范围\n            前置条件：项目经理提交检修范围至设备员\n            测试步骤：\n                1.登录设备员账号\n                2.点击设备员工作台待办处理\n                3.跳转至检修范围添加确认\n                4.勾选同意的法兰点击同意\n                5.检修范围确认结束\n\n            预期结果；项目立项成功，项目经理指定成功\n\n    :param browser:\n    :return:\n    ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "浏览器窗口最大化",
+      "time" : {
+        "start" : 1772524908735,
+        "stop" : 1772524908774,
+        "duration" : 39
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "进入LES登录页",
+      "time" : {
+        "start" : 1772524908775,
+        "stop" : 1772524909840,
+        "duration" : 1065
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "点击待办处理",
+      "time" : {
+        "start" : 1772524910842,
+        "stop" : 1772524910899,
+        "duration" : 57
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "点击驳回",
+      "time" : {
+        "start" : 1772524910899,
+        "stop" : 1772524911060,
+        "duration" : 161
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "点击确认按钮",
+      "time" : {
+        "start" : 1772524911060,
+        "stop" : 1772524911617,
+        "duration" : 557
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 5
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1772524911618,
+      "stop" : 1772524913784,
+      "duration" : 2166
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "设备员查看检修范围并确认"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "设备员审核检修范围"
+  }, {
+    "name" : "epic",
+    "value" : "LES系统"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_sby_sh_01"
+  }, {
+    "name" : "host",
+    "value" : "Y-YU"
+  }, {
+    "name" : "thread",
+    "value" : "3012-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_sby_sh_01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "89eb683b9149f148.json",
+  "parameterValues" : [ ]
+}
