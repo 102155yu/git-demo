@@ -41,9 +41,12 @@ def test_login02(browser):
         # 1. 窗口最大化（pyautogui模拟win+向上箭头，适配Windows系统）
         pyautogui.hotkey('win', 'up')
         # 短暂等待窗口最大化完成
-        time.sleep(1)
-        # 2. 按下F12键（可根据需要调整为presses=n实现多次按）
-        pyautogui.press('f12')
+        time.sleep(3)
+        # # 2. 按下F12键（可根据需要调整为presses=n实现多次按）
+        # pyautogui.press('f12')
+        # # 3. 按下Ctrl+Shift+M切换移动端设备模拟模式
+        # # pyautogui.hotkey('ctrl', 'shift', 'm')
+        # # time.sleep(2)  # 等待模式切换完成
     #初始化页面对象
     #实例化Wait
     wait = WebDriverWait(browser,10)
@@ -51,6 +54,12 @@ def test_login02(browser):
     #进入登录
     with allure.step('进入APP端'):
         loginapp = LoginPage(browser)
+        # 2. 按下F12键（可根据需要调整为presses=n实现多次按）
+        pyautogui.press('f12')
+        time.sleep(2)
+        # 3. 按下Ctrl+Shift+M切换移动端设备模拟模式
+        pyautogui.hotkey('ctrl', 'shift', 'm')
+        time.sleep(2)  # 等待模式切换完成
         loginapp.login(LOGIN_URL_APP, USERNAME_CZG_YJA, PASSWD)
     time.sleep(1)
 

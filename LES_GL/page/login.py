@@ -26,7 +26,7 @@ class LoginPage(WebKeys):
     def loginapp(self, url, username, passwd):
         self.open(url)
             # 实例化Wait
-        wait = WebDriverWait(self.driver, 5)
+        wait = WebDriverWait(self.driver, 10)
             # 根据‘登录LES_GL’作为等待条件
             # wait.until(ec.text_to_be_present_in_element((By.XPATH,'//div'),"欢迎登陆"))
 

@@ -1,10 +1,10 @@
 [ {
-  "uid" : "8ce84920a36a1458",
+  "uid" : "e30ee4ea616b1f30",
   "name" : "技术员填写工序数据",
   "time" : {
-    "start" : 1772616269059,
-    "stop" : 1772616280976,
-    "duration" : 11917
+    "start" : 1772618108619,
+    "stop" : 1772618126678,
+    "duration" : 18059
   },
   "status" : "broken",
   "severity" : "critical"

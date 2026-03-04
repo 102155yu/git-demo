@@ -4,22 +4,22 @@
   "children" : [ {
     "name" : "Y-YU",
     "children" : [ {
-      "name" : "27844-MainThread",
+      "name" : "22504-MainThread",
       "children" : [ {
         "name" : "技术员填写工序数据",
-        "uid" : "8ce84920a36a1458",
-        "parentUid" : "dbc9dfd20210ec5a78a9f815cbb392d1",
+        "uid" : "e30ee4ea616b1f30",
+        "parentUid" : "affb585d3746d646bad846265fc6d663",
         "status" : "broken",
         "time" : {
-          "start" : 1772616269059,
-          "stop" : 1772616280976,
-          "duration" : 11917
+          "start" : 1772618108619,
+          "stop" : 1772618126678,
+          "duration" : 18059
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "dbc9dfd20210ec5a78a9f815cbb392d1"
+      "uid" : "affb585d3746d646bad846265fc6d663"
     } ],
     "uid" : "d8235af02a0b4ab572b70292f685faa2"
   } ]
