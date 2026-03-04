@@ -80,58 +80,58 @@ def test_login02(browser):
     with allure.step('点击提交任务'):
         wk.locator(*allPages.app_gxrw_mfmjc_tj).click()
 
-
-    #进入项目管理页面
-        #点击成员配置按钮
-    with allure.step('点击成员配置按钮'):
-        wk.locator(*allPages.xmgl_cypz).click()
-    #进入成员配置页面
-        #点击添加
-    with allure.step('点击添加'):
-        wk.locator(*allPages.xmgl_cypz_tj).click()
-        #进入添加页面
-            #点击下拉按钮
-    with allure.step('点击下拉按钮'):
-        wk.locator(*allPages.xmgl_cypz_tj_xl).click()
-        #选择第三个人员勾选
-    with allure.step('勾选第三个人员'):
-        wk.locator(*allPages.xmgl_cypz_tj_03).click()
-        #点击确定
-    with allure.step('点击确定'):
-        wk.locator(*allPages.xmgl_cypz_tj_qd).click()
-        #点击返回
-    with allure.step('点击返回'):
-        wk.locator(*allPages.xmgl_cypz_fh).click()
-    #点击检修范围
-    with allure.step('点击检修范围按钮'):
-        wk.locator(*allPages.xmgl_jxfw).click()
-
-    #进入检修范围页面
-        #点击下一页
-    # with allure.step('点击下一页'):
-    #     wk.locator(*allPages.xmgl_jxfw_xyy).click()
-    #     # 点击下一页
-    # with allure.step('点击下一页'):
-    #     wk.locator(*allPages.xmgl_jxfw_xyy).click()
-        #选择第一个法兰点击勾选
-    with allure.step('点击勾选第一个法兰'):
-        wk.locator(*allPages.xmgl_jxfw_gx_01).click()
-        #点击提交
-    with allure.step('点击提交'):
-        wk.locator(*allPages.xmgl_jxfw_tj).click()
-    #弹出确认框
-        #点击确定
-    with allure.step('点击确定'):
-        wk.locator(*allPages.xmgl_jxfw_tj_qr).click()
-
-    # #进行人员配置页面点击项目经理选择框
-    # with allure.step("选择项目经理"):
-    #     wk.locator(*allPages.fws_fzr_lxqr_xmjl).click()
-    #     ActionChains(browser)\
-    #         .key_down(Keys.DOWN)\
-    #         .key_down(Keys.DOWN)\
-    #         .key_down(Keys.ENTER)\
-    #         .perform()
-    # #点击确认按钮
-    # with allure.step('点击确认按钮'):
-    #     wk.locator(*allPages.fws_fzr_lxqr_qr).click()
+    #
+    # #进入项目管理页面
+    #     #点击成员配置按钮
+    # with allure.step('点击成员配置按钮'):
+    #     wk.locator(*allPages.xmgl_cypz).click()
+    # #进入成员配置页面
+    #     #点击添加
+    # with allure.step('点击添加'):
+    #     wk.locator(*allPages.xmgl_cypz_tj).click()
+    #     #进入添加页面
+    #         #点击下拉按钮
+    # with allure.step('点击下拉按钮'):
+    #     wk.locator(*allPages.xmgl_cypz_tj_xl).click()
+    #     #选择第三个人员勾选
+    # with allure.step('勾选第三个人员'):
+    #     wk.locator(*allPages.xmgl_cypz_tj_03).click()
+    #     #点击确定
+    # with allure.step('点击确定'):
+    #     wk.locator(*allPages.xmgl_cypz_tj_qd).click()
+    #     #点击返回
+    # with allure.step('点击返回'):
+    #     wk.locator(*allPages.xmgl_cypz_fh).click()
+    # #点击检修范围
+    # with allure.step('点击检修范围按钮'):
+    #     wk.locator(*allPages.xmgl_jxfw).click()
+    #
+    # #进入检修范围页面
+    #     #点击下一页
+    # # with allure.step('点击下一页'):
+    # #     wk.locator(*allPages.xmgl_jxfw_xyy).click()
+    # #     # 点击下一页
+    # # with allure.step('点击下一页'):
+    # #     wk.locator(*allPages.xmgl_jxfw_xyy).click()
+    #     #选择第一个法兰点击勾选
+    # with allure.step('点击勾选第一个法兰'):
+    #     wk.locator(*allPages.xmgl_jxfw_gx_01).click()
+    #     #点击提交
+    # with allure.step('点击提交'):
+    #     wk.locator(*allPages.xmgl_jxfw_tj).click()
+    # #弹出确认框
+    #     #点击确定
+    # with allure.step('点击确定'):
+    #     wk.locator(*allPages.xmgl_jxfw_tj_qr).click()
+    #
+    # # #进行人员配置页面点击项目经理选择框
+    # # with allure.step("选择项目经理"):
+    # #     wk.locator(*allPages.fws_fzr_lxqr_xmjl).click()
+    # #     ActionChains(browser)\
+    # #         .key_down(Keys.DOWN)\
+    # #         .key_down(Keys.DOWN)\
+    # #         .key_down(Keys.ENTER)\
+    # #         .perform()
+    # # #点击确认按钮
+    # # with allure.step('点击确认按钮'):
+    # #     wk.locator(*allPages.fws_fzr_lxqr_qr).click()
