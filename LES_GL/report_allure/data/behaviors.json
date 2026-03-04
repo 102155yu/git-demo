@@ -2,29 +2,29 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "LES系统",
+    "name" : "LES系统APP端",
     "children" : [ {
-      "name" : "设备员审核检修范围",
+      "name" : "技术员APP页面",
       "children" : [ {
-        "name" : "设备员查看检修范围并确认",
+        "name" : "填写工序数据",
         "children" : [ {
-          "name" : "设备员登录账号查看项目经理提交的检修范围并确认",
-          "uid" : "89eb683b9149f148",
-          "parentUid" : "d3791267a72f940deacedf9f275840be",
-          "status" : "passed",
+          "name" : "技术员填写工序数据",
+          "uid" : "8ce84920a36a1458",
+          "parentUid" : "98848e5117c7d9d609aa3cc6049706d7",
+          "status" : "broken",
           "time" : {
-            "start" : 1772524908735,
-            "stop" : 1772524911617,
-            "duration" : 2882
+            "start" : 1772616269059,
+            "stop" : 1772616280976,
+            "duration" : 11917
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         } ],
-        "uid" : "d3791267a72f940deacedf9f275840be"
+        "uid" : "98848e5117c7d9d609aa3cc6049706d7"
       } ],
-      "uid" : "967f0f14a07bad1706be3c5bd11075c9"
+      "uid" : "6d00d1e374c58c7b39f9be89758231a6"
     } ],
-    "uid" : "6811519b2e8d73eb8610a9f48418a4b2"
+    "uid" : "33d09a809878df57e1e13f99b14febcf"
   } ]
 }

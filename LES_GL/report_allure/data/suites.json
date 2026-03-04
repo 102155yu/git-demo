@@ -4,22 +4,22 @@
   "children" : [ {
     "name" : "testcase",
     "children" : [ {
-      "name" : "test_sby_sh_01",
+      "name" : "test_jsy_01",
       "children" : [ {
-        "name" : "设备员登录账号查看项目经理提交的检修范围并确认",
-        "uid" : "89eb683b9149f148",
-        "parentUid" : "86b2b20a38144f09dbd992fadf245059",
-        "status" : "passed",
+        "name" : "技术员填写工序数据",
+        "uid" : "8ce84920a36a1458",
+        "parentUid" : "9c10a592c099f6c18827beec60efb8be",
+        "status" : "broken",
         "time" : {
-          "start" : 1772524908735,
-          "stop" : 1772524911617,
-          "duration" : 2882
+          "start" : 1772616269059,
+          "stop" : 1772616280976,
+          "duration" : 11917
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "86b2b20a38144f09dbd992fadf245059"
+      "uid" : "9c10a592c099f6c18827beec60efb8be"
     } ],
     "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
   } ]

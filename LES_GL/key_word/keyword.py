@@ -6,6 +6,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 import os
 import threading
+import pyautogui
 
 #定义工具类（进行关键字驱动）
 class WebKeys:

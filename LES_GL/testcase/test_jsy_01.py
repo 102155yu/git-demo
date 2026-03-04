@@ -1,6 +1,6 @@
 #应用POM模式实现登录
 import time
-
+import pyautogui
 import allure
 from selenium.webdriver import ActionChains, Keys
 from selenium.webdriver.common.by import By
@@ -36,16 +36,22 @@ def test_login02(browser):
     :return:
     """
     # 窗口最大化操作（核心新增）
-    with allure.step('浏览器窗口最大化'):
-        browser.maximize_window()
+    # ========== 新增：窗口最大化 + 按F12键 ==========
+    with allure.step('窗口最大化并按下F12键'):
+        # 1. 窗口最大化（pyautogui模拟win+向上箭头，适配Windows系统）
+        pyautogui.hotkey('win', 'up')
+        # 短暂等待窗口最大化完成
+        time.sleep(1)
+        # 2. 按下F12键（可根据需要调整为presses=n实现多次按）
+        pyautogui.press('f12')
     #初始化页面对象
     #实例化Wait
     wait = WebDriverWait(browser,10)
     wk = WebKeys(browser)
     #进入登录
     with allure.step('进入APP端'):
-        login = LoginPage(browser)
-        login.login(LOGIN_URL_APP, USERNAME_CZG_YJA, PASSWD)
+        loginapp = LoginPage(browser)
+        loginapp.login(LOGIN_URL_APP, USERNAME_CZG_YJA, PASSWD)
     time.sleep(1)
 
 
@@ -75,7 +81,15 @@ def test_login02(browser):
     #点击提交密封面照片
     with allure.step('点击密封面照片'):
         wk.locator(*allPages.app_gxrw_mfmjc_mfmzp).click()
+        # 关键等待：给弹窗加载留足够时间（可根据实际情况调整秒数）
+    time.sleep(3)
 
+        # 输入图片路径并按回车确认（模拟手动输入文件地址）
+    with allure.step('输入图片路径并确认上传'):
+            # 输入图片绝对路径，r前缀避免反斜杠转义
+        pyautogui.typewrite(r'C:\Users\chens\Pictures\1.jpg', interval=0.1)
+            # 连续按3次回车（适配弹窗的确认逻辑）
+        pyautogui.press(keys='ENTER', presses=3)
     #点击提交按钮提交任务
     with allure.step('点击提交任务'):
         wk.locator(*allPages.app_gxrw_mfmjc_tj).click()

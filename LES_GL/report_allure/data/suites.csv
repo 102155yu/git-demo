@@ -1,16 +1,15 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue Mar 03 16:01:48 CST 2026","Tue Mar 03 16:01:51 CST 2026","2882","testcase","test_sby_sh_01","","","","设备员登录账号查看项目经理提交的检修范围并确认","
+"broken","Wed Mar 04 17:24:29 CST 2026","Wed Mar 04 17:24:40 CST 2026","11917","testcase","test_jsy_01","","","","技术员填写工序数据","
         用例编号：test_loin02
-            用例标题：设备员审核检修范围
-            前置条件：项目经理提交检修范围至设备员
+            用例标题：技术员填写工序数据
+            前置条件：法兰添加了检修范围生成了工序任务
             测试步骤：
-                1.登录设备员账号
-                2.点击设备员工作台待办处理
-                3.跳转至检修范围添加确认
-                4.勾选同意的法兰点击同意
-                5.检修范围确认结束
+                1.登录技术员账号
+                2.填写对应工序任务信息
+                3.提交工序任务
+                4.完成工序任务
 
-            预期结果；项目立项成功，项目经理指定成功
+            预期结果；工序任务提交无报错
 
     :param browser:
     :return:

@@ -1,11 +1,11 @@
 [ {
-  "uid" : "89eb683b9149f148",
-  "name" : "设备员登录账号查看项目经理提交的检修范围并确认",
+  "uid" : "8ce84920a36a1458",
+  "name" : "技术员填写工序数据",
   "time" : {
-    "start" : 1772524908735,
-    "stop" : 1772524911617,
-    "duration" : 2882
+    "start" : 1772616269059,
+    "stop" : 1772616280976,
+    "duration" : 11917
   },
-  "status" : "passed",
+  "status" : "broken",
   "severity" : "critical"
 } ]

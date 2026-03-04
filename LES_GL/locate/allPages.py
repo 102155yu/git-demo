@@ -161,6 +161,16 @@ fwjh_dljfwjh_jxfwpz_flpz_fy =["xpath",]
 """
 APP页面
 """
+#登录
+#账号
+#用户名输入框
+page_login_user_app = ["xpath","/html/body/div/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[1]/uni-view[1]/uni-input/div/div"]
+
+#密码输入框
+page_login_indexPwd_app = ["xpath","/html/body/div/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[1]/uni-view[2]/uni-view/uni-input/div/div"]
+#登录按钮
+page_login_loginBtn_app = ["xpath","/html/body/div/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[1]/uni-view[3]"]
+#密码
 '''
     定力矩服务
 '''

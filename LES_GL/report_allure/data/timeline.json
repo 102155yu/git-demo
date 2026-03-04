@@ -4,22 +4,22 @@
   "children" : [ {
     "name" : "Y-YU",
     "children" : [ {
-      "name" : "3012-MainThread",
+      "name" : "27844-MainThread",
       "children" : [ {
-        "name" : "设备员登录账号查看项目经理提交的检修范围并确认",
-        "uid" : "89eb683b9149f148",
-        "parentUid" : "ad4b254880358663ff964e2a7c878f97",
-        "status" : "passed",
+        "name" : "技术员填写工序数据",
+        "uid" : "8ce84920a36a1458",
+        "parentUid" : "dbc9dfd20210ec5a78a9f815cbb392d1",
+        "status" : "broken",
         "time" : {
-          "start" : 1772524908735,
-          "stop" : 1772524911617,
-          "duration" : 2882
+          "start" : 1772616269059,
+          "stop" : 1772616280976,
+          "duration" : 11917
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "ad4b254880358663ff964e2a7c878f97"
+      "uid" : "dbc9dfd20210ec5a78a9f815cbb392d1"
     } ],
     "uid" : "d8235af02a0b4ab572b70292f685faa2"
   } ]
