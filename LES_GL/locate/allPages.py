@@ -165,11 +165,107 @@ APP页面
     定力矩服务
 '''
 #工序处理模块
-app_dljfw_gxcl_gxcl=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view/uni-view/uni-view[2]/uni-view[2]/uni-view[1]/uni-image/img"]
+app_dljfw_gxcl=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view/uni-view/uni-view[2]/uni-view[2]/uni-view[1]/uni-image/img"]
     #待领取页签
 app_dljfw_gxcl_dlq =["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/div[2]/div[1]/text()"]
-    #待处理页签
-app_dljfw_gxcl_dql=["xpath",""]
         #勾选框第一个
-app_dljfw_gxcl_dql_01=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[2]/uni-scroll-view/div/div/div/uni-view[1]/uni-view/uni-view/uni-view[1]/uni-image/img"]
+app_dljfw_gxcl_dlq_01=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[2]/uni-scroll-view/div/div/div/uni-view[1]/uni-view/uni-view/uni-view[1]/uni-image/img"]
+        #领取按钮
+app_dljfw_gxcl_dlq_lq=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-view[2]"]
+    #待处理页签
+app_dljfw_gxcl_dcl=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/div[2]/div[2]"]
+        #第一个工序
+app_dljfw_gxcl_dcl_dj_01=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[2]/uni-scroll-view/div/div/div/uni-view[1]/uni-view/uni-view/uni-view[2]/uni-view[1]/uni-view[1]/uni-view[2]"]
 
+#工序任务页面
+    #法兰挂牌
+app_gxrw_flgp=["xpath",""]
+    #法兰拆卸
+app_gxrw_=["xpath",""]
+    #密封面检查
+        #密封面照片
+app_gxrw_mfmjc_mfmzp=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[19]/uni-view/uni-view/uni-view/uni-view/uni-view"]
+        #提交按钮
+app_gxrw_mfmjc_tj=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
+    #垫片检查
+        #垫片照片
+app_gxrw_dpjc_dpzp=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[11]/uni-view/uni-view/uni-view/uni-view/uni-view"]
+        #垫片规格铭牌
+app_gxrw_dpjc_dpgemp=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[12]/uni-view/uni-view/uni-view/uni-view/uni-view/uni-view[2]"]
+        #提交按钮
+app_gxrw_dpjc_tj=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
+    #紧固件检查
+app_gxrw_jgjjc=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[12]/uni-view/uni-view/uni-view/uni-view/uni-view/uni-view[2]"]
+        #螺栓螺母照片
+app_gxrw_jgjjc_lslmzp=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[12]/uni-view/uni-view/uni-view/uni-view/uni-view/uni-view[2]"]
+        # 提交按钮
+app_gxrw_jgjjc_dpjc_tj = ["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
+    #预装确认
+        # 提交按钮
+app_gxrw_ycqr_dpjc_tj = ["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
+app_gxrw_ycqr_=["xpath",""]
+    #SOP确认
+        # 提交按钮
+app_gxrw_sopqr_tj = ["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
+        #工具类型
+app_gxrw_sopqr_gjlx=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[1]/uni-view[2]/uni-picker/div[2]/uni-view/uni-view"]
+            #工具类型-完成按钮
+app_gxrw_sopqr_gjlx_wc=["xpath","/html/body/div[1]/uni-app/div/div[2]/div[1]/div[2]"]
+        #工具型号
+app_gxrw_sopqr_gjxh=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[2]/uni-view[2]"]
+            # 完成按钮
+app_gxrw_sopqr_gjxh_wc=["xpath","/html/body/div[1]/uni-app/div/div[2]/div[1]/div[2]"]
+        #螺母对边
+app_gxrw_sopqr_lmdb=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[3]/uni-view[2]"]
+        #工具数量
+app_gxrw_sopqr_gjsl=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[4]/uni-view[2]"]
+        #新旧螺栓确认
+app_gxrw_sopqr_xjlsqr=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[5]/uni-view[2]"]
+            # 完成按钮
+app_gxrw_sopqr_gjxh_wc = ["xpath", "/html/body/div[1]/uni-app/div/div[2]/div[1]/div[2]"]
+        #润滑剂确认
+app_gxrw_sopqr_rhjqr=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[6]/uni-view[2]"]
+        #螺栓工况确认
+app_gxrw_sopqr_lsgkqr=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[7]/uni-view[2]"]
+        #法兰面工况
+app_gxrw_sopqr_flmgk=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[8]/uni-view[2]"]
+        #摩擦系数
+app_gxrw_sopqr_mcxs=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[9]/uni-view[2]"]
+        #T1A
+app_gxrw_sopqr_T1A=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[10]/uni-view[2]"]
+        #T1B
+app_gxrw_sopqr_T1B=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[11]/uni-view[2]"]
+        #A压
+app_gxrw_sopqr_Ay=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[12]/uni-view[2]"]
+        #B压
+app_gxrw_sopqr_By=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[13]/uni-view[2]"]
+        #预紧力推荐值
+app_gxrw_sopqr_yjltjz=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[14]/uni-view[2]"]
+        #实际施工值
+app_gxrw_sopqr_sjsgz=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[15]/uni-view[2]"]
+
+    #法兰抽检
+        # 提交按钮
+app_gxrw_flcj_dpjc_tj = ["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
+app_gxrw_flcj_=["xpath",""]
+    #完工确认
+        # 提交按钮
+app_gxrw_wgqr_dpjc_tj = ["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
+        #平行公差
+app_gxrw_wgqr_pxgc=["xpath",""]
+        #公差值
+app_gxrw_wgqr_gcz=["xpath",""]
+        #垫片受压状态是否异常
+app_gxrw_wgqr_dpsyzt=["xpath",""]
+        #垫片照片
+app_gxrw_wgqr_dpzp=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[5]/uni-view/uni-view/uni-view/uni-view/uni-view"]
+        #保存
+app_gxrw_wgqr_bc=["xpath",""]
+    #法兰校核
+        # 提交按钮
+app_gxrw_fljh_dpjc_tj = ["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
+app_gxrw_fljh_=["xpath",""]
+    #螺栓抽检
+        # 提交按钮
+app_gxrw_lscj_dpjc_tj = ["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
+app_gxrw_lscj_=["xpath",""]

@@ -4,8 +4,8 @@
 
 #LES登录链接
 
-LOGIN_URL ="http://192.168.2.154:12012/glsh/#/login"
-
+LOGIN_URL_PC ="http://192.168.2.154:12012/glsh/#/login"
+LOGIN_URL_APP ="http://192.168.2.154:12012/glsh/app/"
 #用户名
 USERNAME_zg_YJA = "JA.YU" #机动处专工 余家傲
 USERNAME_XMJL_LQ ="13016408500" #项目经理 罗庆

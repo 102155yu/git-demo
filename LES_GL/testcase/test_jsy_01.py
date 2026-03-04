@@ -43,19 +43,43 @@ def test_login02(browser):
     wait = WebDriverWait(browser,10)
     wk = WebKeys(browser)
     #进入登录
-    with allure.step('进入LES登录页'):
+    with allure.step('进入APP端'):
         login = LoginPage(browser)
-        login.login(LOGIN_URL, USERNAME_XMJL_LQ, PASSWD)
+        login.login(LOGIN_URL_APP, USERNAME_CZG_YJA, PASSWD)
     time.sleep(1)
 
 
-    # 点击待办处理
-    with allure.step('点击待办处理'):
-        wk.locator(*allPages.sby_gzt_db_cl).click()
+    #进入定力矩服务，点击工序处理
+    with allure.step('点击工序处理'):
+        wk.locator(*allPages.app_dljfw_gxcl).click()
 
-    # 点击处理弹窗确认按钮
-    with allure.step('点击处理弹窗确认按钮'):
-        wk.locator(*allPages.xmjl_gzt_db_ts_qr).click()
+    # 点击领取工序任务
+    with allure.step('点击勾选任务'):
+        wk.locator(*allPages.app_dljfw_gxcl_dql_dj_01).click()
+
+    #点击领取按钮
+    with allure.step('点击领取按钮'):
+        wk.locator(*allPages.app_dljfw_gxcl_dlq_lq).click()
+
+    #等待1分钟点击“待处理”
+    time.sleep(60)
+    with allure.step('点击待处理'):
+        wk.locator(*allPages.app_dljfw_gxcl_dcl).click()
+
+    #进入待处理页面点击任务
+    with allure.step('点击任务'):
+        wk.locator(*allPages.app_dljfw_gxcl_dcl_dj_01).click()
+
+    #跳转至工序任务页面
+        #密封面页面
+    #点击提交密封面照片
+    with allure.step('点击密封面照片'):
+        wk.locator(*allPages.app_gxrw_mfmjc_mfmzp).click()
+
+    #点击提交按钮提交任务
+    with allure.step('点击提交任务'):
+        wk.locator(*allPages.app_gxrw_mfmjc_tj).click()
+
 
     #进入项目管理页面
         #点击成员配置按钮

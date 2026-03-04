@@ -46,7 +46,7 @@ def test_login02(browser):
     #进入登录
     with allure.step('进入LES登录页'):
         login = LoginPage(browser)
-        login.login(LOGIN_URL, USERNAME_sby_55, PASSWD)
+        login.login(LOGIN_URL_PC, USERNAME_sby_55, PASSWD)
     time.sleep(1)
 
 
