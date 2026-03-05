@@ -175,17 +175,17 @@ page_login_loginBtn_app = ["xpath","/html/body/div/uni-app/uni-page/uni-page-wra
     定力矩服务
 '''
 #工序处理模块
-app_dljfw_gxcl=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view/uni-view/uni-view[2]/uni-view[2]/uni-view[1]/uni-image/img"]
+app_dljfw_gxcl=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view/uni-view/uni-view[2]/uni-view[2]/uni-view[1]"]
     #待领取页签
 app_dljfw_gxcl_dlq =["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/div[2]/div[1]/text()"]
         #勾选框第一个
-app_dljfw_gxcl_dlq_01=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[2]/uni-scroll-view/div/div/div/uni-view[1]/uni-view/uni-view/uni-view[1]/uni-image/img"]
+app_dljfw_gxcl_dlq_01=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[2]/uni-scroll-view/div/div/div/uni-view[1]/uni-view/uni-view/uni-view[1]/uni-image"]
         #领取按钮
 app_dljfw_gxcl_dlq_lq=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-view[2]"]
     #待处理页签
 app_dljfw_gxcl_dcl=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/div[2]/div[2]"]
         #第一个工序
-app_dljfw_gxcl_dcl_dj_01=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[2]/uni-scroll-view/div/div/div/uni-view[1]/uni-view/uni-view/uni-view[2]/uni-view[1]/uni-view[1]/uni-view[2]"]
+app_dljfw_gxcl_dcl_dj_01=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[2]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[1]/uni-view/uni-view[2]/uni-view[1]/uni-view[1]"]
 
 #工序任务页面
     #法兰挂牌

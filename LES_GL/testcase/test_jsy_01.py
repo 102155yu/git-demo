@@ -40,13 +40,7 @@ def test_login02(browser):
     with allure.step('窗口最大化并按下F12键'):
         # 1. 窗口最大化（pyautogui模拟win+向上箭头，适配Windows系统）
         pyautogui.hotkey('win', 'up')
-        # 短暂等待窗口最大化完成
-        time.sleep(3)
-        # # 2. 按下F12键（可根据需要调整为presses=n实现多次按）
-        # pyautogui.press('f12')
-        # # 3. 按下Ctrl+Shift+M切换移动端设备模拟模式
-        # # pyautogui.hotkey('ctrl', 'shift', 'm')
-        # # time.sleep(2)  # 等待模式切换完成
+
     #初始化页面对象
     #实例化Wait
     wait = WebDriverWait(browser,10)
@@ -54,30 +48,33 @@ def test_login02(browser):
     #进入登录
     with allure.step('进入APP端'):
         loginapp = LoginPage(browser)
-        # 2. 按下F12键（可根据需要调整为presses=n实现多次按）
+        loginapp.loginapp(LOGIN_URL_APP, USERNAME_CZG_YJA, PASSWD)
+        time.sleep(3)
+    # # 2. 按下F12键（可根据需要调整为presses=n实现多次按）
         pyautogui.press('f12')
-        time.sleep(2)
-        # 3. 按下Ctrl+Shift+M切换移动端设备模拟模式
+        time.sleep(3)
+    # # 3. 按下Ctrl+Shift+M切换移动端设备模拟模式
         pyautogui.hotkey('ctrl', 'shift', 'm')
-        time.sleep(2)  # 等待模式切换完成
-        loginapp.login(LOGIN_URL_APP, USERNAME_CZG_YJA, PASSWD)
-    time.sleep(1)
-
+        time.sleep(3)  # 等待模式切换完成
 
     #进入定力矩服务，点击工序处理
     with allure.step('点击工序处理'):
         wk.locator(*allPages.app_dljfw_gxcl).click()
 
+    time.sleep(2)
+
     # 点击领取工序任务
     with allure.step('点击勾选任务'):
-        wk.locator(*allPages.app_dljfw_gxcl_dql_dj_01).click()
+        wk.locator(*allPages.app_dljfw_gxcl_dlq_01).click()
+
+    time.sleep(2)
 
     #点击领取按钮
     with allure.step('点击领取按钮'):
         wk.locator(*allPages.app_dljfw_gxcl_dlq_lq).click()
 
     #等待1分钟点击“待处理”
-    time.sleep(60)
+    time.sleep(30)
     with allure.step('点击待处理'):
         wk.locator(*allPages.app_dljfw_gxcl_dcl).click()
 

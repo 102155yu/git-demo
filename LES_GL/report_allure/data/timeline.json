@@ -2,25 +2,17 @@
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "name" : "timeline",
   "children" : [ {
-    "name" : "Y-YU",
-    "children" : [ {
-      "name" : "22504-MainThread",
-      "children" : [ {
-        "name" : "技术员填写工序数据",
-        "uid" : "e30ee4ea616b1f30",
-        "parentUid" : "affb585d3746d646bad846265fc6d663",
-        "status" : "broken",
-        "time" : {
-          "start" : 1772618108619,
-          "stop" : 1772618126678,
-          "duration" : 18059
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "affb585d3746d646bad846265fc6d663"
-    } ],
-    "uid" : "d8235af02a0b4ab572b70292f685faa2"
+    "name" : "技术员填写工序数据",
+    "uid" : "5ec2a32500fb3fe9",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1772695369725,
+      "stop" : 1772695475626,
+      "duration" : 105901
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
   } ]
 }
