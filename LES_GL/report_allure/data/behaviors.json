@@ -2,17 +2,29 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "技术员填写工序数据",
-    "uid" : "5ec2a32500fb3fe9",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1772695369725,
-      "stop" : 1772695475626,
-      "duration" : 105901
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
+    "name" : "LES系统APP端",
+    "children" : [ {
+      "name" : "技术员APP页面",
+      "children" : [ {
+        "name" : "填写预装确认工序数据",
+        "children" : [ {
+          "name" : "技术员填写工序数据",
+          "uid" : "bcfd84ac805745ff",
+          "parentUid" : "6909dac16d111807214df4508c99c712",
+          "status" : "passed",
+          "time" : {
+            "start" : 1772789694464,
+            "stop" : 1772789731672,
+            "duration" : 37208
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "6909dac16d111807214df4508c99c712"
+      } ],
+      "uid" : "6d00d1e374c58c7b39f9be89758231a6"
+    } ],
+    "uid" : "33d09a809878df57e1e13f99b14febcf"
   } ]
 }

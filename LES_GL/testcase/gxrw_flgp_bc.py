@@ -56,19 +56,14 @@ def test_login02(browser):
         wk.locator(*allPages.app_dljfw_gxcl).click()
 
         time.sleep(2)
-
-    # 点击领取工序任务
-    with allure.step('点击勾选任务'):
-        wk.locator(*allPages.app_dljfw_gxcl_dlq_01).click()
-
+    #选择对应项目
+    with allure.step('点击项目名称'):
+        wk.locator(*allPages.app_gxcl_xmmc).click()
         time.sleep(2)
-
-    #点击领取按钮
-    with allure.step('点击领取按钮'):
-        wk.locator(*allPages.app_dljfw_gxcl_dlq_lq).click()
-
-    #等待1分钟点击“待处理”
-        time.sleep(30)
+    #输入项目名称
+    with allure.step('点击项目名称'):
+        wk.locator(*allPages.app_gxcl_xmmc_srk).click()
+        time.sleep(2)
     with allure.step('点击待处理'):
         wk.locator(*allPages.app_dljfw_gxcl_dcl).click()
 
@@ -77,20 +72,31 @@ def test_login02(browser):
         wk.locator(*allPages.app_dljfw_gxcl_dcl_dj_01).click()
 
     #跳转至工序任务页面
-        #密封面页面
-    #点击提交密封面照片
-    with allure.step('点击密封面照片'):
-        wk.locator(*allPages.app_gxrw_mfmjc_mfmzp).click()
+        #法兰挂牌页面
+        #点击法兰挂牌页签
+    with allure.step('点击页签法兰挂牌'):
+        wk.locator(*allPages.app_gxrw_flgp).click()
         # 关键等待：给弹窗加载留足够时间（可根据实际情况调整秒数）
-        time.sleep(3)
-
+        #点击法兰挂牌照片上传照片
+    with allure.step('点击法兰挂牌照片'):
+        wk.locator(*allPages.app_gxrw_flgp_flgpzp).click()
+        time.sleep(2)
         # 输入图片路径并按回车确认（模拟手动输入文件地址）
     with allure.step('输入图片路径并确认上传'):
             # 输入图片绝对路径，r前缀避免反斜杠转义
         pyautogui.typewrite(r'C:\Users\chens\Pictures\1.jpg', interval=0.1)
             # 连续按3次回车（适配弹窗的确认逻辑）
         pyautogui.press(keys='ENTER', presses=3)
-    #点击提交按钮提交任务
-    with allure.step('点击提交任务'):
-        wk.locator(*allPages.app_gxrw_mfmjc_tj).click()
+        time.sleep(2)
+    #填写层级
+    with allure.step('点击填写层级'):
+        wk.locator(*allPages.app_gxrw_flgp_cj).send_keys('1')
 
+    # #点击提交按钮提交任务
+    # with allure.step('点击提交任务'):
+    #     wk.locator(*allPages.app_gxrw_flgp_tj).click()
+    #点击保存按钮保存任务
+    with allure.step('点击保存任务'):
+        wk.locator(*allPages.app_gxrw_flgp_bc).click()
+
+    time.sleep(3)

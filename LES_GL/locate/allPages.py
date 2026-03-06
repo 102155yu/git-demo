@@ -188,16 +188,65 @@ app_dljfw_gxcl_dcl=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper
 app_dljfw_gxcl_dcl_dj_01=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[2]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[1]/uni-view/uni-view[2]/uni-view[1]/uni-view[1]"]
 
 #工序任务页面
+#项目名称
+app_gxcl_xmmc =['xpath','/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/div[1]']
+    #输入框查询
+app_gxcl_xmmc_srk=['xpath',"//div[contains(@class, 'model-item') and contains(text(), '2026年01月流程演示1北京源城')]"]
     #法兰挂牌
-app_gxrw_flgp=["xpath",""]
+app_gxrw_flgp=["xpath",'//uni-view[contains(@class, "process-item") and text()="法兰挂牌"]']
+        #法兰挂牌照片
+app_gxrw_flgp_flgpzp=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[1]/uni-view/uni-view/uni-view/uni-view/uni-view"]
+        #法兰层级
+app_gxrw_flgp_cj=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[2]/uni-view[2]/uni-input/div/input"]
+        #提交
+app_gxrw_flgp_tj=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
+        #保存
+app_gxrw_flgp_bc=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[1]"]
+
     #法兰拆卸
-app_gxrw_=["xpath",""]
+app_gxrw_flcx=["xpath",'//uni-view[contains(@class, "process-item") and text()="法兰拆卸"]']
+        #工具类型
+app_gxrw_flcx_gjlx=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[1]/uni-view[2]/uni-picker"]
+        #工具型号
+app_gxrw_flcx_gjxh=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[2]/uni-view[2]/uni-picker"]
+        #拆卸方式
+app_gxrw_flcx_cxfs=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[3]/uni-view[2]/uni-picker"]
+        #拆卸工具数量
+app_gxrw_flcx_cxgjsl=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[4]/uni-view[2]/uni-view/uni-input/div/input"]
+        #拆卸拉伸力
+app_gxrw_flcx_cxlsl=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[5]/uni-view[2]/uni-view/uni-input/div/input"]
+        #拆卸后照片
+app_gxrw_flcx_cxhzp=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[7]/uni-view/uni-view/uni-view/uni-view/uni-view"]
+        #技术人员
+app_gxrw_flcx_jsry_jsry=["xpath",""]
+        #施工人员
+app_gxrw_flcx_sgry=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[17]/uni-view[2]/uni-view/uni-view/uni-view/uni-input/div/input"]
+        #保存
+app_gxrw_flcx_bc=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[1]"]
+app_gxrw_flcx_=["xpath",""]
+
+
+
     #密封面检查
+app_gxrw_mfmjc=["xpath",'//uni-view[contains(@class, "process-item") and text()="密封面检查"]']
+        #保存
+app_gxrw_mfmjc_bc=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[1]"]
+app_gxrw_mfmjc_=["xpath",""]
+app_gxrw_mfmjc_=["xpath",""]
+
         #密封面照片
 app_gxrw_mfmjc_mfmzp=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[19]/uni-view/uni-view/uni-view/uni-view/uni-view"]
         #提交按钮
 app_gxrw_mfmjc_tj=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
     #垫片检查
+app_gxrw_dpjc =["xpath",'//uni-view[contains(@class, "process-item") and text()="垫片检查"]']
+app_gxrw_dpjc_ =["xpath",""]
+app_gxrw_dpjc_ =["xpath",""]
+app_gxrw_dpjc_ =["xpath",""]
+app_gxrw_dpjc_ =["xpath",""]
+app_gxrw_dpjc_ =["xpath",""]
+app_gxrw_dpjc_ =["xpath",""]
+
         #垫片照片
 app_gxrw_dpjc_dpzp=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[11]/uni-view/uni-view/uni-view/uni-view/uni-view"]
         #垫片规格铭牌
@@ -205,24 +254,50 @@ app_gxrw_dpjc_dpgemp=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapp
         #提交按钮
 app_gxrw_dpjc_tj=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
     #紧固件检查
-app_gxrw_jgjjc=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[12]/uni-view/uni-view/uni-view/uni-view/uni-view/uni-view[2]"]
+app_gxrw_jgjjc=["xpath",'//uni-view[contains(@class, "process-item") and text()="紧固件检查"]']
+        #保存
+app_gxrw_jgjjc_bc=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[1]"]
+app_gxrw_jgjjc_=["xpath",""]
+app_gxrw_jgjjc_=["xpath",""]
+app_gxrw_jgjjc_=["xpath",""]
+app_gxrw_jgjjc_=["xpath",""]
+
         #螺栓螺母照片
 app_gxrw_jgjjc_lslmzp=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[12]/uni-view/uni-view/uni-view/uni-view/uni-view/uni-view[2]"]
         # 提交按钮
 app_gxrw_jgjjc_dpjc_tj = ["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
     #预装确认
+app_gxrw_yzqr=["xpath",'//uni-view[contains(@class, "process-item") and text()="预装确认"]']
         # 提交按钮
-app_gxrw_ycqr_dpjc_tj = ["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
-app_gxrw_ycqr_=["xpath",""]
+app_gxrw_yzqr_dpjc_tj = ["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
+        #紧固照片
+app_gxrw_yzqr_jgzp=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[10]/uni-view/uni-view/uni-view/uni-view/uni-view"]
+        #保存
+app_gxrw_yzqr_bc=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[1]"]
+app_gxrw_yzqr_=["xpath",""]
+app_gxrw_yzqr_=["xpath",""]
+app_gxrw_yzqr_=["xpath",""]
+app_gxrw_yzqr_=["xpath",""]
+
     #SOP确认
+app_gxrw_sopqr =["xpath","//uni-view[contains(@class, 'process-item') and text()='sop确认']"]
+app_gxrw_sopqr_ =["xpath",""]
+app_gxrw_sopqr_ =["xpath",""]
+app_gxrw_sopqr_ =["xpath",""]
+app_gxrw_sopqr_ =["xpath",""]
+app_gxrw_sopqr_ =["xpath",""]
+
         # 提交按钮
 app_gxrw_sopqr_tj = ["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
         #工具类型
 app_gxrw_sopqr_gjlx=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[1]/uni-view[2]/uni-picker/div[2]/uni-view/uni-view"]
+            #工具类型—液压方驱扳手
+app_gxrw_sopqr_gjlx_qdbs=["xpath","//div[contains(@class, 'uni-picker-container')]//div[contains(@class, 'uni-picker-view-column')]//div[text()='液压方驱扳手']"]
             #工具类型-完成按钮
 app_gxrw_sopqr_gjlx_wc=["xpath","/html/body/div[1]/uni-app/div/div[2]/div[1]/div[2]"]
         #工具型号
 app_gxrw_sopqr_gjxh=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[2]/uni-view[2]"]
+            #工具型号-LFTW-03
             # 完成按钮
 app_gxrw_sopqr_gjxh_wc=["xpath","/html/body/div[1]/uni-app/div/div[2]/div[1]/div[2]"]
         #螺母对边
@@ -255,10 +330,21 @@ app_gxrw_sopqr_yjltjz=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrap
 app_gxrw_sopqr_sjsgz=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[15]/uni-view[2]"]
 
     #法兰抽检
+app_gxrw_flcj=["xpath","//uni-view[contains(@class, 'process-item') and text()='法兰抽检']"]
         # 提交按钮
 app_gxrw_flcj_dpjc_tj = ["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
 app_gxrw_flcj_=["xpath",""]
+app_gxrw_flcj_=["xpath",""]
+app_gxrw_flcj_=["xpath",""]
+app_gxrw_flcj_=["xpath",""]
+
     #完工确认
+app_gxrw_wgqr=["xpath","//uni-view[contains(@class, 'process-item') and text()='完工确认']"]
+app_gxrw_wgqr_=["xpath",""]
+app_gxrw_wgqr_=["xpath",""]
+app_gxrw_wgqr_=["xpath",""]
+app_gxrw_wgqr_=["xpath",""]
+
         # 提交按钮
 app_gxrw_wgqr_dpjc_tj = ["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
         #平行公差
@@ -272,10 +358,24 @@ app_gxrw_wgqr_dpzp=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper
         #保存
 app_gxrw_wgqr_bc=["xpath",""]
     #法兰校核
+app_gxrw_fljh=["xpath","//uni-view[contains(@class, 'process-item') and text()='法兰校核']"]
+
         # 提交按钮
 app_gxrw_fljh_dpjc_tj = ["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
 app_gxrw_fljh_=["xpath",""]
+app_gxrw_fljh_=["xpath",""]
+app_gxrw_fljh_=["xpath",""]
+app_gxrw_fljh_=["xpath",""]
+
     #螺栓抽检
+app_gxrw_lscj=["xpath","//uni-view[contains(@class, 'process-item') and text()='螺栓抽检']"]
+app_gxrw_lscj_=["xpath",""]
+app_gxrw_lscj_=["xpath",""]
+app_gxrw_lscj_=["xpath",""]
+app_gxrw_lscj_=["xpath",""]
+app_gxrw_lscj_=["xpath",""]
+
         # 提交按钮
 app_gxrw_lscj_dpjc_tj = ["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
 app_gxrw_lscj_=["xpath",""]
+
