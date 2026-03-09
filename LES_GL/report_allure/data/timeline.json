@@ -1,26 +1,26 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-  "name" : "timeline",
   "children" : [ {
     "name" : "Y-YU",
     "children" : [ {
-      "name" : "30508-MainThread",
+      "name" : "33016-MainThread",
       "children" : [ {
         "name" : "技术员填写工序数据",
-        "uid" : "bcfd84ac805745ff",
-        "parentUid" : "20dae58b2584377a28d86dd9be40dabe",
-        "status" : "passed",
+        "uid" : "3702de283cbf2126",
+        "parentUid" : "71e861e15d889c45bbcc0db6d4b03009",
+        "status" : "broken",
         "time" : {
-          "start" : 1772789694464,
-          "stop" : 1772789731672,
-          "duration" : 37208
+          "start" : 1773045739968,
+          "stop" : 1773045756805,
+          "duration" : 16837
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "20dae58b2584377a28d86dd9be40dabe"
+      "uid" : "71e861e15d889c45bbcc0db6d4b03009"
     } ],
     "uid" : "d8235af02a0b4ab572b70292f685faa2"
-  } ]
+  } ],
+  "name" : "timeline"
 }

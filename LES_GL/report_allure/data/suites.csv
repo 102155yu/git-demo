@@ -1,5 +1,5 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Fri Mar 06 17:34:54 CST 2026","Fri Mar 06 17:35:31 CST 2026","37208","testcase","gxrw_yzqr_bc","","","","技术员填写工序数据","
+"broken","Mon Mar 09 16:42:19 CST 2026","Mon Mar 09 16:42:36 CST 2026","16837","testcase","gxrw_fljh_bc","","","","技术员填写工序数据","
         用例编号：test_loin02
             用例标题：技术员填写工序数据
             前置条件：法兰添加了检修范围生成了工序任务

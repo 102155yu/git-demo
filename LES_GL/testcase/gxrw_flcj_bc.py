@@ -16,7 +16,7 @@ from LES_GL.page.login import *
 
 @allure.epic('LES系统APP端')
 @allure.feature('技术员APP页面')
-@allure.story('填写SOP确认工序数据')
+@allure.story('填写法兰抽检工序数据')
 @allure.title('技术员填写工序数据')
 @allure.severity('critical')
 def test_login02(browser):
@@ -37,7 +37,7 @@ def test_login02(browser):
     """
     # 窗口最大化操作（核心新增）
     # ========== 新增：窗口最大化 + 按F12键 ==========
-    with allure.step('窗口最大化'):
+    with allure.step('窗口最大化并按下F12键'):
         # 1. 窗口最大化（pyautogui模拟win+向上箭头，适配Windows系统）
         pyautogui.hotkey('win', 'up')
 
@@ -70,55 +70,72 @@ def test_login02(browser):
     #进入待处理页面点击任务
     with allure.step('点击任务'):
         wk.locator(*allPages.app_dljfw_gxcl_dcl_dj_01).click()
-        time.sleep(2)
-    #跳转至工序任务页面
-        #SOP确认页面
-        #点击SOP确认页签
-    with allure.step('点击页签SOP确认'):
-        wk.locator(*allPages.app_gxrw_sopqr).click()
-        time.sleep(3)
-        #点击工具类型
-    with allure.step('选择工具类型'):
-        wk.locator(*allPages.app_gxrw_sopqr_gjlx).click()
-        time.sleep(2)
-        # ActionChains(browser) \
-        #     .key_down(Keys.ENTER) \
-        #     .perform()
-        #选择工具类型
-    with allure.step('选择工具类型'):
-        wk.locator(*allPages.app_gxrw_sopqr_gjlx_yyfq).click()
-        time.sleep(10)
-    #     点击完成
-        #点击工具型号
-        #选择工具型号
-        #点击完成
-        #填写工具数量
-        #填写工具数量
-    with allure.step('填写工具数量'):
-        wk.locator(*allPages.app_gxrw_sopqr_gjsl).send_keys('2')
-        #填写摩擦系数
-    # with allure.step('填写摩擦系数'):
-    #     wk.locator(*allPages.app_gxrw_sopqr_mcxs).send_keys('0.1')
-    #     #填写A压
-    # with allure.step('填写A压'):
-    #     wk.locator(*allPages.app_gxrw_sopqr_Ay).send_keys('0.1')
-    #     #填写B压
-    # with allure.step('填写B压'):
-    #     wk.locator(*allPages.app_gxrw_sopqr_By).send_keys('0.1')
 
+    #跳转至工序任务页面
+        #法兰抽检页面
+        #点击法兰抽检页签
+    with allure.step('点击页签法兰抽检'):
+        wk.locator(*allPages.app_gxrw_flcj).click()
+        # 关键等待：给弹窗加载留足够时间（可根据实际情况调整秒数）
+        #点击紧固压力
+    with allure.step('点击紧固压力'):
+        wk.locator(*allPages.app_gxrw_flcj_jgyl).click()
+        # 点击抽检前照片
+    with allure.step('点击抽检前照片'):
+        wk.locator(*allPages.app_gxrw_flcj_cjqzp).click()
+        time.sleep(2)
+        # 输入图片路径并按回车确认（模拟手动输入文件地址）
+    with allure.step('输入图片路径并确认上传'):
+            # 输入图片绝对路径，r前缀避免反斜杠转义
+        pyautogui.typewrite(r'C:\Users\chens\Pictures\1.jpg', interval=0.1)
+            # 连续按3次回车（适配弹窗的确认逻辑）
+        pyautogui.press(keys='ENTER', presses=3)
+        time.sleep(2)
+
+        #点击抽检公差
+    with allure.step('点击抽检公差'):
+        wk.locator(*allPages.app_gxrw_flcj_cjgc).click()
+        #点击抽检公差确定
+    with allure.step('点击抽检公差确定'):
+        wk.locator(*allPages.app_gxrw_flcj_cjgc_qd).click()
+        # 点击校验公差1
+    with allure.step('点击校验公差1'):
+        wk.locator(*allPages.app_gxrw_flcj_jygc).click()
+        # time.sleep(2)
+        # 点击校验公差1确定
+    with allure.step('点击校验公差1确定'):
+        wk.locator(*allPages.app_gxrw_flcj_jygc_qd).click()
+        # 点击校验公差2
+    with allure.step('点击校验公差2'):
+        wk.locator(*allPages.app_gxrw_flcj_jygc_2).click()
+        # time.sleep(2)
+        # 点击校验公差2确定
+    with allure.step('点击校验公差2确定'):
+        wk.locator(*allPages.app_gxrw_flcj_jygc_qd_2).click()
+
+        # 点击抽检过程照片
+    with allure.step('点击抽检过程照片'):
+        wk.locator(*allPages.app_gxrw_flcj_cjgczp).click()
+        time.sleep(2)
+        # 输入图片路径并按回车确认（模拟手动输入文件地址）
+    with allure.step('输入图片路径并确认上传'):
+            # 输入图片绝对路径，r前缀避免反斜杠转义
+        pyautogui.typewrite(r'C:\Users\chens\Pictures\1.jpg', interval=0.1)
+            # 连续按3次回车（适配弹窗的确认逻辑）
+        pyautogui.press(keys='ENTER', presses=3)
     # #点击提交按钮提交任务
     # with allure.step('点击提交任务'):
     #     wk.locator(*allPages.app_gxrw_flgp_tj).click()
     #点击保存按钮保存任务
     with allure.step('点击保存任务'):
-        wk.locator(*allPages.app_gxrw_sopqr_bc).click()
+        wk.locator(*allPages.app_gxrw_flcx_bc).click()
         time.sleep(3)
     #点击法兰挂牌页签
     with allure.step('点击页签法兰挂牌'):
         wk.locator(*allPages.app_gxrw_flgp).click()
 
-        # 点击SOP确认页签
-    with allure.step('点击页签SOP确认'):
-        wk.locator(*allPages.app_gxrw_yzqr).click()
+        # 点击法兰抽检页签
+    with allure.step('点击页签法兰抽检'):
+        wk.locator(*allPages.app_gxrw_flcj).click()
 
     time.sleep(10)
