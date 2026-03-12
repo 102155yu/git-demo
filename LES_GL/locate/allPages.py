@@ -94,13 +94,13 @@ fwjh_dljfwjh_tj =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/d
             #年月
 fwjh_dljfwjh_ny =["xpath",]
             #计划名称
-fwjh_dljfwjh_jhmc =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[4]/div[2]/div[1]/div/div/section[1]/form/div/div[2]/div/div/div/div/input"]
+fwjh_dljfwjh_jhmc =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[8]/div[2]/div[1]/div/div/section[1]/form/div/div[2]/div/div/div/div/input"]
             #检修类型
-fwjh_dljfwjh_jxlx =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[4]/div[2]/div[1]/div/div/section[1]/form/div/div[3]/div/div/div[1]/div/div[1]/div[2]/span"]
+fwjh_dljfwjh_jxlx =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[8]/div[2]/div[1]/div/div/section[1]/form/div/div[3]/div/div/div/div/div[1]/div[2]/span"]
             #计划开始日期
-fwjh_dljfwjh_kssj =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[4]/div[2]/div[1]/div/div/section[1]/form/div/div[4]/div/div/div/div/input"]
+fwjh_dljfwjh_kssj =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[8]/div[2]/div[1]/div/div/section[1]/form/div/div[4]/div/div/div/div/input"]
             #计划结束日期
-fwjh_dljfwjh_jssj =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[4]/div[2]/div[1]/div/div/section[1]/form/div/div[5]/div/div/div/div/input"]
+fwjh_dljfwjh_jssj =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[8]/div[2]/div[1]/div/div/section[1]/form/div/div[5]/div/div/div/div/input"]
             #关联进行中计划
 fwjh_dljfwjh_gljxzjh =["xpath",]
             #关联历史计划
@@ -110,7 +110,7 @@ fwjh_dljfwjh_qyjl =["xpath",]
             #监理方
 fwjh_dljfwjh_jlf =["xpath",]
             #保存按钮
-fwjh_dljfwjh_bc =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[4]/div[2]/div[1]/div/div/section[1]/div[2]/button/span"]
+fwjh_dljfwjh_bc =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[8]/div[2]/div[1]/div/div/section[1]/div[2]/button/span"]
             #下派按钮
 fwjh_dljfwjh_xp =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[4]/div[1]/div/div[2]/button[1]/span"]
         # 检修范围配置
@@ -397,6 +397,8 @@ app_gxrw_fljh_pxgc_qd=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrap
 app_gxrw_fljh_jhry=["xpath",""]
         #签名
 app_gxrw_fljh_qm=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[9]/uni-view/uni-view"]
+            #签名框
+app_gxrw_fljh_qm_qmk=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[9]/uni-view/uni-view[2]/uni-view[2]/uni-canvas"]
         #保存
 app_gxrw_fljh_bc=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[1]"]
 

@@ -1,5 +1,5 @@
 {
-  "c63ee7f62c10c50803335ac7f16fcc54" : {
+  "7c78cddd53a2b7e7c264d6bdfa29eabf" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 1,
@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3702de283cbf2126",
+      "uid" : "5909a2112a2d1dd5",
       "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <uni-view data-v-320c675d=\"\" class=\"width400\" style=\"border: 2px solid red\">...</uni-view> is not clickable at point (713, 613). Other element would receive the click: <uni-view data-v-ced01b3d=\"\" class=\"\" name=\"content\" style=\"opacity: 1; position: fixed; display: flex; flex-direction: column; inset: 0px; justify-content: center; align-items: center; border-radius: 0px; transition: opacity 0.3s, -webkit-transform, transform; transform-origin: 50% 50%;\">...</uni-view>\n  (Session info: chrome=139.0.7207.2)\nStacktrace:\n\tGetHandleVerifier [0x0x7ff6b0362665+77205]\n\tGetHandleVerifier [0x0x7ff6b03626c0+77296]\n\t(No symbol) [0x0x7ff6b0119a3a]\n\t(No symbol) [0x0x7ff6b0178429]\n\t(No symbol) [0x0x7ff6b0175dc2]\n\t(No symbol) [0x0x7ff6b0172e11]\n\t(No symbol) [0x0x7ff6b0171d11]\n\t(No symbol) [0x0x7ff6b0163448]\n\t(No symbol) [0x0x7ff6b019864a]\n\t(No symbol) [0x0x7ff6b0162cf6]\n\t(No symbol) [0x0x7ff6b0198860]\n\t(No symbol) [0x0x7ff6b01c08af]\n\t(No symbol) [0x0x7ff6b0198423]\n\t(No symbol) [0x0x7ff6b0161511]\n\t(No symbol) [0x0x7ff6b01622a3]\n\tGetHandleVerifier [0x0x7ff6b064389d+3096525]\n\tGetHandleVerifier [0x0x7ff6b063dc5d+3072909]\n\tGetHandleVerifier [0x0x7ff6b065d74d+3202685]\n\tGetHandleVerifier [0x0x7ff6b037b9fe+180526]\n\tGetHandleVerifier [0x0x7ff6b0382fdf+210703]\n\tGetHandleVerifier [0x0x7ff6b036b304+113204]\n\tGetHandleVerifier [0x0x7ff6b036b4b9+113641]\n\tGetHandleVerifier [0x0x7ff6b0352238+10600]\n\tBaseThreadInitThunk [0x0x7ffe9109e8d7+23]\n\tRtlUserThreadStart [0x0x7ffe91c0c40c+44]",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=139.0.7207.2)\nStacktrace:\n\tGetHandleVerifier [0x0x7ff6b0362665+77205]\n\tGetHandleVerifier [0x0x7ff6b03626c0+77296]\n\t(No symbol) [0x0x7ff6b011986c]\n\t(No symbol) [0x0x7ff6b0169b02]\n\t(No symbol) [0x0x7ff6b0167869]\n\t(No symbol) [0x0x7ff6b019864a]\n\t(No symbol) [0x0x7ff6b0162cf6]\n\t(No symbol) [0x0x7ff6b0198860]\n\t(No symbol) [0x0x7ff6b01c08af]\n\t(No symbol) [0x0x7ff6b0198423]\n\t(No symbol) [0x0x7ff6b0161511]\n\t(No symbol) [0x0x7ff6b01622a3]\n\tGetHandleVerifier [0x0x7ff6b064389d+3096525]\n\tGetHandleVerifier [0x0x7ff6b063dc5d+3072909]\n\tGetHandleVerifier [0x0x7ff6b065d74d+3202685]\n\tGetHandleVerifier [0x0x7ff6b037b9fe+180526]\n\tGetHandleVerifier [0x0x7ff6b0382fdf+210703]\n\tGetHandleVerifier [0x0x7ff6b036b304+113204]\n\tGetHandleVerifier [0x0x7ff6b036b4b9+113641]\n\tGetHandleVerifier [0x0x7ff6b0352238+10600]\n\tBaseThreadInitThunk [0x0x7ffe9109e8d7+23]\n\tRtlUserThreadStart [0x0x7ffe91c0c40c+44]",
       "time" : {
-        "start" : 1773045739968,
-        "stop" : 1773045756805,
-        "duration" : 16837
+        "start" : 1773129978149,
+        "stop" : 1773130043480,
+        "duration" : 65331
       }
     } ]
   }

@@ -93,6 +93,22 @@ def test_login02(browser):
         #点击签字
     with allure.step('点击签字'):
         wk.locator(*allPages.app_gxrw_fljh_qm).click()
+        #调整成手机模式
+    with allure.step('调整成手机模式'):
+
+        pyautogui.press("F12")
+        time.sleep(2)
+        pyautogui.hotkey('ctrl', 'shift', 'm')
+        time.sleep(2)
+        #定位签字框
+    with allure.step("定位签字框"):
+        wk.locator(*allPages.app_gxrw_fljh_qm_qmk).click()
+        clickable = browser.find_element(By.ID,"click")
+        ActionChains(browser)\
+            .click(clickable)\
+            .move_by_offset(13,15)\
+            .perform()
+        time.sleep(5)
 
 
     # #点击提交按钮提交任务

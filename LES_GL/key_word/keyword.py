@@ -7,6 +7,8 @@ from selenium.webdriver.support import expected_conditions as ec
 import os
 import threading
 import pyautogui
+import time
+
 
 #定义工具类（进行关键字驱动）
 class WebKeys:
@@ -73,6 +75,7 @@ class WebKeys:
         new_value = current + 1
         self.write_counter(new_value)
         return new_value
+
 
     #日期控件（保留原有注释，后续可补充）
     # wait.until(ec.visibility_of_element_located(locator)).send_keys("2022‐09‐30")
