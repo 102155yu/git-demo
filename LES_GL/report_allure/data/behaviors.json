@@ -6,22 +6,22 @@
     "children" : [ {
       "name" : "技术员APP页面",
       "children" : [ {
-        "name" : "填写简易模式工序数据",
+        "name" : "填写法兰校核工序数据",
         "children" : [ {
           "name" : "技术员填写工序数据",
-          "uid" : "5909a2112a2d1dd5",
-          "parentUid" : "b998583aad7d25a483f959472c6d48ab",
+          "uid" : "4ba55fff9dc7973d",
+          "parentUid" : "730880fae8d371e8e5197dd22c4d23a0",
           "status" : "broken",
           "time" : {
-            "start" : 1773129978149,
-            "stop" : 1773130043480,
-            "duration" : 65331
+            "start" : 1773281899975,
+            "stop" : 1773281915831,
+            "duration" : 15856
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         } ],
-        "uid" : "b998583aad7d25a483f959472c6d48ab"
+        "uid" : "730880fae8d371e8e5197dd22c4d23a0"
       } ],
       "uid" : "6d00d1e374c58c7b39f9be89758231a6"
     } ],

@@ -4,22 +4,22 @@
   "children" : [ {
     "name" : "testcase",
     "children" : [ {
-      "name" : "gxrw_jyms_bc",
+      "name" : "1",
       "children" : [ {
         "name" : "技术员填写工序数据",
-        "uid" : "5909a2112a2d1dd5",
-        "parentUid" : "247c6b9c853731fda8a333ed093de39a",
+        "uid" : "4ba55fff9dc7973d",
+        "parentUid" : "1cbda1f4d79ba4b85a0fe2878730dd7a",
         "status" : "broken",
         "time" : {
-          "start" : 1773129978149,
-          "stop" : 1773130043480,
-          "duration" : 65331
+          "start" : 1773281899975,
+          "stop" : 1773281915831,
+          "duration" : 15856
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "247c6b9c853731fda8a333ed093de39a"
+      "uid" : "1cbda1f4d79ba4b85a0fe2878730dd7a"
     } ],
     "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
   } ]

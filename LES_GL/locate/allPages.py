@@ -398,7 +398,7 @@ app_gxrw_fljh_jhry=["xpath",""]
         #签名
 app_gxrw_fljh_qm=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[9]/uni-view/uni-view"]
             #签名框
-app_gxrw_fljh_qm_qmk=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[9]/uni-view/uni-view[2]/uni-view[2]/uni-canvas"]
+app_gxrw_fljh_qm_qmk=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[9]/uni-view/uni-view[2]/uni-view[2]/uni-canvas/div"]
         #保存
 app_gxrw_fljh_bc=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[1]"]
 

@@ -1,5 +1,5 @@
 {
-  "7c78cddd53a2b7e7c264d6bdfa29eabf" : {
+  "65c69eb06ecbdc5fcd3c9132fd9b7425" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 1,
@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5909a2112a2d1dd5",
+      "uid" : "4ba55fff9dc7973d",
       "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=139.0.7207.2)\nStacktrace:\n\tGetHandleVerifier [0x0x7ff6b0362665+77205]\n\tGetHandleVerifier [0x0x7ff6b03626c0+77296]\n\t(No symbol) [0x0x7ff6b011986c]\n\t(No symbol) [0x0x7ff6b0169b02]\n\t(No symbol) [0x0x7ff6b0167869]\n\t(No symbol) [0x0x7ff6b019864a]\n\t(No symbol) [0x0x7ff6b0162cf6]\n\t(No symbol) [0x0x7ff6b0198860]\n\t(No symbol) [0x0x7ff6b01c08af]\n\t(No symbol) [0x0x7ff6b0198423]\n\t(No symbol) [0x0x7ff6b0161511]\n\t(No symbol) [0x0x7ff6b01622a3]\n\tGetHandleVerifier [0x0x7ff6b064389d+3096525]\n\tGetHandleVerifier [0x0x7ff6b063dc5d+3072909]\n\tGetHandleVerifier [0x0x7ff6b065d74d+3202685]\n\tGetHandleVerifier [0x0x7ff6b037b9fe+180526]\n\tGetHandleVerifier [0x0x7ff6b0382fdf+210703]\n\tGetHandleVerifier [0x0x7ff6b036b304+113204]\n\tGetHandleVerifier [0x0x7ff6b036b4b9+113641]\n\tGetHandleVerifier [0x0x7ff6b0352238+10600]\n\tBaseThreadInitThunk [0x0x7ffe9109e8d7+23]\n\tRtlUserThreadStart [0x0x7ffe91c0c40c+44]",
+      "statusDetails" : "TypeError: ActionChains.click() takes from 1 to 2 positional arguments but 3 were given",
       "time" : {
-        "start" : 1773129978149,
-        "stop" : 1773130043480,
-        "duration" : 65331
+        "start" : 1773281899975,
+        "stop" : 1773281915831,
+        "duration" : 15856
       }
     } ]
   }
