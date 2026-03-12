@@ -318,14 +318,14 @@ app_gxrw_sopqr_flmgk=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapp
         #摩擦系数
 app_gxrw_sopqr_mcxs=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[9]/uni-view[2]/uni-view/uni-input/div/input"]
         #T1A
-app_gxrw_sopqr_T1A=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[10]/uni-view[2]"]
+app_gxrw_sopqr_T1A=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[10]/uni-view[2]/uni-view/uni-input/div/input"]
         #T1B
-app_gxrw_sopqr_T1B=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[11]/uni-view[2]"]
+app_gxrw_sopqr_T1B=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[11]/uni-view[2]/uni-view/uni-input/div/input"]
         #A压
-app_gxrw_sopqr_Ay=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[12]/uni-view[2]"]
+app_gxrw_sopqr_Ay=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[12]/uni-view[2]/uni-view/uni-input/div/input"]
         #B压
-app_gxrw_sopqr_By=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[13]/uni-view[2]"]
-        #预紧力推荐值
+app_gxrw_sopqr_By=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[13]/uni-view[2]/uni-view/uni-input/div/input"]
+         #预紧力推荐值
 app_gxrw_sopqr_yjltjz=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[14]/uni-view[2]"]
         #实际施工值
 app_gxrw_sopqr_sjsgz=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[15]/uni-view[2]"]

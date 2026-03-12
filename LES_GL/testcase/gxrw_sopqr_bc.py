@@ -5,8 +5,8 @@ import allure
 from selenium.webdriver import ActionChains, Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
-
 from selenium.webdriver.support.wait import WebDriverWait
+from selenium.common.exceptions import TimeoutException, ElementNotInteractableException
 
 from LES_GL.VAR.BOOKHOUSER_VAR import *
 from LES_GL.key_word.keyword import WebKeys
@@ -14,6 +14,39 @@ from LES_GL.locate import allPages
 from LES_GL.locate.allPages import *
 from LES_GL.page.login import *
 
+# 新增通用函数：等待元素可交互 + 无值则填写
+def fill_if_empty(wait, wk, locator, fill_value, field_name):
+    """
+    :param wait: WebDriverWait实例
+    :param wk: WebKeys实例
+    :param locator: 元素定位器（元组）
+    :param fill_value: 要填写的值
+    :param field_name: 字段名称（用于报告/日志）
+    """
+    try:
+        # 等待元素可交互（最长10秒），解决"未加载完成/不可交互"问题
+        ele = wait.until(
+            EC.element_to_be_clickable(locator)
+        )
+        # 聚焦到输入框（解决遮挡/未激活问题）
+        ele.click()
+        # 获取输入框当前值（兼容value属性/文本内容）
+        current_value = ele.get_attribute('value') or ele.text or ''
+        current_value = current_value.strip()
+
+        if not current_value:
+            # 清空原有空值（避免输入叠加）+ 输入值
+            ele.clear()
+            ele.send_keys(fill_value)
+            allure.attach(f'{field_name}为空，已填写{fill_value}', '操作说明')
+        else:
+            allure.attach(f'{field_name}已有值：{current_value}，无需填写', '操作说明')
+    except TimeoutException:
+        allure.attach(f'{field_name}元素超时未加载，跳过填写', '异常说明')
+        raise  # 抛出异常，让用例失败（也可根据需求改为continue）
+    except ElementNotInteractableException:
+        allure.attach(f'{field_name}元素不可交互，跳过填写', '异常说明')
+        raise
 @allure.epic('LES系统APP端')
 @allure.feature('技术员APP页面')
 @allure.story('填写SOP确认工序数据')
@@ -109,6 +142,37 @@ def test_login02(browser):
     # #点击提交按钮提交任务
     # with allure.step('点击提交任务'):
     #     wk.locator(*allPages.app_gxrw_flgp_tj).click()
+    # ========== 核心修复：使用通用函数处理字段填写 ==========
+    # 处理摩擦系数
+    with allure.step('填写摩擦系数（无值时填写）'):
+        fill_if_empty(
+            wait=wait,
+            wk=wk,
+            locator=allPages.app_gxrw_sopqr_mcxs,
+            fill_value='0.1',
+            field_name='摩擦系数'
+        )
+
+        # 处理A压
+    with allure.step('填写T1@A（无值时填写）'):
+        fill_if_empty(
+            wait=wait,
+            wk=wk,
+            locator=allPages.app_gxrw_sopqr_T1A,
+            fill_value='0.1',
+            field_name='A压'
+        )
+
+        # 处理B压
+    with allure.step('填写T1@B（无值时填写）'):
+        fill_if_empty(
+            wait=wait,
+            wk=wk,
+            locator=allPages.app_gxrw_sopqr_T1B,
+            fill_value='0.1',
+            field_name='B压'
+        )
+
     #点击保存按钮保存任务
     with allure.step('点击保存任务'):
         wk.locator(*allPages.app_gxrw_sopqr_bc).click()
