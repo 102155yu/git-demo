@@ -1,26 +1,26 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
-  "name" : "suites",
   "children" : [ {
     "name" : "testcase",
     "children" : [ {
-      "name" : "1",
+      "name" : "gxrw_lscj_bc",
       "children" : [ {
         "name" : "技术员填写工序数据",
-        "uid" : "4ba55fff9dc7973d",
-        "parentUid" : "1cbda1f4d79ba4b85a0fe2878730dd7a",
-        "status" : "broken",
+        "uid" : "e3c275fd32acf2e9",
+        "parentUid" : "ccab4ef1fc65abb1f731985413a4d122",
+        "status" : "passed",
         "time" : {
-          "start" : 1773281899975,
-          "stop" : 1773281915831,
-          "duration" : 15856
+          "start" : 1773301239685,
+          "stop" : 1773301268544,
+          "duration" : 28859
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "1cbda1f4d79ba4b85a0fe2878730dd7a"
+      "uid" : "ccab4ef1fc65abb1f731985413a4d122"
     } ],
     "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
-  } ]
+  } ],
+  "name" : "suites"
 }

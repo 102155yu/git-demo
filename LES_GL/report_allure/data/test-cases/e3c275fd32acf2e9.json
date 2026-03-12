@@ -1,0 +1,288 @@
+{
+  "uid" : "e3c275fd32acf2e9",
+  "name" : "技术员填写工序数据",
+  "fullName" : "testcase.gxrw_lscj_bc#test_login02",
+  "historyId" : "1a425de6766f29132c351599e3e0189b",
+  "time" : {
+    "start" : 1773301239685,
+    "stop" : 1773301268544,
+    "duration" : 28859
+  },
+  "description" : "\n        用例编号：test_loin02\n            用例标题：技术员填写工序数据\n            前置条件：法兰添加了检修范围生成了工序任务\n            测试步骤：\n                1.登录技术员账号\n                2.填写对应工序任务信息\n                3.提交工序任务\n                4.完成工序任务\n\n            预期结果；工序任务提交无报错\n\n    :param browser:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>    用例编号：test_loin02\n        用例标题：技术员填写工序数据\n        前置条件：法兰添加了检修范围生成了工序任务\n        测试步骤：\n            1.登录技术员账号\n            2.填写对应工序任务信息\n            3.提交工序任务\n            4.完成工序任务\n\n        预期结果；工序任务提交无报错\n\n:param browser:\n:return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1773301238542,
+      "stop" : 1773301239684,
+      "duration" : 1142
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        用例编号：test_loin02\n            用例标题：技术员填写工序数据\n            前置条件：法兰添加了检修范围生成了工序任务\n            测试步骤：\n                1.登录技术员账号\n                2.填写对应工序任务信息\n                3.提交工序任务\n                4.完成工序任务\n\n            预期结果；工序任务提交无报错\n\n    :param browser:\n    :return:\n    ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "窗口最大化并按下F12键",
+      "time" : {
+        "start" : 1773301239685,
+        "stop" : 1773301239790,
+        "duration" : 105
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "进入APP端",
+      "time" : {
+        "start" : 1773301239790,
+        "stop" : 1773301248290,
+        "duration" : 8500
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "点击工序处理",
+      "time" : {
+        "start" : 1773301248290,
+        "stop" : 1773301250344,
+        "duration" : 2054
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "点击项目名称",
+      "time" : {
+        "start" : 1773301250344,
+        "stop" : 1773301252409,
+        "duration" : 2065
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "选择项目",
+      "time" : {
+        "start" : 1773301252409,
+        "stop" : 1773301254467,
+        "duration" : 2058
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "点击待处理",
+      "time" : {
+        "start" : 1773301254467,
+        "stop" : 1773301254538,
+        "duration" : 71
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "点击任务",
+      "time" : {
+        "start" : 1773301254538,
+        "stop" : 1773301254890,
+        "duration" : 352
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "点击螺栓抽检页签",
+      "time" : {
+        "start" : 1773301254890,
+        "stop" : 1773301255038,
+        "duration" : 148
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "填写实际施工值",
+      "time" : {
+        "start" : 1773301255038,
+        "stop" : 1773301255103,
+        "duration" : 65
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "点击保存任务",
+      "time" : {
+        "start" : 1773301255103,
+        "stop" : 1773301258410,
+        "duration" : 3307
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "点击页签法兰挂牌",
+      "time" : {
+        "start" : 1773301258410,
+        "stop" : 1773301258475,
+        "duration" : 65
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "点击螺栓抽检页签",
+      "time" : {
+        "start" : 1773301258475,
+        "stop" : 1773301258543,
+        "duration" : 68
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 12,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1773301268544,
+      "stop" : 1773301270690,
+      "duration" : 2146
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "填写螺栓抽检工序数据"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "epic",
+    "value" : "LES系统APP端"
+  }, {
+    "name" : "feature",
+    "value" : "技术员APP页面"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "gxrw_lscj_bc"
+  }, {
+    "name" : "host",
+    "value" : "Y-YU"
+  }, {
+    "name" : "thread",
+    "value" : "25800-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.gxrw_lscj_bc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e3c275fd32acf2e9.json",
+  "parameterValues" : [ ]
+}

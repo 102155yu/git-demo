@@ -1,21 +1,20 @@
 {
-  "65c69eb06ecbdc5fcd3c9132fd9b7425" : {
+  "1a425de6766f29132c351599e3e0189b" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4ba55fff9dc7973d",
-      "status" : "broken",
-      "statusDetails" : "TypeError: ActionChains.click() takes from 1 to 2 positional arguments but 3 were given",
+      "uid" : "e3c275fd32acf2e9",
+      "status" : "passed",
       "time" : {
-        "start" : 1773281899975,
-        "stop" : 1773281915831,
-        "duration" : 15856
+        "start" : 1773301239685,
+        "stop" : 1773301268544,
+        "duration" : 28859
       }
     } ]
   }

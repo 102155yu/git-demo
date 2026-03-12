@@ -36,6 +36,13 @@ def test_login02(browser):
     :return:
     """
     # 窗口最大化操作（核心新增）
+    # ========== 关键：适配你屏幕的坐标（根据截图调整） ==========
+    # 步骤1：运行代码到“调整成手机模式”后暂停，手动获取以下坐标：
+    # 1. 签字框绿色框的中心坐标（鼠标移到中心，看PyAutoGUI坐标：pyautogui.position()）
+    SIGN_CENTER_X = 600  # 替换为你屏幕的实际X坐标（示例：180）
+    SIGN_CENTER_Y = 800  # 替换为你屏幕的实际Y坐标（示例：400）
+    # 2. 笔画长度（绿色框宽度的1/4，避免越界）
+    STROKE_LEN = 30  # 可根据实际调整（示例：30px）
     # ========== 新增：窗口最大化 + 按F12键 ==========
     with allure.step('窗口最大化并按下F12键'):
         # 1. 窗口最大化（pyautogui模拟win+向上箭头，适配Windows系统）
@@ -81,15 +88,56 @@ def test_login02(browser):
         pyautogui.press("F12")
         time.sleep(2)
         pyautogui.hotkey('ctrl', 'shift', 'm')
+        time.sleep(8)
+        # 定位签字框
+        # 定位签字框（Canvas）并在正中间绘制“王”字
+    with allure.step("在签字框正中间绘制“王”字"):
+        try:
+            # 步骤1：移动到签字框中心，激活绘制区域
+            pyautogui.moveTo(SIGN_CENTER_X, SIGN_CENTER_Y, duration=0.5)
+            pyautogui.click()  # 激活Canvas
+            time.sleep(0.5)
+
+            # 步骤2：绘制“王”字（以中心为基准）
+            # 第一横：中心向左→向右
+            pyautogui.mouseDown(x=SIGN_CENTER_X - STROKE_LEN, y=SIGN_CENTER_Y - STROKE_LEN)
+            pyautogui.moveTo(x=SIGN_CENTER_X + STROKE_LEN, y=SIGN_CENTER_Y - STROKE_LEN, duration=0.2)
+            pyautogui.mouseUp()
+            time.sleep(0.2)
+
+            # 中间竖：中心向上→向下
+            pyautogui.mouseDown(x=SIGN_CENTER_X, y=SIGN_CENTER_Y - STROKE_LEN)
+            pyautogui.moveTo(x=SIGN_CENTER_X, y=SIGN_CENTER_Y + STROKE_LEN, duration=0.2)
+            pyautogui.mouseUp()
+            time.sleep(0.2)
+
+            # 第二横：中心向左→向右
+            pyautogui.mouseDown(x=SIGN_CENTER_X - STROKE_LEN, y=SIGN_CENTER_Y)
+            pyautogui.moveTo(x=SIGN_CENTER_X + STROKE_LEN, y=SIGN_CENTER_Y, duration=0.2)
+            pyautogui.mouseUp()
+            time.sleep(0.2)
+
+            allure.attach(
+                f"绘制完成：中心坐标({SIGN_CENTER_X},{SIGN_CENTER_Y})，笔画长度{STROKE_LEN}",
+                "绘制结果",
+                allure.attachment_type.TEXT
+            )
+        except Exception as e:
+            allure.attach(f"绘制失败：{str(e)}", "错误信息", allure.attachment_type.TEXT)
+            raise
+        # 停留查看绘制效果
+        #切换电脑模式，定位保存按钮点击保存
+    with allure.step("点击签字框中的保存"):
+        pyautogui.press("F12")
         time.sleep(2)
-        #定位签字框
-    with allure.step("定位签字框"):
-        action.click(*allPages.app_gxrw_fljh_qm_qmk)\
-            .move_by_offset(13,15)\
-            .perform()
-        time.sleep(20)
+        wk.locator(*allPages.app_gxrw_fljh_qm_qmk_bc).click()
 
+        #点击保存，保存签名
+    with allure.step("点击保存，保存签名"):
 
+        wk.locator(*allPages.app_gxrw_fljh_bc).click()
+
+        time.sleep(10)
     # # #点击提交按钮提交任务
     # # with allure.step('点击提交任务'):
     # #     wk.locator(*allPages.app_gxrw_wgqr_tj).click()

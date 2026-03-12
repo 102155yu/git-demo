@@ -1,26 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "name" : "categories",
-  "children" : [ {
-    "name" : "Test defects",
-    "children" : [ {
-      "name" : "TypeError: ActionChains.click() takes from 1 to 2 positional arguments but 3 were given",
-      "children" : [ {
-        "name" : "技术员填写工序数据",
-        "uid" : "4ba55fff9dc7973d",
-        "parentUid" : "49bdfd8785990c54947f5e7135d5344b",
-        "status" : "broken",
-        "time" : {
-          "start" : 1773281899975,
-          "stop" : 1773281915831,
-          "duration" : 15856
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "49bdfd8785990c54947f5e7135d5344b"
-    } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
-  } ]
+  "children" : [ ],
+  "name" : "categories"
 }

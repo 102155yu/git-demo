@@ -23,6 +23,7 @@ class LoginPage(WebKeys):
         self.locator(*page_login_indexPwd).send_keys(passwd)
         self.locator(*page_login_loginBtn).click()
 
+    #登录APP操作
     def loginapp(self, url, username, passwd):
         self.open(url)
             # 实例化Wait

@@ -1,30 +1,30 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
-  "name" : "behaviors",
   "children" : [ {
     "name" : "LES系统APP端",
     "children" : [ {
       "name" : "技术员APP页面",
       "children" : [ {
-        "name" : "填写法兰校核工序数据",
+        "name" : "填写螺栓抽检工序数据",
         "children" : [ {
           "name" : "技术员填写工序数据",
-          "uid" : "4ba55fff9dc7973d",
-          "parentUid" : "730880fae8d371e8e5197dd22c4d23a0",
-          "status" : "broken",
+          "uid" : "e3c275fd32acf2e9",
+          "parentUid" : "d1568a3ced0c2f038e68278a1d1f9183",
+          "status" : "passed",
           "time" : {
-            "start" : 1773281899975,
-            "stop" : 1773281915831,
-            "duration" : 15856
+            "start" : 1773301239685,
+            "stop" : 1773301268544,
+            "duration" : 28859
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         } ],
-        "uid" : "730880fae8d371e8e5197dd22c4d23a0"
+        "uid" : "d1568a3ced0c2f038e68278a1d1f9183"
       } ],
       "uid" : "6d00d1e374c58c7b39f9be89758231a6"
     } ],
     "uid" : "33d09a809878df57e1e13f99b14febcf"
-  } ]
+  } ],
+  "name" : "behaviors"
 }
