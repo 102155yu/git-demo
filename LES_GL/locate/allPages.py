@@ -191,7 +191,7 @@ app_dljfw_gxcl_dcl_dj_01=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-w
 #项目名称
 app_gxcl_xmmc =['xpath','/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/div[1]']
     #输入框查询
-app_gxcl_xmmc_srk=['xpath',"//div[contains(@class, 'model-item') and contains(text(), '2026年03月流程测试1-1北京源诚')]"]
+app_gxcl_xmmc_srk=['xpath',"//div[contains(@class, 'model-item') and contains(text(), '2026年03月新测试流程北京源诚')]"]
     #法兰挂牌
 app_gxrw_flgp=["xpath",'//uni-view[contains(@class, "process-item") and text()="法兰挂牌"]']
         #法兰挂牌照片

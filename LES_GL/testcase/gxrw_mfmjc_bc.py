@@ -45,6 +45,7 @@ def test_login02(browser):
     #实例化Wait
     wait = WebDriverWait(browser,10)
     wk = WebKeys(browser)
+    jyms_executor = GxrwJymsExecutor(browser)
     #进入登录
     with allure.step('进入APP端'):
         login_app = LoginPage(browser)
@@ -74,34 +75,37 @@ def test_login02(browser):
     #跳转至工序任务页面
         #密封面检查页面
         #点击密封面检查页签
-    with allure.step('点击密封面检查页签'):
-        wk.locator(*allPages.app_gxrw_mfmjc).click()
-        # 关键等待：给弹窗加载留足够时间（可根据实际情况调整秒数）
-        # 点击密封面照片上传密封面照片
-    with allure.step('点击密封面照片'):
-        wk.locator(*allPages.app_gxrw_mfmjc_mfmzp).click()
-        time.sleep(2)
-        # 输入图片路径并按回车确认（模拟手动输入文件地址）
-    with allure.step('输入图片路径并确认上传'):
-            # 输入图片绝对路径，r前缀避免反斜杠转义
-        pyautogui.typewrite(r'C:\Users\chens\Pictures\1.jpg', interval=0.1)
-            # 连续按3次回车（适配弹窗的确认逻辑）
-        pyautogui.press(keys='ENTER', presses=3)
-        time.sleep(2)
+    # with allure.step('点击密封面检查页签'):
+    #     wk.locator(*allPages.app_gxrw_mfmjc).click()
+    #     # 关键等待：给弹窗加载留足够时间（可根据实际情况调整秒数）
+    #     # 点击密封面照片上传密封面照片
+    # with allure.step('点击密封面照片'):
+    #     wk.locator(*allPages.app_gxrw_mfmjc_mfmzp).click()
+    #     time.sleep(2)
+    #     # 输入图片路径并按回车确认（模拟手动输入文件地址）
+    # with allure.step('输入图片路径并确认上传'):
+    #         # 输入图片绝对路径，r前缀避免反斜杠转义
+    #     pyautogui.typewrite(r'C:\Users\chens\Pictures\1.jpg', interval=0.1)
+    #         # 连续按3次回车（适配弹窗的确认逻辑）
+    #     pyautogui.press(keys='ENTER', presses=3)
+    #     time.sleep(2)
 
     # #点击提交按钮提交任务
     # with allure.step('点击提交任务'):
     #     wk.locator(*allPages.app_gxrw_flgp_tj).click()
-    #点击保存按钮保存任务
-    with allure.step('点击保存任务'):
-        wk.locator(*allPages.app_gxrw_mfmjc_bc).click()
-        time.sleep(3)
-    #点击法兰挂牌页签
-    with allure.step('点击页签法兰挂牌'):
-        wk.locator(*allPages.app_gxrw_flgp).click()
-
-        # 点击密封面检查页签
-    with allure.step('点击密封面检查页签'):
-        wk.locator(*allPages.app_gxrw_mfmjc).click()
+    # 点击提交按钮提交任务
+    with allure.step('做密封面检查工序'):
+        jyms_executor.execute_full_gxrw_mfmjc_flow()
+    # #点击保存按钮保存任务
+    # with allure.step('点击保存任务'):
+    #     wk.locator(*allPages.app_gxrw_mfmjc_bc).click()
+    #     time.sleep(3)
+    # #点击法兰挂牌页签
+    # with allure.step('点击页签法兰挂牌'):
+    #     wk.locator(*allPages.app_gxrw_flgp).click()
+    #
+    #     # 点击密封面检查页签
+    # with allure.step('点击密封面检查页签'):
+    #     wk.locator(*allPages.app_gxrw_mfmjc).click()
 
     time.sleep(10)
