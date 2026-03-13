@@ -7,13 +7,13 @@
       "name" : "2",
       "children" : [ {
         "name" : "技术员填写标准工序数据",
-        "uid" : "c314cbf4b5dc8d78",
+        "uid" : "da8e6b94e42d3e0d",
         "parentUid" : "a934bd1a5df4255b33bfdaaec0c6678b",
-        "status" : "broken",
+        "status" : "passed",
         "time" : {
-          "start" : 1773394401111,
-          "stop" : 1773394429501,
-          "duration" : 28390
+          "start" : 1773395131798,
+          "stop" : 1773395173368,
+          "duration" : 41570
         },
         "flaky" : false,
         "newFailed" : false,

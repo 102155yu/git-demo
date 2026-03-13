@@ -1,26 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ {
-    "name" : "Test defects",
-    "children" : [ {
-      "name" : "AttributeError: 'bytes' object has no attribute 'visibility_of_element_located'",
-      "children" : [ {
-        "name" : "技术员填写标准工序数据",
-        "uid" : "c314cbf4b5dc8d78",
-        "parentUid" : "a925ca12249525a9e425512bab9423f6",
-        "status" : "broken",
-        "time" : {
-          "start" : 1773394401111,
-          "stop" : 1773394429501,
-          "duration" : 28390
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "a925ca12249525a9e425512bab9423f6"
-    } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
-  } ]
+  "children" : [ ]
 }
