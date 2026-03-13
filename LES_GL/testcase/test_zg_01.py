@@ -69,7 +69,7 @@ def test_login02(browser):
             # 调用计数器自增方法，获取最新值
         counter_value = wk.increment_counter()
             # 拼接唯一名称（前缀可自定义）
-        plan_name = f"源诚服务-web-yja-{counter_value}"
+        plan_name = f"测试专工调整计划-web-yja-{counter_value}"
             # 输入计划名称
         wk.locator(*allPages.fwjh_dljfwjh_jhmc).send_keys(plan_name)
             # 打印日志，方便调试

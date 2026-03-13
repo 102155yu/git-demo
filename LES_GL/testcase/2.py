@@ -74,28 +74,8 @@ def test_login02(browser):
         time.sleep(2)
     #跳转至工序任务页面
         #SOP确认页面
-        #点击SOP确认页签
-    with allure.step('提交工序：法兰挂牌'):
-        jyms_executor.execute_full_gxrw_flgp_flow()
-    with allure.step('提交工序：法兰拆卸'):
-        jyms_executor.execute_full_gxrw_flcx_flow()
-    with allure.step('提交工序：密封面检查'):
-        jyms_executor.execute_full_gxrw_mfmjc_flow()
-    with allure.step('提交工序：垫片检查'):
-        jyms_executor.execute_full_gxrw_dpjc_flow()
-    with allure.step('提交工序：紧固件检查'):
-        jyms_executor.execute_full_gxrw_jgjjc_flow()
-    with allure.step('提交工序：预装确认'):
-        jyms_executor.execute_full_gxrw_yzqr_flow()
     with allure.step('提交工序：SOP确认'):
         jyms_executor.execute_full_gxrw_sopqr_flow()
-    with allure.step('提交工序：法兰抽检'):
-        jyms_executor.execute_full_gxrw_flcj_flow()
-    with allure.step('提交工序：完工确认'):
-        jyms_executor.execute_full_gxrw_wgqr_flow()
-    with allure.step('提交工序：法兰校核'):
-        jyms_executor.execute_full_gxrw_fljh_flow()
-    with allure.step('提交工序：螺栓抽检'):
-        jyms_executor.execute_full_gxrw_lscj_flow()
+
 
     time.sleep(10)

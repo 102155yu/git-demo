@@ -2,21 +2,21 @@
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "name" : "packages",
   "children" : [ {
-    "name" : "testcase.gxrw_jyms_bc",
+    "name" : "testcase.2",
     "children" : [ {
-      "name" : "技术员填写工序数据",
-      "uid" : "54f18bdaf80751a7",
-      "parentUid" : "ce08309bea627186cbb5dc167554047f",
-      "status" : "passed",
+      "name" : "技术员填写标准工序数据",
+      "uid" : "c314cbf4b5dc8d78",
+      "parentUid" : "32bd38f967fa528ff4aaf341655747af",
+      "status" : "broken",
       "time" : {
-        "start" : 1773371035089,
-        "stop" : 1773371123927,
-        "duration" : 88838
+        "start" : 1773394401111,
+        "stop" : 1773394429501,
+        "duration" : 28390
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     } ],
-    "uid" : "testcase.gxrw_jyms_bc"
+    "uid" : "testcase.2"
   } ]
 }

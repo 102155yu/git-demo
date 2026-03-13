@@ -1,7 +1,11 @@
 """
     封装：函数、类（方法）
 """
+from telnetlib import EC
+
+import allure
 from selenium import webdriver
+from selenium.common import TimeoutException, ElementNotInteractableException
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 import os
@@ -76,6 +80,38 @@ class WebKeys:
         self.write_counter(new_value)
         return new_value
 
+    def fill_if_empty(wait, wk, locator, fill_value, field_name):
+        """
+        :param wait: WebDriverWait实例
+        :param wk: WebKeys实例
+        :param locator: 元素定位器（元组）
+        :param fill_value: 要填写的值
+        :param field_name: 字段名称（用于报告/日志）
+        """
+        try:
+            # 等待元素可交互（最长10秒），解决"未加载完成/不可交互"问题
+            ele = wait.until(
+                EC.element_to_be_clickable(locator)
+            )
+            # 聚焦到输入框（解决遮挡/未激活问题）
+            ele.click()
+            # 获取输入框当前值（兼容value属性/文本内容）
+            current_value = ele.get_attribute('value') or ele.text or ''
+            current_value = current_value.strip()
 
+            if not current_value:
+                # 清空原有空值（避免输入叠加）+ 输入值
+                ele.clear()
+                ele.send_keys(fill_value)
+                allure.attach(f'{field_name}为空，已填写{fill_value}', '操作说明')
+            else:
+                allure.attach(f'{field_name}已有值：{current_value}，无需填写', '操作说明')
+        except TimeoutException:
+            allure.attach(f'{field_name}元素超时未加载，跳过填写', '异常说明')
+            raise  # 抛出异常，让用例失败（也可根据需求改为continue）
+        except ElementNotInteractableException:
+            allure.attach(f'{field_name}元素不可交互，跳过填写', '异常说明')
+            raise
     #日期控件（保留原有注释，后续可补充）
     # wait.until(ec.visibility_of_element_located(locator)).send_keys("2022‐09‐30")
+        # 重构后的 fill_if_empty 方法（移除多余的wait/wk参数）

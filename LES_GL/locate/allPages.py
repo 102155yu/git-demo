@@ -112,24 +112,24 @@ fwjh_dljfwjh_jlf =["xpath",]
             #保存按钮
 fwjh_dljfwjh_bc =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[8]/div[2]/div[1]/div/div/section[1]/div[2]/button/span"]
             #下派按钮
-fwjh_dljfwjh_xp =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[4]/div[1]/div/div[2]/button[1]/span"]
+fwjh_dljfwjh_xp =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[8]/div[1]/div/div[2]/button[1]/span"]
         # 检修范围配置
             #添加按钮
-fwjh_dljfwjh_jxfwpz_tj =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[4]/div[2]/div[1]/div/div/section[2]/div[2]/div/div/button[1]/span"]
-                #服务商
-fwjh_dljfwjh_jxfwpz_fws =["xpath","/html/body/div[4]/div/div/div/form/div/div[1]/div/div/div/div"]
+fwjh_dljfwjh_jxfwpz_tj =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[8]/div[2]/div[1]/div/div/section[2]/div[2]/div/div/button[1]/span"]
+            #服务商
+fwjh_dljfwjh_jxfwpz_fws =["xpath","/html/body/div[4]/div/div/div/form/div/div[1]/div/div/div/div/div[1]/div[1]"]
                 #装置
-fwjh_dljfwjh_jxfwpz_zz =["xpath","/html/body/div[4]/div/div/div/form/div/div[2]/div/div/div/div"]
+fwjh_dljfwjh_jxfwpz_zz =["xpath","/html/body/div[4]/div/div/div/form/div/div[2]/div/div/div/div/div[1]/div[1]"]
                 #装置法兰总量
 fwjh_dljfwjh_jxfwpz_zzflzl =["xpath",""]
                 #计划检修量
-fwjh_dljfwjh_jxfwpz_jhjxl =["xpath","/html/body/div[4]/div/div/div/form/div/div[4]/div/div/div[1]/div/input"]
+fwjh_dljfwjh_jxfwpz_jhjxl =["xpath","/html/body/div[4]/div/div/div/form/div/div[4]/div/div/div/div/input"]
                 #服务模式
-fwjh_dljfwjh_jxfwpz_fwms =["xpath","/html/body/div[4]/div/div/div/form/div/div[5]/div/div/div/div/div[1]/div[2]/span"]
+fwjh_dljfwjh_jxfwpz_fwms =["xpath","/html/body/div[4]/div/div/div/form/div/div[5]/div/div/div/div/div[1]/div[2]"]
                 #确定按钮
 fwjh_dljfwjh_jxfwpz_qd =["xpath","/html/body/div[4]/div/div/footer/button[2]/span"]
                 #取消按钮
-fwjh_dljfwjh_jxfwpz_qx =["xpath",]
+fwjh_dljfwjh_jxfwpz_qx =["xpath","/html/body/div[4]/div/div/footer/button[1]/span"]
             #批量删除按钮
 fwjh_dljfwjh_jxfwpz_plsc =["xpath",]
             #编辑
@@ -274,7 +274,8 @@ app_gxrw_yzqr_dpjc_tj = ["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wr
 app_gxrw_yzqr_jgzp=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[10]/uni-view/uni-view/uni-view/uni-view/uni-view"]
         #保存
 app_gxrw_yzqr_bc=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[1]"]
-app_gxrw_yzqr_=["xpath",""]
+        #提交
+app_gxrw_yzqr_tj=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
 app_gxrw_yzqr_=["xpath",""]
 app_gxrw_yzqr_=["xpath",""]
 app_gxrw_yzqr_=["xpath",""]
@@ -355,7 +356,7 @@ app_gxrw_flcj_cjgczp=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapp
         #保存
 app_gxrw_flcj_bc=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[1]"]
         #提交
-app_gxrw_flcj_=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
+app_gxrw_flcj_tj=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
 app_gxrw_flcj_=["xpath",""]
 
     #完工确认
@@ -403,8 +404,8 @@ app_gxrw_fljh_qm_qmk=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapp
 app_gxrw_fljh_qm_qmk_bc = ["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[3]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[9]/uni-view/uni-view[2]/uni-view[2]/uni-view/uni-button[2]"]
         #保存
 app_gxrw_fljh_bc=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[1]"]
-
-app_gxrw_fljh_=["xpath",""]
+        #提交
+app_gxrw_fljh_tj=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
 app_gxrw_fljh_=["xpath",""]
 
     #螺栓抽检
