@@ -13,8 +13,6 @@ from LES_GL.locate import allPages
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, ElementNotInteractableException
 
-from LES_GL.testcase.gxrw_jyms_bc import fill_if_empty
-
 
 #以页面或组件为单位，封装常用的行为代码和页面元素定位代码
 class LoginPage(WebKeys):
@@ -237,34 +235,58 @@ class GxrwJymsExecutor:
         with allure.step('填写工具数量'):
             wk.locator(*allPages.app_gxrw_sopqr_gjsl).send_keys('2')
 
-        # 通用函数填充字段
-        with allure.step('填写摩擦系数（无值时填写）'):
-            fill_if_empty(
-                wait=wait,
-                wk=wk,
+        # # 通用函数填充字段
+        # with allure.step('填写摩擦系数（无值时填写）'):
+        #     fill_if_empty(
+        #         wait=wait,
+        #         wk=wk,
+        #         locator=allPages.app_gxrw_sopqr_mcxs,
+        #         fill_value='0.1',
+        #         field_name='摩擦系数'
+        #     )
+        # with allure.step('填写T1@A（无值时填写）'):
+        #     fill_if_empty(
+        #         wait=wait,
+        #         wk=wk,
+        #         locator=allPages.app_gxrw_sopqr_T1A,
+        #         fill_value='0.1',
+        #         field_name='A压'
+        #     )
+        # with allure.step('填写T1@B（无值时填写）'):
+        #     fill_if_empty(
+        #         wait=wait,
+        #         wk=wk,
+        #         locator=allPages.app_gxrw_sopqr_T1B,
+        #         fill_value='0.1',
+        #         field_name='B压'
+        #     )
+    # 填写摩擦系数（调用WebKeys中的fill_if_empty方法）
+
+        with allure.step('填写摩擦系数'):
+            self.wk.fill_if_empty(
                 locator=allPages.app_gxrw_sopqr_mcxs,
                 fill_value='0.1',
                 field_name='摩擦系数'
             )
-        with allure.step('填写T1@A（无值时填写）'):
-            fill_if_empty(
-                wait=wait,
-                wk=wk,
+
+            # 填写A压（调用WebKeys中的fill_if_empty方法）
+        with allure.step('填写T1A'):
+            self.wk.fill_if_empty(
                 locator=allPages.app_gxrw_sopqr_T1A,
                 fill_value='0.1',
-                field_name='A压'
+                field_name='T1@A Pressure'
             )
-        with allure.step('填写T1@B（无值时填写）'):
-            fill_if_empty(
-                wait=wait,
-                wk=wk,
+
+            # 填写B压（调用WebKeys中的fill_if_empty方法）
+        with allure.step('填写T1B'):
+            self.wk.fill_if_empty(
                 locator=allPages.app_gxrw_sopqr_T1B,
                 fill_value='0.1',
-                field_name='B压'
+                field_name='T1@B Pressure'
             )
-        with allure.step('点击提交任务'):
-            wk.locator(*allPages.app_gxrw_sopqr_tj).click()
-            time.sleep(3)
+            with allure.step('点击提交任务'):
+                wk.locator(*allPages.app_gxrw_sopqr_tj).click()
+                time.sleep(3)
     def execute_full_gxrw_flcj_flow(self):
         # 法兰抽检页面
         # 点击法兰抽检页签

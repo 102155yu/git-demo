@@ -1,22 +1,22 @@
 {
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-  "name" : "packages",
   "children" : [ {
     "name" : "testcase.2",
     "children" : [ {
       "name" : "技术员填写标准工序数据",
-      "uid" : "da8e6b94e42d3e0d",
+      "uid" : "bebac42425b7603e",
       "parentUid" : "32bd38f967fa528ff4aaf341655747af",
       "status" : "passed",
       "time" : {
-        "start" : 1773395131798,
-        "stop" : 1773395173368,
-        "duration" : 41570
+        "start" : 1773396117362,
+        "stop" : 1773396159118,
+        "duration" : 41756
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     } ],
     "uid" : "testcase.2"
-  } ]
+  } ],
+  "name" : "packages"
 }

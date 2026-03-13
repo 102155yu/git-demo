@@ -1,6 +1,5 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
-  "name" : "behaviors",
   "children" : [ {
     "name" : "LES系统APP端",
     "children" : [ {
@@ -9,13 +8,13 @@
         "name" : "填写标准工序数据",
         "children" : [ {
           "name" : "技术员填写标准工序数据",
-          "uid" : "da8e6b94e42d3e0d",
+          "uid" : "bebac42425b7603e",
           "parentUid" : "7b2445819494685c39b2518fab1e5adb",
           "status" : "passed",
           "time" : {
-            "start" : 1773395131798,
-            "stop" : 1773395173368,
-            "duration" : 41570
+            "start" : 1773396117362,
+            "stop" : 1773396159118,
+            "duration" : 41756
           },
           "flaky" : false,
           "newFailed" : false,
@@ -26,5 +25,6 @@
       "uid" : "6d00d1e374c58c7b39f9be89758231a6"
     } ],
     "uid" : "33d09a809878df57e1e13f99b14febcf"
-  } ]
+  } ],
+  "name" : "behaviors"
 }

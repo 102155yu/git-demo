@@ -1,19 +1,18 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
-  "name" : "suites",
   "children" : [ {
     "name" : "testcase",
     "children" : [ {
       "name" : "2",
       "children" : [ {
         "name" : "技术员填写标准工序数据",
-        "uid" : "da8e6b94e42d3e0d",
+        "uid" : "bebac42425b7603e",
         "parentUid" : "a934bd1a5df4255b33bfdaaec0c6678b",
         "status" : "passed",
         "time" : {
-          "start" : 1773395131798,
-          "stop" : 1773395173368,
-          "duration" : 41570
+          "start" : 1773396117362,
+          "stop" : 1773396159118,
+          "duration" : 41756
         },
         "flaky" : false,
         "newFailed" : false,
@@ -22,5 +21,6 @@
       "uid" : "a934bd1a5df4255b33bfdaaec0c6678b"
     } ],
     "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
-  } ]
+  } ],
+  "name" : "suites"
 }
