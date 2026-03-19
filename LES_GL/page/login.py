@@ -480,3 +480,63 @@ class GxrwJymsExecutor:
             # #点击提交按钮提交任务
         with allure.step('点击提交任务'):
             self.wk.locator(*allPages.app_gxrw_lscj_tj).click()
+
+    def execute_full_PM_cypz_flow(self):
+        #点击成员配置按钮
+        # 点击成员配置按钮
+        with allure.step('点击成员配置按钮'):
+            self.wk.locator(*allPages.xmgl_cypz).click()
+        # 进入成员配置页面
+        # 点击添加
+        with allure.step('点击添加'):
+            self.wk.locator(*allPages.xmgl_cypz_tj).click()
+            # 进入添加页面
+            # 点击下拉按钮
+        with allure.step('点击下拉按钮'):
+            self.wk.locator(*allPages.xmgl_cypz_tj_xl).click()
+            # 选择第三个人员勾选
+        with allure.step('勾选第三个人员'):
+            self.wk.locator(*allPages.xmgl_cypz_tj_03).click()
+            # 点击确定
+        with allure.step('点击确定'):
+            self.wk.locator(*allPages.xmgl_cypz_tj_qd).click()
+            # 点击返回
+        with allure.step('点击返回'):
+            self.wk.locator(*allPages.xmgl_cypz_fh).click()
+
+    def execute_full_PM_pzjxfw_flow(self):
+        #配置检修范围
+        # 点击检修范围
+        with allure.step('点击检修范围按钮'):
+            self.wk.locator(*allPages.xmgl_jxfw).click()
+
+        # 进入检修范围页面
+        # 点击下一页
+        # with allure.step('点击下一页'):
+        #     self.wk.locator(*allPages.xmgl_jxfw_xyy).click()
+        #     # 点击下一页
+        # with allure.step('点击下一页'):
+        #     self.wk.locator(*allPages.xmgl_jxfw_xyy).click()
+        # 选择第一个法兰点击勾选
+        # with allure.step('点击勾选第一个法兰'):
+        #     self.wk.locator(*allPages.xmgl_jxfw_gx_01).click()
+            # 点击勾选全部法兰
+        with allure.step('点击勾选全部法兰'):
+            self.wk.locator(*allPages.xmgl_jxfw_gx_01).click()
+            # 点击提交
+        with allure.step('点击提交'):
+            self.wk.locator(*allPages.xmgl_jxfw_tj).click()
+        # 弹出确认框
+        # 点击确定
+        with allure.step('点击确定'):
+            self.wk.locator(*allPages.xmgl_jxfw_tj_qr).click()
+
+        #点击返回
+        with allure.step('点击返回'):
+            self.wk.locator(*allPages.xmgl_jxfw_fh).click()
+
+    def execute_full_PM_jx_flow(self):
+        #结项
+        #上传结项资料
+        with allure.step('点击检修范围按钮'):
+            self.wk.locator(*allPages.xmgl_jxfw).click()

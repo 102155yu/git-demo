@@ -53,7 +53,7 @@ xmjl_gzt_db_cl=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div
 xmjl_gzt_db_ts_qr=["xpath","/html/body/div[12]/div/div/div[3]/button/span"]
 #项目管理页面
     #成员配置按钮
-xmgl_cypz=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div/div[1]/div[2]/button[1]/span"]
+xmgl_cypz=["xpath","//span[text()='成员配置']/parent::button"]
         #成员配置页面
             #添加按钮
 xmgl_cypz_tj=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[2]/div[1]/div/div/div/div[2]/div[2]/div/div/button[1]/span"]
@@ -66,25 +66,33 @@ xmgl_cypz_tj_qd=["xpath","/html/body/div[6]/div/div/footer/div/button[2]/span"]
             #返回按钮
 xmgl_cypz_fh=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[1]/button/span"]
     #推送设备员按钮
-xmgl_tssby=["xpath",""]
+xmgl_tssby=["xpath","//span[text()='推送设备员确认']/parent::button"]
     #检修范围按钮
 xmgl_jxfw=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div/div[1]/div[2]/button[3]/span"]
         #下一页按钮
 xmgl_jxfw_xyy=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[4]/button[2]/i"]
+        #全选
+xmgl_jxfw_gx_qx=["xpath",'<span class="el-checkbox__input"><input class="el-checkbox__original" type="checkbox" id="el-id-429-2327"><span class="el-checkbox__inner"></span></span>']
         #勾选1
 xmgl_jxfw_gx_01=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[3]/div/div[1]/div[3]/div/div[1]/div/table/tbody/tr[1]/td[1]/div/label/span/span"]
         #提交按钮
 xmgl_jxfw_tj=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div/div[1]/button[1]/span"]
         #提交页面-确认按钮
 xmgl_jxfw_tj_qr=["xpath","/html/body/div[7]/div/div/div[3]/button[2]/span"]
+        #返回按钮
+xmgl_jxfw_fh=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[1]/div[2]/button/span"]
     # 角色配置
-xmgl_jspz=["xpath",""]
+xmgl_jspz=["xpath","//span[text()='角色配置']/parent::button"]
     # 压测
-xmgl_yc=["xpath",""]
+xmgl_yc=["xpath","//span[text()='压测']/parent::button"]
     #结项
-xmgl_jx=["xpath",""]
+xmgl_jx=["xpath","//span[text()='结项']/parent::button"]
+xmgl_jx_=["xpath","//span[text()='上传结项材料']/parent::button"]
+xmgl_jx_=["xpath",""]
+xmgl_jx_=["xpath",""]
+
     # 返回
-xmgl_fh=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[1]/button/span"]
+xmgl_fh=["xpath","//span[text()='返回']/parent::button"]
 #服务计划管理
 fwjh =["xpath","/html/body/div[1]/div/div/div[2]/div/div[1]/div/ul/li[2]/div/span"]
     #定力矩服务计划
@@ -422,4 +430,22 @@ app_gxrw_lscj_=["xpath",""]
         # 提交按钮
 app_gxrw_lscj_dpjc_tj = ["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
 app_gxrw_lscj_=["xpath",""]
+#服务商管理
+    #添加
+jcsjgl_fwsgl_tj =["xpath","//span[text()='添加']/parent::button"]
+        #添加-服务商名称
+jcsjgl_fwsgl_tj_ =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div/div/div/form/div/div[1]/div/div/div/input"]
+        #添加-服务商简称
+jcsjgl_fwsgl_tj_ =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div/div/div/form/div/div[2]/div/div/div/input"]
 
+        #添加-服务商类型
+jcsjgl_fwsgl_tj_ =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div/div/div/form/div/div[3]/div/div/div/div[1]/div[2]/span"]
+
+        #添加-服务范围
+jcsjgl_fwsgl_tj_ =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div/div/div/form/div/div[4]/div/div/div/div[1]/div[2]/span"]
+
+        #添加-负责人
+jcsjgl_fwsgl_tj_ =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div/div/div/form/div/div[5]/div/div/div/input"]
+
+        #添加-联系方式
+jcsjgl_fwsgl_tj_ =["xpath",'<input class="el-input__inner" maxlength="11" type="text" autocomplete="off" tabindex="0" placeholder="请输入" id="el-id-429-2805">']

@@ -6,22 +6,22 @@
     "children" : [ {
       "name" : "技术员APP页面",
       "children" : [ {
-        "name" : "填写标准工序数据",
+        "name" : "填写简易模式数据",
         "children" : [ {
-          "name" : "技术员填写标准工序数据",
-          "uid" : "bb147f76c19e0fcd",
-          "parentUid" : "7b2445819494685c39b2518fab1e5adb",
+          "name" : "技术员填写简易工序数据",
+          "uid" : "ab9187af245cdc5f",
+          "parentUid" : "2abbcc9af5b7abfe438446842ef1bc9c",
           "status" : "passed",
           "time" : {
-            "start" : 1773891101323,
-            "stop" : 1773891254651,
-            "duration" : 153328
+            "start" : 1773898681630,
+            "stop" : 1773898775282,
+            "duration" : 93652
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         } ],
-        "uid" : "7b2445819494685c39b2518fab1e5adb"
+        "uid" : "2abbcc9af5b7abfe438446842ef1bc9c"
       } ],
       "uid" : "6d00d1e374c58c7b39f9be89758231a6"
     } ],
