@@ -273,7 +273,7 @@ class GxrwJymsExecutor:
         with allure.step('填写T1A'):
             self.wk.fill_if_empty(
                 locator=allPages.app_gxrw_sopqr_T1A,
-                fill_value='0.1',
+                fill_value='600',
                 field_name='T1@A Pressure'
             )
 
@@ -281,7 +281,7 @@ class GxrwJymsExecutor:
         with allure.step('填写T1B'):
             self.wk.fill_if_empty(
                 locator=allPages.app_gxrw_sopqr_T1B,
-                fill_value='0.1',
+                fill_value='600',
                 field_name='T1@B Pressure'
             )
             with allure.step('点击提交任务'):

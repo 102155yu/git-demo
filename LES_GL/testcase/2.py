@@ -68,14 +68,43 @@ def test_login02(browser):
     with allure.step('点击待处理'):
         wk.locator(*allPages.app_dljfw_gxcl_dcl).click()
 
-    #进入待处理页面点击任务
-    with allure.step('点击任务'):
-        wk.locator(*allPages.app_dljfw_gxcl_dcl_dj_01).click()
-        time.sleep(2)
-    #跳转至工序任务页面
-        #SOP确认页面
-    with allure.step('提交工序：SOP确认'):
-        jyms_executor.execute_full_gxrw_sopqr_flow()
+    # #进入待处理页面点击任务
+    # with allure.step('点击任务'):
+    #     wk.locator(*allPages.app_dljfw_gxcl_dcl_dj_01).click()
+    #     time.sleep(2)
+    # #跳转至工序任务页面
+    #     #SOP确认页面
+    # with allure.step('提交工序：SOP确认'):
+    #     jyms_executor.execute_full_gxrw_sopqr_flow()
+    # 循环执行20次SOP确认提交流程
+    for i in range(3):
+        with allure.step(f'第{i + 1}次执行：点击任务'):
+            # 每次循环都重新定位任务元素，避免元素失效
+            try:
+                task_element = wait.until(
+                    EC.element_to_be_clickable(allPages.app_dljfw_gxcl_dcl_dj_01)
+                )
+                task_element.click()
+                time.sleep(2)
+            except (TimeoutException, ElementNotInteractableException) as e:
+                allure.attach(f"第{i + 1}次点击任务失败: {str(e)}", name="错误信息",
+                              attachment_type=allure.attachment_type.TEXT)
+                continue
 
+        # 跳转至工序任务页面
+        # SOP确认页面
+        with allure.step(f'第{i + 1}次执行：提交工序：SOP确认'):
+            try:
+                jyms_executor.execute_full_gxrw_sopqr_flow()
+                allure.attach(f"第{i + 1}次SOP确认提交成功", name="执行结果",
+                              attachment_type=allure.attachment_type.TEXT)
+            except Exception as e:
+                allure.attach(f"第{i + 1}次SOP确认提交失败: {str(e)}", name="错误信息",
+                              attachment_type=allure.attachment_type.TEXT)
+                # 失败后可以选择继续下一次循环或退出
+                continue
+
+        # 每次提交后等待，确保页面稳定后再进行下一次操作
+        time.sleep(2)
 
     time.sleep(10)

@@ -69,7 +69,7 @@ def test_login02(browser):
             # 调用计数器自增方法，获取最新值
         counter_value = wk.increment_counter()
             # 拼接唯一名称（前缀可自定义）
-        plan_name = f"测试专工调整计划-web-yja-{counter_value}"
+        plan_name = f"测试扫码查看预紧力-web-yja-{counter_value}"
             # 输入计划名称
         wk.locator(*allPages.fwjh_dljfwjh_jhmc).send_keys(plan_name)
             # 打印日志，方便调试
@@ -145,7 +145,7 @@ def test_login02(browser):
     #点击确认保存检修范围
     with allure.step("点击确认保存检修范围"):
         wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_qd).click()
-    time.sleep(3)
+    time.sleep(30)
     #点击下派
     with allure.step("点击下派"):
         wk.locator(*allPages.fwjh_dljfwjh_xp).click()
