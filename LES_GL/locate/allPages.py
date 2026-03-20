@@ -430,22 +430,35 @@ app_gxrw_lscj_=["xpath",""]
         # 提交按钮
 app_gxrw_lscj_dpjc_tj = ["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[4]/uni-view[2]"]
 app_gxrw_lscj_=["xpath",""]
-#服务商管理
-    #添加
+
+"""基础数据管理"""
+jcsjgl=["xpath","//span[contains(@class, 'el-tooltip__trigger') and text()='基础数据管理']"]
+"委托方管理"
+jcsjgl_wtfgl=["xpath","//span[contains(@class, 'el-tooltip__trigger') and text()='委托方管理']"]
+"服务商管理"
+jcsjgl_fwsgl=["xpath","//span[contains(@class, 'el-tooltip__trigger') and text()='服务商管理']"]
+ #添加
 jcsjgl_fwsgl_tj =["xpath","//span[text()='添加']/parent::button"]
         #添加-服务商名称
-jcsjgl_fwsgl_tj_ =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div/div/div/form/div/div[1]/div/div/div/input"]
+jcsjgl_fwsgl_tj_fwsmc =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div/div/div/form/div/div[1]/div/div/div/input"]
         #添加-服务商简称
-jcsjgl_fwsgl_tj_ =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div/div/div/form/div/div[2]/div/div/div/input"]
+jcsjgl_fwsgl_tj_fwsjc =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div/div/div/form/div/div[2]/div/div/div/input"]
 
         #添加-服务商类型
-jcsjgl_fwsgl_tj_ =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div/div/div/form/div/div[3]/div/div/div/div[1]/div[2]/span"]
+jcsjgl_fwsgl_tj_fwslx =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div/div/div/form/div/div[3]/div/div/div/div[1]/div[2]/span"]
 
         #添加-服务范围
-jcsjgl_fwsgl_tj_ =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div/div/div/form/div/div[4]/div/div/div/div[1]/div[2]/span"]
+jcsjgl_fwsgl_tj_fwfw =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div/div/div/form/div/div[4]/div/div/div/div[1]/div[2]/span"]
 
         #添加-负责人
-jcsjgl_fwsgl_tj_ =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div/div/div/form/div/div[5]/div/div/div/input"]
+jcsjgl_fwsgl_tj_fzr =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div/div/div/form/div/div[5]/div/div/div/input"]
 
         #添加-联系方式
-jcsjgl_fwsgl_tj_ =["xpath",'<input class="el-input__inner" maxlength="11" type="text" autocomplete="off" tabindex="0" placeholder="请输入" id="el-id-429-2805">']
+jcsjgl_fwsgl_tj_lxfs =["xpath",'/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div/div/div/form/div/div[6]/div/div/div/input']
+        #添加—确认
+jcsjgl_fwsgl_tj_qr =["xpath","//span[text()='确认']/parent::button"]
+        #添加-取消
+jcsjgl_fwsgl_tj_qx =["xpath","//span[text()='取消']/parent::button"]
+"服务商信息管理"
+"设备信息管理"
+

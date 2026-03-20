@@ -1,5 +1,5 @@
 import time
-
+from selenium.webdriver import ActionChains ,Keys
 import allure
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -540,3 +540,48 @@ class GxrwJymsExecutor:
         #上传结项资料
         with allure.step('点击检修范围按钮'):
             self.wk.locator(*allPages.xmgl_jxfw).click()
+
+    def execute_full_zg_fwsgl_flow(self):
+        #新建服务商
+        #添加服务商
+        with allure.step('点击添加按钮'):
+            self.wk.locator(*allPages.jcsjgl_fwsgl_tj).click()
+
+        #填写服务商名称
+        with allure.step('填写服务商名称'):
+            self.wk.locator(*allPages.jcsjgl_fwsgl_tj_fwsmc).send_keys("源城测绘")
+
+        #填写服务商简称
+        with allure.step('填写服务商简称'):
+            self.wk.locator(*allPages.jcsjgl_fwsgl_tj_fwsjc).send_keys("YCCH")
+
+        #填写服务商类型
+        with allure.step('填写服务商类型'):
+            self.wk.locator(*allPages.jcsjgl_fwsgl_tj_fwslx)
+            ActionChains(self.browser) \
+                .send_keys("技术服务") \
+                .key_down(Keys.DOWN) \
+                .key_down(Keys.ENTER) \
+                .perform()
+
+
+        #选择服务范围
+        with allure.step('选择服务范围'):
+            self.wk.locator(*allPages.jcsjgl_fwsgl_tj_fwfw)
+            ActionChains(self.browser) \
+                .send_keys("定力矩服务") \
+                .key_down(Keys.DOWN) \
+                .key_down(Keys.ENTER) \
+                .perform()
+
+        #填写负责人
+        with allure.step('填写负责人'):
+            self.wk.locator(*allPages.jcsjgl_fwsgl_tj_fzr).send_keys("李学谦")
+
+        #填写联系方式
+        with allure.step('填写联系方式'):
+            self.wk.locator(*allPages.jcsjgl_fwsgl_tj_lxfs).send_keys('18911773995')
+
+        #点击确认
+        with allure.step('点击确认'):
+            self.wk.locator(*allPages.jcsjgl_fwsgl_tj_qr).click()

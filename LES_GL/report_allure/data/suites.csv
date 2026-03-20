@@ -1,15 +1,16 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Mar 19 13:38:01 CST 2026","Thu Mar 19 13:39:35 CST 2026","93652","testcase","gxrw_jyms_tj","","","","技术员填写简易工序数据","
+"broken","Fri Mar 20 14:37:59 CST 2026","Fri Mar 20 14:38:13 CST 2026","14188","testcase","test_PC","","","","专工创建计划","
         用例编号：test_loin02
-            用例标题：技术员填写工序数据
-            前置条件：法兰添加了检修范围生成了工序任务
+            用例标题：登录
+            前置条件：登录
             测试步骤：
-                1.登录技术员账号
-                2.填写对应工序任务信息
-                3.提交工序任务
-                4.完成工序任务
+                1登录进入首页
+                2.选择服务计划管理菜单
+                3.点击定力矩服务计划菜单
+                4.点击添加定力矩服务计划
+                5.下派成功
 
-            预期结果；工序任务提交无报错
+            预期结果；专工建立计划下派成功
 
     :param browser:
     :return:
