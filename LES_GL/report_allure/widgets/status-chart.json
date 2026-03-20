@@ -1,11 +1,11 @@
 [ {
-  "uid" : "29198ca50d812264",
-  "name" : "专工创建计划",
+  "uid" : "f39ff3824fa1e6dc",
+  "name" : "技术员填写简易工序数据（循环10次）",
   "time" : {
-    "start" : 1773988679113,
-    "stop" : 1773988693301,
-    "duration" : 14188
+    "start" : 1773993391575,
+    "stop" : 1773993981869,
+    "duration" : 590294
   },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "critical"
 } ]

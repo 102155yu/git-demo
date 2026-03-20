@@ -2,29 +2,29 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "LES系统",
+    "name" : "LES系统APP端",
     "children" : [ {
-      "name" : "登录",
+      "name" : "技术员APP页面",
       "children" : [ {
-        "name" : "典型场景",
+        "name" : "填写简易模式数据",
         "children" : [ {
-          "name" : "专工创建计划",
-          "uid" : "29198ca50d812264",
-          "parentUid" : "62fd82adebdcc2ad5b5f55c4dcaa8169",
-          "status" : "broken",
+          "name" : "技术员填写简易工序数据（循环10次）",
+          "uid" : "f39ff3824fa1e6dc",
+          "parentUid" : "2abbcc9af5b7abfe438446842ef1bc9c",
+          "status" : "passed",
           "time" : {
-            "start" : 1773988679113,
-            "stop" : 1773988693301,
-            "duration" : 14188
+            "start" : 1773993391575,
+            "stop" : 1773993981869,
+            "duration" : 590294
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         } ],
-        "uid" : "62fd82adebdcc2ad5b5f55c4dcaa8169"
+        "uid" : "2abbcc9af5b7abfe438446842ef1bc9c"
       } ],
-      "uid" : "235d2a4d911fde3d04e9a0ed3cc76a88"
+      "uid" : "6d00d1e374c58c7b39f9be89758231a6"
     } ],
-    "uid" : "6811519b2e8d73eb8610a9f48418a4b2"
+    "uid" : "33d09a809878df57e1e13f99b14febcf"
   } ]
 }

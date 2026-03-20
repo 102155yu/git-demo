@@ -445,10 +445,10 @@ jcsjgl_fwsgl_tj_fwsmc =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/di
 jcsjgl_fwsgl_tj_fwsjc =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div/div/div/form/div/div[2]/div/div/div/input"]
 
         #添加-服务商类型
-jcsjgl_fwsgl_tj_fwslx =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div/div/div/form/div/div[3]/div/div/div/div[1]/div[2]/span"]
+jcsjgl_fwsgl_tj_fwslx =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div/div/div/form/div/div[3]/div/div/div/div[2]"]
 
         #添加-服务范围
-jcsjgl_fwsgl_tj_fwfw =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div/div/div/form/div/div[4]/div/div/div/div[1]/div[2]/span"]
+jcsjgl_fwsgl_tj_fwfw =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div/div/div/form/div/div[4]/div/div/div/div[1]"]
 
         #添加-负责人
 jcsjgl_fwsgl_tj_fzr =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div/div/div/form/div/div[5]/div/div/div/input"]
@@ -456,7 +456,7 @@ jcsjgl_fwsgl_tj_fzr =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[
         #添加-联系方式
 jcsjgl_fwsgl_tj_lxfs =["xpath",'/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div/div/div/form/div/div[6]/div/div/div/input']
         #添加—确认
-jcsjgl_fwsgl_tj_qr =["xpath","//span[text()='确认']/parent::button"]
+jcsjgl_fwsgl_tj_qd =["xpath","//span[text()='确定']/parent::button"]
         #添加-取消
 jcsjgl_fwsgl_tj_qx =["xpath","//span[text()='取消']/parent::button"]
 "服务商信息管理"

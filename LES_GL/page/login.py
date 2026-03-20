@@ -354,18 +354,7 @@ class GxrwJymsExecutor:
         # 点击完工确认页签
         with allure.step('点击完工确认页签'):
             self.wk.locator(*allPages.app_gxrw_wgqr).click()
-            # 关键等待：给弹窗加载留足够时间（可根据实际情况调整秒数）
-            # 点击垫片照片上传垫片照片
-        with allure.step('点击垫片照片'):
-            self.wk.locator(*allPages.app_gxrw_wgqr_dpzp).click()
-            time.sleep(2)
-            # 输入图片路径并按回车确认（模拟手动输入文件地址）
-        with allure.step('输入图片路径并确认上传'):
-            # 输入图片绝对路径，r前缀避免反斜杠转义
-            pyautogui.typewrite(r'C:\Users\chens\Pictures\1.jpg', interval=0.1)
-            # 连续按3次回车（适配弹窗的确认逻辑）
-            pyautogui.press(keys='ENTER', presses=3)
-            time.sleep(2)
+
 
         # #点击提交按钮提交任务
         with allure.step('点击提交任务'):
@@ -401,63 +390,63 @@ class GxrwJymsExecutor:
         with allure.step('平行公差填写'):
             self.wk.locator(*allPages.app_gxrw_fljh_pxgc_qd).click()
 
-            # 点击签字
-        with allure.step('点击签字'):
-            self.wk.locator(*allPages.app_gxrw_fljh_qm).click()
-            # 调整成手机模式
-        with allure.step('调整成手机模式'):
-
-            pyautogui.press("F12")
-            time.sleep(2)
-            pyautogui.hotkey('ctrl', 'shift', 'm')
-            time.sleep(2)
-            # 定位签字框
-            # 定位签字框（Canvas）并在正中间绘制“王”字
-        with allure.step("在签字框正中间绘制“王”字"):
-            try:
-                # 步骤1：移动到签字框中心，激活绘制区域
-                pyautogui.moveTo(SIGN_CENTER_X, SIGN_CENTER_Y, duration=0.5)
-                pyautogui.click()  # 激活Canvas
-                time.sleep(0.5)
-
-                # 步骤2：绘制“王”字（以中心为基准）
-                # 第一横：中心向左→向右
-                pyautogui.mouseDown(x=SIGN_CENTER_X - STROKE_LEN, y=SIGN_CENTER_Y - STROKE_LEN)
-                pyautogui.moveTo(x=SIGN_CENTER_X + STROKE_LEN, y=SIGN_CENTER_Y - STROKE_LEN, duration=0.2)
-                pyautogui.mouseUp()
-                time.sleep(0.2)
-
-                # 中间竖：中心向上→向下
-                pyautogui.mouseDown(x=SIGN_CENTER_X, y=SIGN_CENTER_Y - STROKE_LEN)
-                pyautogui.moveTo(x=SIGN_CENTER_X, y=SIGN_CENTER_Y + STROKE_LEN, duration=0.2)
-                pyautogui.mouseUp()
-                time.sleep(0.2)
-
-                # 第二横：中心向左→向右
-                pyautogui.mouseDown(x=SIGN_CENTER_X - STROKE_LEN, y=SIGN_CENTER_Y)
-                pyautogui.moveTo(x=SIGN_CENTER_X + STROKE_LEN, y=SIGN_CENTER_Y, duration=0.2)
-                pyautogui.mouseUp()
-                time.sleep(0.2)
-
-                allure.attach(
-                    f"绘制完成：中心坐标({SIGN_CENTER_X},{SIGN_CENTER_Y})，笔画长度{STROKE_LEN}",
-                    "绘制结果",
-                    allure.attachment_type.TEXT
-                )
-            except Exception as e:
-                allure.attach(f"绘制失败：{str(e)}", "错误信息", allure.attachment_type.TEXT)
-                raise
-            # 停留查看绘制效果
-            # 切换电脑模式，定位保存按钮点击保存
-        with allure.step("点击签字框中的保存"):
-            pyautogui.press("F12")
-            time.sleep(2)
-            self.wk.locator(*allPages.app_gxrw_fljh_qm_qmk_bc).click()
-
-            # 点击保存，保存签名
-        with allure.step("点击保存，保存签名"):
-
-            self.wk.locator(*allPages.app_gxrw_fljh_bc).click()
+        #     # 点击签字
+        # with allure.step('点击签字'):
+        #     self.wk.locator(*allPages.app_gxrw_fljh_qm).click()
+        #     # 调整成手机模式
+        # with allure.step('调整成手机模式'):
+        #
+        #     pyautogui.press("F12")
+        #     time.sleep(2)
+        #     pyautogui.hotkey('ctrl', 'shift', 'm')
+        #     time.sleep(2)
+        #     # 定位签字框
+        #     # 定位签字框（Canvas）并在正中间绘制“王”字
+        # with allure.step("在签字框正中间绘制“王”字"):
+        #     try:
+        #         # 步骤1：移动到签字框中心，激活绘制区域
+        #         pyautogui.moveTo(SIGN_CENTER_X, SIGN_CENTER_Y, duration=0.5)
+        #         pyautogui.click()  # 激活Canvas
+        #         time.sleep(0.5)
+        #
+        #         # 步骤2：绘制“王”字（以中心为基准）
+        #         # 第一横：中心向左→向右
+        #         pyautogui.mouseDown(x=SIGN_CENTER_X - STROKE_LEN, y=SIGN_CENTER_Y - STROKE_LEN)
+        #         pyautogui.moveTo(x=SIGN_CENTER_X + STROKE_LEN, y=SIGN_CENTER_Y - STROKE_LEN, duration=0.2)
+        #         pyautogui.mouseUp()
+        #         time.sleep(0.2)
+        #
+        #         # 中间竖：中心向上→向下
+        #         pyautogui.mouseDown(x=SIGN_CENTER_X, y=SIGN_CENTER_Y - STROKE_LEN)
+        #         pyautogui.moveTo(x=SIGN_CENTER_X, y=SIGN_CENTER_Y + STROKE_LEN, duration=0.2)
+        #         pyautogui.mouseUp()
+        #         time.sleep(0.2)
+        #
+        #         # 第二横：中心向左→向右
+        #         pyautogui.mouseDown(x=SIGN_CENTER_X - STROKE_LEN, y=SIGN_CENTER_Y)
+        #         pyautogui.moveTo(x=SIGN_CENTER_X + STROKE_LEN, y=SIGN_CENTER_Y, duration=0.2)
+        #         pyautogui.mouseUp()
+        #         time.sleep(0.2)
+        #
+        #         allure.attach(
+        #             f"绘制完成：中心坐标({SIGN_CENTER_X},{SIGN_CENTER_Y})，笔画长度{STROKE_LEN}",
+        #             "绘制结果",
+        #             allure.attachment_type.TEXT
+        #         )
+        #     except Exception as e:
+        #         allure.attach(f"绘制失败：{str(e)}", "错误信息", allure.attachment_type.TEXT)
+        #         raise
+        #     # 停留查看绘制效果
+        #     # 切换电脑模式，定位保存按钮点击保存
+        # with allure.step("点击签字框中的保存"):
+        #     pyautogui.press("F12")
+        #     time.sleep(2)
+        #     self.wk.locator(*allPages.app_gxrw_fljh_qm_qmk_bc).click()
+        #
+        #     # 点击保存，保存签名
+        # with allure.step("点击保存，保存签名"):
+        #
+        #     self.wk.locator(*allPages.app_gxrw_fljh_bc).click()
             # 点击提交按钮保存任务
         with allure.step('点击保存任务'):
             self.wk.locator(*allPages.app_gxrw_fljh_bc).click()
@@ -557,21 +546,21 @@ class GxrwJymsExecutor:
 
         #填写服务商类型
         with allure.step('填写服务商类型'):
-            self.wk.locator(*allPages.jcsjgl_fwsgl_tj_fwslx)
+            self.wk.locator(*allPages.jcsjgl_fwsgl_tj_fwslx).click()
             ActionChains(self.browser) \
-                .send_keys("技术服务") \
                 .key_down(Keys.DOWN) \
                 .key_down(Keys.ENTER) \
+                .click()\
                 .perform()
 
 
         #选择服务范围
         with allure.step('选择服务范围'):
-            self.wk.locator(*allPages.jcsjgl_fwsgl_tj_fwfw)
+            self.wk.locator(*allPages.jcsjgl_fwsgl_tj_fwfw).click()
             ActionChains(self.browser) \
-                .send_keys("定力矩服务") \
                 .key_down(Keys.DOWN) \
                 .key_down(Keys.ENTER) \
+                .click()\
                 .perform()
 
         #填写负责人
@@ -584,4 +573,4 @@ class GxrwJymsExecutor:
 
         #点击确认
         with allure.step('点击确认'):
-            self.wk.locator(*allPages.jcsjgl_fwsgl_tj_qr).click()
+            self.wk.locator(*allPages.jcsjgl_fwsgl_tj_qd).click()
