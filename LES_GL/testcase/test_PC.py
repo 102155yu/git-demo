@@ -17,23 +17,23 @@ from LES_GL.page.process import *
 
 
 @allure.epic('LES系统')
-@allure.feature('登录')
-@allure.story('典型场景')
-@allure.title('专工创建计划')
+@allure.feature('项目经理工作台')
+@allure.story('配置项目信息')
+@allure.title('项目经理配置项目信息')
 @allure.severity('critical')
 def test_login02(browser):
     """
         用例编号：test_loin02
-            用例标题：登录
-            前置条件：登录
+            用例标题：项目经理配置项目信息
+            前置条件：服务商负责人配置完成项目经理
             测试步骤：
-                1登录进入首页
-                2.选择服务计划管理菜单
-                3.点击定力矩服务计划菜单
-                4.点击添加定力矩服务计划
-                5.下派成功
+                1.登录项目经理账号
+                2.点击工作台待办处理
+                3.项目配置项目成员
+                4.添加法兰进入检修范围
+                5.提交至设备员确认
 
-            预期结果；专工建立计划下派成功
+            预期结果；项目成员配置成功，法兰添加成功
 
     :param browser:
     :return:
@@ -45,126 +45,24 @@ def test_login02(browser):
     #实例化Wait
     wait = WebDriverWait(browser,10)
     wk = WebKeys(browser)
-    jy = GxrwJymsExecutor(browser)
-
+    mj = GxrwJymsExecutor(browser)
     #进入登录
     with allure.step('进入LES登录页'):
         login = LoginPage(browser)
-        login.login(LOGIN_URL_PC, USERNAME_zg_PGN, PASSWD)
+        login.login(LOGIN_URL_PC, USERNAME_XMJL_PM, PASSWD)
     time.sleep(1)
 
-    # #定位基础数据管理
-    # with allure.step('定位基础数据管理'):
-    #
-    #     wk.locator(*allPages.jcsjgl).click()
-    #
-    # # 点击服务商管理
-    # with allure.step('点击服务商管理'):
-    #     wk.locator(*allPages.jcsjgl_fwsgl).click()
 
-    # #添加服务商
-    # with allure.step('添加服务商'):
-    #     jy.execute_full_zg_fwsgl_flow()
+    # 点击待办处理
+    with allure.step('点击待办处理'):
+        wk.locator(*allPages.sby_gzt_db_cl).click()
 
-    # 定位服务计划管理
-    with allure.step('定位服务计划管理菜单'):
-        wk.locator(*allPages.fwjh).click()
+    # 点击处理弹窗确认按钮
+    with allure.step('点击处理弹窗确认按钮'):
+        wk.locator(*allPages.xmjl_gzt_db_ts_qr).click()
 
-    # 点击定力矩服务计划菜单
-    with allure.step('点击定力矩服务计划菜单'):
-        wk.locator(*allPages.fwjh_dljfwjh).click()
-
-    # 点击添加定力矩服务计划
-    with allure.step('点击添加定力矩服务计划'):
-        wk.locator(*allPages.fwjh_dljfwjh_tj).click()
-    # 输入名称
-    # with allure.step('输入计划名称'):
-    #     wk.locator(*allPages.fwjh_dljfwjh_jhmc).send_keys("全厂大检修")
-    #
-        # ---------- 核心改造：使用计数器生成唯一计划名称 ----------
-    with allure.step('输入计划名称（计数器生成唯一名称）'):
-        # 调用计数器自增方法，获取最新值
-        counter_value = wk.increment_counter()
-        # 拼接唯一名称（前缀可自定义）
-        plan_name = f"全厂大检修重要法兰管理-{counter_value}"
-        # 输入计划名称
-        wk.locator(*allPages.fwjh_dljfwjh_jhmc).send_keys(plan_name)
-        # 打印日志，方便调试
-        allure.attach(f"生成的计划名称：{plan_name}", "计划名称", allure.attachment_type.TEXT)
-        # ---------- 计数器改造结束 ----------
-
-    # 选择检修类型
-    with allure.step("选择检修类型"):
-        wk.locator(*allPages.fwjh_dljfwjh_jxlx).click()
-        # 通过classname定位到仓库的下拉框
-        ActionChains(browser) \
-            .key_down(Keys.DOWN) \
-            .key_down(Keys.ENTER) \
-            .perform()
-    # 选择开始时间
-    with allure.step("选择开始时间"):
-        wk.locator(*allPages.fwjh_dljfwjh_kssj).click()
-        ActionChains(browser) \
-            .key_down(Keys.DOWN) \
-            .key_down(Keys.RIGHT) \
-            .key_down(Keys.ENTER) \
-            .perform()
-    # 选择结束时间
-    with allure.step("选择结束时间"):
-        wk.locator(*allPages.fwjh_dljfwjh_jssj).click()
-        ActionChains(browser) \
-            .key_down(Keys.DOWN) \
-            .key_down(Keys.DOWN) \
-            .key_down(Keys.DOWN) \
-            .key_down(Keys.RIGHT) \
-            .key_down(Keys.ENTER) \
-            .perform()
-
-    # 点击保存
-    with allure.step("保存"):
-        wk.locator(*allPages.fwjh_dljfwjh_bc).click()
-
-    # 添加检修范围
-    with allure.step("点击添加，添加检修范围"):
-        wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_tj).click()
-
-    # 选择服务商
-    with allure.step("选择服务商:北京源城"):
-        wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_fws).click()
-        ActionChains(browser) \
-            .key_down(Keys.DOWN) \
-            .key_down(Keys.ENTER) \
-            .perform()
-
-    # 选择装置
-    with allure.step("选择装置:55万吨"):
-        wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_zz).click()
-        ActionChains(browser) \
-            .send_keys('55万吨') \
-            .key_down(Keys.DOWN) \
-            .key_down(Keys.ENTER) \
-            .perform()
-
-    # 填写计划检修量
-    with allure.step("选择装置:55万吨"):
-        wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_jhjxl).send_keys("50")
-
-    # 选择服务模式
-    with allure.step("选择服务模式：简易模式"):
-        wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_fwms).click()
-        ActionChains(browser) \
-            .key_down(Keys.DOWN) \
-            .key_down(Keys.DOWN) \
-            .key_down(Keys.DOWN) \
-            .key_down(Keys.ENTER) \
-            .perform()
-    # 点击确认保存检修范围
-    with allure.step("点击确认保存检修范围"):
-        wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_qd).click()
-    time.sleep(30)
-    # 点击下派
-    with allure.step("点击下派"):
-        wk.locator(*allPages.fwjh_dljfwjh_xp).click()
-    time.sleep(3)
-
+    #进入项目管理页面
+        #点击成员配置按钮
+    with allure.step('点击成员配置按钮'):
+        mj.execute_full_PM_cypz_flow()
 

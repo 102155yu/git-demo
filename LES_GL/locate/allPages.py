@@ -53,7 +53,7 @@ fws_fzr_lxqr_qr=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div/div[3
     #处理按钮
 xmjl_gzt_db_cl=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[2]/div/div[3]/div/div/div[2]/button/span"]
     #提示界面-确认按钮
-xmjl_gzt_db_ts_qr=["xpath","/html/body/div[12]/div/div/div[3]/button/span"]
+xmjl_gzt_db_ts_qr=["xpath","/html/body/div[9]/div/div/div[3]/button/span"]
 #项目管理页面
     #成员配置按钮
 xmgl_cypz=["xpath","//span[text()='成员配置']/parent::button"]
@@ -62,6 +62,8 @@ xmgl_cypz=["xpath","//span[text()='成员配置']/parent::button"]
 xmgl_cypz_tj=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[2]/div[1]/div/div/div/div[2]/div[2]/div/div/button[1]/span"]
             #添加页面展开箭头
 xmgl_cypz_tj_xl=["xpath","/html/body/div[6]/div/div/div/div[2]/div/div[1]/div/div/div[1]/div[1]/i"]
+            #全选
+xmgl_cypz_tj_qx=["xpath","/html/body/div[6]/div/div/div/div[2]/div/div[1]/div/div/div[1]/div[1]/label/span"]
             #选择人员
 xmgl_cypz_tj_03=["xpath","/html/body/div[6]/div/div/div/div[2]/div/div[1]/div/div/div[1]/div[2]/div[3]/div/label/span/span"]
             #确定按钮

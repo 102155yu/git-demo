@@ -450,9 +450,9 @@ class GxrwJymsExecutor:
             # 点击下拉按钮
         with allure.step('点击下拉按钮'):
             self.wk.locator(*allPages.xmgl_cypz_tj_xl).click()
-            # 选择第三个人员勾选
-        with allure.step('勾选第三个人员'):
-            self.wk.locator(*allPages.xmgl_cypz_tj_03).click()
+            # 全选
+        with allure.step('全选'):
+            self.wk.locator(*allPages.xmgl_cypz_tj_qx).click()
             # 点击确定
         with allure.step('点击确定'):
             self.wk.locator(*allPages.xmgl_cypz_tj_qd).click()

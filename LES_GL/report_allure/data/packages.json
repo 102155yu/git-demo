@@ -2,21 +2,21 @@
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "name" : "packages",
   "children" : [ {
-    "name" : "testcase.test_fws_01",
+    "name" : "testcase.test_PC",
     "children" : [ {
-      "name" : "登录彭淦账号完成项目立项确认及项目经理选择",
-      "uid" : "e2047013b20def6c",
-      "parentUid" : "862af340c5371180492f59d0d8dec843",
+      "name" : "项目经理配置项目信息",
+      "uid" : "22b87ff15851fb4d",
+      "parentUid" : "717a22171bfe0bcec8233d60fb56b329",
       "status" : "passed",
       "time" : {
-        "start" : 1774233403488,
-        "stop" : 1774233406082,
-        "duration" : 2594
+        "start" : 1774260079107,
+        "stop" : 1774260083490,
+        "duration" : 4383
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     } ],
-    "uid" : "testcase.test_fws_01"
+    "uid" : "testcase.test_PC"
   } ]
 }
