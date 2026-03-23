@@ -68,7 +68,7 @@ xmgl_cypz_fh=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[1
     #推送设备员按钮
 xmgl_tssby=["xpath","//span[text()='推送设备员确认']/parent::button"]
     #检修范围按钮
-xmgl_jxfw=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div/div[1]/div[2]/button[3]/span"]
+xmgl_jxfw=["xpath","//span[text()='检修范围']/parent::button"]
         #下一页按钮
 xmgl_jxfw_xyy=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[4]/button[2]/i"]
         #全选

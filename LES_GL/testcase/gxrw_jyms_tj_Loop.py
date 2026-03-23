@@ -49,13 +49,22 @@ def test_login02(browser):
     # 进入登录
     with allure.step('进入APP端'):
         login_app = LoginPage(browser)
-        login_app.loginapp(LOGIN_URL_APP, USERNAME_CZG_WS, PASSWD)
+        login_app.loginapp(LOGIN_URL_APP, USERNAME_CZG_zhn, PASSWD)
         time.sleep(2)
 
     # 进入定力矩服务，点击工序处理
     with allure.step('点击工序处理'):
         wk.locator(*allPages.app_dljfw_gxcl).click()
         time.sleep(2)
+    # # #选择对应项目
+    # with allure.step('点击项目名称'):
+    #     wk.locator(*allPages.app_gxcl_xmmc).click()
+    #     time.sleep(2)
+    # #输入项目名称
+    # with allure.step('选择项目'):
+    #     wk.locator(*allPages.app_gxcl_xmmc_srk).click()
+
+        # time.sleep(2)
 
     with allure.step('点击待处理'):
         wk.locator(*allPages.app_dljfw_gxcl_dcl).click()
@@ -67,7 +76,9 @@ def test_login02(browser):
             # 显式等待任务元素可点击，提升稳定性
             wait.until(EC.element_to_be_clickable(allPages.app_dljfw_gxcl_dcl_dj_01)).click()
             time.sleep(2)
-
+        #提交法兰挂牌工序
+        with allure.step(f'第{cycle_num}次循环 - 提交工序：法兰挂牌'):
+            jyms_executor.execute_full_gxrw_flgp_flow()
         # 提交密封面检查工序
         with allure.step(f'第{cycle_num}次循环 - 提交工序：密封面检查'):
             jyms_executor.execute_full_gxrw_mfmjc_flow()
@@ -77,9 +88,9 @@ def test_login02(browser):
         # 提交紧固件检查工序
         with allure.step(f'第{cycle_num}次循环 - 提交工序：紧固件检查'):
             jyms_executor.execute_full_gxrw_jgjjc_flow()
-        # 提交SOP确认工序
-        with allure.step(f'第{cycle_num}次循环 - 提交工序：SOP确认'):
-            jyms_executor.execute_full_gxrw_sopqr_flow()
+        # 提交预装确认工序
+        with allure.step(f'第{cycle_num}次循环 - 提交工序：预装确认'):
+            jyms_executor.execute_full_gxrw_yzqr_flow()
         # 提交完工确认工序
         with allure.step(f'第{cycle_num}次循环 - 提交工序：完工确认'):
             jyms_executor.execute_full_gxrw_wgqr_flow()

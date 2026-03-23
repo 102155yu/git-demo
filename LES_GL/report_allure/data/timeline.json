@@ -4,22 +4,22 @@
   "children" : [ {
     "name" : "Y-YU",
     "children" : [ {
-      "name" : "37876-MainThread",
+      "name" : "8280-MainThread",
       "children" : [ {
-        "name" : "技术员填写简易工序数据（循环10次）",
-        "uid" : "f39ff3824fa1e6dc",
-        "parentUid" : "930999da6dfb7f84066abc48449dcc1c",
+        "name" : "专工创建计划",
+        "uid" : "b39e16739e4e40e3",
+        "parentUid" : "51abef2c0dd089e2563e78b3f321ea27",
         "status" : "passed",
         "time" : {
-          "start" : 1773993391575,
-          "stop" : 1773993981869,
-          "duration" : 590294
+          "start" : 1774092682430,
+          "stop" : 1774092732719,
+          "duration" : 50289
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "930999da6dfb7f84066abc48449dcc1c"
+      "uid" : "51abef2c0dd089e2563e78b3f321ea27"
     } ],
     "uid" : "d8235af02a0b4ab572b70292f685faa2"
   } ]

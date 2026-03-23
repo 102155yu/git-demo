@@ -1,14 +1,16 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Fri Mar 20 15:56:31 CST 2026","Fri Mar 20 16:06:21 CST 2026","590294","testcase","gxrw_jyms_tj_Loop","","","","技术员填写简易工序数据（循环10次）","
+"passed","Sat Mar 21 19:31:22 CST 2026","Sat Mar 21 19:32:12 CST 2026","50289","testcase","test_PC","","","","专工创建计划","
         用例编号：test_loin02
-            用例标题：技术员填写工序数据（循环10次）
-            前置条件：法兰添加了检修范围生成了工序任务
+            用例标题：登录
+            前置条件：登录
             测试步骤：
-                1.登录技术员账号
-                2.循环10次执行：
-                    a.点击待处理任务
-                    b.提交密封面检查、垫片检查、紧固件检查、SOP确认、完工确认工序
-            预期结果；每次工序任务提交无报错
+                1登录进入首页
+                2.选择服务计划管理菜单
+                3.点击定力矩服务计划菜单
+                4.点击添加定力矩服务计划
+                5.下派成功
+
+            预期结果；专工建立计划下派成功
 
     :param browser:
     :return:

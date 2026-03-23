@@ -75,8 +75,8 @@ def test_login02(browser):
     #跳转至工序任务页面
         #进入工序填报页面
     #   # 填写法兰挂牌工序任务
-    # with allure.step('提交工序：法兰挂牌'):
-    #     jyms_executor.execute_full_gxrw_flgp_flow()
+    with allure.step('提交工序：法兰挂牌'):
+        jyms_executor.execute_full_gxrw_flgp_flow()
     #     # 填写法兰拆卸工序任务
     # with allure.step('提交工序：法兰拆卸'):
     #     jyms_executor.execute_full_gxrw_flcx_flow()

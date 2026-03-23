@@ -48,7 +48,7 @@ def test_login02(browser):
     #进入登录
     with allure.step('进入LES登录页'):
         login = LoginPage(browser)
-        login.login(LOGIN_URL_PC, USERNAME_zg_YJA, PASSWD)
+        login.login(LOGIN_URL_PC, USERNAME_zg_PGN, PASSWD)
     time.sleep(1)
 
     # #定位基础数据管理
@@ -76,20 +76,20 @@ def test_login02(browser):
     with allure.step('点击添加定力矩服务计划'):
         wk.locator(*allPages.fwjh_dljfwjh_tj).click()
     # 输入名称
-    with allure.step('输入计划名称'):
-        wk.locator(*allPages.fwjh_dljfwjh_jhmc).send_keys("全厂大检修重要法兰管理")
+    # with allure.step('输入计划名称'):
+    #     wk.locator(*allPages.fwjh_dljfwjh_jhmc).send_keys("全厂大检修")
     #
-    #     # ---------- 核心改造：使用计数器生成唯一计划名称 ----------
-    # with allure.step('输入计划名称（计数器生成唯一名称）'):
-    #     # 调用计数器自增方法，获取最新值
-    #     counter_value = wk.increment_counter()
-    #     # 拼接唯一名称（前缀可自定义）
-    #     plan_name = f"全厂大检修重要法兰管理-{counter_value}"
-    #     # 输入计划名称
-    #     wk.locator(*allPages.fwjh_dljfwjh_jhmc).send_keys(plan_name)
-    #     # 打印日志，方便调试
-    #     allure.attach(f"生成的计划名称：{plan_name}", "计划名称", allure.attachment_type.TEXT)
-    #     # ---------- 计数器改造结束 ----------
+        # ---------- 核心改造：使用计数器生成唯一计划名称 ----------
+    with allure.step('输入计划名称（计数器生成唯一名称）'):
+        # 调用计数器自增方法，获取最新值
+        counter_value = wk.increment_counter()
+        # 拼接唯一名称（前缀可自定义）
+        plan_name = f"全厂大检修重要法兰管理-{counter_value}"
+        # 输入计划名称
+        wk.locator(*allPages.fwjh_dljfwjh_jhmc).send_keys(plan_name)
+        # 打印日志，方便调试
+        allure.attach(f"生成的计划名称：{plan_name}", "计划名称", allure.attachment_type.TEXT)
+        # ---------- 计数器改造结束 ----------
 
     # 选择检修类型
     with allure.step("选择检修类型"):

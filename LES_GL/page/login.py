@@ -523,12 +523,17 @@ class GxrwJymsExecutor:
         #点击返回
         with allure.step('点击返回'):
             self.wk.locator(*allPages.xmgl_jxfw_fh).click()
-
+    #检修范围
     def execute_full_PM_jx_flow(self):
-        #结项
-        #上传结项资料
+        #法兰检修范围配置
         with allure.step('点击检修范围按钮'):
             self.wk.locator(*allPages.xmgl_jxfw).click()
+        #勾选全选按钮
+        with allure.step('勾选全选按钮'):
+            self.wk.locator(*allPages.xmgl_jxfw_gx_qx).click()
+        #点击提交
+        with allure.step('点击提交'):
+            self.wk.locator(*allPages.xmgl_jxfw_tj).click()
 
     def execute_full_zg_fwsgl_flow(self):
         #新建服务商
