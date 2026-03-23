@@ -150,17 +150,3 @@ def test_login02(browser):
     with allure.step("点击下派"):
         wk.locator(*allPages.fwjh_dljfwjh_xp).click()
     time.sleep(3)
-    # with allure.step("后置校验：验证计划名称展示在页面中"):
-    #     try:
-    #         # 1. 返回计划列表页
-    #         wk.locator(*allPages.fwjh_dljfwjh).click()
-    #         # 2. 校验计划名称是否存在于页面
-    #         is_text_exist = wk.check_text_in_page(plan_name, timeout=15)
-    #         # 3. 断言（核心：用例成败的关键判断）
-    #         assert is_text_exist, f"创建的计划名称【{plan_name}】未在页面中展示！"
-    #         # 4. 报告附加校验结果（成功）
-    #         allure.attach(f"校验通过：计划名称【{plan_name}】已在页面展示", "校验结果", allure.attachment_type.TEXT)
-    #     except AssertionError as e:
-    #         # 断言失败时，强制写入失败信息到Allure
-    #         allure.attach(f"校验失败：{str(e)}", "校验结果", allure.attachment_type.TEXT)
-    #         raise  # 重新抛出异常，保证用例标记为失败
