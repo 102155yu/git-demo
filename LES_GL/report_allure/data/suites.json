@@ -4,22 +4,22 @@
   "children" : [ {
     "name" : "testcase",
     "children" : [ {
-      "name" : "test_PC",
+      "name" : "test_fws_01",
       "children" : [ {
-        "name" : "专工创建计划",
-        "uid" : "b39e16739e4e40e3",
-        "parentUid" : "12bc2e26a5751fc7dd79a86946530b0d",
+        "name" : "登录彭淦账号完成项目立项确认及项目经理选择",
+        "uid" : "e2047013b20def6c",
+        "parentUid" : "0ec14872c8e25253c2dd8b6192d0b386",
         "status" : "passed",
         "time" : {
-          "start" : 1774092682430,
-          "stop" : 1774092732719,
-          "duration" : 50289
+          "start" : 1774233403488,
+          "stop" : 1774233406082,
+          "duration" : 2594
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "12bc2e26a5751fc7dd79a86946530b0d"
+      "uid" : "0ec14872c8e25253c2dd8b6192d0b386"
     } ],
     "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
   } ]

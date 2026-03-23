@@ -1,10 +1,10 @@
 [ {
-  "uid" : "b39e16739e4e40e3",
-  "name" : "专工创建计划",
+  "uid" : "e2047013b20def6c",
+  "name" : "登录彭淦账号完成项目立项确认及项目经理选择",
   "time" : {
-    "start" : 1774092682430,
-    "stop" : 1774092732719,
-    "duration" : 50289
+    "start" : 1774233403488,
+    "stop" : 1774233406082,
+    "duration" : 2594
   },
   "status" : "passed",
   "severity" : "critical"

@@ -1,0 +1,198 @@
+{
+  "uid" : "e2047013b20def6c",
+  "name" : "登录彭淦账号完成项目立项确认及项目经理选择",
+  "fullName" : "testcase.test_fws_01#test_login02",
+  "historyId" : "5c49d4857f16e4df531be2981ef78355",
+  "time" : {
+    "start" : 1774233403488,
+    "stop" : 1774233406082,
+    "duration" : 2594
+  },
+  "description" : "\n        用例编号：test_loin02\n            用例标题：项目立项确认-项目经理指定\n            前置条件：设备员发布计划成功\n            测试步骤：\n                1.登录彭淦账号\n                2.完成服务商工作台待办处理\n                3.项目立项确认\n                4.项目经理选择确认\n\n            预期结果；项目立项成功，项目经理指定成功\n\n    :param browser:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>    用例编号：test_loin02\n        用例标题：项目立项确认-项目经理指定\n        前置条件：设备员发布计划成功\n        测试步骤：\n            1.登录彭淦账号\n            2.完成服务商工作台待办处理\n            3.项目立项确认\n            4.项目经理选择确认\n\n        预期结果；项目立项成功，项目经理指定成功\n\n:param browser:\n:return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1774233402241,
+      "stop" : 1774233403488,
+      "duration" : 1247
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        用例编号：test_loin02\n            用例标题：项目立项确认-项目经理指定\n            前置条件：设备员发布计划成功\n            测试步骤：\n                1.登录彭淦账号\n                2.完成服务商工作台待办处理\n                3.项目立项确认\n                4.项目经理选择确认\n\n            预期结果；项目立项成功，项目经理指定成功\n\n    :param browser:\n    :return:\n    ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "浏览器窗口最大化",
+      "time" : {
+        "start" : 1774233403488,
+        "stop" : 1774233403541,
+        "duration" : 53
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "进入LES登录页",
+      "time" : {
+        "start" : 1774233403541,
+        "stop" : 1774233404644,
+        "duration" : 1103
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "点击待办处理",
+      "time" : {
+        "start" : 1774233405646,
+        "stop" : 1774233405707,
+        "duration" : 61
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "点击下一步",
+      "time" : {
+        "start" : 1774233405707,
+        "stop" : 1774233405841,
+        "duration" : 134
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "选择项目经理",
+      "time" : {
+        "start" : 1774233405841,
+        "stop" : 1774233405932,
+        "duration" : 91
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "点击确认按钮",
+      "time" : {
+        "start" : 1774233405932,
+        "stop" : 1774233406082,
+        "duration" : 150
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 6
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1774233406083,
+      "stop" : 1774233408252,
+      "duration" : 2169
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "项目立项确认-项目经理指定"
+  }, {
+    "name" : "epic",
+    "value" : "LES系统"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "服务商工作台"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_fws_01"
+  }, {
+    "name" : "host",
+    "value" : "Y-YU"
+  }, {
+    "name" : "thread",
+    "value" : "38148-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_fws_01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e2047013b20def6c.json",
+  "parameterValues" : [ ]
+}

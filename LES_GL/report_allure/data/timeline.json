@@ -4,22 +4,22 @@
   "children" : [ {
     "name" : "Y-YU",
     "children" : [ {
-      "name" : "8280-MainThread",
+      "name" : "38148-MainThread",
       "children" : [ {
-        "name" : "专工创建计划",
-        "uid" : "b39e16739e4e40e3",
-        "parentUid" : "51abef2c0dd089e2563e78b3f321ea27",
+        "name" : "登录彭淦账号完成项目立项确认及项目经理选择",
+        "uid" : "e2047013b20def6c",
+        "parentUid" : "e0bccd8910911e09ab78de02d0ccebce",
         "status" : "passed",
         "time" : {
-          "start" : 1774092682430,
-          "stop" : 1774092732719,
-          "duration" : 50289
+          "start" : 1774233403488,
+          "stop" : 1774233406082,
+          "duration" : 2594
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "51abef2c0dd089e2563e78b3f321ea27"
+      "uid" : "e0bccd8910911e09ab78de02d0ccebce"
     } ],
     "uid" : "d8235af02a0b4ab572b70292f685faa2"
   } ]

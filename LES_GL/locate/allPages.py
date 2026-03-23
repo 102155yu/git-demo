@@ -26,7 +26,10 @@ sby_gzt_db_cl=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[
     #待办页面处理弹窗确认按钮
 sby_gzt_db_cl_qr=["xpath","/html/body/div[10]/div/div/div[3]/button/span"]
     #定力矩服务计划页面 下派 按钮
-sby_gzt_db_cl_fb=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div[1]/div/div[2]/button[1]/span"]
+sby_gzt_db_cl_fb=["xpath","//button[contains(@class,'handler-btn')]//span[text()='发布']"]
+        #定力矩服务计划页面 下派--确认 按钮
+sby_gzt_db_cl_fb_qd =["xpath","//div[contains(@class,'el-message-box__btns')]//button[contains(@class,'el-button--primary')]//span[text()='确定']"]
+
     #检修范围添加确认页面
         #同意按钮
 sby_gzt_db_jxfwqr_ty=["xpath",""]

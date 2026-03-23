@@ -1,16 +1,15 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sat Mar 21 19:31:22 CST 2026","Sat Mar 21 19:32:12 CST 2026","50289","testcase","test_PC","","","","专工创建计划","
+"passed","Mon Mar 23 10:36:43 CST 2026","Mon Mar 23 10:36:46 CST 2026","2594","testcase","test_fws_01","","","","登录彭淦账号完成项目立项确认及项目经理选择","
         用例编号：test_loin02
-            用例标题：登录
-            前置条件：登录
+            用例标题：项目立项确认-项目经理指定
+            前置条件：设备员发布计划成功
             测试步骤：
-                1登录进入首页
-                2.选择服务计划管理菜单
-                3.点击定力矩服务计划菜单
-                4.点击添加定力矩服务计划
-                5.下派成功
+                1.登录彭淦账号
+                2.完成服务商工作台待办处理
+                3.项目立项确认
+                4.项目经理选择确认
 
-            预期结果；专工建立计划下派成功
+            预期结果；项目立项成功，项目经理指定成功
 
     :param browser:
     :return:

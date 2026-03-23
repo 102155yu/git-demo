@@ -4,26 +4,26 @@
   "children" : [ {
     "name" : "LES系统",
     "children" : [ {
-      "name" : "登录",
+      "name" : "服务商工作台",
       "children" : [ {
-        "name" : "典型场景",
+        "name" : "项目立项确认-项目经理指定",
         "children" : [ {
-          "name" : "专工创建计划",
-          "uid" : "b39e16739e4e40e3",
-          "parentUid" : "62fd82adebdcc2ad5b5f55c4dcaa8169",
+          "name" : "登录彭淦账号完成项目立项确认及项目经理选择",
+          "uid" : "e2047013b20def6c",
+          "parentUid" : "7136e23428549276993a681eaafefcc2",
           "status" : "passed",
           "time" : {
-            "start" : 1774092682430,
-            "stop" : 1774092732719,
-            "duration" : 50289
+            "start" : 1774233403488,
+            "stop" : 1774233406082,
+            "duration" : 2594
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         } ],
-        "uid" : "62fd82adebdcc2ad5b5f55c4dcaa8169"
+        "uid" : "7136e23428549276993a681eaafefcc2"
       } ],
-      "uid" : "235d2a4d911fde3d04e9a0ed3cc76a88"
+      "uid" : "407d4171f8fb3fead08c0d14c7c975bb"
     } ],
     "uid" : "6811519b2e8d73eb8610a9f48418a4b2"
   } ]

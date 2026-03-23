@@ -64,3 +64,8 @@ def test_login02(browser):
     with allure.step("点击发布计划"):
 
         wk.locator(*allPages.sby_gzt_db_cl_fb).click()
+
+    #点击提示确认
+    with allure.step("点击提示确认"):
+
+        wk.locator(*allPages.sby_gzt_db_cl_fb_qd).click()

@@ -145,7 +145,7 @@ def test_login02(browser):
     #点击确认保存检修范围
     with allure.step("点击确认保存检修范围"):
         wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_qd).click()
-    time.sleep(30)
+    time.sleep(3)
     #点击下派
     with allure.step("点击下派"):
         wk.locator(*allPages.fwjh_dljfwjh_xp).click()

@@ -3,13 +3,13 @@
 """
 
 #LES登录链接
-# LOGIN_URL_PC ='http://192.168.2.154:12012/glsh/#/login'#测试
+LOGIN_URL_PC ='http://192.168.2.154:12012/glsh/#/login'#测试
 # LOGIN_URL_PC ="https://les-pre.wellinte.com/glsh/#/baseDataMgt/flange"#预发
-# LOGIN_URL_APP ="http://192.168.2.154:12012/glsh/app/"  #测试
+LOGIN_URL_APP ="http://192.168.2.154:12012/glsh/app/"  #测试
 # LOGIN_URL_APP ="https://les-pre.wellinte.com/glsh/app/"#预发
-LOGIN_URL_PC ="https://10.105.43.7/web/#"
-
-LOGIN_URL_APP ="https://10.105.43.7/app/#"
+# LOGIN_URL_PC ="https://10.105.43.7/web/#"
+#
+# LOGIN_URL_APP ="https://10.105.43.7/app/#"
 
 
 

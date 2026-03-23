@@ -62,7 +62,6 @@ def test_login02(browser):
         wk.locator(*allPages.fws_fzr_lxqr_xmjl).click()
         ActionChains(browser)\
             .key_down(Keys.DOWN)\
-            .key_down(Keys.DOWN)\
             .key_down(Keys.ENTER)\
             .perform()
     #点击确认按钮
