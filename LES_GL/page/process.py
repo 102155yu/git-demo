@@ -806,6 +806,12 @@ class GxrwJymsExecutor:
             self.wk.locator(*allPages.fwjh_rwzx_xmjxqr_pass).click()
 
 #退出登录
-    # def execute_full_log_out_flow(self):
+    def execute_full_log_out_flow(self):
+        # 点击个人信息框
+        with allure.step('点击个人信息框'):
+            self.wk.locator(*allPages.sy_Personal_information_box).click()
 
+        # 点击退出登录
+        with allure.step('点击退出登录'):
+            self.wk.locator(*allPages.sy_log_out).click()
 

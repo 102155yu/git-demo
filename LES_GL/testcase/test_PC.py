@@ -62,6 +62,6 @@ def test_login02(browser):
     time.sleep(8)
     with allure.step("登录设备员账号"):
         login = LoginPage(browser)
-        login.login( USERNAME_sby_80, PASSWD)
+        login.input_credential_and_login(USERNAME_sby_80, PASSWD)
 
     time.sleep(10)

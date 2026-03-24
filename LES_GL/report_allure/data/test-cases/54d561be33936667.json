@@ -1,0 +1,183 @@
+{
+  "uid" : "54d561be33936667",
+  "name" : "项目经理配置项目信息",
+  "fullName" : "testcase.test_PC#test_login02",
+  "historyId" : "125fa818ce7726e5b2362ce6e659ea74",
+  "time" : {
+    "start" : 1774346785104,
+    "stop" : 1774346806089,
+    "duration" : 20985
+  },
+  "description" : "\n        用例编号：test_loin02\n            用例标题：项目经理配置项目信息\n            前置条件：服务商负责人配置完成项目经理\n            测试步骤：\n                1.登录项目经理账号\n                2.点击工作台待办处理\n                3.项目配置项目成员\n                4.添加法兰进入检修范围\n                5.提交至设备员确认\n\n            预期结果；项目成员配置成功，法兰添加成功\n\n    :param browser:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>    用例编号：test_loin02\n        用例标题：项目经理配置项目信息\n        前置条件：服务商负责人配置完成项目经理\n        测试步骤：\n            1.登录项目经理账号\n            2.点击工作台待办处理\n            3.项目配置项目成员\n            4.添加法兰进入检修范围\n            5.提交至设备员确认\n\n        预期结果；项目成员配置成功，法兰添加成功\n\n:param browser:\n:return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1774346783823,
+      "stop" : 1774346785104,
+      "duration" : 1281
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        用例编号：test_loin02\n            用例标题：项目经理配置项目信息\n            前置条件：服务商负责人配置完成项目经理\n            测试步骤：\n                1.登录项目经理账号\n                2.点击工作台待办处理\n                3.项目配置项目成员\n                4.添加法兰进入检修范围\n                5.提交至设备员确认\n\n            预期结果；项目成员配置成功，法兰添加成功\n\n    :param browser:\n    :return:\n    ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "浏览器窗口最大化",
+      "time" : {
+        "start" : 1774346785104,
+        "stop" : 1774346785233,
+        "duration" : 129
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "进入LES登录页",
+      "time" : {
+        "start" : 1774346785234,
+        "stop" : 1774346786306,
+        "duration" : 1072
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "点击个人信息框",
+      "time" : {
+        "start" : 1774346787307,
+        "stop" : 1774346787354,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "点击退出登录",
+      "time" : {
+        "start" : 1774346787354,
+        "stop" : 1774346787923,
+        "duration" : 569
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "登录设备员账号",
+      "time" : {
+        "start" : 1774346795924,
+        "stop" : 1774346796088,
+        "duration" : 164
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 5,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1774346806089,
+      "stop" : 1774346808266,
+      "duration" : 2177
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "LES系统"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "story",
+    "value" : "配置项目信息"
+  }, {
+    "name" : "feature",
+    "value" : "项目经理工作台"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_PC"
+  }, {
+    "name" : "host",
+    "value" : "Y-YU"
+  }, {
+    "name" : "thread",
+    "value" : "44004-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_PC"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "54d561be33936667.json",
+  "parameterValues" : [ ]
+}
