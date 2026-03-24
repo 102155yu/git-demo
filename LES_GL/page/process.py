@@ -734,3 +734,63 @@ class GxrwJymsExecutor:
         # 点击确定
         with allure.step('点击确定'):
             self.wk.locator(*allPages.fwgcgl_jxsjqr_qd).click()
+
+#进入项目管理页面流程
+    def execute_full_xmgl_xq_flow(self):
+        # 服务过程管理菜单
+        with allure.step('服务过程管理菜单'):
+            self.wk.locator(*allPages.fwgcgl).click()
+        # 点击定力矩服务菜单
+        with allure.step('点击定力矩服务菜单'):
+            self.wk.locator(*allPages.fwgcgl_dljfw).click()
+        # 点击项目管理菜单
+        with allure.step('点击项目管理菜单'):
+            self.wk.locator(*allPages.fwgcgl_dljfw_xmgl).click()
+        # 进入项目管理页面点击查看按钮
+        with allure.step('进入项目管理页面点击查看按钮'):
+            self.wk.locator(*allPages.fwgcgl_dljfw_xmgl_ck).click()
+
+#项目经理上传结项资料
+    def execute_full_xmgl_scjxzl_flow(self):
+        # 进入项目管理详情页面
+        with allure.step('点击上传结项材料'):
+            self.wk.locator(*allPages.xmgl_jx_scjxzl).click()
+        # 进入上传页面，点击上传框
+        with allure.step('点击上传框'):
+            self.wk.locator(*allPages.xmgl_jx_jxclsc).click()
+            time.sleep(2)
+            pyautogui.typewrite(r'C:\Users\chens\Pictures\1.jpg', interval=0.1)
+            pyautogui.press(keys='ENTER', presses=3)
+            time.sleep(3)
+        # 点击确定保存上传文件
+        with allure.step('点击确定保存上传文件'):
+            self.wk.locator(*allPages.xmgl_jx_jxclsc_qd).click()
+            time.sleep(3)
+        # 点击“其他过程材料页签”
+        with allure.step('点击“其他过程材料页签”'):
+            self.wk.locator(*allPages.xmgl_jx_jxclsq_yq).click()
+
+        # 点击上传框上传
+        with allure.step('点击上传框上传'):
+            self.wk.locator(*allPages.xmgl_jx_qtgczlsc).click()
+            time.sleep(2)
+            pyautogui.typewrite(r'C:\Users\chens\Pictures\1.jpg', interval=0.1)
+            pyautogui.press(keys='ENTER', presses=3)
+            time.sleep(3)
+        # 点击确定按钮
+        with allure.step('点击确定按钮'):
+            self.wk.locator(*allPages.xmgl_jx_qtgczlsc_qd).click()
+            time.sleep(2)
+        # 点击退出按钮
+        with allure.step('点击“点击退出按钮”'):
+            self.wk.locator(*allPages.xmgl_jx_x).click()
+
+    # 项目经理点击结项
+    def execute_full_xmgl_jx_flow(self):
+        # 点击结项按钮
+        with allure.step('点击结项按钮'):
+            self.wk.locator(*allPages.xmgl_jx).click()
+
+        # 点击结项确定按钮
+        with allure.step('点击结项确定按钮'):
+            self.wk.locator(*allPages.xmgl_jx_qd).click()

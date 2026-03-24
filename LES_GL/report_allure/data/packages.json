@@ -5,13 +5,13 @@
     "name" : "testcase.test_PC",
     "children" : [ {
       "name" : "项目经理配置项目信息",
-      "uid" : "a4a6c1a64b552a",
+      "uid" : "b3b51351c2bfcc38",
       "parentUid" : "717a22171bfe0bcec8233d60fb56b329",
       "status" : "passed",
       "time" : {
-        "start" : 1774336003940,
-        "stop" : 1774336007764,
-        "duration" : 3824
+        "start" : 1774343601044,
+        "stop" : 1774343628184,
+        "duration" : 27140
       },
       "flaky" : false,
       "newFailed" : false,

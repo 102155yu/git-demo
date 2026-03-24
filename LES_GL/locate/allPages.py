@@ -136,9 +136,24 @@ xmgl_jspz=["xpath","//span[text()='角色配置']/parent::button"]
 xmgl_yc=["xpath","//span[text()='压测']/parent::button"]
     #结项
 xmgl_jx=["xpath","//span[text()='结项']/parent::button"]
-xmgl_jx_=["xpath","//span[text()='上传结项材料']/parent::button"]
-xmgl_jx_=["xpath",""]
-xmgl_jx_=["xpath",""]
+        #结项材料申请页签
+xmgl_jx_jxclsq_yq=["xpath","//div[contains(text(),'结项材料申请') and contains(@class,'el-tabs__item')]"]
+        #上传结项资料
+xmgl_jx_scjxzl=["xpath","//span[text()='上传结项材料']/parent::button"]
+            #结项材料上传
+xmgl_jx_jxclsc=["xpath","/html/body/div[4]/div/div/div/div/div[2]/div[1]/div/div[1]/div"]
+            #确定按钮
+xmgl_jx_jxclsc_qd=["xpath","//span[text()='确定']"]
+        #其他过程材料页签
+xmgl_jx_jxclsq_yq=["xpath","//div[contains(text(),'其他过程材料') and contains(@class,'el-tabs__item')]"]
+            #上传其他资料
+xmgl_jx_qtgczlsc=["xpath","/html/body/div[4]/div/div/div/div/div[2]/div[2]/div/div[1]/div/div/div"]
+            #确定按钮
+xmgl_jx_qtgczlsc_qd=["xpath","(//button[contains(@class,'el-button--primary') and .//span[text()='确定']])[2]"]
+        #点击退出
+xmgl_jx_x=["xpath","/html/body/div[4]/div/header/button"]
+        #结项确定按钮
+xmgl_jx_qd=["xpath","//span[text()='确定']"]
 
     # 返回
 xmgl_fh=["xpath","//span[text()='返回']/parent::button"]

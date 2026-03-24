@@ -9,13 +9,13 @@
         "name" : "配置项目信息",
         "children" : [ {
           "name" : "项目经理配置项目信息",
-          "uid" : "a4a6c1a64b552a",
+          "uid" : "b3b51351c2bfcc38",
           "parentUid" : "0b32b0f0859beb2bd62a1b88ed569a26",
           "status" : "passed",
           "time" : {
-            "start" : 1774336003940,
-            "stop" : 1774336007764,
-            "duration" : 3824
+            "start" : 1774343601044,
+            "stop" : 1774343628184,
+            "duration" : 27140
           },
           "flaky" : false,
           "newFailed" : false,
