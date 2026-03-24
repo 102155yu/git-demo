@@ -2,19 +2,20 @@
   "125fa818ce7726e5b2362ce6e659ea74" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b3b51351c2bfcc38",
-      "status" : "passed",
+      "uid" : "3c61ef7cbba9c4ee",
+      "status" : "broken",
+      "statusDetails" : "TypeError: LoginPage.login() missing 1 required positional argument: 'passwd'",
       "time" : {
-        "start" : 1774343601044,
-        "stop" : 1774343628184,
-        "duration" : 27140
+        "start" : 1774346060495,
+        "stop" : 1774346071275,
+        "duration" : 10780
       }
     } ]
   }

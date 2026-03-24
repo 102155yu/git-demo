@@ -1,5 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "TypeError: LoginPage.login() missing 1 required positional argument: 'passwd'",
+      "children" : [ {
+        "name" : "项目经理配置项目信息",
+        "uid" : "3c61ef7cbba9c4ee",
+        "parentUid" : "277e72e1c94790ebd44a5b91723e0f7d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1774346060495,
+          "stop" : 1774346071275,
+          "duration" : 10780
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "277e72e1c94790ebd44a5b91723e0f7d"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
 }

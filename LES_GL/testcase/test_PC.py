@@ -49,14 +49,19 @@ def test_login02(browser):
     #进入登录
     with allure.step('进入LES登录页'):
         login = LoginPage(browser)
-        login.login(LOGIN_URL_PC, USERNAME_XMJL_LQ, PASSWD)
+        login.login(LOGIN_URL_PC, USERNAME_sby_80, PASSWD)
     time.sleep(1)
 
-    #进入项目管理详情页面
-    with allure.step('进入项目管理详情页面'):
-        mj.execute_full_xmgl_xq_flow()
+    # 点击个人信息框
+    with allure.step('点击个人信息框'):
+        wk.locator(*allPages.sy_Personal_information_box).click()
 
-    #进入项目管理详情页面
-    with allure.step('点击上传结项材料'):
-        wk.locator(*allPages.xmgl_jx_scjxzl).click()
+    # 点击退出登录
+    with allure.step('点击退出登录'):
+        wk.locator(*allPages.sy_log_out).click()
+    time.sleep(8)
+    with allure.step("登录设备员账号"):
+        login = LoginPage(browser)
+        login.login( USERNAME_sby_80, PASSWD)
 
+    time.sleep(10)

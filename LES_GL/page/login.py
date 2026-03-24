@@ -49,3 +49,4 @@ class LoginPage(WebKeys):
         self.locator(*page_login_loginBtn_app).click()
         # 根据username出现在首页作为等待条件，确保首页正常出现
         # wait.until(ec.text_to_be_present_in_element((By.LINK_TEXT, username), username))
+

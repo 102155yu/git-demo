@@ -794,3 +794,18 @@ class GxrwJymsExecutor:
         # 点击结项确定按钮
         with allure.step('点击结项确定按钮'):
             self.wk.locator(*allPages.xmgl_jx_qd).click()
+
+# 设备员审批通过
+    def execute_full_sby_jx_pass_flow(self):
+        # 点击待办处理
+        with allure.step('点击待办处理'):
+            self.wk.locator(*allPages.sby_gzt_db_cl).click()
+
+        # 点击通过
+        with allure.step('点击待办处理'):
+            self.wk.locator(*allPages.fwjh_rwzx_xmjxqr_pass).click()
+
+#退出登录
+    # def execute_full_log_out_flow(self):
+
+

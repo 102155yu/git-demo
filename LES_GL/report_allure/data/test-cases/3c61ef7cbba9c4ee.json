@@ -1,0 +1,214 @@
+{
+  "uid" : "3c61ef7cbba9c4ee",
+  "name" : "项目经理配置项目信息",
+  "fullName" : "testcase.test_PC#test_login02",
+  "historyId" : "125fa818ce7726e5b2362ce6e659ea74",
+  "time" : {
+    "start" : 1774346060495,
+    "stop" : 1774346071275,
+    "duration" : 10780
+  },
+  "description" : "\n        用例编号：test_loin02\n            用例标题：项目经理配置项目信息\n            前置条件：服务商负责人配置完成项目经理\n            测试步骤：\n                1.登录项目经理账号\n                2.点击工作台待办处理\n                3.项目配置项目成员\n                4.添加法兰进入检修范围\n                5.提交至设备员确认\n\n            预期结果；项目成员配置成功，法兰添加成功\n\n    :param browser:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>    用例编号：test_loin02\n        用例标题：项目经理配置项目信息\n        前置条件：服务商负责人配置完成项目经理\n        测试步骤：\n            1.登录项目经理账号\n            2.点击工作台待办处理\n            3.项目配置项目成员\n            4.添加法兰进入检修范围\n            5.提交至设备员确认\n\n        预期结果；项目成员配置成功，法兰添加成功\n\n:param browser:\n:return:\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "TypeError: LoginPage.login() missing 1 required positional argument: 'passwd'",
+  "statusTrace" : "browser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"e5db2f82d0871d04f4b1ade3fc7ad20d\")>\n\n    @allure.epic('LES系统')\n    @allure.feature('项目经理工作台')\n    @allure.story('配置项目信息')\n    @allure.title('项目经理配置项目信息')\n    @allure.severity('critical')\n    def test_login02(browser):\n        \"\"\"\n            用例编号：test_loin02\n                用例标题：项目经理配置项目信息\n                前置条件：服务商负责人配置完成项目经理\n                测试步骤：\n                    1.登录项目经理账号\n                    2.点击工作台待办处理\n                    3.项目配置项目成员\n                    4.添加法兰进入检修范围\n                    5.提交至设备员确认\n    \n                预期结果；项目成员配置成功，法兰添加成功\n    \n        :param browser:\n        :return:\n        \"\"\"\n        # 窗口最大化操作（核心新增）\n        with allure.step('浏览器窗口最大化'):\n            browser.maximize_window()\n        #初始化页面对象\n        #实例化Wait\n        wait = WebDriverWait(browser,10)\n        wk = WebKeys(browser)\n        mj = GxrwJymsExecutor(browser)\n        #进入登录\n        with allure.step('进入LES登录页'):\n            login = LoginPage(browser)\n            login.login(LOGIN_URL_PC, USERNAME_sby_80, PASSWD)\n        time.sleep(1)\n    \n        # 点击个人信息框\n        with allure.step('点击个人信息框'):\n            wk.locator(*allPages.sy_Personal_information_box).click()\n    \n        # 点击退出登录\n        with allure.step('点击退出登录'):\n            wk.locator(*allPages.sy_log_out).click()\n        time.sleep(8)\n        with allure.step(\"登录设备员账号\"):\n            login = LoginPage(browser)\n>           login.login( USERNAME_sby_80, PASSWD)\nE           TypeError: LoginPage.login() missing 1 required positional argument: 'passwd'\n\ntestcase\\test_PC.py:65: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1774346059303,
+      "stop" : 1774346060495,
+      "duration" : 1192
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        用例编号：test_loin02\n            用例标题：项目经理配置项目信息\n            前置条件：服务商负责人配置完成项目经理\n            测试步骤：\n                1.登录项目经理账号\n                2.点击工作台待办处理\n                3.项目配置项目成员\n                4.添加法兰进入检修范围\n                5.提交至设备员确认\n\n            预期结果；项目成员配置成功，法兰添加成功\n\n    :param browser:\n    :return:\n    ",
+    "status" : "broken",
+    "statusMessage" : "TypeError: LoginPage.login() missing 1 required positional argument: 'passwd'",
+    "statusTrace" : "browser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"e5db2f82d0871d04f4b1ade3fc7ad20d\")>\n\n    @allure.epic('LES系统')\n    @allure.feature('项目经理工作台')\n    @allure.story('配置项目信息')\n    @allure.title('项目经理配置项目信息')\n    @allure.severity('critical')\n    def test_login02(browser):\n        \"\"\"\n            用例编号：test_loin02\n                用例标题：项目经理配置项目信息\n                前置条件：服务商负责人配置完成项目经理\n                测试步骤：\n                    1.登录项目经理账号\n                    2.点击工作台待办处理\n                    3.项目配置项目成员\n                    4.添加法兰进入检修范围\n                    5.提交至设备员确认\n    \n                预期结果；项目成员配置成功，法兰添加成功\n    \n        :param browser:\n        :return:\n        \"\"\"\n        # 窗口最大化操作（核心新增）\n        with allure.step('浏览器窗口最大化'):\n            browser.maximize_window()\n        #初始化页面对象\n        #实例化Wait\n        wait = WebDriverWait(browser,10)\n        wk = WebKeys(browser)\n        mj = GxrwJymsExecutor(browser)\n        #进入登录\n        with allure.step('进入LES登录页'):\n            login = LoginPage(browser)\n            login.login(LOGIN_URL_PC, USERNAME_sby_80, PASSWD)\n        time.sleep(1)\n    \n        # 点击个人信息框\n        with allure.step('点击个人信息框'):\n            wk.locator(*allPages.sy_Personal_information_box).click()\n    \n        # 点击退出登录\n        with allure.step('点击退出登录'):\n            wk.locator(*allPages.sy_log_out).click()\n        time.sleep(8)\n        with allure.step(\"登录设备员账号\"):\n            login = LoginPage(browser)\n>           login.login( USERNAME_sby_80, PASSWD)\nE           TypeError: LoginPage.login() missing 1 required positional argument: 'passwd'\n\ntestcase\\test_PC.py:65: TypeError",
+    "steps" : [ {
+      "name" : "浏览器窗口最大化",
+      "time" : {
+        "start" : 1774346060495,
+        "stop" : 1774346060547,
+        "duration" : 52
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "进入LES登录页",
+      "time" : {
+        "start" : 1774346060547,
+        "stop" : 1774346061618,
+        "duration" : 1071
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "点击个人信息框",
+      "time" : {
+        "start" : 1774346062620,
+        "stop" : 1774346062682,
+        "duration" : 62
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "点击退出登录",
+      "time" : {
+        "start" : 1774346062682,
+        "stop" : 1774346063273,
+        "duration" : 591
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "登录设备员账号",
+      "time" : {
+        "start" : 1774346071274,
+        "stop" : 1774346071274,
+        "duration" : 0
+      },
+      "status" : "broken",
+      "statusMessage" : "TypeError: LoginPage.login() missing 1 required positional argument: 'passwd'\n",
+      "statusTrace" : "  File \"C:\\Users\\chens\\Desktop\\git-demo\\LES_GL\\testcase\\test_PC.py\", line 65, in test_login02\n    login.login( USERNAME_sby_80, PASSWD)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "添加失败截图... ...",
+      "time" : {
+        "start" : 1774346071314,
+        "stop" : 1774346071467,
+        "duration" : 153
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "caeb0647ac9dea39",
+        "name" : "失败截图",
+        "source" : "caeb0647ac9dea39.png",
+        "type" : "image/png",
+        "size" : 57886
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1774346071468,
+      "stop" : 1774346073667,
+      "duration" : 2199
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "配置项目信息"
+  }, {
+    "name" : "feature",
+    "value" : "项目经理工作台"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "epic",
+    "value" : "LES系统"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_PC"
+  }, {
+    "name" : "host",
+    "value" : "Y-YU"
+  }, {
+    "name" : "thread",
+    "value" : "16204-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_PC"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "3c61ef7cbba9c4ee.json",
+  "parameterValues" : [ ]
+}

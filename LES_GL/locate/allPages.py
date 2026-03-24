@@ -19,6 +19,10 @@ page_login_loginBtn = ["xpath",'/html/body/div[1]/div/div/div[2]/div/form/div[3]
 '''
 二.菜单
 '''
+"首页"
+sy_Personal_information_box =["xpath","/html/body/div[1]/div/div/div[1]/div[2]/div/div[3]/span"]
+sy_log_out =["xpath","/html/body/div[3]/div[1]/div/div[1]/div/ul/li[2]"]
+
 #机动部静设备工作台
 #生产运行部设备工程师工作台
     #待办页面处理按钮
@@ -157,7 +161,7 @@ xmgl_jx_qd=["xpath","//span[text()='确定']"]
 
     # 返回
 xmgl_fh=["xpath","//span[text()='返回']/parent::button"]
-#服务计划管理
+"""服务计划管理"""
 fwjh =["xpath","/html/body/div[1]/div/div/div[2]/div/div[1]/div/ul/li[2]/div/span"]
     #定力矩服务计划
 fwjh_dljfwjh =["xpath","/html/body/div[1]/div/div/div[2]/div/div[1]/div/ul/li[2]/ul/li[2]/span"]
@@ -229,6 +233,25 @@ fwjh_dljfwjh_jxfwpz_flpz_xzmb =["xpath",]
 fwjh_dljfwjh_jxfwpz_flpz_sc =["xpath",]
                     #翻页
 fwjh_dljfwjh_jxfwpz_flpz_fy =["xpath",]
+"任务中心"
+fwjh_rwzx=["xpath","//span[text()='任务中心']"]
+    #项目结项确认
+        #通过按钮
+fwjh_rwzx_xmjxqr_pass=["xpath","//span[text()='通 过']"]
+        #不通过
+fwjh_rwzx_=["xpath","//span[text()='不通过']"]
+
+fwjh_rwzx_=["xpath",""]
+
+
+fwjh_rwzx_=["xpath",""]
+
+
+fwjh_rwzx_=["xpath",""]
+
+
+
+
 
 """
 APP页面
