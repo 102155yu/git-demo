@@ -24,7 +24,7 @@ page_login_loginBtn = ["xpath",'/html/body/div[1]/div/div/div[2]/div/form/div[3]
     #待办页面处理按钮
 sby_gzt_db_cl=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[2]/div/div[3]/div[1]/div/div[2]/button/span"]
     #待办页面处理弹窗确认按钮
-sby_gzt_db_cl_qr=["xpath","/html/body/div[10]/div/div/div[3]/button/span"]
+sby_gzt_db_cl_qr=["xpath","//span[text()='确认']"]
     #定力矩服务计划页面 下派 按钮
 sby_gzt_db_cl_fb=["xpath","//button[contains(@class,'handler-btn')]//span[text()='发布']"]
         #定力矩服务计划页面 下派--确认 按钮
@@ -54,6 +54,37 @@ fws_fzr_lxqr_qr=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div/div[3
 xmjl_gzt_db_cl=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[2]/div/div[3]/div/div/div[2]/button/span"]
     #提示界面-确认按钮
 xmjl_gzt_db_ts_qr=["xpath","/html/body/div[9]/div/div/div[3]/button/span"]
+
+"""
+服务过程管理
+"""
+fwgcgl=["xpath","//span[contains(@class, 'el-tooltip__trigger') and text()='服务过程管理']"]
+"""
+    定力矩服务    
+"""
+fwgcgl_dljfw =["xpath","//span[contains(@class, 'el-tooltip__trigger') and text()='定力矩服务']"]
+"检修数据确认"
+fwgcgl_jxsjqr =["xpath","//span[text()='检修数据确认']"]
+    #通过按钮
+fwgcgl_jxsjqr_tg =["xpath","//span[text()='通过']"]
+    #不通过按钮
+fwgcgl_jxsjqr_btg =["xpath","//span[text()='不通过']"]
+    #全选按钮
+fwgcgl_jxsjqr_qx =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div/div[2]/div[1]/div/div[2]/div[2]/div/div[1]/div[2]/table/thead/tr/th[1]/div/label/span"]
+    #确定
+fwgcgl_jxsjqr_qd =["xpath","//span[text()='确定']"]
+        #审批意见
+fwgcgl_jxsjqr_spyj =["xpath","/html/body/div[4]/div/div/div[2]/div[2]/div[1]"]
+    #取消
+fwgcgl_jxsjqr_cancel =["xpath","//span[text()='取消']"]
+fwgcgl_jxsjqr_ =["xpath",""]
+
+
+"项目管理"
+fwgcgl_dljfw_xmgl =["xpath","//span[contains(@class, 'el-tooltip__trigger') and text()='项目管理']"]
+    #查看
+fwgcgl_dljfw_xmgl_ck =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[2]/div/div[1]/div[3]/div/div[1]/div/table/tbody/tr[1]/td[16]/div/div/div/div/button/span/span"]
+
 #项目管理页面
     #成员配置按钮
 xmgl_cypz=["xpath","//span[text()='成员配置']/parent::button"]
@@ -72,6 +103,18 @@ xmgl_cypz_tj_qd=["xpath","/html/body/div[6]/div/div/footer/div/button[2]/span"]
 xmgl_cypz_fh=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[1]/button/span"]
     #推送设备员按钮
 xmgl_tssby=["xpath","//span[text()='推送设备员确认']/parent::button"]
+        #推送按钮
+xmgl_tssby_ts =["xpath","(//button[contains(@class,'handler-btn')])[3]"]
+            #全选
+xmgl_tssby_ts_qx =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[2]/div[1]/div/div[2]/div/div/div/div[1]/div/div[1]/div[2]/table/thead/tr/th[1]/div/label/span"]
+            #确定
+xmgl_tssby_ts_qd =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[2]/div[1]/div/div[2]/div/div/footer/span/button[2]/span"]
+        #返回按钮
+xmgl_tssby_fh =["xpath",'//span[text()="返回"]']
+xmgl_tssby_ =["xpath",""]
+xmgl_tssby_ =["xpath",""]
+xmgl_tssby_ =["xpath",""]
+xmgl_tssby_ =["xpath",""]
     #检修范围按钮
 xmgl_jxfw=["xpath","//span[text()='检修范围']/parent::button"]
         #下一页按钮
@@ -86,6 +129,7 @@ xmgl_jxfw_tj=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div/d
 xmgl_jxfw_tj_qr=["xpath","/html/body/div[7]/div/div/div[3]/button[2]/span"]
         #返回按钮
 xmgl_jxfw_fh=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[1]/div[2]/button/span"]
+
     # 角色配置
 xmgl_jspz=["xpath","//span[text()='角色配置']/parent::button"]
     # 压测

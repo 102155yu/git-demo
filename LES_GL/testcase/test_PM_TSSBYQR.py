@@ -18,8 +18,8 @@ from LES_GL.page.process import *
 
 @allure.epic('LES系统')
 @allure.feature('项目经理工作台')
-@allure.story('配置项目信息')
-@allure.title('项目经理配置项目信息')
+@allure.story('推送设备员确认')
+@allure.title('推送设备员确认')
 @allure.severity('critical')
 def test_login02(browser):
     """
@@ -49,15 +49,40 @@ def test_login02(browser):
     #进入登录
     with allure.step('进入LES登录页'):
         login = LoginPage(browser)
-        login.login(LOGIN_URL_PC, USERNAME_sby_80, PASSWD)
+        login.login(LOGIN_URL_PC, USERNAME_XMJL_PM, PASSWD)
     time.sleep(1)
 
-    #点击待办
-    with allure.step('点击待办'):
-        wk.locator(*allPages.sby_gzt_db_cl).click()
+    #服务过程管理菜单
+    with allure.step('服务过程管理菜单'):
+        wk.locator(*allPages.fwgcgl).click()
+    #点击定力矩服务菜单
+    with allure.step('点击定力矩服务菜单'):
+        wk.locator(*allPages.fwgcgl_dljfw).click()
+    # 点击项目管理菜单
+    with allure.step('点击项目管理菜单'):
+        wk.locator(*allPages.fwgcgl_dljfw_xmgl).click()
+    #进入项目管理页面点击查看按钮
+    with allure.step('进入项目管理页面点击查看按钮'):
+        wk.locator(*allPages.fwgcgl_dljfw_xmgl_ck).click()
 
+    #进入项目页面点击推送设备员确认
+    with allure.step('进入项目页面点击推送设备员确认'):
+        wk.locator(*allPages.xmgl_tssby).click()
+    #点击推送按钮
+    with allure.step('点击推送按钮'):
+        wk.locator(*allPages.xmgl_tssby_ts).click()
 
+    #勾选法兰进行推送
+    with allure.step('勾选法兰'):
+        wk.locator(*allPages.xmgl_tssby_ts_qx).click()
 
+    #点击确定
+    with allure.step('点击确定'):
+        wk.locator(*allPages.xmgl_tssby_ts_qd).click()
+
+    #点击返回推送成功
+    with allure.step('点击返回推送成功'):
+        wk.locator(*allPages.xmgl_tssby_fh).click()
 
 
 

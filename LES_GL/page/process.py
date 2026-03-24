@@ -24,7 +24,6 @@ class GxrwJymsExecutor:
         self.wk = WebKeys(browser)
 
     def execute_full_jrgxcl_flow(self):
-        """执行完整的简易模式工序数据填写流程（与原用例逻辑完全一致）"""
 
         # ========== 进入定力矩服务-工序处理-待处理 ==========
         # 点击工序处理
@@ -37,6 +36,7 @@ class GxrwJymsExecutor:
         self.wk.locator(*allPages.app_dljfw_gxcl_dcl_dj_01).click()
         time.sleep(2)
 
+    # ========== 密封面检查 ==========
     def execute_full_gxrw_mfmjc_flow(self):
         # ========== 4. 密封面检查 ==========
         # 点击密封面检查页签
@@ -52,8 +52,8 @@ class GxrwJymsExecutor:
         self.wk.locator(*allPages.app_gxrw_mfmjc_tj).click()
         time.sleep(3)
 
+    # ==========  法兰挂牌  ==========
     def execute_full_gxrw_flgp_flow(self):
-        # 法兰挂牌页面
         # 点击法兰挂牌页签
         with allure.step('点击页签法兰挂牌'):
             self.wk.locator(*allPages.app_gxrw_flgp).click()
@@ -81,6 +81,8 @@ class GxrwJymsExecutor:
         #点击提交按钮提交任务
         with allure.step('点击提交任务'):
             self.wk.locator(*allPages.app_gxrw_flgp_tj).click()
+
+    # ==========  法兰拆卸  ==========
     def execute_full_gxrw_flcx_flow(self):
         # 法兰拆卸页面
         # 点击法兰拆卸页签
@@ -117,6 +119,8 @@ class GxrwJymsExecutor:
         # #点击提交按钮提交任务
         with allure.step('点击提交任务'):
             self.wk.locator(*allPages.app_gxrw_flgp_tj).click()
+
+    # ==========  垫片检查  ==========
     def execute_full_gxrw_dpjc_flow(self):
         # ========== 5. 垫片检查 ==========
         # 点击垫片检查页签
@@ -137,8 +141,9 @@ class GxrwJymsExecutor:
         # 提交任务
         self.wk.locator(*allPages.app_gxrw_flgp_tj).click()
         time.sleep(3)
+
+    # ==========  紧固件检查  ==========
     def execute_full_gxrw_jgjjc_flow(self):
-        # ========== 6. 紧固件检查 ==========
         # 点击紧固件检查页签
         self.wk.locator(*allPages.app_gxrw_jgjjc).click()
         time.sleep(1)
@@ -151,6 +156,8 @@ class GxrwJymsExecutor:
         # 提交任务
         self.wk.locator(*allPages.app_gxrw_flgp_tj).click()
         time.sleep(3)
+
+    # ==========  预装确认  ==========
     def execute_full_gxrw_yzqr_flow(self):
         # 预装确认页面
         # 点击预装确认页签
@@ -173,6 +180,8 @@ class GxrwJymsExecutor:
         # #点击提交按钮提交任务
         with allure.step('点击提交任务'):
             self.wk.locator(*allPages.app_gxrw_yzqr_tj).click()
+
+    # ========== SOP确认 ==========
     def execute_full_gxrw_sopqr_flow(self):
     # 新增通用函数：等待元素可交互 + 无值则填写
 
@@ -253,6 +262,8 @@ class GxrwJymsExecutor:
             with allure.step('点击提交任务'):
                 wk.locator(*allPages.app_gxrw_sopqr_tj).click()
                 time.sleep(3)
+
+    # ========== 法兰抽检 ==========
     def execute_full_gxrw_flcj_flow(self):
         # 法兰抽检页面
         # 点击法兰抽检页签
@@ -316,6 +327,7 @@ class GxrwJymsExecutor:
         with allure.step('点击提交任务'):
             self.wk.locator(*allPages.app_gxrw_flcj_tj).click()
 
+    # ========== 完工确认 ==========
     def execute_full_gxrw_wgqr_flow(self):  # 完工确认
         # 点击完工确认页签
         with allure.step('点击完工确认页签'):
@@ -327,6 +339,8 @@ class GxrwJymsExecutor:
             self.wk.locator(*allPages.app_gxrw_wgqr_tj).click()
 
             time.sleep(3)
+
+    # ========== 法兰校核 ==========
     def execute_full_gxrw_fljh_flow(self):    # 法兰校核
         # ========== 关键：适配你屏幕的坐标（根据截图调整） ==========
         # 步骤1：运行代码到“调整成手机模式”后暂停，手动获取以下坐标：
@@ -419,6 +433,8 @@ class GxrwJymsExecutor:
         #点击提交按钮提交任务
         with allure.step('点击提交任务'):
             self.wk.locator(*allPages.app_gxrw_fljh_tj).click()
+
+    # ========== 螺栓抽检 ==========
     def execute_full_gxrw_lscj_flow(self):
         # 螺栓抽检页面
         # 点击螺栓抽检页签
@@ -459,6 +475,26 @@ class GxrwJymsExecutor:
             # 点击返回
         with allure.step('点击返回'):
             self.wk.locator(*allPages.xmgl_cypz_fh).click()
+    #推送设备员确认
+    def execute_full_PM_tssbyqr_flow(self):
+        # 进入项目页面点击推送设备员确认
+        with allure.step('进入项目页面点击推送设备员确认'):
+            self.wk.locator(*allPages.xmgl_tssby).click()
+        # 点击推送按钮
+        with allure.step('点击推送按钮'):
+            self.wk.locator(*allPages.xmgl_tssby_ts).click()
+
+        # 勾选法兰进行推送
+        with allure.step('勾选法兰'):
+            self.wk.locator(*allPages.xmgl_tssby_ts_qx).click()
+
+        # 点击确定
+        with allure.step('点击确定'):
+            self.wk.locator(*allPages.xmgl_tssby_ts_qd).click()
+
+        # 点击返回推送成功
+        with allure.step('点击返回推送成功'):
+            self.wk.locator(*allPages.xmgl_tssby_fh).click()
 
     # 配置检修范围
     def execute_full_PM_pzjxfw_flow(self):
@@ -492,7 +528,7 @@ class GxrwJymsExecutor:
         with allure.step('点击返回'):
             self.wk.locator(*allPages.xmgl_jxfw_fh).click()
 
-
+    # 新建服务商
     def execute_full_zg_fwsgl_flow(self):
         #新建服务商
         #添加服务商
@@ -676,3 +712,25 @@ class GxrwJymsExecutor:
         # 点击确认按钮
         with allure.step('点击确认按钮'):
             self.wk.locator(*allPages.fws_fzr_lxqr_qr).click()
+
+
+#设备员通过检修数据确认
+    def execute_full_sby_jxsjqr_flow(self):
+        # 点击待办
+        with allure.step('点击待办'):
+            self.wk.locator(*allPages.sby_gzt_db_cl).click()
+
+        # 点击确认
+        with allure.step('点击确认跳转至详情页'):
+            self.wk.locator(*allPages.sby_gzt_db_cl_qr).click()
+
+        # 点击全选
+        with allure.step('点击全选'):
+            self.wk.locator(*allPages.fwgcgl_jxsjqr_qx).click()
+
+        # 点击通过
+        with allure.step('点击通过'):
+            self.wk.locator(*allPages.fwgcgl_jxsjqr_tg).click()
+        # 点击确定
+        with allure.step('点击确定'):
+            self.wk.locator(*allPages.fwgcgl_jxsjqr_qd).click()

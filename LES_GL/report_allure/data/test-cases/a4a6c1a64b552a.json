@@ -1,12 +1,12 @@
 {
-  "uid" : "22b87ff15851fb4d",
+  "uid" : "a4a6c1a64b552a",
   "name" : "项目经理配置项目信息",
   "fullName" : "testcase.test_PC#test_login02",
   "historyId" : "125fa818ce7726e5b2362ce6e659ea74",
   "time" : {
-    "start" : 1774260079107,
-    "stop" : 1774260083490,
-    "duration" : 4383
+    "start" : 1774336003940,
+    "stop" : 1774336007764,
+    "duration" : 3824
   },
   "description" : "\n        用例编号：test_loin02\n            用例标题：项目经理配置项目信息\n            前置条件：服务商负责人配置完成项目经理\n            测试步骤：\n                1.登录项目经理账号\n                2.点击工作台待办处理\n                3.项目配置项目成员\n                4.添加法兰进入检修范围\n                5.提交至设备员确认\n\n            预期结果；项目成员配置成功，法兰添加成功\n\n    :param browser:\n    :return:\n    ",
   "descriptionHtml" : "<pre><code>    用例编号：test_loin02\n        用例标题：项目经理配置项目信息\n        前置条件：服务商负责人配置完成项目经理\n        测试步骤：\n            1.登录项目经理账号\n            2.点击工作台待办处理\n            3.项目配置项目成员\n            4.添加法兰进入检修范围\n            5.提交至设备员确认\n\n        预期结果；项目成员配置成功，法兰添加成功\n\n:param browser:\n:return:\n</code></pre>\n",
@@ -16,9 +16,9 @@
   "beforeStages" : [ {
     "name" : "browser",
     "time" : {
-      "start" : 1774260077906,
-      "stop" : 1774260079107,
-      "duration" : 1201
+      "start" : 1774336002544,
+      "stop" : 1774336003940,
+      "duration" : 1396
     },
     "status" : "passed",
     "steps" : [ ],
@@ -26,8 +26,8 @@
     "parameters" : [ ],
     "stepsCount" : 0,
     "hasContent" : false,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
   } ],
   "testStage" : {
     "description" : "\n        用例编号：test_loin02\n            用例标题：项目经理配置项目信息\n            前置条件：服务商负责人配置完成项目经理\n            测试步骤：\n                1.登录项目经理账号\n                2.点击工作台待办处理\n                3.项目配置项目成员\n                4.添加法兰进入检修范围\n                5.提交至设备员确认\n\n            预期结果；项目成员配置成功，法兰添加成功\n\n    :param browser:\n    :return:\n    ",
@@ -35,9 +35,9 @@
     "steps" : [ {
       "name" : "浏览器窗口最大化",
       "time" : {
-        "start" : 1774260079107,
-        "stop" : 1774260079148,
-        "duration" : 41
+        "start" : 1774336003940,
+        "stop" : 1774336003984,
+        "duration" : 44
       },
       "status" : "passed",
       "steps" : [ ],
@@ -45,14 +45,14 @@
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : false,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
       "name" : "进入LES登录页",
       "time" : {
-        "start" : 1774260079148,
-        "stop" : 1774260080243,
-        "duration" : 1095
+        "start" : 1774336003984,
+        "stop" : 1774336005117,
+        "duration" : 1133
       },
       "status" : "passed",
       "steps" : [ ],
@@ -60,14 +60,14 @@
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : false,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
-      "name" : "点击待办处理",
+      "name" : "点击待办",
       "time" : {
-        "start" : 1774260081244,
-        "stop" : 1774260081348,
-        "duration" : 104
+        "start" : 1774336006118,
+        "stop" : 1774336006196,
+        "duration" : 78
       },
       "status" : "passed",
       "steps" : [ ],
@@ -75,14 +75,14 @@
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : false,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
-      "name" : "点击处理弹窗确认按钮",
+      "name" : "点击确认跳转至详情页",
       "time" : {
-        "start" : 1774260081348,
-        "stop" : 1774260081940,
-        "duration" : 592
+        "start" : 1774336006196,
+        "stop" : 1774336006777,
+        "duration" : 581
       },
       "status" : "passed",
       "steps" : [ ],
@@ -90,127 +90,67 @@
       "parameters" : [ ],
       "stepsCount" : 0,
       "hasContent" : false,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
-      "name" : "点击成员配置按钮",
+      "name" : "点击全选",
       "time" : {
-        "start" : 1774260081940,
-        "stop" : 1774260083490,
-        "duration" : 1550
+        "start" : 1774336006777,
+        "stop" : 1774336007113,
+        "duration" : 336
       },
       "status" : "passed",
-      "steps" : [ {
-        "name" : "点击成员配置按钮",
-        "time" : {
-          "start" : 1774260081940,
-          "stop" : 1774260082613,
-          "duration" : 673
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "stepsCount" : 0,
-        "hasContent" : false,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      }, {
-        "name" : "点击添加",
-        "time" : {
-          "start" : 1774260082613,
-          "stop" : 1774260082731,
-          "duration" : 118
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "stepsCount" : 0,
-        "hasContent" : false,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      }, {
-        "name" : "点击下拉按钮",
-        "time" : {
-          "start" : 1774260082732,
-          "stop" : 1774260082875,
-          "duration" : 143
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "stepsCount" : 0,
-        "hasContent" : false,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      }, {
-        "name" : "全选",
-        "time" : {
-          "start" : 1774260082875,
-          "stop" : 1774260082940,
-          "duration" : 65
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "stepsCount" : 0,
-        "hasContent" : false,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      }, {
-        "name" : "点击确定",
-        "time" : {
-          "start" : 1774260082940,
-          "stop" : 1774260083007,
-          "duration" : 67
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "stepsCount" : 0,
-        "hasContent" : false,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      }, {
-        "name" : "点击返回",
-        "time" : {
-          "start" : 1774260083007,
-          "stop" : 1774260083489,
-          "duration" : 482
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "stepsCount" : 0,
-        "hasContent" : false,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      } ],
+      "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 6,
-      "hasContent" : true,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "点击通过",
+      "time" : {
+        "start" : 1774336007114,
+        "stop" : 1774336007188,
+        "duration" : 74
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "点击确定",
+      "time" : {
+        "start" : 1774336007188,
+        "stop" : 1774336007764,
+        "duration" : 576
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 11,
+    "stepsCount" : 7,
     "hasContent" : true,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
   },
   "afterStages" : [ {
     "name" : "browser::0",
     "time" : {
-      "start" : 1774260083490,
-      "stop" : 1774260085683,
-      "duration" : 2193
+      "start" : 1774336007764,
+      "stop" : 1774336009946,
+      "duration" : 2182
     },
     "status" : "passed",
     "steps" : [ ],
@@ -218,21 +158,21 @@
     "parameters" : [ ],
     "stepsCount" : 0,
     "hasContent" : false,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
   } ],
   "labels" : [ {
     "name" : "epic",
     "value" : "LES系统"
-  }, {
-    "name" : "story",
-    "value" : "配置项目信息"
   }, {
     "name" : "severity",
     "value" : "critical"
   }, {
     "name" : "feature",
     "value" : "项目经理工作台"
+  }, {
+    "name" : "story",
+    "value" : "配置项目信息"
   }, {
     "name" : "parentSuite",
     "value" : "testcase"
@@ -244,7 +184,7 @@
     "value" : "Y-YU"
   }, {
     "name" : "thread",
-    "value" : "11176-MainThread"
+    "value" : "31156-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -268,6 +208,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "22b87ff15851fb4d.json",
+  "source" : "a4a6c1a64b552a.json",
   "parameterValues" : [ ]
 }

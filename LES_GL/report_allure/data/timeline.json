@@ -4,22 +4,22 @@
   "children" : [ {
     "name" : "Y-YU",
     "children" : [ {
-      "name" : "11176-MainThread",
+      "name" : "31156-MainThread",
       "children" : [ {
         "name" : "项目经理配置项目信息",
-        "uid" : "22b87ff15851fb4d",
-        "parentUid" : "286a4d45fd1a65a9e79a3480b451f64e",
+        "uid" : "a4a6c1a64b552a",
+        "parentUid" : "1d3632803faf86f982134a92facd4992",
         "status" : "passed",
         "time" : {
-          "start" : 1774260079107,
-          "stop" : 1774260083490,
-          "duration" : 4383
+          "start" : 1774336003940,
+          "stop" : 1774336007764,
+          "duration" : 3824
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "286a4d45fd1a65a9e79a3480b451f64e"
+      "uid" : "1d3632803faf86f982134a92facd4992"
     } ],
     "uid" : "d8235af02a0b4ab572b70292f685faa2"
   } ]

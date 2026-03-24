@@ -1,10 +1,10 @@
 [ {
-  "uid" : "22b87ff15851fb4d",
+  "uid" : "a4a6c1a64b552a",
   "name" : "项目经理配置项目信息",
   "time" : {
-    "start" : 1774260079107,
-    "stop" : 1774260083490,
-    "duration" : 4383
+    "start" : 1774336003940,
+    "stop" : 1774336007764,
+    "duration" : 3824
   },
   "status" : "passed",
   "severity" : "critical"
