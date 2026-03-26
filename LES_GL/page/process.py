@@ -740,7 +740,7 @@ class GxrwJymsExecutor:
             self.wk.locator(*allPages.fws_fzr_lxqr_qr).click()
 
 
-#设备员通过检修数据确认
+#设备员通过检修数据确认(项目经理推送法兰)
     def execute_full_sby_jxsjqr_flow(self):
         # 点击待办
         with allure.step('点击待办'):
@@ -821,15 +821,19 @@ class GxrwJymsExecutor:
         with allure.step('点击结项确定按钮'):
             self.wk.locator(*allPages.xmgl_jx_qd).click()
 
-# 设备员审批通过
+# 设备员审批通过（法兰添加检修范围）
     def execute_full_sby_jx_pass_flow(self):
         # 点击待办处理
         with allure.step('点击待办处理'):
             self.wk.locator(*allPages.sby_gzt_db_cl).click()
 
-        # 点击通过
-        with allure.step('点击待办处理'):
-            self.wk.locator(*allPages.fwjh_rwzx_xmjxqr_pass).click()
+        # 进入检修范围添加确认页面
+        with allure.step('点击驳回'):  # 不勾选内容情况下点击驳回会同意所有选项
+            self.wk.locator(*allPages.sby_gzt_db_jxfwqr_bh).click()
+
+        # 点击确认按钮
+        with allure.step('点击确认按钮'):
+            self.wk.locator(*allPages.sby_gzt_db_jxfwqr_bh_qr).click()
 #关闭浏览器
     def close_browser(self, delay=0):
         """
@@ -938,7 +942,7 @@ class GxrwJymsExecutor:
 
         # 填写计划检修量
         with allure.step("选择装置:55万吨"):
-            self.wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_jhjxl).send_keys("50")
+            self.wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_jhjxl).send_keys("200")
 
         # 选择服务模式
         with allure.step("选择服务模式：简易模式"):

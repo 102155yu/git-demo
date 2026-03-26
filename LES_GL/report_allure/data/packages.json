@@ -1,22 +1,22 @@
 {
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-  "name" : "packages",
   "children" : [ {
     "name" : "testcase.test_PC",
     "children" : [ {
-      "name" : "项目经理配置项目信息",
-      "uid" : "21d811cd63bdef04",
+      "name" : "主要流程验证",
+      "uid" : "843dbe8a000c9b3b",
       "parentUid" : "717a22171bfe0bcec8233d60fb56b329",
-      "status" : "passed",
+      "status" : "broken",
       "time" : {
-        "start" : 1774518426208,
-        "stop" : 1774518454978,
-        "duration" : 28770
+        "start" : 1774519470684,
+        "stop" : 1774519602423,
+        "duration" : 131739
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     } ],
     "uid" : "testcase.test_PC"
-  } ]
+  } ],
+  "name" : "packages"
 }
