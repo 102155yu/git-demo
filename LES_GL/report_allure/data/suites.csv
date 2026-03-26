@@ -1,5 +1,5 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue Mar 24 18:06:25 CST 2026","Tue Mar 24 18:06:46 CST 2026","20985","testcase","test_PC","","","","项目经理配置项目信息","
+"passed","Thu Mar 26 09:55:38 CST 2026","Thu Mar 26 09:57:25 CST 2026","107057","testcase","test_PC","","","","项目经理配置项目信息","
         用例编号：test_loin02
             用例标题：项目经理配置项目信息
             前置条件：服务商负责人配置完成项目经理
