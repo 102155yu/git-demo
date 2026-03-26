@@ -11,8 +11,7 @@ from LES_GL.VAR.BOOKHOUSER_VAR import LOGIN_URL_APP, USERNAME_CZG_YJA, PASSWD
 from LES_GL.key_word.keyword import *
 from LES_GL.locate import allPages
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException, ElementNotInteractableException
-
+from selenium.common.exceptions import TimeoutException, ElementNotInteractableException, WebDriverException
 
 
 class GxrwJymsExecutor:
@@ -503,31 +502,57 @@ class GxrwJymsExecutor:
         # 点击检修范围
         with allure.step('点击检修范围按钮'):
             self.wk.locator(*allPages.xmgl_jxfw).click()
+            time.sleep(3)
 
-        # 进入检修范围页面
-        # 点击下一页
-        # with allure.step('点击下一页'):
-        #     self.wk.locator(*allPages.xmgl_jxfw_xyy).click()
-        #     # 点击下一页
-        # with allure.step('点击下一页'):
-        #     self.wk.locator(*allPages.xmgl_jxfw_xyy).click()
-        # 选择第一个法兰点击勾选
-        # with allure.step('点击勾选第一个法兰'):
-        #     self.wk.locator(*allPages.xmgl_jxfw_gx_01).click()
-            # 点击勾选全部法兰
-        with allure.step('点击勾选全部法兰'):
-            self.wk.locator(*allPages.xmgl_jxfw_gx_01).click()
-            # 点击提交
-        with allure.step('点击提交'):
-            self.wk.locator(*allPages.xmgl_jxfw_tj).click()
-        # 弹出确认框
-        # 点击确定
-        with allure.step('点击确定'):
-            self.wk.locator(*allPages.xmgl_jxfw_tj_qr).click()
+            # 勾选全部法兰
+            with allure.step('点击勾选全部法兰'):
+                self.wk.locator(*allPages.xmgl_jxfw_gx_qx).click()
+                time.sleep(2)
 
-        #点击返回
-        with allure.step('点击返回'):
-            self.wk.locator(*allPages.xmgl_jxfw_fh).click()
+            # ====================== 循环翻页勾选（只做勾选，不提交！）======================
+            max_pages = 50  # 最多翻50页，防止卡死
+            current_page = 0
+
+            while current_page < max_pages:
+                try:
+                    # 获取选中条数
+                    selected_text = self.wk.locator(*allPages.xmgl_jxfw_selected_count).text
+                    selected_count = int(selected_text.replace('已选中', '').replace('条数据', ''))
+                    allure.attach(f"第{current_page + 1}页选中：{selected_count}条", "数据", allure.attachment_type.TEXT)
+
+                    # 本页无数据 → 翻页
+                    if selected_count == 0:
+                        with allure.step(f"第{current_page + 1}页无数据，翻下一页"):
+                            # JS 点击下一页（永不报错）
+                            next_ele = self.wk.locator(*allPages.xmgl_jxfw_xyy)
+                            self.browser.execute_script("arguments[0].click();", next_ele)
+                            time.sleep(3)
+
+                            # 翻页后重新勾选
+                            self.wk.locator(*allPages.xmgl_jxfw_gx_qx).click()
+                            time.sleep(2)
+                            current_page += 1
+                    else:
+                        # 有数据，退出循环
+                        break
+
+                except Exception as e:
+                    allure.attach(f"异常：{str(e)}", "错误", allure.attachment_type.TEXT)
+                    break
+
+            # ====================== 【循环结束】才提交！======================
+            with allure.step(f'已选中{selected_count}条数据，点击提交'):
+                self.wk.locator(*allPages.xmgl_jxfw_tj).click()
+                time.sleep(2)
+
+            # 点击确认框确定
+            with allure.step('点击确认弹窗确定'):
+                self.wk.locator(*allPages.xmgl_jxfw_tj_qr).click()
+                time.sleep(2)
+
+            # 点击返回
+            with allure.step('点击返回'):
+                self.wk.locator(*allPages.xmgl_jxfw_fh).click()
 
     # 新建服务商
     def execute_full_zg_fwsgl_flow(self):
@@ -805,8 +830,25 @@ class GxrwJymsExecutor:
         # 点击通过
         with allure.step('点击待办处理'):
             self.wk.locator(*allPages.fwjh_rwzx_xmjxqr_pass).click()
-
-#退出登录
+#关闭浏览器
+    def close_browser(self, delay=0):
+        """
+        封装关闭浏览器的通用方法
+        :param delay: 延迟关闭时间（秒），默认0秒
+        """
+        with allure.step(f"延迟{delay}秒后关闭浏览器"):
+            if delay > 0:
+                time.sleep(delay)
+            try:
+                self.browser.quit()
+                allure.attach(f"延迟{delay}秒后，浏览器已成功关闭", "关闭结果", allure.attachment_type.TEXT)
+            except WebDriverException as e:
+                error_msg = f"延迟{delay}秒后关闭浏览器失败：{str(e)}"
+                allure.attach(error_msg, "关闭结果（异常）", allure.attachment_type.TEXT)
+                print(f"【警告】{error_msg}")
+            finally:
+                self.browser = None
+    #退出登录
     def execute_full_log_out_flow(self):
         # 点击个人信息框
         with allure.step('点击个人信息框'):
@@ -949,40 +991,40 @@ class GxrwJymsExecutor:
             self.wk.locator(*allPages.rwfb_xp_sure).click()
 
 
-"""服务模式"""
+#"""服务模式"""
 #标准模式
 
     def execute_full_xmjl_xprw_flow(self):
     # 填写法兰挂牌工序任务
         with allure.step('提交工序：法兰挂牌'):
-            execute_full_gxrw_flgp_flow()
+            self.execute_full_gxrw_flgp_flow()
             # 填写法兰拆卸工序任务
         with allure.step('提交工序：法兰拆卸'):
-            jyms_executor.execute_full_gxrw_flcx_flow()
+            self.execute_full_gxrw_flcx_flow()
             # 填写密封面检查工序任务
         with allure.step('提交工序：密封面检查'):
-            jyms_executor.execute_full_gxrw_mfmjc_flow()
+            self.execute_full_gxrw_mfmjc_flow()
             # 填写垫片检查工序任务
         with allure.step('提交工序：垫片检查'):
-            jyms_executor.execute_full_gxrw_dpjc_flow()
+            self.execute_full_gxrw_dpjc_flow()
             # 填写紧固件检查工序任务
         with allure.step('提交工序：紧固件检查'):
-            jyms_executor.execute_full_gxrw_jgjjc_flow()
+            self.execute_full_gxrw_jgjjc_flow()
             # 填写预装确认工序任务
         with allure.step('提交工序：预装确认'):
-            jyms_executor.execute_full_gxrw_yzqr_flow()
+            self.execute_full_gxrw_yzqr_flow()
             # 填写SOP确认工序任务
         with allure.step('提交工序：SOP确认'):
-            jyms_executor.execute_full_gxrw_sopqr_flow()
+            self.execute_full_gxrw_sopqr_flow()
             # 填写法兰抽检工序任务
         with allure.step('提交工序：法兰抽检'):
-            jyms_executor.execute_full_gxrw_flcj_flow()
+            self.execute_full_gxrw_flcj_flow()
             # 填写完工确认工序任务
         with allure.step('提交工序：完工确认'):
-            jyms_executor.execute_full_gxrw_wgqr_flow()
+            self.execute_full_gxrw_wgqr_flow()
             # 填写法兰校核工序任务
         with allure.step('提交工序：法兰校核'):
-            jyms_executor.execute_full_gxrw_fljh_flow()
+            self.execute_full_gxrw_fljh_flow()
             # 填写螺栓抽检工序任务
         with allure.step('提交工序：螺栓抽检'):
-            jyms_executor.execute_full_gxrw_lscj_flow()
+            self.execute_full_gxrw_lscj_flow()

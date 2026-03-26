@@ -1,26 +1,26 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
   "children" : [ {
     "name" : "Y-YU",
     "children" : [ {
-      "name" : "9772-MainThread",
+      "name" : "29800-MainThread",
       "children" : [ {
-        "name" : "主要流程验证",
-        "uid" : "f9fe41fe135f0207",
-        "parentUid" : "b740d28405f25eb5391f7b34300823d8",
-        "status" : "broken",
+        "name" : "项目经理配置项目信息",
+        "uid" : "21d811cd63bdef04",
+        "parentUid" : "6069be2fed30e1ad100fd8980dc71150",
+        "status" : "passed",
         "time" : {
-          "start" : 1774507680081,
-          "stop" : 1774507700700,
-          "duration" : 20619
+          "start" : 1774518426208,
+          "stop" : 1774518454978,
+          "duration" : 28770
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "b740d28405f25eb5391f7b34300823d8"
+      "uid" : "6069be2fed30e1ad100fd8980dc71150"
     } ],
     "uid" : "d8235af02a0b4ab572b70292f685faa2"
-  } ],
-  "name" : "timeline"
+  } ]
 }

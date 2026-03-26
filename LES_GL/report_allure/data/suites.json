@@ -1,18 +1,19 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
   "children" : [ {
     "name" : "testcase",
     "children" : [ {
       "name" : "test_PC",
       "children" : [ {
-        "name" : "主要流程验证",
-        "uid" : "f9fe41fe135f0207",
+        "name" : "项目经理配置项目信息",
+        "uid" : "21d811cd63bdef04",
         "parentUid" : "12bc2e26a5751fc7dd79a86946530b0d",
-        "status" : "broken",
+        "status" : "passed",
         "time" : {
-          "start" : 1774507680081,
-          "stop" : 1774507700700,
-          "duration" : 20619
+          "start" : 1774518426208,
+          "stop" : 1774518454978,
+          "duration" : 28770
         },
         "flaky" : false,
         "newFailed" : false,
@@ -21,6 +22,5 @@
       "uid" : "12bc2e26a5751fc7dd79a86946530b0d"
     } ],
     "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
-  } ],
-  "name" : "suites"
+  } ]
 }

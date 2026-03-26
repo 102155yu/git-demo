@@ -1,11 +1,11 @@
 [ {
-  "uid" : "f9fe41fe135f0207",
-  "name" : "主要流程验证",
+  "uid" : "21d811cd63bdef04",
+  "name" : "项目经理配置项目信息",
   "time" : {
-    "start" : 1774507680081,
-    "stop" : 1774507700700,
-    "duration" : 20619
+    "start" : 1774518426208,
+    "stop" : 1774518454978,
+    "duration" : 28770
   },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "critical"
 } ]

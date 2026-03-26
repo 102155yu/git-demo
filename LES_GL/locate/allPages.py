@@ -122,9 +122,12 @@ xmgl_tssby_ =["xpath",""]
     #检修范围按钮
 xmgl_jxfw=["xpath","//span[text()='检修范围']/parent::button"]
         #下一页按钮
-xmgl_jxfw_xyy=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[4]/button[2]/i"]
+xmgl_jxfw_xyy=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[4]/button[2]"]
         #全选
-xmgl_jxfw_gx_qx=["xpath",'<span class="el-checkbox__input"><input class="el-checkbox__original" type="checkbox" id="el-id-429-2327"><span class="el-checkbox__inner"></span></span>']
+xmgl_jxfw_gx_qx=["xpath",'/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[3]/div/div[1]/div[2]/table/thead/tr/th[1]/div/label/span']
+        #已选中X条数据
+xmgl_jxfw_selected_count = ["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div/div[2]/span"]
+
         #勾选1
 xmgl_jxfw_gx_01=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[3]/div/div[1]/div[3]/div/div[1]/div/table/tbody/tr[1]/td[1]/div/label/span/span"]
         #提交按钮
