@@ -97,4 +97,39 @@ def test_login02(browser):
     with allure.step("成员配置添加所有成员进项目"):
         mj.execute_full_PM_cypz_flow()
 
+    with allure.step("添加法兰到检修范围"):
+        mj.execute_full_PM_pzjxfw_flow()
+
+    with allure.step('退出登录'):
+        mj.execute_full_log_out_flow()
+
+    with allure.step("登录设备员账号"):
+        login = LoginPage(browser)
+        login.input_credential_and_login(USERNAME_sby_80, PASSWD)
+
+    with allure.step("设备员通过检修数据确认"):
+        mj.execute_full_sby_jxsjqr_flow()
+
+    with allure.step('退出登录'):
+        mj.execute_full_log_out_flow()
+
+    with allure.step("登录项目经理账号"):
+        login = LoginPage(browser)
+        login.input_credential_and_login(USERNAME_XMJL_LQ, PASSWD)
+
+    with allure.step('下派任务'):
+        mj.execute_full_xmjl_xprw_flow()
+
+    with allure.step('退出登录'):
+        mj.execute_full_log_out_flow()
+
+    with allure.step('进入APP端'):
+        login_app = LoginPage(browser)
+        login_app.loginapp(LOGIN_URL_APP, USERNAME_CZG_YJA, PASSWD)
+
+        time.sleep(2)
+
+    with allure.step(""):
+        mj.
+
     time.sleep(10)

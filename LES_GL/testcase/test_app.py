@@ -13,6 +13,8 @@ from LES_GL.key_word.keyword import WebKeys
 from LES_GL.locate import allPages
 from LES_GL.locate.allPages import *
 from LES_GL.page.login import *
+from LES_GL.page.process import GxrwJymsExecutor
+
 
 @allure.epic('LES系统APP端')
 @allure.feature('技术员APP页面')

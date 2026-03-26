@@ -161,6 +161,34 @@ xmgl_jx_qd=["xpath","//span[text()='确定']"]
 
     # 返回
 xmgl_fh=["xpath","//span[text()='返回']/parent::button"]
+
+"任务管理"
+rwgl =["xpath","//span[text()='任务管理']"]
+####'任务发布'###
+rwfb=["xpath","//span[text()='任务发布']"]
+#转派按钮
+rwfb_zp=["xpath","//span[text()='转派']"]
+#全选按钮
+rwfb_check_all=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[2]/div/div[1]/div[2]/table/thead/tr/th[1]/div/label/span"]
+#下派按钮
+rwfb_xp=["xpath","//span[text()='下派']"]
+    #负责人选项框
+rwfb_xp_fzrxxk=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[3]/div/div/div/form/div/div/div"]
+    #确定按钮
+rwfb_xp_sure=["xpath","//span[text()='确定']"]
+
+rwfb_zp_=["xpath",""]
+
+rwfb_zp_=["xpath",""]
+
+rwfb_zp_=["xpath",""]
+
+rwfb_zp_=["xpath",""]
+
+rwfb_zp_=["xpath",""]
+
+
+
 """服务计划管理"""
 fwjh =["xpath","/html/body/div[1]/div/div/div[2]/div/div[1]/div/ul/li[2]/div/span"]
     #定力矩服务计划

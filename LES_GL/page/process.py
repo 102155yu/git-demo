@@ -902,9 +902,7 @@ class GxrwJymsExecutor:
         with allure.step("选择服务模式：简易模式"):
             self.wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_fwms).click()
             ActionChains(self.browser) \
-                .key_down(Keys.DOWN) \
-                .key_down(Keys.DOWN) \
-                .key_down(Keys.DOWN) \
+                .key_down(Keys.UP) \
                 .key_down(Keys.ENTER) \
                 .perform()
         # 点击确认保存检修范围
@@ -915,3 +913,76 @@ class GxrwJymsExecutor:
         with allure.step("点击下派"):
             self.wk.locator(*allPages.fwjh_dljfwjh_xp).click()
         time.sleep(3)
+
+#项目经理下派任务
+    def execute_full_xmjl_xprw_flow(self):
+        # 点击服务过程管理
+        with allure.step("点击服务过程管理"):
+            self.wk.locator(*allPages.fwgcgl).click()
+        # 点击定力矩服务
+        with allure.step("点击定力矩服务"):
+            self.wk.locator(*allPages.fwgcgl_dljfw).click()
+        # 点击任务管理
+        with allure.step("点击任务管理"):
+            self.wk.locator(*allPages.rwgl).click()
+        # 点击任务发布
+        with allure.step("点击任务发布"):
+            self.wk.locator(*allPages.rwfb).click()
+        time.sleep(3)
+        # 点击勾选全部任务
+        with allure.step("勾选全部"):
+            self.wk.locator(*allPages.rwfb_check_all).click()
+        time.sleep(3)
+        # 点击下派
+        with allure.step("点击下派"):
+            self.wk.locator(*allPages.rwfb_xp).click()
+        # 点击负责人下拉框
+        with allure.step("点击负责人选项框"):
+            self.wk.locator(*allPages.rwfb_xp_fzrxxk).click()
+            ActionChains(self.browser) \
+                .send_keys("余家傲") \
+                .key_down(Keys.DOWN) \
+                .key_down(Keys.ENTER) \
+                .perform()
+        # 点击确定
+        with allure.step("点击确定"):
+            self.wk.locator(*allPages.rwfb_xp_sure).click()
+
+
+"""服务模式"""
+#标准模式
+
+    def execute_full_xmjl_xprw_flow(self):
+    # 填写法兰挂牌工序任务
+        with allure.step('提交工序：法兰挂牌'):
+            execute_full_gxrw_flgp_flow()
+            # 填写法兰拆卸工序任务
+        with allure.step('提交工序：法兰拆卸'):
+            jyms_executor.execute_full_gxrw_flcx_flow()
+            # 填写密封面检查工序任务
+        with allure.step('提交工序：密封面检查'):
+            jyms_executor.execute_full_gxrw_mfmjc_flow()
+            # 填写垫片检查工序任务
+        with allure.step('提交工序：垫片检查'):
+            jyms_executor.execute_full_gxrw_dpjc_flow()
+            # 填写紧固件检查工序任务
+        with allure.step('提交工序：紧固件检查'):
+            jyms_executor.execute_full_gxrw_jgjjc_flow()
+            # 填写预装确认工序任务
+        with allure.step('提交工序：预装确认'):
+            jyms_executor.execute_full_gxrw_yzqr_flow()
+            # 填写SOP确认工序任务
+        with allure.step('提交工序：SOP确认'):
+            jyms_executor.execute_full_gxrw_sopqr_flow()
+            # 填写法兰抽检工序任务
+        with allure.step('提交工序：法兰抽检'):
+            jyms_executor.execute_full_gxrw_flcj_flow()
+            # 填写完工确认工序任务
+        with allure.step('提交工序：完工确认'):
+            jyms_executor.execute_full_gxrw_wgqr_flow()
+            # 填写法兰校核工序任务
+        with allure.step('提交工序：法兰校核'):
+            jyms_executor.execute_full_gxrw_fljh_flow()
+            # 填写螺栓抽检工序任务
+        with allure.step('提交工序：螺栓抽检'):
+            jyms_executor.execute_full_gxrw_lscj_flow()

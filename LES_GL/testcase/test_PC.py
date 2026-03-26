@@ -16,22 +16,31 @@ from LES_GL.page.login import *
 from LES_GL.page.process import *
 
 
-@allure.epic('LES系统')
-@allure.feature('项目经理工作台')
-@allure.story('配置项目信息')
-@allure.title('项目经理配置项目信息')
-@allure.severity('critical')
+@allure.epic('LES系统')#标记大模块 / 系统级的测试范围，通常对应产品的一个大方向
+@allure.feature('主要流程')#标记功能模块，是 Epic 下的子分类，用于聚合一类相关功能
+@allure.story('检修计划管理')#标记用户故事 / 具体功能点，是 Feature 下更细粒度的业务场景
+@allure.title('主要流程验证')#为测试用例设置可读性强的标题，在报告中直接展示，便于快速理解用例目的
+@allure.severity('critical')#标记用例优先级 / 严重程度，用于区分测试重点
 def test_login02(browser):
     """
         用例编号：test_loin02
-            用例标题：项目经理配置项目信息
-            前置条件：服务商负责人配置完成项目经理
+            用例标题：主要流程验证
+            前置条件：系统为最新状态
             测试步骤：
-                1.登录项目经理账号
-                2.点击工作台待办处理
-                3.项目配置项目成员
-                4.添加法兰进入检修范围
-                5.提交至设备员确认
+                1.登录专工账号创建计划
+                2.创建完成退出登录
+                3.登录设备员下发计划
+                4.下发计划成功后退出登录
+                5.登录服务商负责人配置项目经理
+                6.项目经理创建成功后退出登录
+                7.登录项目经理账号进行人员信息配置
+                8.项目经理下派具体任务
+                9.操作员完成任务
+                10.项目经理推送法兰至设备员确认
+                11.设备确认检修数据
+                12.项目经理上传结项数据进行结项
+                13.设备员进行结项审批
+                14.审批完成结项完成流程结束
 
             预期结果；项目成员配置成功，法兰添加成功
 
@@ -49,43 +58,38 @@ def test_login02(browser):
     #进入登录
     with allure.step('进入LES登录页'):
         login = LoginPage(browser)
-        login.login(LOGIN_URL_PC, USERNAME_zg_YJA, PASSWD)
+        login.login(LOGIN_URL_PC, USERNAME_XMJL_LQ, PASSWD)
     time.sleep(1)
-
-    with allure.step("专工下发计划"):
-        mj.execute_full_zg_Plan_flow()
-
-    with allure.step('退出登录'):
-        mj.execute_full_log_out_flow()
-
-    with allure.step("登录设备员账号"):
-        login = LoginPage(browser)
-        login.input_credential_and_login(USERNAME_sby_80, PASSWD)
-
-    with allure.step("设备员确认计划 发布计划"):
-        mj.execute_full_sby_fbjh_flow()
-
-    with allure.step('退出登录'):
-        mj.execute_full_log_out_flow()
-
-    with allure.step("登录服务商负责人账号"):
-        login = LoginPage(browser)
-        login.input_credential_and_login(USERNAME_XMFZR_PG, PASSWD)
-
-    with allure.step("服务商负责人添加项目经理"):
-        mj.execute_full_fws_tjxmjl_flow()
-
-    with allure.step('退出登录'):
-        mj.execute_full_log_out_flow()
-
-    with allure.step("登录项目经理账号"):
-        login = LoginPage(browser)
-        login.input_credential_and_login(USERNAME_XMJL_LQ, PASSWD)
-
-    with allure.step("进入项目管理页面"):
-        mj.execute_full_xmgl_xq_flow()
-
-    with allure.step("成员配置添加所有成员进项目"):
-        mj.execute_full_PM_cypz_flow()
+    #点击服务过程管理
+    with allure.step("点击服务过程管理"):
+        wk.locator(*allPages.fwgcgl).click()
+    #点击定力矩服务
+    with allure.step("点击定力矩服务"):
+        wk.locator(*allPages.fwgcgl_dljfw).click()
+    #点击任务管理
+    with allure.step("点击任务管理"):
+        wk.locator(*allPages.rwgl).click()
+    #点击任务发布
+    with allure.step("点击任务发布"):
+        wk.locator(*allPages.rwfb).click()
+    time.sleep(3)
+    #点击勾选全部任务
+    with allure.step("勾选全部"):
+        wk.locator(*allPages.rwfb_check_all).click()
+    time.sleep(3)
+    #点击下派
+    with allure.step("点击下派"):
+        wk.locator(*allPages.rwfb_xp).click()
+    #点击负责人下拉框
+    with allure.step("点击负责人选项框"):
+        wk.locator(*allPages.rwfb_xp_fzrxxk).click()
+        ActionChains(browser) \
+            .send_keys("余家傲")\
+            .key_down(Keys.DOWN)\
+            .key_down(Keys.ENTER)\
+            .perform()
+    #点击确定
+    with allure.step("点击确定"):
+        wk.locator(*allPages.rwfb_xp_sure).click()
 
     time.sleep(10)

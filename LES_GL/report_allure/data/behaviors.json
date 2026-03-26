@@ -1,30 +1,30 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
-  "name" : "behaviors",
   "children" : [ {
     "name" : "LES系统",
     "children" : [ {
-      "name" : "项目经理工作台",
+      "name" : "主要流程",
       "children" : [ {
-        "name" : "配置项目信息",
+        "name" : "检修计划管理",
         "children" : [ {
-          "name" : "项目经理配置项目信息",
-          "uid" : "df64c18e670b2bef",
-          "parentUid" : "0b32b0f0859beb2bd62a1b88ed569a26",
-          "status" : "passed",
+          "name" : "主要流程验证",
+          "uid" : "f9fe41fe135f0207",
+          "parentUid" : "ee46593a4e8873304c1d133297866e45",
+          "status" : "broken",
           "time" : {
-            "start" : 1774490138079,
-            "stop" : 1774490245136,
-            "duration" : 107057
+            "start" : 1774507680081,
+            "stop" : 1774507700700,
+            "duration" : 20619
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         } ],
-        "uid" : "0b32b0f0859beb2bd62a1b88ed569a26"
+        "uid" : "ee46593a4e8873304c1d133297866e45"
       } ],
-      "uid" : "7d473e074dcb372e79664738d533c2b8"
+      "uid" : "d73e108f2221f2974651653f909d07c1"
     } ],
     "uid" : "6811519b2e8d73eb8610a9f48418a4b2"
-  } ]
+  } ],
+  "name" : "behaviors"
 }
