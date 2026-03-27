@@ -834,6 +834,7 @@ class GxrwJymsExecutor:
         # 点击确认按钮
         with allure.step('点击确认按钮'):
             self.wk.locator(*allPages.sby_gzt_db_jxfwqr_bh_qr).click()
+        time.sleep(5)
 #关闭浏览器
     def close_browser(self, delay=0):
         """
@@ -998,7 +999,7 @@ class GxrwJymsExecutor:
 #"""服务模式"""
 #标准模式
 
-    def execute_full_xmjl_xprw_flow(self):
+    def execute_full_standard_mode_flow(self):
     # 填写法兰挂牌工序任务
         with allure.step('提交工序：法兰挂牌'):
             self.execute_full_gxrw_flgp_flow()
@@ -1032,3 +1033,9 @@ class GxrwJymsExecutor:
             # 填写螺栓抽检工序任务
         with allure.step('提交工序：螺栓抽检'):
             self.execute_full_gxrw_lscj_flow()
+        time.sleep(5)
+
+# """验证APP任务提交是否完成"""
+    def execute_full_verification_flow(self):
+        with allure.step("点击已完成"):
+

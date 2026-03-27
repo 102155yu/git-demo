@@ -1,26 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span data-v-67993249=\"\" class=\"el-dropdown-link el-tooltip__trigger el-tooltip__trigger\" id=\"el-id-1701-1000\" role=\"button\" tabindex=\"0\" aria-controls=\"el-id-1701-1001\" aria-expanded=\"false\" aria-haspopup=\"menu\" style=\"border: 2px solid red\">...</span> is not clickable at point (1357, 25). Other element would receive the click: <div role=\"dialog\" aria-modal=\"true\" aria-describedby=\"el-id-1701-1120\" class=\"el-overlay-message-box\" aria-label=\"驳回\">...</div>\n  (Session info: chrome=139.0.7207.2)\nStacktrace:\n\tGetHandleVerifier [0x0x7ff6ef092665+77205]\n\tGetHandleVerifier [0x0x7ff6ef0926c0+77296]\n\t(No symbol) [0x0x7ff6eee49a3a]\n\t(No symbol) [0x0x7ff6eeea8429]\n\t(No symbol) [0x0x7ff6eeea5dc2]\n\t(No symbol) [0x0x7ff6eeea2e11]\n\t(No symbol) [0x0x7ff6eeea1d11]\n\t(No symbol) [0x0x7ff6eee93448]\n\t(No symbol) [0x0x7ff6eeec864a]\n\t(No symbol) [0x0x7ff6eee92cf6]\n\t(No symbol) [0x0x7ff6eeec8860]\n\t(No symbol) [0x0x7ff6eeef08af]\n\t(No symbol) [0x0x7ff6eeec8423]\n\t(No symbol) [0x0x7ff6eee91511]\n\t(No symbol) [0x0x7ff6eee922a3]\n\tGetHandleVerifier [0x0x7ff6ef37389d+3096525]\n\tGetHandleVerifier [0x0x7ff6ef36dc5d+3072909]\n\tGetHandleVerifier [0x0x7ff6ef38d74d+3202685]\n\tGetHandleVerifier [0x0x7ff6ef0ab9fe+180526]\n\tGetHandleVerifier [0x0x7ff6ef0b2fdf+210703]\n\tGetHandleVerifier [0x0x7ff6ef09b304+113204]\n\tGetHandleVerifier [0x0x7ff6ef09b4b9+113641]\n\tGetHandleVerifier [0x0x7ff6ef082238+10600]\n\tBaseThreadInitThunk [0x0x7ff8c338e8d7+23]\n\tRtlUserThreadStart [0x0x7ff8c442c48c+44]",
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n\tGetHandleVerifier [0x0x7ff6ef092665+77205]\n\tGetHandleVerifier [0x0x7ff6ef0926c0+77296]\n\t(No symbol) [0x0x7ff6eee49a3a]\n\t(No symbol) [0x0x7ff6eeea043a]\n\t(No symbol) [0x0x7ff6eeea06ec]\n\t(No symbol) [0x0x7ff6eeef3ae7]\n\t(No symbol) [0x0x7ff6eeec868f]\n\t(No symbol) [0x0x7ff6eeef08af]\n\t(No symbol) [0x0x7ff6eeec8423]\n\t(No symbol) [0x0x7ff6eee91511]\n\t(No symbol) [0x0x7ff6eee922a3]\n\tGetHandleVerifier [0x0x7ff6ef37389d+3096525]\n\tGetHandleVerifier [0x0x7ff6ef36dc5d+3072909]\n\tGetHandleVerifier [0x0x7ff6ef38d74d+3202685]\n\tGetHandleVerifier [0x0x7ff6ef0ab9fe+180526]\n\tGetHandleVerifier [0x0x7ff6ef0b2fdf+210703]\n\tGetHandleVerifier [0x0x7ff6ef09b304+113204]\n\tGetHandleVerifier [0x0x7ff6ef09b4b9+113641]\n\tGetHandleVerifier [0x0x7ff6ef082238+10600]\n\tBaseThreadInitThunk [0x0x7ff8c338e8d7+23]\n\tRtlUserThreadStart [0x0x7ff8c442c48c+44]",
       "children" : [ {
         "name" : "主要流程验证",
-        "uid" : "843dbe8a000c9b3b",
-        "parentUid" : "bb7ea55e65b01f026a81556b18e9e105",
+        "uid" : "d403670644f1e24f",
+        "parentUid" : "28fe1cea4c8166e13c63a2d29a0b269d",
         "status" : "broken",
         "time" : {
-          "start" : 1774519470684,
-          "stop" : 1774519602423,
-          "duration" : 131739
+          "start" : 1774574744470,
+          "stop" : 1774574889624,
+          "duration" : 145154
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "bb7ea55e65b01f026a81556b18e9e105"
+      "uid" : "28fe1cea4c8166e13c63a2d29a0b269d"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
-  } ],
-  "name" : "categories"
+  } ]
 }

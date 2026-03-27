@@ -1,5 +1,5 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"broken","Thu Mar 26 18:04:30 CST 2026","Thu Mar 26 18:06:42 CST 2026","131739","testcase","test_PC","","","","主要流程验证","
+"broken","Fri Mar 27 09:25:44 CST 2026","Fri Mar 27 09:28:09 CST 2026","145154","testcase","test_PC","","","","主要流程验证","
         用例编号：test_loin02
             用例标题：主要流程验证
             前置条件：系统为最新状态

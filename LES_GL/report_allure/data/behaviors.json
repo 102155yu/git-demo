@@ -1,5 +1,6 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
   "children" : [ {
     "name" : "LES系统",
     "children" : [ {
@@ -8,13 +9,13 @@
         "name" : "检修计划管理",
         "children" : [ {
           "name" : "主要流程验证",
-          "uid" : "843dbe8a000c9b3b",
+          "uid" : "d403670644f1e24f",
           "parentUid" : "ee46593a4e8873304c1d133297866e45",
           "status" : "broken",
           "time" : {
-            "start" : 1774519470684,
-            "stop" : 1774519602423,
-            "duration" : 131739
+            "start" : 1774574744470,
+            "stop" : 1774574889624,
+            "duration" : 145154
           },
           "flaky" : false,
           "newFailed" : false,
@@ -25,6 +26,5 @@
       "uid" : "d73e108f2221f2974651653f909d07c1"
     } ],
     "uid" : "6811519b2e8d73eb8610a9f48418a4b2"
-  } ],
-  "name" : "behaviors"
+  } ]
 }

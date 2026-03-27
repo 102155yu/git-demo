@@ -121,7 +121,7 @@ def test_login02(browser):
         LES.execute_full_xmjl_xprw_flow()
 
     with allure.step("完成后关闭浏览器"):
-        LES.close_browser(delay=3)
+        LES.execute_full_log_out_flow()
 
     with allure.step('进入APP端'):
         login_app = LoginPage(browser)
@@ -134,15 +134,15 @@ def test_login02(browser):
 
 
     with allure.step("做标准工序任务"):
-        LES.execute_full_xmjl_xprw_flow()
+        LES.execute_full_standard_mode_flow()
 
-    with allure.step("完成后关闭浏览器"):
-        LES.close_browser(delay=3)
 
     with allure.step('登录项目经理账号'):
         login = LoginPage(browser)
-        login.login(LOGIN_URL_PC, USERNAME_XMJL_LQ, PASSWD)
-    time.sleep(1)
+
+    with allure.step('进入项目详情页面'):
+        LES.execute_full_xmgl_xq_flow()
+
 
     with allure.step("项目经理推送法兰至装置员"):
         LES.execute_full_PM_tssbyqr_flow()

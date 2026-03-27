@@ -1,18 +1,19 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
   "children" : [ {
     "name" : "testcase",
     "children" : [ {
       "name" : "test_PC",
       "children" : [ {
         "name" : "主要流程验证",
-        "uid" : "843dbe8a000c9b3b",
+        "uid" : "d403670644f1e24f",
         "parentUid" : "12bc2e26a5751fc7dd79a86946530b0d",
         "status" : "broken",
         "time" : {
-          "start" : 1774519470684,
-          "stop" : 1774519602423,
-          "duration" : 131739
+          "start" : 1774574744470,
+          "stop" : 1774574889624,
+          "duration" : 145154
         },
         "flaky" : false,
         "newFailed" : false,
@@ -21,6 +22,5 @@
       "uid" : "12bc2e26a5751fc7dd79a86946530b0d"
     } ],
     "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
-  } ],
-  "name" : "suites"
+  } ]
 }
