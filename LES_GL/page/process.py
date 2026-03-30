@@ -491,10 +491,10 @@ class GxrwJymsExecutor:
         # 点击确定
         with allure.step('点击确定'):
             self.wk.locator(*allPages.xmgl_tssby_ts_qd).click()
-
+        time.sleep(3)
         # 点击返回推送成功
-        with allure.step('点击返回推送成功'):
-            self.wk.locator(*allPages.xmgl_tssby_fh).click()
+        # with allure.step('点击返回推送成功'):
+        #     self.wk.locator(*allPages.xmgl_tssby_fh).click()
 
     # 配置检修范围
     def execute_full_PM_pzjxfw_flow(self):
@@ -835,6 +835,21 @@ class GxrwJymsExecutor:
         with allure.step('点击确认按钮'):
             self.wk.locator(*allPages.sby_gzt_db_jxfwqr_bh_qr).click()
         time.sleep(5)
+# 设备员审批通过结项
+    def execute_full_sby_Pass_the_knot_flow(self):
+        # 点击待办处理
+        with allure.step('点击待办处理'):
+            self.wk.locator(*allPages.sby_gzt_db_cl).click()
+
+        # 进入检修范围添加确认页面
+        with allure.step('点击通过'):  # 不勾选内容情况下点击驳回会同意所有选项
+            self.wk.locator(*allPages.fwjh_rwzx_xmjxqr_pass).click()
+
+
+        time.sleep(5)
+
+
+
 #关闭浏览器
     def close_browser(self, delay=0):
         """

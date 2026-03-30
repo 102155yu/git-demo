@@ -143,7 +143,7 @@ def test_login02(browser):
 
     with allure.step('登录项目经理账号'):
         login = LoginPage(browser)
-        login.input_credential_and_login(LOGIN_URL_APP,USERNAME_sby_80, PASSWD)
+        login.login(LOGIN_URL_PC, USERNAME_XMJL_LQ, PASSWD)
 
     with allure.step('进入项目详情页面'):
         LES.execute_full_xmgl_xq_flow()
@@ -171,6 +171,10 @@ def test_login02(browser):
         login = LoginPage(browser)
         login.input_credential_and_login(USERNAME_XMJL_LQ, PASSWD)
 
+    with allure.step("进入项目详情页面"):
+        LES.execute_full_xmgl_xq_flow()
+
+
     with allure.step('上传结项资料'):
         LES.execute_full_xmgl_scjxzl_flow()
 
@@ -186,7 +190,7 @@ def test_login02(browser):
         login.input_credential_and_login(USERNAME_sby_80, PASSWD)
 
     with allure.step('设备员审批结项通过'):
-        LES.execute_full_sby_jx_pass_flow()
+        LES.execute_full_sby_Pass_the_knot_flow()
 
 
     time.sleep(10)

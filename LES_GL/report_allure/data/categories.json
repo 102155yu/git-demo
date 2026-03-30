@@ -4,22 +4,22 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "TypeError: LoginPage.input_credential_and_login() takes 3 positional arguments but 4 were given",
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n\tGetHandleVerifier [0x0x7ff606e82665+77205]\n\tGetHandleVerifier [0x0x7ff606e826c0+77296]\n\t(No symbol) [0x0x7ff606c39a3a]\n\t(No symbol) [0x0x7ff606c9043a]\n\t(No symbol) [0x0x7ff606c906ec]\n\t(No symbol) [0x0x7ff606ce3ae7]\n\t(No symbol) [0x0x7ff606cb868f]\n\t(No symbol) [0x0x7ff606ce08af]\n\t(No symbol) [0x0x7ff606cb8423]\n\t(No symbol) [0x0x7ff606c81511]\n\t(No symbol) [0x0x7ff606c822a3]\n\tGetHandleVerifier [0x0x7ff60716389d+3096525]\n\tGetHandleVerifier [0x0x7ff60715dc5d+3072909]\n\tGetHandleVerifier [0x0x7ff60717d74d+3202685]\n\tGetHandleVerifier [0x0x7ff606e9b9fe+180526]\n\tGetHandleVerifier [0x0x7ff606ea2fdf+210703]\n\tGetHandleVerifier [0x0x7ff606e8b304+113204]\n\tGetHandleVerifier [0x0x7ff606e8b4b9+113641]\n\tGetHandleVerifier [0x0x7ff606e72238+10600]\n\tBaseThreadInitThunk [0x0x7ff8c338e8d7+23]\n\tRtlUserThreadStart [0x0x7ff8c442c48c+44]",
       "children" : [ {
         "name" : "主要流程验证",
-        "uid" : "16b1e64f8f91f650",
-        "parentUid" : "2bdb600dac1d90e6a1d1e32aa9c71962",
+        "uid" : "63a6b56efb92e8a",
+        "parentUid" : "3716f666b64bd1eae3871f429fd99e9c",
         "status" : "broken",
         "time" : {
-          "start" : 1774599636715,
-          "stop" : 1774599904052,
-          "duration" : 267337
+          "start" : 1774863997696,
+          "stop" : 1774864050005,
+          "duration" : 52309
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "2bdb600dac1d90e6a1d1e32aa9c71962"
+      "uid" : "3716f666b64bd1eae3871f429fd99e9c"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]
