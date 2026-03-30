@@ -955,7 +955,7 @@ class GxrwJymsExecutor:
         # 点击确认保存检修范围
         with allure.step("点击确认保存检修范围"):
             self.wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_qd).click()
-        time.sleep(60)
+        time.sleep(2)
         # 点击下派
         with allure.step("点击下派"):
             self.wk.locator(*allPages.fwjh_dljfwjh_xp).click()
@@ -994,7 +994,7 @@ class GxrwJymsExecutor:
         # 点击确定
         with allure.step("点击确定"):
             self.wk.locator(*allPages.rwfb_xp_sure).click()
-
+        time.sleep(3)
 
 #"""服务模式"""
 #标准模式
@@ -1038,4 +1038,11 @@ class GxrwJymsExecutor:
 # """验证APP任务提交是否完成"""
     def execute_full_verification_flow(self):
         with allure.step("点击已完成"):
-
+            self.wk.locator(*allPages.app_dljfw_gxcl_ywc).click()
+            time.sleep(2)
+        with allure.step("点击待处理"):
+            self.wk.locator(*allPages.app_dljfw_gxcl_ywc).click()
+            time.sleep(2)
+        with allure.step("点击已完成"):
+            self.wk.locator(*allPages.app_dljfw_gxcl_ywc).click()
+            time.sleep(2)

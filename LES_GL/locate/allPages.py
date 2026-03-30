@@ -298,7 +298,7 @@ page_login_indexPwd_app = ["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-
 page_login_loginBtn_app = ["xpath","/html/body/div/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[1]/uni-view[3]"]
 #密码
 '''
-    定力矩服务
+    APP-定力矩服务
 '''
 #工序处理模块
 app_dljfw_gxcl=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view/uni-view/uni-view[2]/uni-view[2]/uni-view[1]"]
@@ -312,7 +312,8 @@ app_dljfw_gxcl_dlq_lq=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrap
 app_dljfw_gxcl_dcl=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/div[2]/div[2]"]
         #第一个工序
 app_dljfw_gxcl_dcl_dj_01=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/uni-view[2]/uni-scroll-view/div/div/div/uni-view[1]/uni-view[1]/uni-view/uni-view[2]/uni-view[1]/uni-view[1]"]
-
+    #已完成页签
+app_dljfw_gxcl_ywc=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/div[2]/div[3]"]
 #工序任务页面
 #项目名称
 app_gxcl_xmmc =['xpath','/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/div[1]']

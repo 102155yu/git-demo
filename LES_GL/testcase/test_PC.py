@@ -120,7 +120,8 @@ def test_login02(browser):
     with allure.step('下派任务'):
         LES.execute_full_xmjl_xprw_flow()
 
-    with allure.step("完成后关闭浏览器"):
+
+    with allure.step('退出登录'):
         LES.execute_full_log_out_flow()
 
     with allure.step('进入APP端'):
@@ -136,9 +137,13 @@ def test_login02(browser):
     with allure.step("做标准工序任务"):
         LES.execute_full_standard_mode_flow()
 
+    with allure.step("查看已完成项目是否提交成功"):
+        LES.execute_full_verification_flow()
+
 
     with allure.step('登录项目经理账号'):
         login = LoginPage(browser)
+        login.input_credential_and_login(LOGIN_URL_APP,USERNAME_sby_80, PASSWD)
 
     with allure.step('进入项目详情页面'):
         LES.execute_full_xmgl_xq_flow()

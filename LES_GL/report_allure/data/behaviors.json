@@ -9,13 +9,13 @@
         "name" : "检修计划管理",
         "children" : [ {
           "name" : "主要流程验证",
-          "uid" : "d403670644f1e24f",
+          "uid" : "16b1e64f8f91f650",
           "parentUid" : "ee46593a4e8873304c1d133297866e45",
           "status" : "broken",
           "time" : {
-            "start" : 1774574744470,
-            "stop" : 1774574889624,
-            "duration" : 145154
+            "start" : 1774599636715,
+            "stop" : 1774599904052,
+            "duration" : 267337
           },
           "flaky" : false,
           "newFailed" : false,
