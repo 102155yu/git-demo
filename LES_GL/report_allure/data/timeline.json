@@ -4,22 +4,22 @@
   "children" : [ {
     "name" : "Y-YU",
     "children" : [ {
-      "name" : "22920-MainThread",
+      "name" : "29588-MainThread",
       "children" : [ {
         "name" : "主要流程验证",
-        "uid" : "63a6b56efb92e8a",
-        "parentUid" : "0be05099dc6a5293ae8a743e351add74",
+        "uid" : "700c1ffa0be3aff",
+        "parentUid" : "8e90fbac668a224fec59d7fe657249fa",
         "status" : "broken",
         "time" : {
-          "start" : 1774863997696,
-          "stop" : 1774864050005,
-          "duration" : 52309
+          "start" : 1775612622673,
+          "stop" : 1775612671960,
+          "duration" : 49287
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "0be05099dc6a5293ae8a743e351add74"
+      "uid" : "8e90fbac668a224fec59d7fe657249fa"
     } ],
     "uid" : "d8235af02a0b4ab572b70292f685faa2"
   } ]

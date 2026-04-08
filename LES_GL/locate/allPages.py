@@ -91,7 +91,7 @@ fwgcgl_dljfw_xmgl_ck =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div
 
 #项目管理页面
     #成员配置按钮
-xmgl_cypz=["xpath","//span[text()='成员配置']/parent::button"]
+xmgl_cypz=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[1]/div/div[2]/div[1]/div/div/div/div[3]"]
         #成员配置页面
             #添加按钮
 xmgl_cypz_tj=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[2]/div[1]/div/div/div/div[2]/div[2]/div/div/button[1]/span"]
