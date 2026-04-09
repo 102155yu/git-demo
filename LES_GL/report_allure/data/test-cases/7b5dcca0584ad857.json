@@ -1,0 +1,3270 @@
+{
+  "uid" : "7b5dcca0584ad857",
+  "name" : "主要流程验证",
+  "fullName" : "testcase.test_Main_flow#test_login02",
+  "historyId" : "d9ac4607731051d890b0c582cb89fc15",
+  "time" : {
+    "start" : 1775725399299,
+    "stop" : 1775725743942,
+    "duration" : 344643
+  },
+  "description" : "\n        用例编号：test_loin02\n            用例标题：主要流程验证\n            前置条件：系统为最新状态\n            测试步骤：\n                1.登录专工账号创建计划\n                2.创建完成退出登录\n                3.登录设备员下发计划\n                4.下发计划成功后退出登录\n                5.登录服务商负责人配置项目经理\n                6.项目经理创建成功后退出登录\n                7.登录项目经理账号进行人员信息配置\n                8.项目经理下派具体任务\n                9.操作员完成任务\n                10.项目经理推送法兰至设备员确认\n                11.设备确认检修数据\n                12.项目经理上传结项数据进行结项\n                13.设备员进行结项审批\n                14.审批完成结项完成流程结束\n\n            预期结果；项目成员配置成功，法兰添加成功\n\n    :param browser:\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>    用例编号：test_loin02\n        用例标题：主要流程验证\n        前置条件：系统为最新状态\n        测试步骤：\n            1.登录专工账号创建计划\n            2.创建完成退出登录\n            3.登录设备员下发计划\n            4.下发计划成功后退出登录\n            5.登录服务商负责人配置项目经理\n            6.项目经理创建成功后退出登录\n            7.登录项目经理账号进行人员信息配置\n            8.项目经理下派具体任务\n            9.操作员完成任务\n            10.项目经理推送法兰至设备员确认\n            11.设备确认检修数据\n            12.项目经理上传结项数据进行结项\n            13.设备员进行结项审批\n            14.审批完成结项完成流程结束\n\n        预期结果；项目成员配置成功，法兰添加成功\n\n:param browser:\n:return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1775725398157,
+      "stop" : 1775725399299,
+      "duration" : 1142
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        用例编号：test_loin02\n            用例标题：主要流程验证\n            前置条件：系统为最新状态\n            测试步骤：\n                1.登录专工账号创建计划\n                2.创建完成退出登录\n                3.登录设备员下发计划\n                4.下发计划成功后退出登录\n                5.登录服务商负责人配置项目经理\n                6.项目经理创建成功后退出登录\n                7.登录项目经理账号进行人员信息配置\n                8.项目经理下派具体任务\n                9.操作员完成任务\n                10.项目经理推送法兰至设备员确认\n                11.设备确认检修数据\n                12.项目经理上传结项数据进行结项\n                13.设备员进行结项审批\n                14.审批完成结项完成流程结束\n\n            预期结果；项目成员配置成功，法兰添加成功\n\n    :param browser:\n    :return:\n    ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "浏览器窗口最大化",
+      "time" : {
+        "start" : 1775725399299,
+        "stop" : 1775725399330,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "进入LES登录页",
+      "time" : {
+        "start" : 1775725399331,
+        "stop" : 1775725400520,
+        "duration" : 1189
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "专工下发计划",
+      "time" : {
+        "start" : 1775725401520,
+        "stop" : 1775725419192,
+        "duration" : 17672
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "定位服务计划管理菜单",
+        "time" : {
+          "start" : 1775725401520,
+          "stop" : 1775725401710,
+          "duration" : 190
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击定力矩服务计划菜单",
+        "time" : {
+          "start" : 1775725401710,
+          "stop" : 1775725402405,
+          "duration" : 695
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击添加定力矩服务计划",
+        "time" : {
+          "start" : 1775725402405,
+          "stop" : 1775725403140,
+          "duration" : 735
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "输入计划名称（计数器生成唯一名称）",
+        "time" : {
+          "start" : 1775725403140,
+          "stop" : 1775725403301,
+          "duration" : 161
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "47927d3e33fc3eff",
+          "name" : "计划名称",
+          "source" : "47927d3e33fc3eff.txt",
+          "type" : "text/plain",
+          "size" : 48
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      }, {
+        "name" : "选择检修类型",
+        "time" : {
+          "start" : 1775725403301,
+          "stop" : 1775725403443,
+          "duration" : 142
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "选择开始时间",
+        "time" : {
+          "start" : 1775725403443,
+          "stop" : 1775725403634,
+          "duration" : 191
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "选择结束时间",
+        "time" : {
+          "start" : 1775725403634,
+          "stop" : 1775725403867,
+          "duration" : 233
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "保存",
+        "time" : {
+          "start" : 1775725403867,
+          "stop" : 1775725404035,
+          "duration" : 168
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击添加，添加检修范围",
+        "time" : {
+          "start" : 1775725404035,
+          "stop" : 1775725404408,
+          "duration" : 373
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "选择服务商:北京源城",
+        "time" : {
+          "start" : 1775725404408,
+          "stop" : 1775725407649,
+          "duration" : 3241
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "选择装置:80万吨",
+        "time" : {
+          "start" : 1775725407649,
+          "stop" : 1775725407799,
+          "duration" : 150
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "填写计划量",
+        "time" : {
+          "start" : 1775725407799,
+          "stop" : 1775725407907,
+          "duration" : 108
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "选择服务模式：简易模式",
+        "time" : {
+          "start" : 1775725407907,
+          "stop" : 1775725408030,
+          "duration" : 123
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击确认保存检修范围",
+        "time" : {
+          "start" : 1775725408030,
+          "stop" : 1775725408130,
+          "duration" : 100
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击下派",
+        "time" : {
+          "start" : 1775725416130,
+          "stop" : 1775725416192,
+          "duration" : 62
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 15,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "退出登录",
+      "time" : {
+        "start" : 1775725419192,
+        "stop" : 1775725425865,
+        "duration" : 6673
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击个人信息框",
+        "time" : {
+          "start" : 1775725419192,
+          "stop" : 1775725419257,
+          "duration" : 65
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击退出登录",
+        "time" : {
+          "start" : 1775725419257,
+          "stop" : 1775725419865,
+          "duration" : 608
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "登录设备员账号",
+      "time" : {
+        "start" : 1775725425865,
+        "stop" : 1775725426080,
+        "duration" : 215
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "设备员确认计划 发布计划",
+      "time" : {
+        "start" : 1775725426080,
+        "stop" : 1775725427992,
+        "duration" : 1912
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击待办处理",
+        "time" : {
+          "start" : 1775725426080,
+          "stop" : 1775725426482,
+          "duration" : 402
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击处理弹窗确认按钮",
+        "time" : {
+          "start" : 1775725426482,
+          "stop" : 1775725427065,
+          "duration" : 583
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击发布计划",
+        "time" : {
+          "start" : 1775725427065,
+          "stop" : 1775725427813,
+          "duration" : 748
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击提示确认",
+        "time" : {
+          "start" : 1775725427813,
+          "stop" : 1775725427992,
+          "duration" : 179
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "退出登录",
+      "time" : {
+        "start" : 1775725427992,
+        "stop" : 1775725434944,
+        "duration" : 6952
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击个人信息框",
+        "time" : {
+          "start" : 1775725427992,
+          "stop" : 1775725428259,
+          "duration" : 267
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击退出登录",
+        "time" : {
+          "start" : 1775725428259,
+          "stop" : 1775725428944,
+          "duration" : 685
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "登录服务商负责人账号",
+      "time" : {
+        "start" : 1775725434944,
+        "stop" : 1775725435144,
+        "duration" : 200
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "服务商负责人添加项目经理",
+      "time" : {
+        "start" : 1775725435145,
+        "stop" : 1775725435937,
+        "duration" : 792
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击待办处理",
+        "time" : {
+          "start" : 1775725435145,
+          "stop" : 1775725435457,
+          "duration" : 312
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击下一步",
+        "time" : {
+          "start" : 1775725435457,
+          "stop" : 1775725435634,
+          "duration" : 177
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "选择项目经理",
+        "time" : {
+          "start" : 1775725435634,
+          "stop" : 1775725435759,
+          "duration" : 125
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击确认按钮",
+        "time" : {
+          "start" : 1775725435759,
+          "stop" : 1775725435937,
+          "duration" : 178
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "退出登录",
+      "time" : {
+        "start" : 1775725435937,
+        "stop" : 1775725442673,
+        "duration" : 6736
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击个人信息框",
+        "time" : {
+          "start" : 1775725435937,
+          "stop" : 1775725436081,
+          "duration" : 144
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击退出登录",
+        "time" : {
+          "start" : 1775725436081,
+          "stop" : 1775725436672,
+          "duration" : 591
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "登录项目经理账号",
+      "time" : {
+        "start" : 1775725442673,
+        "stop" : 1775725442874,
+        "duration" : 201
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "进入项目管理页面",
+      "time" : {
+        "start" : 1775725442874,
+        "stop" : 1775725444634,
+        "duration" : 1760
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "服务过程管理菜单",
+        "time" : {
+          "start" : 1775725442874,
+          "stop" : 1775725443140,
+          "duration" : 266
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击定力矩服务菜单",
+        "time" : {
+          "start" : 1775725443140,
+          "stop" : 1775725443229,
+          "duration" : 89
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击项目管理菜单",
+        "time" : {
+          "start" : 1775725443229,
+          "stop" : 1775725443949,
+          "duration" : 720
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "进入项目管理页面点击查看按钮",
+        "time" : {
+          "start" : 1775725443949,
+          "stop" : 1775725444634,
+          "duration" : 685
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "成员配置添加所有成员进项目",
+      "time" : {
+        "start" : 1775725444634,
+        "stop" : 1775725445296,
+        "duration" : 662
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击成员配置按钮",
+        "time" : {
+          "start" : 1775725444634,
+          "stop" : 1775725444774,
+          "duration" : 140
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击添加",
+        "time" : {
+          "start" : 1775725444774,
+          "stop" : 1775725444903,
+          "duration" : 129
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击下拉按钮",
+        "time" : {
+          "start" : 1775725444903,
+          "stop" : 1775725445084,
+          "duration" : 181
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "全选",
+        "time" : {
+          "start" : 1775725445084,
+          "stop" : 1775725445197,
+          "duration" : 113
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击确定",
+        "time" : {
+          "start" : 1775725445197,
+          "stop" : 1775725445296,
+          "duration" : 99
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 5,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "添加法兰到检修范围",
+      "time" : {
+        "start" : 1775725445296,
+        "stop" : 1775725491424,
+        "duration" : 46128
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击检修范围按钮",
+        "time" : {
+          "start" : 1775725445296,
+          "stop" : 1775725491424,
+          "duration" : 46128
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "点击勾选全部法兰",
+          "time" : {
+            "start" : 1775725448865,
+            "stop" : 1775725450920,
+            "duration" : 2055
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "第1页无数据，翻下一页",
+          "time" : {
+            "start" : 1775725450950,
+            "stop" : 1775725456088,
+            "duration" : 5138
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "第2页无数据，翻下一页",
+          "time" : {
+            "start" : 1775725456118,
+            "stop" : 1775725461266,
+            "duration" : 5148
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "第3页无数据，翻下一页",
+          "time" : {
+            "start" : 1775725461289,
+            "stop" : 1775725466432,
+            "duration" : 5143
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "第4页无数据，翻下一页",
+          "time" : {
+            "start" : 1775725466462,
+            "stop" : 1775725471607,
+            "duration" : 5145
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "第5页无数据，翻下一页",
+          "time" : {
+            "start" : 1775725471633,
+            "stop" : 1775725476781,
+            "duration" : 5148
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "第6页无数据，翻下一页",
+          "time" : {
+            "start" : 1775725476809,
+            "stop" : 1775725481946,
+            "duration" : 5137
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "第7页无数据，翻下一页",
+          "time" : {
+            "start" : 1775725481967,
+            "stop" : 1775725487104,
+            "duration" : 5137
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "已选中50条数据，点击提交",
+          "time" : {
+            "start" : 1775725487129,
+            "stop" : 1775725489256,
+            "duration" : 2127
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击确认弹窗确定",
+          "time" : {
+            "start" : 1775725489256,
+            "stop" : 1775725491424,
+            "duration" : 2168
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ {
+          "uid" : "41c3ba6c9f147b8c",
+          "name" : "数据",
+          "source" : "41c3ba6c9f147b8c.txt",
+          "type" : "text/plain",
+          "size" : 20
+        }, {
+          "uid" : "66bf62f3464c6cab",
+          "name" : "数据",
+          "source" : "66bf62f3464c6cab.txt",
+          "type" : "text/plain",
+          "size" : 20
+        }, {
+          "uid" : "829cf2d9c2a10e96",
+          "name" : "数据",
+          "source" : "829cf2d9c2a10e96.txt",
+          "type" : "text/plain",
+          "size" : 20
+        }, {
+          "uid" : "eefc2336f00301c5",
+          "name" : "数据",
+          "source" : "eefc2336f00301c5.txt",
+          "type" : "text/plain",
+          "size" : 20
+        }, {
+          "uid" : "7ece429b39a6f90f",
+          "name" : "数据",
+          "source" : "7ece429b39a6f90f.txt",
+          "type" : "text/plain",
+          "size" : 20
+        }, {
+          "uid" : "f1c21c5e719f9593",
+          "name" : "数据",
+          "source" : "f1c21c5e719f9593.txt",
+          "type" : "text/plain",
+          "size" : 20
+        }, {
+          "uid" : "b6853576668a486a",
+          "name" : "数据",
+          "source" : "b6853576668a486a.txt",
+          "type" : "text/plain",
+          "size" : 20
+        }, {
+          "uid" : "b995221c22756a21",
+          "name" : "数据",
+          "source" : "b995221c22756a21.txt",
+          "type" : "text/plain",
+          "size" : 21
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 10,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 8
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 11,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 8
+    }, {
+      "name" : "退出登录",
+      "time" : {
+        "start" : 1775725491424,
+        "stop" : 1775725498102,
+        "duration" : 6678
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击个人信息框",
+        "time" : {
+          "start" : 1775725491424,
+          "stop" : 1775725491496,
+          "duration" : 72
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击退出登录",
+        "time" : {
+          "start" : 1775725491496,
+          "stop" : 1775725492101,
+          "duration" : 605
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "登录设备员账号",
+      "time" : {
+        "start" : 1775725498102,
+        "stop" : 1775725498344,
+        "duration" : 242
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "设备员通过检修数据确认",
+      "time" : {
+        "start" : 1775725498344,
+        "stop" : 1775725504235,
+        "duration" : 5891
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击待办处理",
+        "time" : {
+          "start" : 1775725498344,
+          "stop" : 1775725498765,
+          "duration" : 421
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击驳回",
+        "time" : {
+          "start" : 1775725498765,
+          "stop" : 1775725499133,
+          "duration" : 368
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击确认按钮",
+        "time" : {
+          "start" : 1775725499133,
+          "stop" : 1775725499234,
+          "duration" : 101
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "退出登录",
+      "time" : {
+        "start" : 1775725504235,
+        "stop" : 1775725510879,
+        "duration" : 6644
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击个人信息框",
+        "time" : {
+          "start" : 1775725504235,
+          "stop" : 1775725504298,
+          "duration" : 63
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击退出登录",
+        "time" : {
+          "start" : 1775725504298,
+          "stop" : 1775725504878,
+          "duration" : 580
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "登录项目经理账号",
+      "time" : {
+        "start" : 1775725510879,
+        "stop" : 1775725511082,
+        "duration" : 203
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "下派任务",
+      "time" : {
+        "start" : 1775725511082,
+        "stop" : 1775725522199,
+        "duration" : 11117
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击服务过程管理",
+        "time" : {
+          "start" : 1775725511083,
+          "stop" : 1775725511353,
+          "duration" : 270
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击定力矩服务",
+        "time" : {
+          "start" : 1775725511353,
+          "stop" : 1775725511464,
+          "duration" : 111
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击任务管理",
+        "time" : {
+          "start" : 1775725511464,
+          "stop" : 1775725512081,
+          "duration" : 617
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击任务发布",
+        "time" : {
+          "start" : 1775725512082,
+          "stop" : 1775725512681,
+          "duration" : 599
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "勾选全部",
+        "time" : {
+          "start" : 1775725515682,
+          "stop" : 1775725515744,
+          "duration" : 62
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击下派",
+        "time" : {
+          "start" : 1775725518745,
+          "stop" : 1775725518867,
+          "duration" : 122
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击负责人选项框",
+        "time" : {
+          "start" : 1775725518867,
+          "stop" : 1775725519074,
+          "duration" : 207
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击确定",
+        "time" : {
+          "start" : 1775725519074,
+          "stop" : 1775725519198,
+          "duration" : 124
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 8,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "退出登录",
+      "time" : {
+        "start" : 1775725525200,
+        "stop" : 1775725531928,
+        "duration" : 6728
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击个人信息框",
+        "time" : {
+          "start" : 1775725525200,
+          "stop" : 1775725525304,
+          "duration" : 104
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击退出登录",
+        "time" : {
+          "start" : 1775725525304,
+          "stop" : 1775725525927,
+          "duration" : 623
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "进入APP端",
+      "time" : {
+        "start" : 1775725531928,
+        "stop" : 1775725540433,
+        "duration" : 8505
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "进入任务页面",
+      "time" : {
+        "start" : 1775725540433,
+        "stop" : 1775725546627,
+        "duration" : 6194
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "做标准工序任务",
+      "time" : {
+        "start" : 1775725546627,
+        "stop" : 1775725664319,
+        "duration" : 117692
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "提交工序：法兰挂牌",
+        "time" : {
+          "start" : 1775725546627,
+          "stop" : 1775725554187,
+          "duration" : 7560
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "点击页签法兰挂牌",
+          "time" : {
+            "start" : 1775725546627,
+            "stop" : 1775725546689,
+            "duration" : 62
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击法兰挂牌照片",
+          "time" : {
+            "start" : 1775725546689,
+            "stop" : 1775725548750,
+            "duration" : 2061
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "输入图片路径并确认上传",
+          "time" : {
+            "start" : 1775725548750,
+            "stop" : 1775725553976,
+            "duration" : 5226
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击填写层级",
+          "time" : {
+            "start" : 1775725553976,
+            "stop" : 1775725554036,
+            "duration" : 60
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击保存任务",
+          "time" : {
+            "start" : 1775725554036,
+            "stop" : 1775725554102,
+            "duration" : 66
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击提交任务",
+          "time" : {
+            "start" : 1775725554102,
+            "stop" : 1775725554187,
+            "duration" : 85
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 6,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "提交工序：法兰拆卸",
+        "time" : {
+          "start" : 1775725554187,
+          "stop" : 1775725567231,
+          "duration" : 13044
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "点击页签法兰拆卸",
+          "time" : {
+            "start" : 1775725554187,
+            "stop" : 1775725554569,
+            "duration" : 382
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击法兰拆卸工具数量",
+          "time" : {
+            "start" : 1775725554570,
+            "stop" : 1775725554642,
+            "duration" : 72
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击法兰拆卸拉伸力",
+          "time" : {
+            "start" : 1775725554642,
+            "stop" : 1775725554729,
+            "duration" : 87
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击拆卸后照片",
+          "time" : {
+            "start" : 1775725554729,
+            "stop" : 1775725556820,
+            "duration" : 2091
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "输入图片路径并确认上传",
+          "time" : {
+            "start" : 1775725556820,
+            "stop" : 1775725562057,
+            "duration" : 5237
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击填写施工人员",
+          "time" : {
+            "start" : 1775725562057,
+            "stop" : 1775725564111,
+            "duration" : 2054
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击保存任务",
+          "time" : {
+            "start" : 1775725564111,
+            "stop" : 1775725567181,
+            "duration" : 3070
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击提交任务",
+          "time" : {
+            "start" : 1775725567181,
+            "stop" : 1775725567231,
+            "duration" : 50
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 8,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "提交工序：密封面检查",
+        "time" : {
+          "start" : 1775725567231,
+          "stop" : 1775725578943,
+          "duration" : 11712
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "提交工序：垫片检查",
+        "time" : {
+          "start" : 1775725578943,
+          "stop" : 1775725597676,
+          "duration" : 18733
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "提交工序：紧固件检查",
+        "time" : {
+          "start" : 1775725597676,
+          "stop" : 1775725609077,
+          "duration" : 11401
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "提交工序：预装确认",
+        "time" : {
+          "start" : 1775725609077,
+          "stop" : 1775725616521,
+          "duration" : 7444
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "点击页签预装确认",
+          "time" : {
+            "start" : 1775725609077,
+            "stop" : 1775725609144,
+            "duration" : 67
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击紧固照片",
+          "time" : {
+            "start" : 1775725609145,
+            "stop" : 1775725611209,
+            "duration" : 2064
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "输入图片路径并确认上传",
+          "time" : {
+            "start" : 1775725611209,
+            "stop" : 1775725616461,
+            "duration" : 5252
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击提交任务",
+          "time" : {
+            "start" : 1775725616461,
+            "stop" : 1775725616521,
+            "duration" : 60
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 4,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "提交工序：SOP确认",
+        "time" : {
+          "start" : 1775725616521,
+          "stop" : 1775725635422,
+          "duration" : 18901
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "点击页签SOP确认",
+          "time" : {
+            "start" : 1775725616521,
+            "stop" : 1775725619879,
+            "duration" : 3358
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "选择工具类型",
+          "time" : {
+            "start" : 1775725619879,
+            "stop" : 1775725621984,
+            "duration" : 2105
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "选择工具类型（液压风枪）",
+          "time" : {
+            "start" : 1775725621984,
+            "stop" : 1775725632040,
+            "duration" : 10056
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "填写工具数量",
+          "time" : {
+            "start" : 1775725632040,
+            "stop" : 1775725632115,
+            "duration" : 75
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "填写摩擦系数",
+          "time" : {
+            "start" : 1775725632115,
+            "stop" : 1775725632201,
+            "duration" : 86
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "6de9d0749c99f452",
+            "name" : "操作说明",
+            "source" : "6de9d0749c99f452.attach",
+            "type" : "text/plain",
+            "size" : 45
+          } ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "填写T1A",
+          "time" : {
+            "start" : 1775725632201,
+            "stop" : 1775725632273,
+            "duration" : 72
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "a2e6923e0ae471d7",
+            "name" : "操作说明",
+            "source" : "a2e6923e0ae471d7.attach",
+            "type" : "text/plain",
+            "size" : 45
+          } ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        }, {
+          "name" : "填写T1B",
+          "time" : {
+            "start" : 1775725632273,
+            "stop" : 1775725635422,
+            "duration" : 3149
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "点击提交任务",
+            "time" : {
+              "start" : 1775725632354,
+              "stop" : 1775725635422,
+              "duration" : 3068
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          } ],
+          "attachments" : [ {
+            "uid" : "15abb467d2ad7d70",
+            "name" : "操作说明",
+            "source" : "15abb467d2ad7d70.attach",
+            "type" : "text/plain",
+            "size" : 46
+          } ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "hasContent" : true,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 8,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 3
+      }, {
+        "name" : "提交工序：法兰抽检",
+        "time" : {
+          "start" : 1775725635422,
+          "stop" : 1775725654138,
+          "duration" : 18716
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "点击页签法兰抽检",
+          "time" : {
+            "start" : 1775725635422,
+            "stop" : 1775725635478,
+            "duration" : 56
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击紧固压力",
+          "time" : {
+            "start" : 1775725635478,
+            "stop" : 1775725635530,
+            "duration" : 52
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击抽检前照片",
+          "time" : {
+            "start" : 1775725635530,
+            "stop" : 1775725637603,
+            "duration" : 2073
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "输入图片路径并确认上传",
+          "time" : {
+            "start" : 1775725637603,
+            "stop" : 1775725642838,
+            "duration" : 5235
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击抽检公差",
+          "time" : {
+            "start" : 1775725642838,
+            "stop" : 1775725642908,
+            "duration" : 70
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击抽检公差确定",
+          "time" : {
+            "start" : 1775725642908,
+            "stop" : 1775725643471,
+            "duration" : 563
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击校验公差1",
+          "time" : {
+            "start" : 1775725643471,
+            "stop" : 1775725643846,
+            "duration" : 375
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击校验公差1确定",
+          "time" : {
+            "start" : 1775725643846,
+            "stop" : 1775725644412,
+            "duration" : 566
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击校验公差2",
+          "time" : {
+            "start" : 1775725644412,
+            "stop" : 1775725644786,
+            "duration" : 374
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击校验公差2确定",
+          "time" : {
+            "start" : 1775725644786,
+            "stop" : 1775725645358,
+            "duration" : 572
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击抽检过程照片",
+          "time" : {
+            "start" : 1775725645358,
+            "stop" : 1775725647699,
+            "duration" : 2341
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "输入图片路径并确认上传",
+          "time" : {
+            "start" : 1775725647699,
+            "stop" : 1775725650931,
+            "duration" : 3232
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击保存任务",
+          "time" : {
+            "start" : 1775725650931,
+            "stop" : 1775725654077,
+            "duration" : 3146
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击提交任务",
+          "time" : {
+            "start" : 1775725654077,
+            "stop" : 1775725654137,
+            "duration" : 60
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 14,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "提交工序：完工确认",
+        "time" : {
+          "start" : 1775725654138,
+          "stop" : 1775725657536,
+          "duration" : 3398
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "点击完工确认页签",
+          "time" : {
+            "start" : 1775725654138,
+            "stop" : 1775725654489,
+            "duration" : 351
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击提交任务",
+          "time" : {
+            "start" : 1775725654490,
+            "stop" : 1775725657536,
+            "duration" : 3046
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "提交工序：法兰校核",
+        "time" : {
+          "start" : 1775725657536,
+          "stop" : 1775725658785,
+          "duration" : 1249
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "点击法兰校核页签",
+          "time" : {
+            "start" : 1775725657536,
+            "stop" : 1775725657583,
+            "duration" : 47
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击输入工具数量",
+          "time" : {
+            "start" : 1775725657583,
+            "stop" : 1775725657640,
+            "duration" : 57
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击输入扭矩值",
+          "time" : {
+            "start" : 1775725657640,
+            "stop" : 1775725657701,
+            "duration" : 61
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击输入平行公差",
+          "time" : {
+            "start" : 1775725657701,
+            "stop" : 1775725657783,
+            "duration" : 82
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "平行公差填写",
+          "time" : {
+            "start" : 1775725657784,
+            "stop" : 1775725658351,
+            "duration" : 567
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击保存任务",
+          "time" : {
+            "start" : 1775725658351,
+            "stop" : 1775725658720,
+            "duration" : 369
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击提交任务",
+          "time" : {
+            "start" : 1775725658720,
+            "stop" : 1775725658785,
+            "duration" : 65
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 7,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "提交工序：螺栓抽检",
+        "time" : {
+          "start" : 1775725658785,
+          "stop" : 1775725659319,
+          "duration" : 534
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "点击螺栓抽检页签",
+          "time" : {
+            "start" : 1775725658785,
+            "stop" : 1775725659140,
+            "duration" : 355
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "填写实际施工值",
+          "time" : {
+            "start" : 1775725659140,
+            "stop" : 1775725659197,
+            "duration" : 57
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击保存任务",
+          "time" : {
+            "start" : 1775725659197,
+            "stop" : 1775725659257,
+            "duration" : 60
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "点击提交任务",
+          "time" : {
+            "start" : 1775725659257,
+            "stop" : 1775725659319,
+            "duration" : 62
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 4,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 64,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 3
+    }, {
+      "name" : "查看已完成项目是否提交成功",
+      "time" : {
+        "start" : 1775725664319,
+        "stop" : 1775725670491,
+        "duration" : 6172
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击已完成",
+        "time" : {
+          "start" : 1775725664319,
+          "stop" : 1775725666392,
+          "duration" : 2073
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击待处理",
+        "time" : {
+          "start" : 1775725666392,
+          "stop" : 1775725668440,
+          "duration" : 2048
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击已完成",
+        "time" : {
+          "start" : 1775725668440,
+          "stop" : 1775725670491,
+          "duration" : 2051
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "登录项目经理账号",
+      "time" : {
+        "start" : 1775725670491,
+        "stop" : 1775725671247,
+        "duration" : 756
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "进入项目详情页面",
+      "time" : {
+        "start" : 1775725671247,
+        "stop" : 1775725672989,
+        "duration" : 1742
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "服务过程管理菜单",
+        "time" : {
+          "start" : 1775725671247,
+          "stop" : 1775725671557,
+          "duration" : 310
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击定力矩服务菜单",
+        "time" : {
+          "start" : 1775725671558,
+          "stop" : 1775725671646,
+          "duration" : 88
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击项目管理菜单",
+        "time" : {
+          "start" : 1775725671646,
+          "stop" : 1775725672272,
+          "duration" : 626
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "进入项目管理页面点击查看按钮",
+        "time" : {
+          "start" : 1775725672272,
+          "stop" : 1775725672989,
+          "duration" : 717
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "项目经理推送法兰至装置员",
+      "time" : {
+        "start" : 1775725672989,
+        "stop" : 1775725677043,
+        "duration" : 4054
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "进入项目页面点击推送设备员确认",
+        "time" : {
+          "start" : 1775725672989,
+          "stop" : 1775725673132,
+          "duration" : 143
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击推送按钮",
+        "time" : {
+          "start" : 1775725673132,
+          "stop" : 1775725673376,
+          "duration" : 244
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "勾选法兰",
+        "time" : {
+          "start" : 1775725673376,
+          "stop" : 1775725673909,
+          "duration" : 533
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击批量推送",
+        "time" : {
+          "start" : 1775725673910,
+          "stop" : 1775725674042,
+          "duration" : 132
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "退出登录",
+      "time" : {
+        "start" : 1775725677043,
+        "stop" : 1775725683722,
+        "duration" : 6679
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击个人信息框",
+        "time" : {
+          "start" : 1775725677043,
+          "stop" : 1775725677106,
+          "duration" : 63
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击退出登录",
+        "time" : {
+          "start" : 1775725677106,
+          "stop" : 1775725677722,
+          "duration" : 616
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "登录设备员账号",
+      "time" : {
+        "start" : 1775725683722,
+        "stop" : 1775725683959,
+        "duration" : 237
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "设备员通过检修数据审核",
+      "time" : {
+        "start" : 1775725683959,
+        "stop" : 1775725688541,
+        "duration" : 4582
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击待办",
+        "time" : {
+          "start" : 1775725683959,
+          "stop" : 1775725684408,
+          "duration" : 449
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击确认跳转至详情页",
+        "time" : {
+          "start" : 1775725684408,
+          "stop" : 1775725685000,
+          "duration" : 592
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击全选",
+        "time" : {
+          "start" : 1775725688001,
+          "stop" : 1775725688092,
+          "duration" : 91
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击通过",
+        "time" : {
+          "start" : 1775725688092,
+          "stop" : 1775725688441,
+          "duration" : 349
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击确定",
+        "time" : {
+          "start" : 1775725688441,
+          "stop" : 1775725688541,
+          "duration" : 100
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 5,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "退出登录",
+      "time" : {
+        "start" : 1775725688541,
+        "stop" : 1775725695484,
+        "duration" : 6943
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击个人信息框",
+        "time" : {
+          "start" : 1775725688541,
+          "stop" : 1775725688810,
+          "duration" : 269
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击退出登录",
+        "time" : {
+          "start" : 1775725688810,
+          "stop" : 1775725689483,
+          "duration" : 673
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "登录项目经理账号",
+      "time" : {
+        "start" : 1775725695484,
+        "stop" : 1775725695776,
+        "duration" : 292
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "进入项目详情页面",
+      "time" : {
+        "start" : 1775725695776,
+        "stop" : 1775725697365,
+        "duration" : 1589
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "服务过程管理菜单",
+        "time" : {
+          "start" : 1775725695776,
+          "stop" : 1775725696044,
+          "duration" : 268
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击定力矩服务菜单",
+        "time" : {
+          "start" : 1775725696044,
+          "stop" : 1775725696122,
+          "duration" : 78
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击项目管理菜单",
+        "time" : {
+          "start" : 1775725696122,
+          "stop" : 1775725696727,
+          "duration" : 605
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "进入项目管理页面点击查看按钮",
+        "time" : {
+          "start" : 1775725696727,
+          "stop" : 1775725697365,
+          "duration" : 638
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "上传结项资料",
+      "time" : {
+        "start" : 1775725697365,
+        "stop" : 1775725720243,
+        "duration" : 22878
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击上传结项材料",
+        "time" : {
+          "start" : 1775725697365,
+          "stop" : 1775725697572,
+          "duration" : 207
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击上传框",
+        "time" : {
+          "start" : 1775725697572,
+          "stop" : 1775725706669,
+          "duration" : 9097
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击确定保存上传文件",
+        "time" : {
+          "start" : 1775725706669,
+          "stop" : 1775725709726,
+          "duration" : 3057
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击“其他过程材料页签”",
+        "time" : {
+          "start" : 1775725709726,
+          "stop" : 1775725709787,
+          "duration" : 61
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击上传框上传",
+        "time" : {
+          "start" : 1775725709787,
+          "stop" : 1775725718100,
+          "duration" : 8313
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击确定按钮",
+        "time" : {
+          "start" : 1775725718100,
+          "stop" : 1775725720177,
+          "duration" : 2077
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击“点击退出按钮”",
+        "time" : {
+          "start" : 1775725720177,
+          "stop" : 1775725720243,
+          "duration" : 66
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 7,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "点击结项申请",
+      "time" : {
+        "start" : 1775725720243,
+        "stop" : 1775725721200,
+        "duration" : 957
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击结项按钮",
+        "time" : {
+          "start" : 1775725720243,
+          "stop" : 1775725720623,
+          "duration" : 380
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击结项确定按钮",
+        "time" : {
+          "start" : 1775725720623,
+          "stop" : 1775725721200,
+          "duration" : 577
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "退出登录",
+      "time" : {
+        "start" : 1775725721200,
+        "stop" : 1775725728099,
+        "duration" : 6899
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击个人信息框",
+        "time" : {
+          "start" : 1775725721200,
+          "stop" : 1775725721510,
+          "duration" : 310
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击退出登录",
+        "time" : {
+          "start" : 1775725721510,
+          "stop" : 1775725722098,
+          "duration" : 588
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "登录设备员账号",
+      "time" : {
+        "start" : 1775725728099,
+        "stop" : 1775725728315,
+        "duration" : 216
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "设备员审批结项通过",
+      "time" : {
+        "start" : 1775725728315,
+        "stop" : 1775725733941,
+        "duration" : 5626
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击待办处理",
+        "time" : {
+          "start" : 1775725728315,
+          "stop" : 1775725728708,
+          "duration" : 393
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "点击通过",
+        "time" : {
+          "start" : 1775725728708,
+          "stop" : 1775725728941,
+          "duration" : 233
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 206,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 12
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1775725743942,
+      "stop" : 1775725746183,
+      "duration" : 2241
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "LES系统"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "主要流程"
+  }, {
+    "name" : "story",
+    "value" : "检修计划管理"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_Main_flow"
+  }, {
+    "name" : "host",
+    "value" : "Y-YU"
+  }, {
+    "name" : "thread",
+    "value" : "29392-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_Main_flow"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7b5dcca0584ad857.json",
+  "parameterValues" : [ ]
+}

@@ -16,8 +16,8 @@ LOGIN_URL_APP ="http://192.168.2.154:12012/glsh/app/"  #测试
 #用户名
 
 USERNAME_zg_PGN = "panggn953" #机动处专工 旁光南
-USERNAME_zg_YJA = "JA.YU" #机动处专工 余家傲
-USERNAME_XMJL_LQ ="13016408500" #项目经理 罗庆
+USERNAME_zg_YJA = 'panggn953'#"JA.YU" #机动处专工 余家傲
+USERNAME_XMJL_LQ ="13760306643"#"13016408500" #项目经理 罗庆
 USERNAME_XMJL_PM ="15800327893" #PM机器人
 USERNAME_XMFZR_PG ="18272015001"    #项目负责人 彭淦
 USERNAME_CZG_YJA ="13720102552" #操作工 余

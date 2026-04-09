@@ -120,7 +120,7 @@ def test_login02(browser):
     with allure.step('下派任务'):
         LES.execute_full_xmjl_xprw_flow()
 
-
+    time.sleep(3)
     with allure.step('退出登录'):
         LES.execute_full_log_out_flow()
 

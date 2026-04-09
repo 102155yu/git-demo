@@ -896,7 +896,7 @@ class GxrwJymsExecutor:
             # 调用计数器自增方法，获取最新值
             counter_value = self.wk.increment_counter()
             # 拼接唯一名称（前缀可自定义）
-            plan_name = f"测试日报-web-yja-{counter_value}"
+            plan_name = f"测试完整流程-yja-{counter_value}"
             # 输入计划名称
             self.wk.locator(*allPages.fwjh_dljfwjh_jhmc).send_keys(plan_name)
             # 打印日志，方便调试
@@ -976,7 +976,7 @@ class GxrwJymsExecutor:
         # 点击确认保存检修范围
         with allure.step("点击确认保存检修范围"):
             self.wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_qd).click()
-        time.sleep(30)
+        time.sleep(8)
         # 点击下派
         with allure.step("点击下派"):
             self.wk.locator(*allPages.fwjh_dljfwjh_xp).click()
