@@ -748,6 +748,7 @@ class GxrwJymsExecutor:
         with allure.step('点击确认跳转至详情页'):
             self.wk.locator(*allPages.sby_gzt_db_cl_qr).click()
 
+        time.sleep(3)
         # 点击全选
         with allure.step('点击全选'):
             self.wk.locator(*allPages.fwgcgl_jxsjqr_qx).click()

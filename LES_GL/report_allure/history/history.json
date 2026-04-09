@@ -2,20 +2,19 @@
   "d9ac4607731051d890b0c582cb89fc15" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c7de7d137894432",
-      "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n\tGetHandleVerifier [0x0x7ff7d0542665+77205]\n\tGetHandleVerifier [0x0x7ff7d05426c0+77296]\n\t(No symbol) [0x0x7ff7d02f9a3a]\n\t(No symbol) [0x0x7ff7d035043a]\n\t(No symbol) [0x0x7ff7d03506ec]\n\t(No symbol) [0x0x7ff7d03a3ae7]\n\t(No symbol) [0x0x7ff7d037868f]\n\t(No symbol) [0x0x7ff7d03a08af]\n\t(No symbol) [0x0x7ff7d0378423]\n\t(No symbol) [0x0x7ff7d0341511]\n\t(No symbol) [0x0x7ff7d03422a3]\n\tGetHandleVerifier [0x0x7ff7d082389d+3096525]\n\tGetHandleVerifier [0x0x7ff7d081dc5d+3072909]\n\tGetHandleVerifier [0x0x7ff7d083d74d+3202685]\n\tGetHandleVerifier [0x0x7ff7d055b9fe+180526]\n\tGetHandleVerifier [0x0x7ff7d0562fdf+210703]\n\tGetHandleVerifier [0x0x7ff7d054b304+113204]\n\tGetHandleVerifier [0x0x7ff7d054b4b9+113641]\n\tGetHandleVerifier [0x0x7ff7d0532238+10600]\n\tBaseThreadInitThunk [0x0x7ffeb385e8d7+23]\n\tRtlUserThreadStart [0x0x7ffeb492c48c+44]",
+      "uid" : "cce9a63b91301415",
+      "status" : "passed",
       "time" : {
-        "start" : 1775724175100,
-        "stop" : 1775724200483,
-        "duration" : 25383
+        "start" : 1775724785574,
+        "stop" : 1775724844708,
+        "duration" : 59134
       }
     } ]
   }

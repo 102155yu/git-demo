@@ -74,7 +74,7 @@ fwgcgl_jxsjqr_tg =["xpath","//span[text()='通过']"]
     #不通过按钮
 fwgcgl_jxsjqr_btg =["xpath","//span[text()='不通过']"]
     #全选按钮
-fwgcgl_jxsjqr_qx =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div/div[2]/div[1]/div/div[2]/div[2]/div/div[1]/div[2]/table/thead/tr/th[1]/div/label/span"]
+fwgcgl_jxsjqr_qx =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div/div[2]/div[2]/div/div[2]/div[2]/div/div[1]/div[2]/table/thead/tr/th[1]/div/label/span"]
     #确定
 fwgcgl_jxsjqr_qd =["xpath","//span[text()='确定']"]
         #审批意见

@@ -55,90 +55,90 @@ def test_login02(browser):
     wait = WebDriverWait(browser,10)
     wk = WebKeys(browser)
     LES = GxrwJymsExecutor(browser)
-    #进入登录
-    # with allure.step('进入LES登录页'):
-    #     login = LoginPage(browser)
-    #     login.login(LOGIN_URL_PC, USERNAME_zg_YJA, PASSWD)
-    # time.sleep(1)
-    #
-    # with allure.step("专工下发计划"):
-    #     LES.execute_full_zg_Plan_flow()
-    #
-    # with allure.step('退出登录'):
-    #     LES.execute_full_log_out_flow()
-    #
-    # with allure.step("登录设备员账号"):
-    #     login = LoginPage(browser)
-    #     login.input_credential_and_login(USERNAME_sby_80, PASSWD)
-    #
-    # with allure.step("设备员确认计划 发布计划"):
-    #     LES.execute_full_sby_fbjh_flow()
-    #
-    # with allure.step('退出登录'):
-    #     LES.execute_full_log_out_flow()
-    #
-    # with allure.step("登录服务商负责人账号"):
-    #     login = LoginPage(browser)
-    #     login.input_credential_and_login(USERNAME_XMFZR_PG, PASSWD)
-    #
-    # with allure.step("服务商负责人添加项目经理"):
-    #     LES.execute_full_fws_tjxmjl_flow()
-    #
-    # with allure.step('退出登录'):
-    #     LES.execute_full_log_out_flow()
-    #
-    # with allure.step("登录项目经理账号"):
-    #     login = LoginPage(browser)
-    #     login.input_credential_and_login(USERNAME_XMJL_LQ, PASSWD)
-    #
-    # with allure.step("进入项目管理页面"):
-    #     LES.execute_full_xmgl_xq_flow()
-    #
-    # with allure.step("成员配置添加所有成员进项目"):
-    #     LES.execute_full_PM_cypz_flow()
-    #
-    # with allure.step("添加法兰到检修范围"):
-    #     LES.execute_full_PM_pzjxfw_flow()
-    #
-    # with allure.step('退出登录'):
-    #     LES.execute_full_log_out_flow()
-    #
-    # with allure.step("登录设备员账号"):
-    #     login = LoginPage(browser)
-    #     login.input_credential_and_login(USERNAME_sby_80, PASSWD)
-    #
-    # with allure.step("设备员通过检修数据确认"):
-    #     LES.execute_full_sby_jx_pass_flow()
-    #
-    # with allure.step('退出登录'):
-    #     LES.execute_full_log_out_flow()
-    #
-    # with allure.step("登录项目经理账号"):
-    #     login = LoginPage(browser)
-    #     login.input_credential_and_login(USERNAME_XMJL_LQ, PASSWD)
-    #
-    # with allure.step('下派任务'):
-    #     LES.execute_full_xmjl_xprw_flow()
-    #
-    #
-    # with allure.step('退出登录'):
-    #     LES.execute_full_log_out_flow()
-    #
-    # with allure.step('进入APP端'):
-    #     login_app = LoginPage(browser)
-    #     login_app.loginapp(LOGIN_URL_APP, USERNAME_CZG_YJA, PASSWD)
-    #
-    #     time.sleep(2)
-    #
-    # with allure.step("进入任务页面"):
-    #     LES.execute_full_jrgxcl_flow()
-    #
-    #
-    # with allure.step("做标准工序任务"):
-    #     LES.execute_full_standard_mode_flow()
-    #
-    # with allure.step("查看已完成项目是否提交成功"):
-    #     LES.execute_full_verification_flow()
+    # 进入登录
+    with allure.step('进入LES登录页'):
+        login = LoginPage(browser)
+        login.login(LOGIN_URL_PC, USERNAME_zg_YJA, PASSWD)
+    time.sleep(1)
+
+    with allure.step("专工下发计划"):
+        LES.execute_full_zg_Plan_flow()
+
+    with allure.step('退出登录'):
+        LES.execute_full_log_out_flow()
+
+    with allure.step("登录设备员账号"):
+        login = LoginPage(browser)
+        login.input_credential_and_login(USERNAME_sby_80, PASSWD)
+
+    with allure.step("设备员确认计划 发布计划"):
+        LES.execute_full_sby_fbjh_flow()
+
+    with allure.step('退出登录'):
+        LES.execute_full_log_out_flow()
+
+    with allure.step("登录服务商负责人账号"):
+        login = LoginPage(browser)
+        login.input_credential_and_login(USERNAME_XMFZR_PG, PASSWD)
+
+    with allure.step("服务商负责人添加项目经理"):
+        LES.execute_full_fws_tjxmjl_flow()
+
+    with allure.step('退出登录'):
+        LES.execute_full_log_out_flow()
+
+    with allure.step("登录项目经理账号"):
+        login = LoginPage(browser)
+        login.input_credential_and_login(USERNAME_XMJL_LQ, PASSWD)
+
+    with allure.step("进入项目管理页面"):
+        LES.execute_full_xmgl_xq_flow()
+
+    with allure.step("成员配置添加所有成员进项目"):
+        LES.execute_full_PM_cypz_flow()
+
+    with allure.step("添加法兰到检修范围"):
+        LES.execute_full_PM_pzjxfw_flow()
+
+    with allure.step('退出登录'):
+        LES.execute_full_log_out_flow()
+
+    with allure.step("登录设备员账号"):
+        login = LoginPage(browser)
+        login.input_credential_and_login(USERNAME_sby_80, PASSWD)
+
+    with allure.step("设备员通过检修数据确认"):
+        LES.execute_full_sby_jx_pass_flow()
+
+    with allure.step('退出登录'):
+        LES.execute_full_log_out_flow()
+
+    with allure.step("登录项目经理账号"):
+        login = LoginPage(browser)
+        login.input_credential_and_login(USERNAME_XMJL_LQ, PASSWD)
+
+    with allure.step('下派任务'):
+        LES.execute_full_xmjl_xprw_flow()
+
+
+    with allure.step('退出登录'):
+        LES.execute_full_log_out_flow()
+
+    with allure.step('进入APP端'):
+        login_app = LoginPage(browser)
+        login_app.loginapp(LOGIN_URL_APP, USERNAME_CZG_YJA, PASSWD)
+
+        time.sleep(2)
+
+    with allure.step("进入任务页面"):
+        LES.execute_full_jrgxcl_flow()
+
+
+    with allure.step("做标准工序任务"):
+        LES.execute_full_standard_mode_flow()
+
+    with allure.step("查看已完成项目是否提交成功"):
+        LES.execute_full_verification_flow()
 
 
     with allure.step('登录项目经理账号'):
@@ -178,19 +178,19 @@ def test_login02(browser):
     with allure.step('上传结项资料'):
         LES.execute_full_xmgl_scjxzl_flow()
 
-    # with allure.step('点击结项申请'):
-    #     LES.execute_full_xmgl_jx_flow()
-    #
-    #
-    # with allure.step('退出登录'):
-    #     LES.execute_full_log_out_flow()
-    #
-    # with allure.step("登录设备员账号"):
-    #     login = LoginPage(browser)
-    #     login.input_credential_and_login(USERNAME_sby_80, PASSWD)
-    #
-    # with allure.step('设备员审批结项通过'):
-    #     LES.execute_full_sby_Pass_the_knot_flow()
+    with allure.step('点击结项申请'):
+        LES.execute_full_xmgl_jx_flow()
+
+
+    with allure.step('退出登录'):
+        LES.execute_full_log_out_flow()
+
+    with allure.step("登录设备员账号"):
+        login = LoginPage(browser)
+        login.input_credential_and_login(USERNAME_sby_80, PASSWD)
+
+    with allure.step('设备员审批结项通过'):
+        LES.execute_full_sby_Pass_the_knot_flow()
 
 
     time.sleep(10)
