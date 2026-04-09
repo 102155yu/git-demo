@@ -1,18 +1,19 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
   "children" : [ {
     "name" : "testcase",
     "children" : [ {
       "name" : "test_Main_flow",
       "children" : [ {
         "name" : "主要流程验证",
-        "uid" : "3639819b989a47c9",
+        "uid" : "c7de7d137894432",
         "parentUid" : "90dd7b425242ef512deb9f378b3468af",
         "status" : "broken",
         "time" : {
-          "start" : 1775721516158,
-          "stop" : 1775721883675,
-          "duration" : 367517
+          "start" : 1775724175100,
+          "stop" : 1775724200483,
+          "duration" : 25383
         },
         "flaky" : false,
         "newFailed" : false,
@@ -21,6 +22,5 @@
       "uid" : "90dd7b425242ef512deb9f378b3468af"
     } ],
     "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
-  } ],
-  "name" : "suites"
+  } ]
 }

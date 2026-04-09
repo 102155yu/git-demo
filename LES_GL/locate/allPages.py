@@ -114,7 +114,7 @@ xmgl_tssby_ts =["xpath",'(//span[text()=" 推送 "])[2]']
 xmgl_tssby_plts = ['xpath','//span[text()="批量推送"]']
 
         #批量撤回
-xmgl_tssby_plts = ['xpath','//span[text()="批量撤回"]']
+xmgl_tssby_plch = ['xpath','//span[text()="批量撤回"]']
 
             #全选
 xmgl_tssby_ts_qx =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[5]/div[2]/div[1]/div/div/div[3]/div/div[1]/div[2]/table/thead/tr/th[1]/div/label"]

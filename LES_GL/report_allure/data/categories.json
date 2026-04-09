@@ -1,18 +1,19 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
       "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n\tGetHandleVerifier [0x0x7ff7d0542665+77205]\n\tGetHandleVerifier [0x0x7ff7d05426c0+77296]\n\t(No symbol) [0x0x7ff7d02f9a3a]\n\t(No symbol) [0x0x7ff7d035043a]\n\t(No symbol) [0x0x7ff7d03506ec]\n\t(No symbol) [0x0x7ff7d03a3ae7]\n\t(No symbol) [0x0x7ff7d037868f]\n\t(No symbol) [0x0x7ff7d03a08af]\n\t(No symbol) [0x0x7ff7d0378423]\n\t(No symbol) [0x0x7ff7d0341511]\n\t(No symbol) [0x0x7ff7d03422a3]\n\tGetHandleVerifier [0x0x7ff7d082389d+3096525]\n\tGetHandleVerifier [0x0x7ff7d081dc5d+3072909]\n\tGetHandleVerifier [0x0x7ff7d083d74d+3202685]\n\tGetHandleVerifier [0x0x7ff7d055b9fe+180526]\n\tGetHandleVerifier [0x0x7ff7d0562fdf+210703]\n\tGetHandleVerifier [0x0x7ff7d054b304+113204]\n\tGetHandleVerifier [0x0x7ff7d054b4b9+113641]\n\tGetHandleVerifier [0x0x7ff7d0532238+10600]\n\tBaseThreadInitThunk [0x0x7ffeb385e8d7+23]\n\tRtlUserThreadStart [0x0x7ffeb492c48c+44]",
       "children" : [ {
         "name" : "主要流程验证",
-        "uid" : "3639819b989a47c9",
+        "uid" : "c7de7d137894432",
         "parentUid" : "d819a8ea7a472e73bf49d328f2f390c7",
         "status" : "broken",
         "time" : {
-          "start" : 1775721516158,
-          "stop" : 1775721883675,
-          "duration" : 367517
+          "start" : 1775724175100,
+          "stop" : 1775724200483,
+          "duration" : 25383
         },
         "flaky" : false,
         "newFailed" : false,
@@ -21,6 +22,5 @@
       "uid" : "d819a8ea7a472e73bf49d328f2f390c7"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
-  } ],
-  "name" : "categories"
+  } ]
 }
