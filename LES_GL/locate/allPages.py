@@ -91,28 +91,35 @@ fwgcgl_dljfw_xmgl_ck =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div
 
 #项目管理页面
     #成员配置按钮
-xmgl_cypz=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[1]/div/div[2]/div[1]/div/div/div/div[3]"]
+xmgl_cypz=["xpath","//div[contains(@class, 'el-tabs__item') and text()='成员配置']"]
         #成员配置页面
             #添加按钮
-xmgl_cypz_tj=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[2]/div[1]/div/div/div/div[2]/div[2]/div/div/button[1]/span"]
+xmgl_cypz_tj=["xpath","//span[text()='添加']"]
             #添加页面展开箭头
-xmgl_cypz_tj_xl=["xpath","/html/body/div[6]/div/div/div/div[2]/div/div[1]/div/div/div[1]/div[1]/i"]
+xmgl_cypz_tj_xl=["xpath","/html/body/div[5]/div/div/div/div[2]/div/div[1]/div/div/div[1]/div[1]/i"]
             #全选
-xmgl_cypz_tj_qx=["xpath","/html/body/div[6]/div/div/div/div[2]/div/div[1]/div/div/div[1]/div[1]/label/span"]
+xmgl_cypz_tj_qx=["xpath","/html/body/div[5]/div/div/div/div[2]/div/div[1]/div/div/div[1]/div[1]/label/span"]
             #选择人员
 xmgl_cypz_tj_03=["xpath","/html/body/div[6]/div/div/div/div[2]/div/div[1]/div/div/div[1]/div[2]/div[3]/div/label/span/span"]
             #确定按钮
-xmgl_cypz_tj_qd=["xpath","/html/body/div[6]/div/div/footer/div/button[2]/span"]
+xmgl_cypz_tj_qd=["xpath","//span[text()='确定']"]
             #返回按钮
-xmgl_cypz_fh=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[1]/button/span"]
+xmgl_cypz_fh=["xpath","//span[text()='返回']"]
     #推送设备员按钮
-xmgl_tssby=["xpath","//span[text()='推送设备员确认']/parent::button"]
+xmgl_tssby=["xpath","//div[contains(@class, 'el-tabs__item') and text()='推送设备员']"]
         #推送按钮
-xmgl_tssby_ts =["xpath","(//button[contains(@class,'handler-btn')])[3]"]
+xmgl_tssby_ts =["xpath",'(//span[text()=" 推送 "])[2]']
+        #批量推送
+
+xmgl_tssby_plts = ['xpath','//span[text()="批量推送"]']
+
+        #批量撤回
+xmgl_tssby_plts = ['xpath','//span[text()="批量撤回"]']
+
             #全选
-xmgl_tssby_ts_qx =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[2]/div[1]/div/div[2]/div/div/div/div[1]/div/div[1]/div[2]/table/thead/tr/th[1]/div/label/span"]
+xmgl_tssby_ts_qx =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[5]/div[2]/div[1]/div/div/div[3]/div/div[1]/div[2]/table/thead/tr/th[1]/div/label"]
             #确定
-xmgl_tssby_ts_qd =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div[2]/div[1]/div/div[2]/div/div/footer/span/button[2]/span"]
+xmgl_tssby_ts_qd =["xpath",""]
         #返回按钮
 xmgl_tssby_fh =["xpath",'//span[text()="返回"]']
 xmgl_tssby_ =["xpath",""]
@@ -120,29 +127,29 @@ xmgl_tssby_ =["xpath",""]
 xmgl_tssby_ =["xpath",""]
 xmgl_tssby_ =["xpath",""]
     #检修范围按钮
-xmgl_jxfw=["xpath","//span[text()='检修范围']/parent::button"]
+xmgl_jxfw=["xpath","//div[contains(@class, 'el-tabs__item') and text()='检修范围']"]
         #下一页按钮
-xmgl_jxfw_xyy=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[4]/button[2]"]
+xmgl_jxfw_xyy=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div/div/div[2]/div[2]/div[1]/div/div/div[2]/div[4]/button[2]/i"]
         #全选
-xmgl_jxfw_gx_qx=["xpath",'/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[3]/div/div[1]/div[2]/table/thead/tr/th[1]/div/label/span']
+xmgl_jxfw_gx_qx=["xpath",'/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div/div/div[2]/div[2]/div[1]/div/div/div[2]/div[3]/div/div[1]/div[2]/table/thead/tr/th[1]/div/label/span']
         #已选中X条数据
-xmgl_jxfw_selected_count = ["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div/div[2]/span"]
+xmgl_jxfw_selected_count = ["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div/div/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div/div[2]/span"]
 
         #勾选1
 xmgl_jxfw_gx_01=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[3]/div/div[1]/div[3]/div/div[1]/div/table/tbody/tr[1]/td[1]/div/label/span/span"]
         #提交按钮
-xmgl_jxfw_tj=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div/div[1]/button[1]/span"]
+xmgl_jxfw_tj=["xpath",'//span[text()="提交"]']
         #提交页面-确认按钮
-xmgl_jxfw_tj_qr=["xpath","/html/body/div[7]/div/div/div[3]/button[2]/span"]
+xmgl_jxfw_tj_qr=["xpath",'//span[text()="确定"]']
         #返回按钮
-xmgl_jxfw_fh=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[1]/div[2]/button/span"]
+xmgl_jxfw_fh=["xpath",'//span[text()="返回"]']
 
     # 角色配置
 xmgl_jspz=["xpath","//span[text()='角色配置']/parent::button"]
     # 压测
 xmgl_yc=["xpath","//span[text()='压测']/parent::button"]
     #结项
-xmgl_jx=["xpath","//span[text()='结项']/parent::button"]
+xmgl_jx=["xpath","//div[contains(@class, 'el-tabs__item') and text()='结项']"]
         #结项材料申请页签
 xmgl_jx_jxclsq_yq=["xpath","//div[contains(text(),'结项材料申请') and contains(@class,'el-tabs__item')]"]
         #上传结项资料

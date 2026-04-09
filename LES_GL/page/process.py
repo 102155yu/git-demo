@@ -473,8 +473,6 @@ class GxrwJymsExecutor:
         with allure.step('点击确定'):
             self.wk.locator(*allPages.xmgl_cypz_tj_qd).click()
             # 点击返回
-        with allure.step('点击返回'):
-            self.wk.locator(*allPages.xmgl_cypz_fh).click()
     #推送设备员确认
     def execute_full_PM_tssbyqr_flow(self):
         # 进入项目页面点击推送设备员确认
@@ -489,8 +487,8 @@ class GxrwJymsExecutor:
             self.wk.locator(*allPages.xmgl_tssby_ts_qx).click()
 
         # 点击确定
-        with allure.step('点击确定'):
-            self.wk.locator(*allPages.xmgl_tssby_ts_qd).click()
+        with allure.step('点击批量推送'):
+            self.wk.locator(*allPages.xmgl_tssby_plts).click()
         time.sleep(3)
         # 点击返回推送成功
         # with allure.step('点击返回推送成功'):
@@ -550,9 +548,9 @@ class GxrwJymsExecutor:
                 self.wk.locator(*allPages.xmgl_jxfw_tj_qr).click()
                 time.sleep(2)
 
-            # 点击返回
-            with allure.step('点击返回'):
-                self.wk.locator(*allPages.xmgl_jxfw_fh).click()
+            # # 点击返回
+            # with allure.step('点击返回'):
+            #     self.wk.locator(*allPages.xmgl_jxfw_fh).click()
 
     # 新建服务商
     def execute_full_zg_fwsgl_flow(self):
@@ -897,7 +895,7 @@ class GxrwJymsExecutor:
             # 调用计数器自增方法，获取最新值
             counter_value = self.wk.increment_counter()
             # 拼接唯一名称（前缀可自定义）
-            plan_name = f"测试扫码查看预紧力-web-yja-{counter_value}"
+            plan_name = f"测试日报-web-yja-{counter_value}"
             # 输入计划名称
             self.wk.locator(*allPages.fwjh_dljfwjh_jhmc).send_keys(plan_name)
             # 打印日志，方便调试
@@ -947,17 +945,24 @@ class GxrwJymsExecutor:
                 .key_down(Keys.ENTER) \
                 .perform()
 
-        # 选择装置
-        with allure.step("选择装置:55万吨"):
+        # # 选择装置
+        # with allure.step("选择装置:55万吨"):
+        #     self.wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_zz).click()
+        #     ActionChains(self.browser) \
+        #         .send_keys('55万吨') \
+        #         .key_down(Keys.DOWN) \
+        #         .key_down(Keys.ENTER) \
+        #         .perform()
+        # 选择装置80万吨
+        with allure.step("选择装置:80万吨"):
             self.wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_zz).click()
             ActionChains(self.browser) \
-                .send_keys('55万吨') \
+                .send_keys('80万吨') \
                 .key_down(Keys.DOWN) \
                 .key_down(Keys.ENTER) \
                 .perform()
-
         # 填写计划检修量
-        with allure.step("选择装置:55万吨"):
+        with allure.step("填写计划量"):
             self.wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_jhjxl).send_keys("200")
 
         # 选择服务模式
@@ -970,7 +975,7 @@ class GxrwJymsExecutor:
         # 点击确认保存检修范围
         with allure.step("点击确认保存检修范围"):
             self.wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_qd).click()
-        time.sleep(2)
+        time.sleep(30)
         # 点击下派
         with allure.step("点击下派"):
             self.wk.locator(*allPages.fwjh_dljfwjh_xp).click()
