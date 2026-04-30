@@ -2,25 +2,17 @@
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
   "name" : "suites",
   "children" : [ {
-    "name" : "testcase",
-    "children" : [ {
-      "name" : "test_Main_flow",
-      "children" : [ {
-        "name" : "主要流程验证",
-        "uid" : "7b5dcca0584ad857",
-        "parentUid" : "90dd7b425242ef512deb9f378b3468af",
-        "status" : "passed",
-        "time" : {
-          "start" : 1775725399299,
-          "stop" : 1775725743942,
-          "duration" : 344643
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "90dd7b425242ef512deb9f378b3468af"
-    } ],
-    "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
+    "name" : "主要流程验证",
+    "uid" : "89e9df1a27dcab59",
+    "parentUid" : "98d3104e051c652961429bf95fa0b5d6",
+    "status" : "passed",
+    "time" : {
+      "start" : 1776766266033,
+      "stop" : 1776766463478,
+      "duration" : 197445
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
   } ]
 }

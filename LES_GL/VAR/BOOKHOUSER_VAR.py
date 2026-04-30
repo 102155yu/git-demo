@@ -3,31 +3,43 @@
 """
 
 #LES登录链接
-LOGIN_URL_PC ='http://192.168.2.154:12012/glsh/#/login'#测试
-# LOGIN_URL_PC ="https://les-pre.wellinte.com/glsh/#/baseDataMgt/flange"#预发
-LOGIN_URL_APP ="http://192.168.2.154:12012/glsh/app/"  #测试
+# LOGIN_URL_PC ='http://192.168.2.154:12012/glsh/#/login'#测试
+# LOGIN_URL_APP ="http://192.168.2.154:12012/glsh/app/"  #测试
+# # LOGIN_URL_PC ="https://les-pre.wellinte.com/glsh/#/baseDataMgt/flange"#预发
+
 # LOGIN_URL_APP ="https://les-pre.wellinte.com/glsh/app/"#预发
-# LOGIN_URL_PC ="https://10.105.43.7/web/#"
-#
-# LOGIN_URL_APP ="https://10.105.43.7/app/#"
+LOGIN_URL_PC ="https://10.105.43.7/web/#"
+LOGIN_URL_APP ="https://10.105.43.7/app/#"
 
 
 
 #用户名
 
 USERNAME_zg_PGN = "panggn953" #机动处专工 旁光南
-USERNAME_zg_YJA = 'panggn953'#"JA.YU" #机动处专工 余家傲
-USERNAME_XMJL_LQ ="13760306643"#"13016408500" #项目经理 罗庆
+# 测试环境使用
+# USERNAME_zg_YJA = "JA.YU"#'panggn953'#"JA.YU" #机动处专工 余家傲
+# USERNAME_XMJL_LQ ="13016408500"#"13760306643"#"13016408500" #项目经理 罗庆
+# USERNAME_CZG_YJA ="13720102552"#"15575154642""13720102552" #操作工 余
+# USERNAME_sby_80 ="sb.y80"#'shebeiyuan'#"sb.y80"
+
+
 USERNAME_XMJL_PM ="15800327893" #PM机器人
 USERNAME_XMFZR_PG ="18272015001"    #项目负责人 彭淦
-USERNAME_CZG_YJA ="13720102552" #操作工 余
 USERNAME_CZG_WS ="15963716343"
 USERNAME_CZG_zhn ="15063247320" #操作工 朱海龙
 USERNAME_jlf_xmfzr_lxw = "13910893211" #项目负责人 李学武
 USERNAME_jlf_xmjl_wzq ="15963716341"    #项目经理  王子强
 USERNAME_jlf_jlgcs_lc ="17671677251"    #监理工程师 刘超
 USERNAME_sby_55 = "sb.y55"
-USERNAME_sby_80 ="sb.y80"
+
+
+
+# '''正式环境使用'''
+USERNAME_zg_YJA = 'panggn953'#"JA.YU" #机动处专工 正式环境使用
+USERNAME_XMJL_LQ ="13760306643"#"13016408500" #项目经理 罗庆
+USERNAME_CZG_YJA ="15575154642"#"13720102552" #操作工 余
+USERNAME_sby_80 ='shebeiyuan'#"sb.y80"
+
 
 #密码
 PASSWD = '123456'

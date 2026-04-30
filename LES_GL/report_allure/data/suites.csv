@@ -1,5 +1,5 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Apr 09 17:03:19 CST 2026","Thu Apr 09 17:09:03 CST 2026","344643","testcase","test_Main_flow","","","","主要流程验证","
+"passed","Tue Apr 21 18:11:06 CST 2026","Tue Apr 21 18:14:23 CST 2026","197445","","","","","","主要流程验证","
         用例编号：test_loin02
             用例标题：主要流程验证
             前置条件：系统为最新状态

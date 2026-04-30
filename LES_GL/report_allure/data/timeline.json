@@ -2,25 +2,17 @@
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "name" : "timeline",
   "children" : [ {
-    "name" : "Y-YU",
-    "children" : [ {
-      "name" : "29392-MainThread",
-      "children" : [ {
-        "name" : "主要流程验证",
-        "uid" : "7b5dcca0584ad857",
-        "parentUid" : "835cfcfc4bce69d8974f3c115a687fcb",
-        "status" : "passed",
-        "time" : {
-          "start" : 1775725399299,
-          "stop" : 1775725743942,
-          "duration" : 344643
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "835cfcfc4bce69d8974f3c115a687fcb"
-    } ],
-    "uid" : "d8235af02a0b4ab572b70292f685faa2"
+    "name" : "主要流程验证",
+    "uid" : "89e9df1a27dcab59",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1776766266033,
+      "stop" : 1776766463478,
+      "duration" : 197445
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
   } ]
 }
