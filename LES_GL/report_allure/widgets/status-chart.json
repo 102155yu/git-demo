@@ -1,11 +1,11 @@
 [ {
-  "uid" : "89e9df1a27dcab59",
+  "uid" : "29c56c5cbffb1cf3",
   "name" : "主要流程验证",
   "time" : {
-    "start" : 1776766266033,
-    "stop" : 1776766463478,
-    "duration" : 197445
+    "start" : 1778060005479,
+    "stop" : 1778060228479,
+    "duration" : 223000
   },
   "status" : "passed",
-  "severity" : "normal"
+  "severity" : "critical"
 } ]

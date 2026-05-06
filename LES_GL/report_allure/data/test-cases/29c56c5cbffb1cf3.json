@@ -1,11 +1,12 @@
 {
-  "uid" : "89e9df1a27dcab59",
+  "uid" : "29c56c5cbffb1cf3",
   "name" : "主要流程验证",
-  "fullName" : "testcase.test_Main_flow#test_login02",
+  "fullName" : "testcase.test_2#test_login02",
+  "historyId" : "8d27ce7c97d67133ddb365d9eae84ca4",
   "time" : {
-    "start" : 1776766266033,
-    "stop" : 1776766463478,
-    "duration" : 197445
+    "start" : 1778060005479,
+    "stop" : 1778060228479,
+    "duration" : 223000
   },
   "description" : "\n        用例编号：test_loin02\n            用例标题：主要流程验证\n            前置条件：系统为最新状态\n            测试步骤：\n                1.登录专工账号创建计划\n                2.创建完成退出登录\n                3.登录设备员下发计划\n                4.下发计划成功后退出登录\n                5.登录服务商负责人配置项目经理\n                6.项目经理创建成功后退出登录\n                7.登录项目经理账号进行人员信息配置\n                8.项目经理下派具体任务\n                9.操作员完成任务\n                10.项目经理推送法兰至设备员确认\n                11.设备确认检修数据\n                12.项目经理上传结项数据进行结项\n                13.设备员进行结项审批\n                14.审批完成结项完成流程结束\n\n            预期结果；项目成员配置成功，法兰添加成功\n\n    :param browser:\n    :return:\n    ",
   "descriptionHtml" : "<pre><code>    用例编号：test_loin02\n        用例标题：主要流程验证\n        前置条件：系统为最新状态\n        测试步骤：\n            1.登录专工账号创建计划\n            2.创建完成退出登录\n            3.登录设备员下发计划\n            4.下发计划成功后退出登录\n            5.登录服务商负责人配置项目经理\n            6.项目经理创建成功后退出登录\n            7.登录项目经理账号进行人员信息配置\n            8.项目经理下派具体任务\n            9.操作员完成任务\n            10.项目经理推送法兰至设备员确认\n            11.设备确认检修数据\n            12.项目经理上传结项数据进行结项\n            13.设备员进行结项审批\n            14.审批完成结项完成流程结束\n\n        预期结果；项目成员配置成功，法兰添加成功\n\n:param browser:\n:return:\n</code></pre>\n",
@@ -15,9 +16,9 @@
   "beforeStages" : [ {
     "name" : "browser",
     "time" : {
-      "start" : 1776766264606,
-      "stop" : 1776766266033,
-      "duration" : 1427
+      "start" : 1778060004273,
+      "stop" : 1778060005479,
+      "duration" : 1206
     },
     "status" : "passed",
     "steps" : [ ],
@@ -34,9 +35,9 @@
     "steps" : [ {
       "name" : "浏览器窗口最大化",
       "time" : {
-        "start" : 1776766266033,
-        "stop" : 1776766266178,
-        "duration" : 145
+        "start" : 1778060005479,
+        "stop" : 1778060005530,
+        "duration" : 51
       },
       "status" : "passed",
       "steps" : [ ],
@@ -47,11 +48,11 @@
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false
     }, {
-      "name" : "进入LES登录页",
+      "name" : "进入LES登录页，登录设备员账号",
       "time" : {
-        "start" : 1776766266179,
-        "stop" : 1776766278551,
-        "duration" : 12372
+        "start" : 1778060005530,
+        "stop" : 1778060006632,
+        "duration" : 1102
       },
       "status" : "passed",
       "steps" : [ ],
@@ -64,17 +65,17 @@
     }, {
       "name" : "退出登录",
       "time" : {
-        "start" : 1776766282552,
-        "stop" : 1776766289418,
-        "duration" : 6866
+        "start" : 1778060007633,
+        "stop" : 1778060014294,
+        "duration" : 6661
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "点击个人信息框",
         "time" : {
-          "start" : 1776766282552,
-          "stop" : 1776766282726,
-          "duration" : 174
+          "start" : 1778060007633,
+          "stop" : 1778060007710,
+          "duration" : 77
         },
         "status" : "passed",
         "steps" : [ ],
@@ -87,9 +88,9 @@
       }, {
         "name" : "点击退出登录",
         "time" : {
-          "start" : 1776766282726,
-          "stop" : 1776766283418,
-          "duration" : 692
+          "start" : 1778060007710,
+          "stop" : 1778060008294,
+          "duration" : 584
         },
         "status" : "passed",
         "steps" : [ ],
@@ -109,9 +110,9 @@
     }, {
       "name" : "进入APP端",
       "time" : {
-        "start" : 1776766289418,
-        "stop" : 1776766300124,
-        "duration" : 10706
+        "start" : 1778060014294,
+        "stop" : 1778060022824,
+        "duration" : 8530
       },
       "status" : "passed",
       "steps" : [ ],
@@ -124,9 +125,9 @@
     }, {
       "name" : "进入任务页面",
       "time" : {
-        "start" : 1776766300124,
-        "stop" : 1776766306648,
-        "duration" : 6524
+        "start" : 1778060022824,
+        "stop" : 1778060029055,
+        "duration" : 6231
       },
       "status" : "passed",
       "steps" : [ ],
@@ -139,25 +140,25 @@
     }, {
       "name" : "做标准工序任务",
       "time" : {
-        "start" : 1776766306648,
-        "stop" : 1776766431343,
-        "duration" : 124695
+        "start" : 1778060029055,
+        "stop" : 1778060148075,
+        "duration" : 119020
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "提交工序：法兰挂牌",
         "time" : {
-          "start" : 1776766306648,
-          "stop" : 1776766314897,
-          "duration" : 8249
+          "start" : 1778060029055,
+          "stop" : 1778060036749,
+          "duration" : 7694
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "点击页签法兰挂牌",
           "time" : {
-            "start" : 1776766306648,
-            "stop" : 1776766306845,
-            "duration" : 197
+            "start" : 1778060029055,
+            "stop" : 1778060029170,
+            "duration" : 115
           },
           "status" : "passed",
           "steps" : [ ],
@@ -170,9 +171,9 @@
         }, {
           "name" : "点击法兰挂牌照片",
           "time" : {
-            "start" : 1776766306845,
-            "stop" : 1776766309019,
-            "duration" : 2174
+            "start" : 1778060029170,
+            "stop" : 1778060031248,
+            "duration" : 2078
           },
           "status" : "passed",
           "steps" : [ ],
@@ -185,9 +186,9 @@
         }, {
           "name" : "输入图片路径并确认上传",
           "time" : {
-            "start" : 1776766309019,
-            "stop" : 1776766314372,
-            "duration" : 5353
+            "start" : 1778060031248,
+            "stop" : 1778060036487,
+            "duration" : 5239
           },
           "status" : "passed",
           "steps" : [ ],
@@ -200,9 +201,9 @@
         }, {
           "name" : "点击填写层级",
           "time" : {
-            "start" : 1776766314372,
-            "stop" : 1776766314518,
-            "duration" : 146
+            "start" : 1778060036487,
+            "stop" : 1778060036555,
+            "duration" : 68
           },
           "status" : "passed",
           "steps" : [ ],
@@ -215,9 +216,9 @@
         }, {
           "name" : "点击保存任务",
           "time" : {
-            "start" : 1776766314518,
-            "stop" : 1776766314723,
-            "duration" : 205
+            "start" : 1778060036555,
+            "stop" : 1778060036644,
+            "duration" : 89
           },
           "status" : "passed",
           "steps" : [ ],
@@ -230,9 +231,9 @@
         }, {
           "name" : "点击提交任务",
           "time" : {
-            "start" : 1776766314723,
-            "stop" : 1776766314897,
-            "duration" : 174
+            "start" : 1778060036644,
+            "stop" : 1778060036749,
+            "duration" : 105
           },
           "status" : "passed",
           "steps" : [ ],
@@ -252,17 +253,17 @@
       }, {
         "name" : "提交工序：法兰拆卸",
         "time" : {
-          "start" : 1776766314897,
-          "stop" : 1776766328746,
-          "duration" : 13849
+          "start" : 1778060036749,
+          "stop" : 1778060049787,
+          "duration" : 13038
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "点击页签法兰拆卸",
           "time" : {
-            "start" : 1776766314897,
-            "stop" : 1776766315323,
-            "duration" : 426
+            "start" : 1778060036749,
+            "stop" : 1778060037130,
+            "duration" : 381
           },
           "status" : "passed",
           "steps" : [ ],
@@ -275,9 +276,9 @@
         }, {
           "name" : "点击法兰拆卸工具数量",
           "time" : {
-            "start" : 1776766315323,
-            "stop" : 1776766315539,
-            "duration" : 216
+            "start" : 1778060037130,
+            "stop" : 1778060037210,
+            "duration" : 80
           },
           "status" : "passed",
           "steps" : [ ],
@@ -290,9 +291,9 @@
         }, {
           "name" : "点击法兰拆卸拉伸力",
           "time" : {
-            "start" : 1776766315540,
-            "stop" : 1776766315705,
-            "duration" : 165
+            "start" : 1778060037210,
+            "stop" : 1778060037279,
+            "duration" : 69
           },
           "status" : "passed",
           "steps" : [ ],
@@ -305,9 +306,9 @@
         }, {
           "name" : "点击拆卸后照片",
           "time" : {
-            "start" : 1776766315705,
-            "stop" : 1776766317930,
-            "duration" : 2225
+            "start" : 1778060037279,
+            "stop" : 1778060039367,
+            "duration" : 2088
           },
           "status" : "passed",
           "steps" : [ ],
@@ -320,9 +321,9 @@
         }, {
           "name" : "输入图片路径并确认上传",
           "time" : {
-            "start" : 1776766317930,
-            "stop" : 1776766323200,
-            "duration" : 5270
+            "start" : 1778060039367,
+            "stop" : 1778060044581,
+            "duration" : 5214
           },
           "status" : "passed",
           "steps" : [ ],
@@ -335,9 +336,9 @@
         }, {
           "name" : "点击填写施工人员",
           "time" : {
-            "start" : 1776766323200,
-            "stop" : 1776766325383,
-            "duration" : 2183
+            "start" : 1778060044581,
+            "stop" : 1778060046637,
+            "duration" : 2056
           },
           "status" : "passed",
           "steps" : [ ],
@@ -350,9 +351,9 @@
         }, {
           "name" : "点击保存任务",
           "time" : {
-            "start" : 1776766325383,
-            "stop" : 1776766328577,
-            "duration" : 3194
+            "start" : 1778060046637,
+            "stop" : 1778060049729,
+            "duration" : 3092
           },
           "status" : "passed",
           "steps" : [ ],
@@ -365,9 +366,9 @@
         }, {
           "name" : "点击提交任务",
           "time" : {
-            "start" : 1776766328577,
-            "stop" : 1776766328746,
-            "duration" : 169
+            "start" : 1778060049729,
+            "stop" : 1778060049787,
+            "duration" : 58
           },
           "status" : "passed",
           "steps" : [ ],
@@ -387,9 +388,9 @@
       }, {
         "name" : "提交工序：密封面检查",
         "time" : {
-          "start" : 1776766328746,
-          "stop" : 1776766340817,
-          "duration" : 12071
+          "start" : 1778060049787,
+          "stop" : 1778060061633,
+          "duration" : 11846
         },
         "status" : "passed",
         "steps" : [ ],
@@ -402,9 +403,9 @@
       }, {
         "name" : "提交工序：垫片检查",
         "time" : {
-          "start" : 1776766340817,
-          "stop" : 1776766360176,
-          "duration" : 19359
+          "start" : 1778060061633,
+          "stop" : 1778060080557,
+          "duration" : 18924
         },
         "status" : "passed",
         "steps" : [ ],
@@ -417,9 +418,9 @@
       }, {
         "name" : "提交工序：紧固件检查",
         "time" : {
-          "start" : 1776766360176,
-          "stop" : 1776766371996,
-          "duration" : 11820
+          "start" : 1778060080557,
+          "stop" : 1778060092128,
+          "duration" : 11571
         },
         "status" : "passed",
         "steps" : [ ],
@@ -432,17 +433,17 @@
       }, {
         "name" : "提交工序：预装确认",
         "time" : {
-          "start" : 1776766371996,
-          "stop" : 1776766379871,
-          "duration" : 7875
+          "start" : 1778060092128,
+          "stop" : 1778060099592,
+          "duration" : 7464
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "点击页签预装确认",
           "time" : {
-            "start" : 1776766371996,
-            "stop" : 1776766372171,
-            "duration" : 175
+            "start" : 1778060092128,
+            "stop" : 1778060092194,
+            "duration" : 66
           },
           "status" : "passed",
           "steps" : [ ],
@@ -455,9 +456,9 @@
         }, {
           "name" : "点击紧固照片",
           "time" : {
-            "start" : 1776766372171,
-            "stop" : 1776766374376,
-            "duration" : 2205
+            "start" : 1778060092194,
+            "stop" : 1778060094253,
+            "duration" : 2059
           },
           "status" : "passed",
           "steps" : [ ],
@@ -470,9 +471,9 @@
         }, {
           "name" : "输入图片路径并确认上传",
           "time" : {
-            "start" : 1776766374376,
-            "stop" : 1776766379694,
-            "duration" : 5318
+            "start" : 1778060094253,
+            "stop" : 1778060099536,
+            "duration" : 5283
           },
           "status" : "passed",
           "steps" : [ ],
@@ -485,9 +486,9 @@
         }, {
           "name" : "点击提交任务",
           "time" : {
-            "start" : 1776766379694,
-            "stop" : 1776766379871,
-            "duration" : 177
+            "start" : 1778060099536,
+            "stop" : 1778060099592,
+            "duration" : 56
           },
           "status" : "passed",
           "steps" : [ ],
@@ -507,17 +508,17 @@
       }, {
         "name" : "提交工序：SOP确认",
         "time" : {
-          "start" : 1776766379871,
-          "stop" : 1776766399698,
-          "duration" : 19827
+          "start" : 1778060099592,
+          "stop" : 1778060118509,
+          "duration" : 18917
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "点击页签SOP确认",
           "time" : {
-            "start" : 1776766379871,
-            "stop" : 1776766383357,
-            "duration" : 3486
+            "start" : 1778060099592,
+            "stop" : 1778060102970,
+            "duration" : 3378
           },
           "status" : "passed",
           "steps" : [ ],
@@ -530,9 +531,9 @@
         }, {
           "name" : "选择工具类型",
           "time" : {
-            "start" : 1776766383357,
-            "stop" : 1776766385575,
-            "duration" : 2218
+            "start" : 1778060102970,
+            "stop" : 1778060105040,
+            "duration" : 2070
           },
           "status" : "passed",
           "steps" : [ ],
@@ -545,9 +546,9 @@
         }, {
           "name" : "选择工具类型（液压风枪）",
           "time" : {
-            "start" : 1776766385575,
-            "stop" : 1776766395762,
-            "duration" : 10187
+            "start" : 1778060105040,
+            "stop" : 1778060115108,
+            "duration" : 10068
           },
           "status" : "passed",
           "steps" : [ ],
@@ -560,9 +561,9 @@
         }, {
           "name" : "填写工具数量",
           "time" : {
-            "start" : 1776766395762,
-            "stop" : 1776766395944,
-            "duration" : 182
+            "start" : 1778060115108,
+            "stop" : 1778060115173,
+            "duration" : 65
           },
           "status" : "passed",
           "steps" : [ ],
@@ -575,16 +576,16 @@
         }, {
           "name" : "填写摩擦系数",
           "time" : {
-            "start" : 1776766395944,
-            "stop" : 1776766396096,
-            "duration" : 152
+            "start" : 1778060115173,
+            "stop" : 1778060115263,
+            "duration" : 90
           },
           "status" : "passed",
           "steps" : [ ],
           "attachments" : [ {
-            "uid" : "ade5d94fbce504e4",
+            "uid" : "50319cf1645fa4d8",
             "name" : "操作说明",
-            "source" : "ade5d94fbce504e4.attach",
+            "source" : "50319cf1645fa4d8.attach",
             "type" : "text/plain",
             "size" : 45
           } ],
@@ -596,18 +597,18 @@
         }, {
           "name" : "填写T1A",
           "time" : {
-            "start" : 1776766396097,
-            "stop" : 1776766396296,
-            "duration" : 199
+            "start" : 1778060115263,
+            "stop" : 1778060115353,
+            "duration" : 90
           },
           "status" : "passed",
           "steps" : [ ],
           "attachments" : [ {
-            "uid" : "62e2366015bf0eda",
+            "uid" : "9fe7fcfb61355e7",
             "name" : "操作说明",
-            "source" : "62e2366015bf0eda.attach",
+            "source" : "9fe7fcfb61355e7.attach",
             "type" : "text/plain",
-            "size" : 46
+            "size" : 45
           } ],
           "parameters" : [ ],
           "stepsCount" : 0,
@@ -617,17 +618,17 @@
         }, {
           "name" : "填写T1B",
           "time" : {
-            "start" : 1776766396296,
-            "stop" : 1776766399698,
-            "duration" : 3402
+            "start" : 1778060115353,
+            "stop" : 1778060118509,
+            "duration" : 3156
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "点击提交任务",
             "time" : {
-              "start" : 1776766396505,
-              "stop" : 1776766399698,
-              "duration" : 3193
+              "start" : 1778060115428,
+              "stop" : 1778060118509,
+              "duration" : 3081
             },
             "status" : "passed",
             "steps" : [ ],
@@ -639,9 +640,9 @@
             "shouldDisplayMessage" : false
           } ],
           "attachments" : [ {
-            "uid" : "aaf963aa27ca42ae",
+            "uid" : "8ad1bf4490b3fb12",
             "name" : "操作说明",
-            "source" : "aaf963aa27ca42ae.attach",
+            "source" : "8ad1bf4490b3fb12.attach",
             "type" : "text/plain",
             "size" : 46
           } ],
@@ -660,17 +661,17 @@
       }, {
         "name" : "提交工序：法兰抽检",
         "time" : {
-          "start" : 1776766399698,
-          "stop" : 1776766419762,
-          "duration" : 20064
+          "start" : 1778060118509,
+          "stop" : 1778060137539,
+          "duration" : 19030
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "点击页签法兰抽检",
           "time" : {
-            "start" : 1776766399698,
-            "stop" : 1776766399866,
-            "duration" : 168
+            "start" : 1778060118510,
+            "stop" : 1778060118625,
+            "duration" : 115
           },
           "status" : "passed",
           "steps" : [ ],
@@ -683,9 +684,9 @@
         }, {
           "name" : "点击紧固压力",
           "time" : {
-            "start" : 1776766399866,
-            "stop" : 1776766400057,
-            "duration" : 191
+            "start" : 1778060118625,
+            "stop" : 1778060118682,
+            "duration" : 57
           },
           "status" : "passed",
           "steps" : [ ],
@@ -698,9 +699,9 @@
         }, {
           "name" : "点击抽检前照片",
           "time" : {
-            "start" : 1776766400057,
-            "stop" : 1776766402250,
-            "duration" : 2193
+            "start" : 1778060118682,
+            "stop" : 1778060120796,
+            "duration" : 2114
           },
           "status" : "passed",
           "steps" : [ ],
@@ -713,9 +714,9 @@
         }, {
           "name" : "输入图片路径并确认上传",
           "time" : {
-            "start" : 1776766402250,
-            "stop" : 1776766407538,
-            "duration" : 5288
+            "start" : 1778060120796,
+            "stop" : 1778060126045,
+            "duration" : 5249
           },
           "status" : "passed",
           "steps" : [ ],
@@ -728,9 +729,9 @@
         }, {
           "name" : "点击抽检公差",
           "time" : {
-            "start" : 1776766407538,
-            "stop" : 1776766407748,
-            "duration" : 210
+            "start" : 1778060126045,
+            "stop" : 1778060126133,
+            "duration" : 88
           },
           "status" : "passed",
           "steps" : [ ],
@@ -743,9 +744,9 @@
         }, {
           "name" : "点击抽检公差确定",
           "time" : {
-            "start" : 1776766407748,
-            "stop" : 1776766408454,
-            "duration" : 706
+            "start" : 1778060126133,
+            "stop" : 1778060126762,
+            "duration" : 629
           },
           "status" : "passed",
           "steps" : [ ],
@@ -758,9 +759,9 @@
         }, {
           "name" : "点击校验公差1",
           "time" : {
-            "start" : 1776766408454,
-            "stop" : 1776766408853,
-            "duration" : 399
+            "start" : 1778060126762,
+            "stop" : 1778060127126,
+            "duration" : 364
           },
           "status" : "passed",
           "steps" : [ ],
@@ -773,9 +774,9 @@
         }, {
           "name" : "点击校验公差1确定",
           "time" : {
-            "start" : 1776766408853,
-            "stop" : 1776766409565,
-            "duration" : 712
+            "start" : 1778060127126,
+            "stop" : 1778060127719,
+            "duration" : 593
           },
           "status" : "passed",
           "steps" : [ ],
@@ -788,9 +789,9 @@
         }, {
           "name" : "点击校验公差2",
           "time" : {
-            "start" : 1776766409565,
-            "stop" : 1776766409929,
-            "duration" : 364
+            "start" : 1778060127719,
+            "stop" : 1778060128056,
+            "duration" : 337
           },
           "status" : "passed",
           "steps" : [ ],
@@ -803,9 +804,9 @@
         }, {
           "name" : "点击校验公差2确定",
           "time" : {
-            "start" : 1776766409929,
-            "stop" : 1776766410657,
-            "duration" : 728
+            "start" : 1778060128056,
+            "stop" : 1778060128635,
+            "duration" : 579
           },
           "status" : "passed",
           "steps" : [ ],
@@ -818,9 +819,9 @@
         }, {
           "name" : "点击抽检过程照片",
           "time" : {
-            "start" : 1776766410657,
-            "stop" : 1776766413048,
-            "duration" : 2391
+            "start" : 1778060128635,
+            "stop" : 1778060130974,
+            "duration" : 2339
           },
           "status" : "passed",
           "steps" : [ ],
@@ -833,9 +834,9 @@
         }, {
           "name" : "输入图片路径并确认上传",
           "time" : {
-            "start" : 1776766413048,
-            "stop" : 1776766416317,
-            "duration" : 3269
+            "start" : 1778060130974,
+            "stop" : 1778060134259,
+            "duration" : 3285
           },
           "status" : "passed",
           "steps" : [ ],
@@ -848,9 +849,9 @@
         }, {
           "name" : "点击保存任务",
           "time" : {
-            "start" : 1776766416317,
-            "stop" : 1776766419556,
-            "duration" : 3239
+            "start" : 1778060134259,
+            "stop" : 1778060137425,
+            "duration" : 3166
           },
           "status" : "passed",
           "steps" : [ ],
@@ -863,9 +864,9 @@
         }, {
           "name" : "点击提交任务",
           "time" : {
-            "start" : 1776766419556,
-            "stop" : 1776766419762,
-            "duration" : 206
+            "start" : 1778060137425,
+            "stop" : 1778060137539,
+            "duration" : 114
           },
           "status" : "passed",
           "steps" : [ ],
@@ -885,17 +886,17 @@
       }, {
         "name" : "提交工序：完工确认",
         "time" : {
-          "start" : 1776766419762,
-          "stop" : 1776766423334,
-          "duration" : 3572
+          "start" : 1778060137539,
+          "stop" : 1778060140970,
+          "duration" : 3431
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "点击完工确认页签",
           "time" : {
-            "start" : 1776766419762,
-            "stop" : 1776766420164,
-            "duration" : 402
+            "start" : 1778060137539,
+            "stop" : 1778060137899,
+            "duration" : 360
           },
           "status" : "passed",
           "steps" : [ ],
@@ -908,9 +909,9 @@
         }, {
           "name" : "点击提交任务",
           "time" : {
-            "start" : 1776766420164,
-            "stop" : 1776766423334,
-            "duration" : 3170
+            "start" : 1778060137899,
+            "stop" : 1778060140970,
+            "duration" : 3071
           },
           "status" : "passed",
           "steps" : [ ],
@@ -930,17 +931,17 @@
       }, {
         "name" : "提交工序：法兰校核",
         "time" : {
-          "start" : 1776766423334,
-          "stop" : 1776766425341,
-          "duration" : 2007
+          "start" : 1778060140970,
+          "stop" : 1778060142320,
+          "duration" : 1350
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "点击法兰校核页签",
           "time" : {
-            "start" : 1776766423334,
-            "stop" : 1776766423508,
-            "duration" : 174
+            "start" : 1778060140970,
+            "stop" : 1778060141046,
+            "duration" : 76
           },
           "status" : "passed",
           "steps" : [ ],
@@ -953,9 +954,9 @@
         }, {
           "name" : "点击输入工具数量",
           "time" : {
-            "start" : 1776766423508,
-            "stop" : 1776766423656,
-            "duration" : 148
+            "start" : 1778060141046,
+            "stop" : 1778060141095,
+            "duration" : 49
           },
           "status" : "passed",
           "steps" : [ ],
@@ -968,9 +969,9 @@
         }, {
           "name" : "点击输入扭矩值",
           "time" : {
-            "start" : 1776766423656,
-            "stop" : 1776766423801,
-            "duration" : 145
+            "start" : 1778060141095,
+            "stop" : 1778060141190,
+            "duration" : 95
           },
           "status" : "passed",
           "steps" : [ ],
@@ -983,9 +984,9 @@
         }, {
           "name" : "点击输入平行公差",
           "time" : {
-            "start" : 1776766423801,
-            "stop" : 1776766424001,
-            "duration" : 200
+            "start" : 1778060141190,
+            "stop" : 1778060141261,
+            "duration" : 71
           },
           "status" : "passed",
           "steps" : [ ],
@@ -998,9 +999,9 @@
         }, {
           "name" : "平行公差填写",
           "time" : {
-            "start" : 1776766424001,
-            "stop" : 1776766424743,
-            "duration" : 742
+            "start" : 1778060141261,
+            "stop" : 1778060141895,
+            "duration" : 634
           },
           "status" : "passed",
           "steps" : [ ],
@@ -1013,9 +1014,9 @@
         }, {
           "name" : "点击保存任务",
           "time" : {
-            "start" : 1776766424743,
-            "stop" : 1776766425150,
-            "duration" : 407
+            "start" : 1778060141896,
+            "stop" : 1778060142269,
+            "duration" : 373
           },
           "status" : "passed",
           "steps" : [ ],
@@ -1028,9 +1029,9 @@
         }, {
           "name" : "点击提交任务",
           "time" : {
-            "start" : 1776766425150,
-            "stop" : 1776766425341,
-            "duration" : 191
+            "start" : 1778060142269,
+            "stop" : 1778060142320,
+            "duration" : 51
           },
           "status" : "passed",
           "steps" : [ ],
@@ -1050,17 +1051,17 @@
       }, {
         "name" : "提交工序：螺栓抽检",
         "time" : {
-          "start" : 1776766425341,
-          "stop" : 1776766426343,
-          "duration" : 1002
+          "start" : 1778060142320,
+          "stop" : 1778060143074,
+          "duration" : 754
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "点击螺栓抽检页签",
           "time" : {
-            "start" : 1776766425341,
-            "stop" : 1776766425733,
-            "duration" : 392
+            "start" : 1778060142320,
+            "stop" : 1778060142693,
+            "duration" : 373
           },
           "status" : "passed",
           "steps" : [ ],
@@ -1073,9 +1074,9 @@
         }, {
           "name" : "填写实际施工值",
           "time" : {
-            "start" : 1776766425733,
-            "stop" : 1776766425932,
-            "duration" : 199
+            "start" : 1778060142693,
+            "stop" : 1778060142761,
+            "duration" : 68
           },
           "status" : "passed",
           "steps" : [ ],
@@ -1088,9 +1089,9 @@
         }, {
           "name" : "点击保存任务",
           "time" : {
-            "start" : 1776766425932,
-            "stop" : 1776766426122,
-            "duration" : 190
+            "start" : 1778060142761,
+            "stop" : 1778060142990,
+            "duration" : 229
           },
           "status" : "passed",
           "steps" : [ ],
@@ -1103,9 +1104,9 @@
         }, {
           "name" : "点击提交任务",
           "time" : {
-            "start" : 1776766426122,
-            "stop" : 1776766426343,
-            "duration" : 221
+            "start" : 1778060142990,
+            "stop" : 1778060143074,
+            "duration" : 84
           },
           "status" : "passed",
           "steps" : [ ],
@@ -1132,17 +1133,17 @@
     }, {
       "name" : "查看已完成项目是否提交成功",
       "time" : {
-        "start" : 1776766431343,
-        "stop" : 1776766437913,
-        "duration" : 6570
+        "start" : 1778060148075,
+        "stop" : 1778060154336,
+        "duration" : 6261
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "点击已完成",
         "time" : {
-          "start" : 1776766431343,
-          "stop" : 1776766433525,
-          "duration" : 2182
+          "start" : 1778060148075,
+          "stop" : 1778060150148,
+          "duration" : 2073
         },
         "status" : "passed",
         "steps" : [ ],
@@ -1155,9 +1156,9 @@
       }, {
         "name" : "点击待处理",
         "time" : {
-          "start" : 1776766433525,
-          "stop" : 1776766435748,
-          "duration" : 2223
+          "start" : 1778060150148,
+          "stop" : 1778060152269,
+          "duration" : 2121
         },
         "status" : "passed",
         "steps" : [ ],
@@ -1170,9 +1171,9 @@
       }, {
         "name" : "点击已完成",
         "time" : {
-          "start" : 1776766435748,
-          "stop" : 1776766437913,
-          "duration" : 2165
+          "start" : 1778060152269,
+          "stop" : 1778060154336,
+          "duration" : 2067
         },
         "status" : "passed",
         "steps" : [ ],
@@ -1192,9 +1193,9 @@
     }, {
       "name" : "登录项目经理账号",
       "time" : {
-        "start" : 1776766437913,
-        "stop" : 1776766442723,
-        "duration" : 4810
+        "start" : 1778060154336,
+        "stop" : 1778060155078,
+        "duration" : 742
       },
       "status" : "passed",
       "steps" : [ ],
@@ -1207,17 +1208,17 @@
     }, {
       "name" : "进入项目详情页面",
       "time" : {
-        "start" : 1776766442723,
-        "stop" : 1776766446853,
-        "duration" : 4130
+        "start" : 1778060155078,
+        "stop" : 1778060157544,
+        "duration" : 2466
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "服务过程管理菜单",
         "time" : {
-          "start" : 1776766442723,
-          "stop" : 1776766444158,
-          "duration" : 1435
+          "start" : 1778060155078,
+          "stop" : 1778060155432,
+          "duration" : 354
         },
         "status" : "passed",
         "steps" : [ ],
@@ -1230,9 +1231,9 @@
       }, {
         "name" : "点击定力矩服务菜单",
         "time" : {
-          "start" : 1776766444158,
-          "stop" : 1776766444364,
-          "duration" : 206
+          "start" : 1778060155432,
+          "stop" : 1778060156175,
+          "duration" : 743
         },
         "status" : "passed",
         "steps" : [ ],
@@ -1245,9 +1246,9 @@
       }, {
         "name" : "点击项目管理菜单",
         "time" : {
-          "start" : 1776766444364,
-          "stop" : 1776766445066,
-          "duration" : 702
+          "start" : 1778060156175,
+          "stop" : 1778060156795,
+          "duration" : 620
         },
         "status" : "passed",
         "steps" : [ ],
@@ -1260,9 +1261,9 @@
       }, {
         "name" : "进入项目管理页面点击查看按钮",
         "time" : {
-          "start" : 1776766445066,
-          "stop" : 1776766446853,
-          "duration" : 1787
+          "start" : 1778060156795,
+          "stop" : 1778060157544,
+          "duration" : 749
         },
         "status" : "passed",
         "steps" : [ ],
@@ -1282,17 +1283,17 @@
     }, {
       "name" : "项目经理推送法兰至装置员",
       "time" : {
-        "start" : 1776766446853,
-        "stop" : 1776766451953,
-        "duration" : 5100
+        "start" : 1778060157544,
+        "stop" : 1778060161199,
+        "duration" : 3655
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "进入项目页面点击推送设备员确认",
         "time" : {
-          "start" : 1776766446853,
-          "stop" : 1776766447077,
-          "duration" : 224
+          "start" : 1778060157544,
+          "stop" : 1778060157692,
+          "duration" : 148
         },
         "status" : "passed",
         "steps" : [ ],
@@ -1305,9 +1306,9 @@
       }, {
         "name" : "点击推送按钮",
         "time" : {
-          "start" : 1776766447077,
-          "stop" : 1776766447688,
-          "duration" : 611
+          "start" : 1778060157692,
+          "stop" : 1778060157929,
+          "duration" : 237
         },
         "status" : "passed",
         "steps" : [ ],
@@ -1320,9 +1321,9 @@
       }, {
         "name" : "勾选法兰",
         "time" : {
-          "start" : 1776766447688,
-          "stop" : 1776766448621,
-          "duration" : 933
+          "start" : 1778060157930,
+          "stop" : 1778060158100,
+          "duration" : 170
         },
         "status" : "passed",
         "steps" : [ ],
@@ -1335,9 +1336,9 @@
       }, {
         "name" : "点击批量推送",
         "time" : {
-          "start" : 1776766448621,
-          "stop" : 1776766448952,
-          "duration" : 331
+          "start" : 1778060158100,
+          "stop" : 1778060158199,
+          "duration" : 99
         },
         "status" : "passed",
         "steps" : [ ],
@@ -1357,17 +1358,17 @@
     }, {
       "name" : "退出登录",
       "time" : {
-        "start" : 1776766451953,
-        "stop" : 1776766458895,
-        "duration" : 6942
+        "start" : 1778060161199,
+        "stop" : 1778060167912,
+        "duration" : 6713
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "点击个人信息框",
         "time" : {
-          "start" : 1776766451953,
-          "stop" : 1776766452137,
-          "duration" : 184
+          "start" : 1778060161199,
+          "stop" : 1778060161269,
+          "duration" : 70
         },
         "status" : "passed",
         "steps" : [ ],
@@ -1380,9 +1381,9 @@
       }, {
         "name" : "点击退出登录",
         "time" : {
-          "start" : 1776766452137,
-          "stop" : 1776766452893,
-          "duration" : 756
+          "start" : 1778060161269,
+          "stop" : 1778060161911,
+          "duration" : 642
         },
         "status" : "passed",
         "steps" : [ ],
@@ -1402,9 +1403,9 @@
     }, {
       "name" : "登录设备员账号",
       "time" : {
-        "start" : 1776766458895,
-        "stop" : 1776766459576,
-        "duration" : 681
+        "start" : 1778060167912,
+        "stop" : 1778060168116,
+        "duration" : 204
       },
       "status" : "passed",
       "steps" : [ ],
@@ -1417,19 +1418,17 @@
     }, {
       "name" : "设备员通过检修数据审核",
       "time" : {
-        "start" : 1776766459576,
-        "stop" : 1776766463478,
-        "duration" : 3902
+        "start" : 1778060168116,
+        "stop" : 1778060173093,
+        "duration" : 4977
       },
-      "status" : "broken",
-      "statusMessage" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection\nfrom disconnected: not connected to DevTools\n  (Session info: chrome=139.0.7207.2)\nStacktrace:\n\tGetHandleVerifier [0x0x7ff7b0682665+77205]\n\tGetHandleVerifier [0x0x7ff7b06826c0+77296]\n\t(No symbol) [0x0x7ff7b0439a3a]\n\t(No symbol) [0x0x7ff7b0425cb5]\n\t(No symbol) [0x0x7ff7b044a834]\n\t(No symbol) [0x0x7ff7b04bfc35]\n\t(No symbol) [0x0x7ff7b04e01c2]\n\t(No symbol) [0x0x7ff7b04b8423]\n\t(No symbol) [0x0x7ff7b0481511]\n\t(No symbol) [0x0x7ff7b04822a3]\n\tGetHandleVerifier [0x0x7ff7b096389d+3096525]\n\tGetHandleVerifier [0x0x7ff7b095dc5d+3072909]\n\tGetHandleVerifier [0x0x7ff7b097d74d+3202685]\n\tGetHandleVerifier [0x0x7ff7b069b9fe+180526]\n\tGetHandleVerifier [0x0x7ff7b06a2fdf+210703]\n\tGetHandleVerifier [0x0x7ff7b068b304+113204]\n\tGetHandleVerifier [0x0x7ff7b068b4b9+113641]\n\tGetHandleVerifier [0x0x7ff7b0672238+10600]\n\tBaseThreadInitThunk [0x0x7ffe487ae8d7+23]\n\tRtlUserThreadStart [0x0x7ffe49fcc3fc+44]\n\n",
-      "statusTrace" : "  File \"C:\\Users\\chens\\Desktop\\git-demo\\LES_GL\\testcase\\test_Main_flow.py\", line 165, in test_login02\n    LES.execute_full_sby_jxsjqr_flow()\n  File \"C:\\Users\\chens\\Desktop\\git-demo\\LES_GL\\page\\process.py\", line 756, in execute_full_sby_jxsjqr_flow\n    self.wk.locator(*allPages.fwgcgl_jxsjqr_qx).click()\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chens\\Desktop\\git-demo\\LES_GL\\key_word\\keyword.py\", line 36, in locator\n    self.wait.until(ec.visibility_of_element_located(locator))\n  File \"D:\\Python\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 96, in until\n    value = method(self._driver)\n            ^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Python\\Lib\\site-packages\\selenium\\webdriver\\support\\expected_conditions.py\", line 156, in _predicate\n    return _element_if_visible(driver.find_element(*locator))\n                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Python\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 741, in find_element\n    return self.execute(Command.FIND_ELEMENT, {\"using\": by, \"value\": value})[\"value\"]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Python\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 347, in execute\n    self.error_handler.check_response(response)\n  File \"D:\\Python\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 229, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+      "status" : "passed",
       "steps" : [ {
         "name" : "点击待办",
         "time" : {
-          "start" : 1776766459576,
-          "stop" : 1776766460208,
-          "duration" : 632
+          "start" : 1778060168116,
+          "stop" : 1778060168665,
+          "duration" : 549
         },
         "status" : "passed",
         "steps" : [ ],
@@ -1442,9 +1441,9 @@
       }, {
         "name" : "点击确认跳转至详情页",
         "time" : {
-          "start" : 1776766460208,
-          "stop" : 1776766460474,
-          "duration" : 266
+          "start" : 1778060168665,
+          "stop" : 1778060169298,
+          "duration" : 633
         },
         "status" : "passed",
         "steps" : [ ],
@@ -1457,48 +1456,464 @@
       }, {
         "name" : "点击全选",
         "time" : {
-          "start" : 1776766463476,
-          "stop" : 1776766463476,
-          "duration" : 0
+          "start" : 1778060172299,
+          "stop" : 1778060172391,
+          "duration" : 92
         },
-        "status" : "broken",
-        "statusMessage" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection\nfrom disconnected: not connected to DevTools\n  (Session info: chrome=139.0.7207.2)\nStacktrace:\n\tGetHandleVerifier [0x0x7ff7b0682665+77205]\n\tGetHandleVerifier [0x0x7ff7b06826c0+77296]\n\t(No symbol) [0x0x7ff7b0439a3a]\n\t(No symbol) [0x0x7ff7b0425cb5]\n\t(No symbol) [0x0x7ff7b044a834]\n\t(No symbol) [0x0x7ff7b04bfc35]\n\t(No symbol) [0x0x7ff7b04e01c2]\n\t(No symbol) [0x0x7ff7b04b8423]\n\t(No symbol) [0x0x7ff7b0481511]\n\t(No symbol) [0x0x7ff7b04822a3]\n\tGetHandleVerifier [0x0x7ff7b096389d+3096525]\n\tGetHandleVerifier [0x0x7ff7b095dc5d+3072909]\n\tGetHandleVerifier [0x0x7ff7b097d74d+3202685]\n\tGetHandleVerifier [0x0x7ff7b069b9fe+180526]\n\tGetHandleVerifier [0x0x7ff7b06a2fdf+210703]\n\tGetHandleVerifier [0x0x7ff7b068b304+113204]\n\tGetHandleVerifier [0x0x7ff7b068b4b9+113641]\n\tGetHandleVerifier [0x0x7ff7b0672238+10600]\n\tBaseThreadInitThunk [0x0x7ffe487ae8d7+23]\n\tRtlUserThreadStart [0x0x7ffe49fcc3fc+44]\n\n",
-        "statusTrace" : "  File \"C:\\Users\\chens\\Desktop\\git-demo\\LES_GL\\page\\process.py\", line 756, in execute_full_sby_jxsjqr_flow\n    self.wk.locator(*allPages.fwgcgl_jxsjqr_qx).click()\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\chens\\Desktop\\git-demo\\LES_GL\\key_word\\keyword.py\", line 36, in locator\n    self.wait.until(ec.visibility_of_element_located(locator))\n  File \"D:\\Python\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 96, in until\n    value = method(self._driver)\n            ^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Python\\Lib\\site-packages\\selenium\\webdriver\\support\\expected_conditions.py\", line 156, in _predicate\n    return _element_if_visible(driver.find_element(*locator))\n                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Python\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 741, in find_element\n    return self.execute(Command.FIND_ELEMENT, {\"using\": by, \"value\": value})[\"value\"]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Python\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 347, in execute\n    self.error_handler.check_response(response)\n  File \"D:\\Python\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 229, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+        "status" : "passed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ ],
         "stepsCount" : 0,
-        "hasContent" : true,
+        "hasContent" : false,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : true
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "点击通过",
+        "time" : {
+          "start" : 1778060172391,
+          "stop" : 1778060172507,
+          "duration" : 116
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "点击确定",
+        "time" : {
+          "start" : 1778060172508,
+          "stop" : 1778060173093,
+          "duration" : 585
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 3,
+      "stepsCount" : 5,
       "hasContent" : true,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false
     }, {
-      "name" : "添加失败截图... ...",
+      "name" : "退出登录",
       "time" : {
-        "start" : 1776766463539,
-        "stop" : 1776766463539,
-        "duration" : 0
+        "start" : 1778060173093,
+        "stop" : 1778060179987,
+        "duration" : 6894
       },
-      "status" : "broken",
-      "statusMessage" : "selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id\nStacktrace:\n\tGetHandleVerifier [0x0x7ff7b0682665+77205]\n\tGetHandleVerifier [0x0x7ff7b06826c0+77296]\n\t(No symbol) [0x0x7ff7b043986c]\n\t(No symbol) [0x0x7ff7b048063f]\n\t(No symbol) [0x0x7ff7b04b8512]\n\t(No symbol) [0x0x7ff7b04b3013]\n\t(No symbol) [0x0x7ff7b04b20d9]\n\t(No symbol) [0x0x7ff7b0404895]\n\tGetHandleVerifier [0x0x7ff7b096389d+3096525]\n\tGetHandleVerifier [0x0x7ff7b095dc5d+3072909]\n\tGetHandleVerifier [0x0x7ff7b097d74d+3202685]\n\tGetHandleVerifier [0x0x7ff7b069b9fe+180526]\n\tGetHandleVerifier [0x0x7ff7b06a2fdf+210703]\n\t(No symbol) [0x0x7ff7b0403890]\n\tGetHandleVerifier [0x0x7ff7b0a8ca58+4313480]\n\tBaseThreadInitThunk [0x0x7ffe487ae8d7+23]\n\tRtlUserThreadStart [0x0x7ffe49fcc3fc+44]\n\n",
-      "statusTrace" : "  File \"C:\\Users\\chens\\Desktop\\git-demo\\LES_GL\\conftest.py\", line 44, in pytest_runtest_makereport\n    allure.attach(driver.get_screenshot_as_png(), \"失败截图\", allure.attachment_type.PNG)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Python\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 832, in get_screenshot_as_png\n    return b64decode(self.get_screenshot_as_base64().encode(\"ascii\"))\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Python\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 843, in get_screenshot_as_base64\n    return self.execute(Command.SCREENSHOT)[\"value\"]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Python\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 347, in execute\n    self.error_handler.check_response(response)\n  File \"D:\\Python\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 229, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击个人信息框",
+        "time" : {
+          "start" : 1778060173093,
+          "stop" : 1778060173344,
+          "duration" : 251
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "点击退出登录",
+        "time" : {
+          "start" : 1778060173345,
+          "stop" : 1778060173986,
+          "duration" : 641
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "登录项目经理账号",
+      "time" : {
+        "start" : 1778060179987,
+        "stop" : 1778060180266,
+        "duration" : 279
+      },
+      "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
       "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "进入项目详情页面",
+      "time" : {
+        "start" : 1778060180266,
+        "stop" : 1778060182541,
+        "duration" : 2275
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "服务过程管理菜单",
+        "time" : {
+          "start" : 1778060180266,
+          "stop" : 1778060180514,
+          "duration" : 248
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "点击定力矩服务菜单",
+        "time" : {
+          "start" : 1778060180514,
+          "stop" : 1778060181242,
+          "duration" : 728
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "点击项目管理菜单",
+        "time" : {
+          "start" : 1778060181242,
+          "stop" : 1778060181842,
+          "duration" : 600
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "进入项目管理页面点击查看按钮",
+        "time" : {
+          "start" : 1778060181842,
+          "stop" : 1778060182541,
+          "duration" : 699
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
       "hasContent" : true,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : true
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "上传结项资料",
+      "time" : {
+        "start" : 1778060182541,
+        "stop" : 1778060204763,
+        "duration" : 22222
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击上传结项材料",
+        "time" : {
+          "start" : 1778060182541,
+          "stop" : 1778060182740,
+          "duration" : 199
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "点击上传框",
+        "time" : {
+          "start" : 1778060182740,
+          "stop" : 1778060191080,
+          "duration" : 8340
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "点击确定保存上传文件",
+        "time" : {
+          "start" : 1778060191080,
+          "stop" : 1778060194197,
+          "duration" : 3117
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "点击“其他过程材料页签”",
+        "time" : {
+          "start" : 1778060194197,
+          "stop" : 1778060194275,
+          "duration" : 78
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "点击上传框上传",
+        "time" : {
+          "start" : 1778060194275,
+          "stop" : 1778060202605,
+          "duration" : 8330
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "点击确定按钮",
+        "time" : {
+          "start" : 1778060202605,
+          "stop" : 1778060204674,
+          "duration" : 2069
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "点击“点击退出按钮”",
+        "time" : {
+          "start" : 1778060204674,
+          "stop" : 1778060204763,
+          "duration" : 89
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 7,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击结项申请",
+      "time" : {
+        "start" : 1778060204763,
+        "stop" : 1778060205756,
+        "duration" : 993
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击结项按钮",
+        "time" : {
+          "start" : 1778060204763,
+          "stop" : 1778060205146,
+          "duration" : 383
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "点击结项确定按钮",
+        "time" : {
+          "start" : 1778060205146,
+          "stop" : 1778060205756,
+          "duration" : 610
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "退出登录",
+      "time" : {
+        "start" : 1778060205756,
+        "stop" : 1778060212639,
+        "duration" : 6883
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击个人信息框",
+        "time" : {
+          "start" : 1778060205756,
+          "stop" : 1778060206048,
+          "duration" : 292
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "点击退出登录",
+        "time" : {
+          "start" : 1778060206048,
+          "stop" : 1778060206639,
+          "duration" : 591
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "登录设备员账号",
+      "time" : {
+        "start" : 1778060212639,
+        "stop" : 1778060212893,
+        "duration" : 254
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "设备员审批结项通过",
+      "time" : {
+        "start" : 1778060212893,
+        "stop" : 1778060218479,
+        "duration" : 5586
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击待办处理",
+        "time" : {
+          "start" : 1778060212893,
+          "stop" : 1778060213257,
+          "duration" : 364
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "点击通过",
+        "time" : {
+          "start" : 1778060213257,
+          "stop" : 1778060213479,
+          "duration" : 222
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 96,
+    "stepsCount" : 124,
     "hasContent" : true,
     "attachmentsCount" : 3,
     "shouldDisplayMessage" : false
@@ -1506,9 +1921,9 @@
   "afterStages" : [ {
     "name" : "browser::0",
     "time" : {
-      "start" : 1776766463552,
-      "stop" : 1776766465602,
-      "duration" : 2050
+      "start" : 1778060228480,
+      "stop" : 1778060230677,
+      "duration" : 2197
     },
     "status" : "passed",
     "steps" : [ ],
@@ -1520,6 +1935,39 @@
     "shouldDisplayMessage" : false
   } ],
   "labels" : [ {
+    "name" : "epic",
+    "value" : "LES系统"
+  }, {
+    "name" : "story",
+    "value" : "检修计划管理"
+  }, {
+    "name" : "feature",
+    "value" : "主要流程"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_2"
+  }, {
+    "name" : "host",
+    "value" : "Y-YU"
+  }, {
+    "name" : "thread",
+    "value" : "7500-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_2"
+  }, {
     "name" : "resultFormat",
     "value" : "allure2"
   } ],
@@ -1528,10 +1976,11 @@
   "hidden" : false,
   "retry" : false,
   "extra" : {
-    "severity" : "normal",
+    "severity" : "critical",
+    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "89e9df1a27dcab59.json",
+  "source" : "29c56c5cbffb1cf3.json",
   "parameterValues" : [ ]
 }

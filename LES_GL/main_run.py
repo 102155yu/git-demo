@@ -3,7 +3,7 @@ import os
 import pytest
 
 def run():
-    pytest.main(['-s', './testcase/test_Main_flow.py', '--alluredir', './result', '--clean-alluredir'])
+    pytest.main(['-s', './testcase/test_sby_main_process.py', '--alluredir', './result', '--clean-alluredir'])
     # os.system('allure generate ./result/ -o ./report/ --clean')
     os.system('allure generate ./result/ -o ./report_allure/ --clean')
 

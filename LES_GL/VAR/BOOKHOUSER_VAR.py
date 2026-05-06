@@ -3,13 +3,13 @@
 """
 
 #LES登录链接
-# LOGIN_URL_PC ='http://192.168.2.154:12012/glsh/#/login'#测试
-# LOGIN_URL_APP ="http://192.168.2.154:12012/glsh/app/"  #测试
+LOGIN_URL_PC ='http://192.168.2.154:12012/glsh/#/login'#测试
+LOGIN_URL_APP ="http://192.168.2.154:12012/glsh/app/"  #测试
 # # LOGIN_URL_PC ="https://les-pre.wellinte.com/glsh/#/baseDataMgt/flange"#预发
 
 # LOGIN_URL_APP ="https://les-pre.wellinte.com/glsh/app/"#预发
-LOGIN_URL_PC ="https://10.105.43.7/web/#"
-LOGIN_URL_APP ="https://10.105.43.7/app/#"
+# LOGIN_URL_PC ="https://10.105.43.7/web/#"
+# LOGIN_URL_APP ="https://10.105.43.7/app/#"
 
 
 
@@ -17,10 +17,10 @@ LOGIN_URL_APP ="https://10.105.43.7/app/#"
 
 USERNAME_zg_PGN = "panggn953" #机动处专工 旁光南
 # 测试环境使用
-# USERNAME_zg_YJA = "JA.YU"#'panggn953'#"JA.YU" #机动处专工 余家傲
-# USERNAME_XMJL_LQ ="13016408500"#"13760306643"#"13016408500" #项目经理 罗庆
-# USERNAME_CZG_YJA ="13720102552"#"15575154642""13720102552" #操作工 余
-# USERNAME_sby_80 ="sb.y80"#'shebeiyuan'#"sb.y80"
+USERNAME_zg_YJA = "JA.YU"#'panggn953'#"JA.YU" #机动处专工 余家傲
+USERNAME_XMJL_LQ ="13016408500"#"13760306643"#"13016408500" #项目经理 罗庆
+USERNAME_CZG_YJA ="13720102552"#"15575154642""13720102552" #操作工 余
+USERNAME_sby_80 ="sb.y80"#'shebeiyuan'#"sb.y80"
 
 
 USERNAME_XMJL_PM ="15800327893" #PM机器人
@@ -35,10 +35,10 @@ USERNAME_sby_55 = "sb.y55"
 
 
 # '''正式环境使用'''
-USERNAME_zg_YJA = 'panggn953'#"JA.YU" #机动处专工 正式环境使用
-USERNAME_XMJL_LQ ="13760306643"#"13016408500" #项目经理 罗庆
-USERNAME_CZG_YJA ="15575154642"#"13720102552" #操作工 余
-USERNAME_sby_80 ='shebeiyuan'#"sb.y80"
+# USERNAME_zg_YJA = 'panggn953'#"JA.YU" #机动处专工 正式环境使用
+# USERNAME_XMJL_LQ ="13760306643"#"13016408500" #项目经理 罗庆
+# USERNAME_CZG_YJA ="15575154642"#"13720102552" #操作工 余
+# USERNAME_sby_80 ='shebeiyuan'#"sb.y80"
 
 
 #密码

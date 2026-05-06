@@ -1,18 +1,22 @@
 {
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-  "name" : "packages",
   "children" : [ {
-    "name" : "主要流程验证",
-    "uid" : "89e9df1a27dcab59",
-    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
-    "time" : {
-      "start" : 1776766266033,
-      "stop" : 1776766463478,
-      "duration" : 197445
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  } ]
+    "name" : "testcase.test_2",
+    "children" : [ {
+      "name" : "主要流程验证",
+      "uid" : "29c56c5cbffb1cf3",
+      "parentUid" : "d0c6b0db970d9293035649b1ed304427",
+      "status" : "passed",
+      "time" : {
+        "start" : 1778060005479,
+        "stop" : 1778060228479,
+        "duration" : 223000
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "testcase.test_2"
+  } ],
+  "name" : "packages"
 }

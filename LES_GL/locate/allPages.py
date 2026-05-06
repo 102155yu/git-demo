@@ -227,6 +227,14 @@ fwjh_dljfwjh_jlf =["xpath",]
 fwjh_dljfwjh_bc =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[8]/div[2]/div[1]/div/div/section[1]/div[2]/button/span"]
             #下派按钮
 fwjh_dljfwjh_xp =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[8]/div[1]/div/div[2]/button[1]/span"]
+            #提交按钮
+fwjh_dljfwjh_tj_submit =["xpath","//span[text()='提交 ']"]
+            #通过按钮
+fwjh_dljfwjh_tg =["xpath","//span[text()=' 通过 ']"]
+            #不通过按钮
+fwjh_dljfwjh_btg =["xpath","//span[text()=' 不通过 ']"]
+
+
         # 检修范围配置
             #添加按钮
 fwjh_dljfwjh_jxfwpz_tj =["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[8]/div[2]/div[1]/div/div/section[2]/div[2]/div/div/button[1]/span"]
@@ -308,7 +316,7 @@ page_login_loginBtn_app = ["xpath","/html/body/div/uni-app/uni-page/uni-page-wra
     APP-定力矩服务
 '''
 #工序处理模块
-app_dljfw_gxcl=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view/uni-view/uni-view[2]/uni-view[2]/uni-view[1]"]
+app_dljfw_gxcl=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view/uni-view/uni-view[2]/uni-view[2]/uni-view[2]"]
     #待领取页签
 app_dljfw_gxcl_dlq =["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/div[2]/div[1]/text()"]
         #勾选框第一个

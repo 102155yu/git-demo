@@ -717,6 +717,111 @@ class GxrwJymsExecutor:
         with allure.step("点击提示确认"):
             self.wk.locator(*allPages.sby_gzt_db_cl_fb_qd).click()
 
+#设备员发布计划
+    def execute_full_sby_Plan_flow(self):
+        # 定位服务计划管理
+        with allure.step('定位服务计划管理菜单'):
+            self.wk.locator(*allPages.fwjh).click()
+
+        # 点击定力矩服务计划菜单
+        with allure.step('点击定力矩服务计划菜单'):
+            self.wk.locator(*allPages.fwjh_dljfwjh).click()
+
+        # 点击添加定力矩服务计划
+        with allure.step('点击添加定力矩服务计划'):
+            self.wk.locator(*allPages.fwjh_dljfwjh_tj).click()
+
+            # ---------- 核心改造：使用计数器生成唯一计划名称 ----------
+        with allure.step('输入计划名称（计数器生成唯一名称）'):
+            # 调用计数器自增方法，获取最新值
+            counter_value = self.wk.increment_counter()
+            # 拼接唯一名称（前缀可自定义）
+            plan_name = f"测试5-6-yja-{counter_value}"
+            # 输入计划名称
+            self.wk.locator(*allPages.fwjh_dljfwjh_jhmc).send_keys(plan_name)
+            # 打印日志，方便调试
+            allure.attach(f"生成的计划名称：{plan_name}", "计划名称", allure.attachment_type.TEXT)
+            # ---------- 计数器改造结束 ----------
+
+        # 选择检修类型
+        with allure.step("选择检修类型"):
+            self.wk.locator(*allPages.fwjh_dljfwjh_jxlx).click()
+            # 通过classname定位到仓库的下拉框
+            ActionChains(self.browser) \
+                .key_down(Keys.DOWN) \
+                .key_down(Keys.ENTER) \
+                .perform()
+        # 选择开始时间
+        with allure.step("选择开始时间"):
+            self.wk.locator(*allPages.fwjh_dljfwjh_kssj).click()
+            ActionChains(self.browser) \
+                .key_down(Keys.DOWN) \
+                .key_down(Keys.RIGHT) \
+                .key_down(Keys.ENTER) \
+                .perform()
+        # 选择结束时间
+        with allure.step("选择结束时间"):
+            self.wk.locator(*allPages.fwjh_dljfwjh_jssj).click()
+            ActionChains(self.browser) \
+                .key_down(Keys.DOWN) \
+                .key_down(Keys.DOWN) \
+                .key_down(Keys.DOWN) \
+                .key_down(Keys.RIGHT) \
+                .key_down(Keys.ENTER) \
+                .perform()
+
+        # 点击保存
+        with allure.step("保存"):
+            self.wk.locator(*allPages.fwjh_dljfwjh_bc).click()
+
+        # 添加检修范围
+        with allure.step("点击添加，添加检修范围"):
+            self.wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_tj).click()
+
+        # 选择服务商
+        with allure.step("选择服务商:北京源城"):
+            self.wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_fws).click()
+            ActionChains(self.browser) \
+                .key_down(Keys.DOWN) \
+                .key_down(Keys.ENTER) \
+                .perform()
+
+        # # 选择装置
+        # with allure.step("选择装置:55万吨"):
+        #     self.wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_zz).click()
+        #     ActionChains(self.browser) \
+        #         .send_keys('55万吨') \
+        #         .key_down(Keys.DOWN) \
+        #         .key_down(Keys.ENTER) \
+        #         .perform()
+        # 选择装置80万吨
+        with allure.step("选择装置:80万吨"):
+            self.wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_zz).click()
+            ActionChains(self.browser) \
+                .send_keys('80万吨') \
+                .key_down(Keys.DOWN) \
+                .key_down(Keys.ENTER) \
+                .perform()
+        # 填写计划检修量
+        with allure.step("填写计划量"):
+            self.wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_jhjxl).send_keys("200")
+
+        # 选择服务模式
+        with allure.step("选择服务模式：简易模式"):
+            self.wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_fwms).click()
+            ActionChains(self.browser) \
+                .key_down(Keys.UP) \
+                .key_down(Keys.ENTER) \
+                .perform()
+        # 点击确认保存检修范围
+        with allure.step("点击确认保存检修范围"):
+            self.wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_qd).click()
+        time.sleep(8)
+        # 点击下派
+        with allure.step("点击提交"):
+            self.wk.locator(*allPages.fwjh_dljfwjh_tj_submit).click()
+        time.sleep(3)
+
 #服务商负责人添加项目经理
     def execute_full_fws_tjxmjl_flow(self):
         # 点击待办处理
@@ -731,7 +836,7 @@ class GxrwJymsExecutor:
         with allure.step("选择项目经理"):
             self.wk.locator(*allPages.fws_fzr_lxqr_xmjl).click()
             ActionChains(self.browser) \
-                .send_keys("李")\
+                .send_keys("罗")\
                 .key_down(Keys.DOWN) \
                 .key_down(Keys.ENTER) \
                 .perform()
@@ -879,6 +984,22 @@ class GxrwJymsExecutor:
         with allure.step('点击退出登录'):
             self.wk.locator(*allPages.sy_log_out).click()
         time.sleep(6)
+
+#专工审核通过计划
+    def execute_full_zg_shjh_flow(self):
+        # 点击待办处理
+        with allure.step('点击待办处理'):
+            self.wk.locator(*allPages.sby_gzt_db_cl).click()
+
+        # 点击处理弹窗确认按钮
+        with allure.step('点击处理弹窗确认按钮'):
+            self.wk.locator(*allPages.sby_gzt_db_cl_qr).click()
+
+        # 通过设备员的计划
+        with allure.step("点击通过，通过设备员的计划"):
+            self.wk.locator(*allPages.fwjh_dljfwjh_tg).click()
+
+
 #专工下发计划
     def execute_full_zg_Plan_flow(self):
         # 定位服务计划管理
@@ -1010,11 +1131,12 @@ class GxrwJymsExecutor:
         with allure.step("点击负责人选项框"):
             self.wk.locator(*allPages.rwfb_xp_fzrxxk).click()
             ActionChains(self.browser) \
-                .send_keys("李刚") \
+                .send_keys("余家傲") \
                 .key_down(Keys.DOWN) \
                 .key_down(Keys.ENTER) \
                 .perform()
         # 点击确定
+        time.sleep(3)
         with allure.step("点击确定"):
             self.wk.locator(*allPages.rwfb_xp_sure).click()
         time.sleep(3)
