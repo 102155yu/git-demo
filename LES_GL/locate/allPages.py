@@ -1,5 +1,5 @@
 """
-    将常用元素进行封装
+    将常用元素定位信息集中管理、便于维护
 
 """
 from selenium.webdriver.common.by import By
@@ -69,6 +69,19 @@ fwgcgl=["xpath","//span[contains(@class, 'el-tooltip__trigger') and text()='服�
 fwgcgl_dljfw =["xpath","//span[contains(@class, 'el-tooltip__trigger') and text()='定力矩服务']"]
 "检修数据确认"
 fwgcgl_jxsjqr =["xpath","//span[text()='检修数据确认']"]
+#未推送
+    #项目选项框
+fwgcgl_jxsjqr_wts_xm =['xpath',""]
+
+fwgcgl_jxsjqr_wts_ =['xpath',""]
+
+fwgcgl_jxsjqr_wts_ =['xpath',""]
+
+fwgcgl_jxsjqr_wts_ =['xpath',""]
+
+fwgcgl_jxsjqr_wts_ =['xpath',""]
+
+
     #通过按钮
 fwgcgl_jxsjqr_tg =["xpath","//span[text()='通过']"]
     #不通过按钮

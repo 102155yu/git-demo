@@ -1,5 +1,5 @@
 """
-    封装：函数、类（方法）
+    封装：函数、类（方法）  基础层封装常用操作统一接口供上层调用
 """
 import allure
 from selenium import webdriver

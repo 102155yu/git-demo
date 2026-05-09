@@ -1,3 +1,10 @@
+'''
+
+页面的操作封装成一个类供其他操作组合调用
+
+'''
+
+
 import time
 from selenium.webdriver import ActionChains ,Keys
 import allure
