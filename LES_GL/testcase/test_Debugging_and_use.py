@@ -90,12 +90,16 @@ def test_login02(browser):
     with allure.step("登录项目经理账号"):
         login = LoginPage(browser)
         login.input_credential_and_login(USERNAME_XMJL_LQ, PASSWD)
+    time.sleep(2)
 
     with allure.step("进入项目管理页面"):
         LES.execute_full_xmgl_xq_flow()
+    time.sleep(2)
 
     with allure.step("成员配置添加所有成员进项目"):
         LES.execute_full_PM_cypz_flow()
+
+    time.sleep(2)
 
     with allure.step("添加法兰到检修范围"):
         LES.execute_full_PM_pzjxfw_flow()

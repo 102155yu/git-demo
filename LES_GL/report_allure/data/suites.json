@@ -1,26 +1,26 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
   "children" : [ {
     "name" : "testcase",
     "children" : [ {
-      "name" : "test_2",
+      "name" : "test_Debugging_and_use",
       "children" : [ {
         "name" : "主要流程验证",
-        "uid" : "29c56c5cbffb1cf3",
-        "parentUid" : "52bea6aa0c4b3385a6680b632f19be14",
-        "status" : "passed",
+        "uid" : "2ea9c488bf3c3cfd",
+        "parentUid" : "957d763e4fc61684984d850105d5f485",
+        "status" : "broken",
         "time" : {
-          "start" : 1778060005479,
-          "stop" : 1778060228479,
-          "duration" : 223000
+          "start" : 1787641945468,
+          "stop" : 1787642016766,
+          "duration" : 71298
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "52bea6aa0c4b3385a6680b632f19be14"
+      "uid" : "957d763e4fc61684984d850105d5f485"
     } ],
     "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
-  } ],
-  "name" : "suites"
+  } ]
 }

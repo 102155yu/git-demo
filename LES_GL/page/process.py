@@ -839,11 +839,12 @@ class GxrwJymsExecutor:
         with allure.step('点击下一步'):
             self.wk.locator(*allPages.fws_fzr_lxqr_xyb).click()
 
+        time.sleep(3)
         # 进行人员配置页面点击项目经理选择框
         with allure.step("选择项目经理"):
             self.wk.locator(*allPages.fws_fzr_lxqr_xmjl).click()
             ActionChains(self.browser) \
-                .send_keys("罗")\
+                .send_keys("李")\
                 .key_down(Keys.DOWN) \
                 .key_down(Keys.ENTER) \
                 .perform()
@@ -1026,7 +1027,7 @@ class GxrwJymsExecutor:
             # 调用计数器自增方法，获取最新值
             counter_value = self.wk.increment_counter()
             # 拼接唯一名称（前缀可自定义）
-            plan_name = f"测试4-21-yja-{counter_value}"
+            plan_name = f"测试8-20-yja-{counter_value}"
             # 输入计划名称
             self.wk.locator(*allPages.fwjh_dljfwjh_jhmc).send_keys(plan_name)
             # 打印日志，方便调试
@@ -1063,7 +1064,7 @@ class GxrwJymsExecutor:
         # 点击保存
         with allure.step("保存"):
             self.wk.locator(*allPages.fwjh_dljfwjh_bc).click()
-
+        time.sleep(3)
         # 添加检修范围
         with allure.step("点击添加，添加检修范围"):
             self.wk.locator(*allPages.fwjh_dljfwjh_jxfwpz_tj).click()
@@ -1138,7 +1139,7 @@ class GxrwJymsExecutor:
         with allure.step("点击负责人选项框"):
             self.wk.locator(*allPages.rwfb_xp_fzrxxk).click()
             ActionChains(self.browser) \
-                .send_keys("余家傲") \
+                .send_keys("李刚") \
                 .key_down(Keys.DOWN) \
                 .key_down(Keys.ENTER) \
                 .perform()

@@ -1,5 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
-  "name" : "categories"
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span class=\"el-checkbox__input is-disabled\" style=\"border: 2px solid red\">...</span> is not clickable at point (501, 372). Other element would receive the click: <div class=\"el-loading-mask\" style=\"\">...</div>\n  (Session info: chrome=139.0.7207.2)\nStacktrace:\n\tGetHandleVerifier [0x0x7ff7442b2665+77205]\n\tGetHandleVerifier [0x0x7ff7442b26c0+77296]\n\t(No symbol) [0x0x7ff744069a3a]\n\t(No symbol) [0x0x7ff7440c8429]\n\t(No symbol) [0x0x7ff7440c5dc2]\n\t(No symbol) [0x0x7ff7440c2e11]\n\t(No symbol) [0x0x7ff7440c1d11]\n\t(No symbol) [0x0x7ff7440b3448]\n\t(No symbol) [0x0x7ff7440e864a]\n\t(No symbol) [0x0x7ff7440b2cf6]\n\t(No symbol) [0x0x7ff7440e8860]\n\t(No symbol) [0x0x7ff7441108af]\n\t(No symbol) [0x0x7ff7440e8423]\n\t(No symbol) [0x0x7ff7440b1511]\n\t(No symbol) [0x0x7ff7440b22a3]\n\tGetHandleVerifier [0x0x7ff74459389d+3096525]\n\tGetHandleVerifier [0x0x7ff74458dc5d+3072909]\n\tGetHandleVerifier [0x0x7ff7445ad74d+3202685]\n\tGetHandleVerifier [0x0x7ff7442cb9fe+180526]\n\tGetHandleVerifier [0x0x7ff7442d2fdf+210703]\n\tGetHandleVerifier [0x0x7ff7442bb304+113204]\n\tGetHandleVerifier [0x0x7ff7442bb4b9+113641]\n\tGetHandleVerifier [0x0x7ff7442a2238+10600]\n\tBaseThreadInitThunk [0x0x7ffbef04ccb7+23]\n\tRtlUserThreadStart [0x0x7ffbf034ad6c+44]",
+      "children" : [ {
+        "name" : "主要流程验证",
+        "uid" : "2ea9c488bf3c3cfd",
+        "parentUid" : "9aacf989a887c2c6627c055c1365cfe1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1787641945468,
+          "stop" : 1787642016766,
+          "duration" : 71298
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9aacf989a887c2c6627c055c1365cfe1"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
 }

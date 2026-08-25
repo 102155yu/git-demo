@@ -60,9 +60,9 @@ xmjl_gzt_db_cl=["xpath","/html/body/div[1]/div/div/div[4]/div/div/div/div[2]/div
 xmjl_gzt_db_ts_qr=["xpath","/html/body/div[9]/div/div/div[3]/button/span"]
 
 """
-服务过程管理
+项目过程管理
 """
-fwgcgl=["xpath","//span[contains(@class, 'el-tooltip__trigger') and text()='服务过程管理']"]
+fwgcgl=["xpath","//span[contains(@class, 'el-tooltip__trigger') and text()='项目过程管理']"]
 """
     定力矩服务    
 """
@@ -329,7 +329,7 @@ page_login_loginBtn_app = ["xpath","/html/body/div/uni-app/uni-page/uni-page-wra
     APP-定力矩服务
 '''
 #工序处理模块
-app_dljfw_gxcl=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view/uni-view/uni-view[2]/uni-view[2]/uni-view[2]"]
+app_dljfw_gxcl=["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view/uni-view/uni-view/uni-view[2]/uni-view[2]/uni-view[1]"]
     #待领取页签
 app_dljfw_gxcl_dlq =["xpath","/html/body/div[1]/uni-app/uni-page/uni-page-wrapper/uni-page-body/uni-view[2]/div[2]/div[1]/text()"]
         #勾选框第一个

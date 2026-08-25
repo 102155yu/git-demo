@@ -1,5 +1,5 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Wed May 06 17:33:25 CST 2026","Wed May 06 17:37:08 CST 2026","223000","testcase","test_2","","","","主要流程验证","
+"broken","Tue Aug 25 15:12:25 CST 2026","Tue Aug 25 15:13:36 CST 2026","71298","testcase","test_Debugging_and_use","","","","主要流程验证","
         用例编号：test_loin02
             用例标题：主要流程验证
             前置条件：系统为最新状态
